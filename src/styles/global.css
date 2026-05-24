@@ -84,6 +84,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    scrollbar-gutter: stable; /* reserve scrollbar space — prevents layout shift on lock/unlock */
   }
 
   *,
