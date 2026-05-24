@@ -111,10 +111,12 @@
 }
 
 .prose-project p {
-  font-size: 0.9rem;
+  font-size: 0.92rem;      /* slight bump for CJK legibility (was 0.9rem) */
   line-height: 1.9;
   color: #333;
   margin-bottom: 1.5em;
+  word-break: keep-all;    /* no mid-word breaks in CJK; Latin wraps normally */
+  overflow-wrap: break-word; /* break long Latin tokens (URLs etc.) if needed */
 }
 
 .prose-project h2 {
@@ -214,6 +216,8 @@
   color: #444;
   line-height: 1.8;
   margin-bottom: 0.4em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .prose-project ul li::before {
