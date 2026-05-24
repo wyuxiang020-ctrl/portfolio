@@ -6,13 +6,92 @@ interface Props {
 const { src, alt } = Astro.props;
 ---
 
-<!-- Black letterbox container — image shows in full, no cropping -->
-<div class="w-full bg-black flex items-center justify-center" style="height: 68vh; max-height: 820px;">
+<div class="banner-wrap">
+
+  <!-- Blurred ambient background (same image, covers letterbox area) -->
   <img
+    id="bnr-bg"
+    class="banner-bg"
     src={src}
-    alt={alt}
-    style="width: 100%; height: 100%; object-fit: contain; object-position: center; display: block;"
+    alt=""
+    aria-hidden="true"
     loading="eager"
     fetchpriority="high"
   />
+
+  <!-- Darkening overlay so main image pops -->
+  <div class="banner-overlay"></div>
+
+  <!-- Main image: full, no crop, no distortion -->
+  <img
+    id="bnr-main"
+    class="banner-main"
+    src={src}
+    alt={alt}
+    loading="eager"
+    fetchpriority="high"
+  />
+
+  <!-- Bottom gradient: banner fades into page background -->
+  <div class="banner-fade"></div>
+
 </div>
+
+<script is:inline>
+  (function () {
+    var bg   = document.getElementById('bnr-bg');
+    var main = document.getElementById('bnr-main');
+    if (!main || !bg) return;
+
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* Shared state */
+    var scale  = reduced ? 1.0 : 1.02;   /* entrance starts at 1.02 */
+    var mainY  = 0;                        /* parallax offset for main */
+    var bgY    = 0;                        /* parallax offset for bg   */
+
+    /* Apply both entrance scale and parallax in one transform call */
+    function apply() {
+      main.style.transform =
+        'scale(' + scale.toFixed(4) + ') translateY(' + mainY.toFixed(1) + 'px)';
+      bg.style.transform =
+        'translateY(' + bgY.toFixed(1) + 'px)';
+    }
+
+    /* ── Entrance: scale 1.02 → 1.0 over 1.5 s, ease-out cubic ── */
+    if (!reduced) {
+      var t0   = null;
+      var DUR  = 1500;
+
+      function entranceStep(ts) {
+        if (!t0) t0 = ts;
+        var progress = Math.min((ts - t0) / DUR, 1);
+        var eased    = 1 - Math.pow(1 - progress, 3);   /* ease-out cubic */
+        scale        = 1.02 - 0.02 * eased;
+        apply();
+        if (progress < 1) requestAnimationFrame(entranceStep);
+      }
+      requestAnimationFrame(entranceStep);
+    }
+
+    /* ── Parallax on scroll ── */
+    if (!reduced) {
+      var ticking = false;
+
+      function onScroll() {
+        var y = window.scrollY;
+        mainY = -(y * 0.25);   /* main image: subtle, moves up slowly */
+        bgY   =   y * 0.40;   /* bg: moves down a bit, creating depth */
+        apply();
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(onScroll);
+        }
+      }, { passive: true });
+    }
+  })();
+</script>

@@ -366,6 +366,64 @@
   opacity: 1;
 }
 
+/* ─── Project Banner ────────────────────────────────────────── */
+.banner-wrap {
+  position: relative;
+  width: 100%;
+  height: 68vh;
+  max-height: 820px;
+  overflow: hidden;
+  background: #111; /* fallback while images load */
+}
+
+/* Blurred ambient background — same src, covers the letterbox area */
+.banner-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 150%;
+  top: -25%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(48px) brightness(0.6) saturate(1.3);
+  pointer-events: none;
+  /* no will-change here — heavy filter + compositing can hurt perf */
+}
+
+/* Semi-transparent darkening overlay */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Main image — contained, no crop, no distortion */
+.banner-main {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  z-index: 2;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+/* Bottom gradient — blends banner into page white */
+.banner-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  background: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  z-index: 4;
+  pointer-events: none;
+}
+
 /* ─── Lightbox ──────────────────────────────────────────────── */
 #lb {
   position: fixed;
