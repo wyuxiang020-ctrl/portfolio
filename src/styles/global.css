@@ -376,98 +376,78 @@
   background: #111;
 }
 
-/* Blurred ambient background — same src, fills letterbox with colour */
+/* Blurred ambient background — oversized so parallax has room */
 .banner-bg {
   position: absolute;
   width: 100%;
-  height: 150%;
-  top: -25%;
+  height: 160%;
+  top: -30%;
   left: 0;
   object-fit: cover;
   object-position: center;
-  /* stronger effect: blur is heavy, keep brightness up so colour shows */
-  filter: blur(36px) brightness(0.75) saturate(1.6);
+  filter: blur(32px) brightness(0.78) saturate(1.7);
   pointer-events: none;
+  /* translate property set by JS — kept separate from filter */
 }
 
-/* Lighter darkening overlay so the blurred colour stays visible */
+/* Light darkening overlay */
 .banner-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.16);
   z-index: 1;
   pointer-events: none;
 }
 
-/* Outer wrapper — parallax is applied here by JS */
-.banner-outer {
-  position: absolute;
-  /* extra height so downward parallax push doesn't reveal gap at bottom */
-  top: -8%;
-  left: 0;
-  right: 0;
-  bottom: -8%;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Main image — entrance zoom via CSS transition (no conflict with parallax) */
+/* Main image
+   ─ 'scale' (CSS Level 2 individual property) is animated by CSS transition
+   ─ 'translate' (CSS Level 2 individual property) is set by JS for parallax
+   These compose independently — zero conflict.                             */
 .banner-main {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(1.07);
-  transition: transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  will-change: transform;
+  z-index: 2;
+  scale: 1.07;                                           /* entrance start  */
+  transition: scale 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .banner-main.banner-in {
-  transform: scale(1.0);
+  scale: 1.0;                                            /* entrance end    */
 }
 
-/* Bottom gradient — shorter, subtler */
+/* JS-driven hover glow layer */
+#bnr-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: radial-gradient(
+    ellipse at 50% 42%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.2) 38%,
+    transparent 62%
+  );
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Bottom gradient — 60 px */
 .banner-fade {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 60px;
   background: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
   z-index: 4;
   pointer-events: none;
 }
 
-/* Hover breathing glow — radial light from centre */
-.banner-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 3;
-  background: radial-gradient(
-    ellipse at 50% 40%,
-    rgba(255, 255, 255, 0.75) 0%,
-    rgba(255, 255, 255, 0.15) 35%,
-    transparent 65%
-  );
-  opacity: 0;
-  transition: opacity 600ms ease;
-  pointer-events: none;
-}
-.banner-wrap:hover::after {
-  animation: banner-pulse 2.4s ease-in-out 0.4s infinite;
-}
-
-@keyframes banner-pulse {
-  0%, 100% { opacity: 0.07; }
-  50%       { opacity: 0.20; }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .banner-main { transition: none; transform: none; }
-  .banner-wrap::after { animation: none !important; }
+  .banner-main { transition: none; scale: 1; }
 }
 
 /* ─── Lightbox ──────────────────────────────────────────────── */
