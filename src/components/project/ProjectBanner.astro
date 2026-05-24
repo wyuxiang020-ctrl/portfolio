@@ -8,7 +8,7 @@ const { src, alt } = Astro.props;
 
 <div class="banner-wrap">
 
-  <!-- Blurred ambient background (same image, covers letterbox area) -->
+  <!-- Blurred ambient background (same image, covers letterbox) -->
   <img
     id="bnr-bg"
     class="banner-bg"
@@ -19,70 +19,67 @@ const { src, alt } = Astro.props;
     fetchpriority="high"
   />
 
-  <!-- Darkening overlay so main image pops -->
+  <!-- Light darkening overlay -->
   <div class="banner-overlay"></div>
 
-  <!-- Main image: full, no crop, no distortion -->
-  <img
-    id="bnr-main"
-    class="banner-main"
-    src={src}
-    alt={alt}
-    loading="eager"
-    fetchpriority="high"
-  />
+  <!-- Parallax wrapper (JS moves this) -->
+  <div id="bnr-outer" class="banner-outer">
+    <!-- Main image: entrance zoom via CSS transition -->
+    <img
+      id="bnr-main"
+      class="banner-main"
+      src={src}
+      alt={alt}
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
 
-  <!-- Bottom gradient: banner fades into page background -->
+  <!-- Bottom gradient fade to white -->
   <div class="banner-fade"></div>
 
 </div>
 
 <script is:inline>
   (function () {
-    var bg   = document.getElementById('bnr-bg');
-    var main = document.getElementById('bnr-main');
-    if (!main || !bg) return;
+    var bg    = document.getElementById('bnr-bg');
+    var outer = document.getElementById('bnr-outer');
+    var main  = document.getElementById('bnr-main');
+    if (!main || !bg || !outer) return;
 
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    /* Shared state */
-    var scale  = reduced ? 1.0 : 1.02;   /* entrance starts at 1.02 */
-    var mainY  = 0;                        /* parallax offset for main */
-    var bgY    = 0;                        /* parallax offset for bg   */
-
-    /* Apply both entrance scale and parallax in one transform call */
-    function apply() {
-      main.style.transform =
-        'scale(' + scale.toFixed(4) + ') translateY(' + mainY.toFixed(1) + 'px)';
-      bg.style.transform =
-        'translateY(' + bgY.toFixed(1) + 'px)';
-    }
-
-    /* ── Entrance: scale 1.02 → 1.0 over 1.5 s, ease-out cubic ── */
+    /* ── Entrance animation ────────────────────────────────────
+       CSS has .banner-main { transform: scale(1.07) } initially.
+       We add .banner-in after two rAF frames so the browser paints
+       the 1.07 state first, then transitions to scale(1.0).
+       Double rAF = guaranteed one paint frame between set and transition.
+    ────────────────────────────────────────────────────────── */
     if (!reduced) {
-      var t0   = null;
-      var DUR  = 1500;
-
-      function entranceStep(ts) {
-        if (!t0) t0 = ts;
-        var progress = Math.min((ts - t0) / DUR, 1);
-        var eased    = 1 - Math.pow(1 - progress, 3);   /* ease-out cubic */
-        scale        = 1.02 - 0.02 * eased;
-        apply();
-        if (progress < 1) requestAnimationFrame(entranceStep);
-      }
-      requestAnimationFrame(entranceStep);
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          main.classList.add('banner-in');
+        });
+      });
+    } else {
+      main.classList.add('banner-in'); /* skip animation immediately */
     }
 
-    /* ── Parallax on scroll ── */
+    /* ── Parallax ──────────────────────────────────────────────
+       CORRECT direction: positive translateY pushes content DOWN,
+       which counteracts the natural upward scroll → content appears
+       to scroll slower (linger effect).
+
+       outer (main image): +scrollY * 0.22 → moves slower than page
+       bg (blurred):       +scrollY * 0.48 → moves even slower → depth
+    ────────────────────────────────────────────────────────── */
     if (!reduced) {
       var ticking = false;
 
       function onScroll() {
         var y = window.scrollY;
-        mainY = -(y * 0.25);   /* main image: subtle, moves up slowly */
-        bgY   =   y * 0.40;   /* bg: moves down a bit, creating depth */
-        apply();
+        outer.style.transform = 'translateY(' + (y * 0.22).toFixed(1) + 'px)';
+        bg.style.transform    = 'translateY(' + (y * 0.48).toFixed(1) + 'px)';
         ticking = false;
       }
 
