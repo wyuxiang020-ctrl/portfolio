@@ -78,6 +78,32 @@ const pageTitle =
       els.forEach((el) => io.observe(el));
     }
 
+    /* ── Chapter heading line reveal ── */
+    function initHeadingReveal() {
+      const headings = document.querySelectorAll<HTMLElement>('.prose-project h2, .prose-project h3');
+      if (!headings.length) return;
+
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduced) {
+        // Instantly reveal all headings — CSS transition:none handles the rest
+        headings.forEach((el) => el.classList.add('heading-revealed'));
+        return;
+      }
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('heading-revealed');
+            io.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      headings.forEach((el) => io.observe(el));
+    }
+
     /* ── Prose image fade-in ── */
     function initImageFade() {
       document.querySelectorAll<HTMLImageElement>('.prose-project img').forEach((img) => {
@@ -94,6 +120,7 @@ const pageTitle =
 
     function init() {
       initReveal();
+      initHeadingReveal();
       initImageFade();
     }
 

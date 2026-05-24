@@ -134,6 +134,74 @@
   margin-bottom: 0.5em;
 }
 
+/* ─── Chapter heading line reveal ──────────────────────────── */
+/* Only activates once JS runs (js-reveal on <html>), so no-JS
+   users see normal headings with no indent or invisible state. */
+
+.js-reveal .prose-project h2,
+.js-reveal .prose-project h3 {
+  position: relative;
+  padding-left: 56px; /* 40px line + 16px gap */
+  transition:
+    opacity   600ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.js-reveal .prose-project h2::before,
+.js-reveal .prose-project h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 1px;
+  background: #2D4A3E;
+  transition: width 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Not-yet-revealed: hidden */
+.js-reveal .prose-project h2:not(.heading-revealed),
+.js-reveal .prose-project h3:not(.heading-revealed) {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+/* Revealed: line slides in */
+.js-reveal .prose-project h2.heading-revealed::before,
+.js-reveal .prose-project h3.heading-revealed::before {
+  width: 40px;
+}
+
+/* Mobile: shorter line */
+@media (max-width: 640px) {
+  .js-reveal .prose-project h2,
+  .js-reveal .prose-project h3 {
+    padding-left: 40px; /* 24px line + 16px gap */
+  }
+  .js-reveal .prose-project h2.heading-revealed::before,
+  .js-reveal .prose-project h3.heading-revealed::before {
+    width: 24px;
+  }
+}
+
+/* Reduced motion: skip all animation */
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .prose-project h2,
+  .js-reveal .prose-project h3 {
+    transition: none;
+  }
+  .js-reveal .prose-project h2::before,
+  .js-reveal .prose-project h3::before {
+    transition: none;
+  }
+  .js-reveal .prose-project h2:not(.heading-revealed),
+  .js-reveal .prose-project h3:not(.heading-revealed) {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .prose-project ul {
   list-style: none;
   padding: 0;
