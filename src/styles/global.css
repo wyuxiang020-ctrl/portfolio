@@ -1,0 +1,486 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Brand colours */
+  --color-accent:       #2D4A3E;
+  --color-accent-light: #3d6354;
+  --color-text:         #1a1a1a;
+  --color-muted:        #666666;
+  --color-border:       #e5e5e5;
+  --color-bg:           #ffffff;
+  --color-surface:      #f8f8f6;
+}
+
+/* ─── Project card hover interactions ──────────────────────── */
+
+/* Image zoom */
+.project-card .card-img {
+  display: block;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .card-img {
+  transform: scale(1.04);
+}
+
+/* Gradient overlay via ::before — immune to ad-blockers */
+.project-card .img-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.project-card:hover .img-wrap::before {
+  opacity: 1;
+}
+
+/* "View Project →" text */
+.project-card .card-hint {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity   500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.project-card:hover .card-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card .card-title-cn {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .card-title-cn {
+  color: #2D4A3E;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card .card-img,
+  .project-card .img-wrap::before,
+  .project-card .card-hint,
+  .project-card .card-title-cn {
+    transition: none !important;
+  }
+}
+
+/* ─── Base ──────────────────────────────────────────────────── */
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #1a1a1a;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+}
+
+/* ─── Project prose ─────────────────────────────────────────── */
+.prose-project {
+  max-width: 72ch;
+}
+
+.prose-project p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+.prose-project h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-top: 3em;
+  margin-bottom: 0.75em;
+  line-height: 1.2;
+}
+
+.prose-project h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.prose-project ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.6em;
+}
+
+.prose-project ul li {
+  padding-left: 1.25em;
+  position: relative;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 0.4em;
+}
+
+.prose-project ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #2D4A3E;
+}
+
+.prose-project ol {
+  list-style: decimal;
+  padding-left: 1.25em;
+  margin-bottom: 1.6em;
+  color: #444;
+  line-height: 1.8;
+}
+
+.prose-project blockquote {
+  border-left: 2px solid #2D4A3E;
+  padding: 0.5em 0 0.5em 1.5em;
+  margin: 2.5em 0;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #2a2a2a;
+  line-height: 1.6;
+}
+
+.prose-project strong {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.prose-project img {
+  width: 100%;
+  height: auto;
+  margin: 2.5em 0;
+}
+
+/* Full-bleed image */
+.img-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.img-full img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* Two-up image grid */
+.img-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2.5em 0;
+}
+
+/* Three-up image grid */
+.img-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 2.5em 0;
+}
+
+/* Two-up with forced equal height — crops both images to align top/bottom */
+.img-two-crop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2.5em 0;
+  align-items: stretch;
+}
+
+.img-two-crop img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Solo large image — full prose width, generous vertical space */
+.img-solo {
+  margin: 2.5em 0;
+  width: 100%;
+}
+
+.img-solo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  font-size: 0.72rem;
+  color: #999;
+  letter-spacing: 0.03em;
+  margin-top: -1.5em;
+  margin-bottom: 2.5em;
+  line-height: 1.6;
+}
+
+/* Technical data table */
+.prose-project table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-size: 0.85rem;
+}
+
+.prose-project th,
+.prose-project td {
+  text-align: left;
+  padding: 0.6em 1em;
+  border-bottom: 1px solid #e5e5e5;
+  color: #444;
+}
+
+.prose-project th {
+  font-weight: 500;
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.prose-project tr:last-child td {
+  border-bottom: none;
+}
+
+/* ─── Animations ────────────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.animate-fade-up               { animation: fade-up 0.7s ease forwards; }
+.animate-delay-100             { animation-delay: 0.1s; opacity: 0; }
+.animate-delay-200             { animation-delay: 0.2s; opacity: 0; }
+.animate-delay-300             { animation-delay: 0.3s; opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ─── Scroll reveal ─────────────────────────────────────────── */
+/* .js-reveal is added to <html> by JS — elements are visible until JS runs */
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity   650ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 650ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.js-reveal .reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ─── Nav animated underline ────────────────────────────────── */
+.nav-link {
+  position: relative;
+  padding-bottom: 3px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover::after,
+.nav-link.nav-active::after {
+  width: 100%;
+}
+
+/* ─── View transition: gentle fade ─────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation: 220ms ease both vt-fade-out;
+  }
+  ::view-transition-new(root) {
+    animation: 280ms ease both vt-fade-in;
+  }
+  @keyframes vt-fade-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes vt-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}
+
+/* ─── Prose image fade-in ───────────────────────────────────── */
+.prose-project img.img-loading {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.prose-project img.img-loaded {
+  opacity: 1;
+}
+
+/* ─── Lightbox ──────────────────────────────────────────────── */
+#lb {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.93);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#lb.lb-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Close button */
+#lb-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 200ms;
+  z-index: 2;
+  padding: 0;
+}
+#lb-close:hover { opacity: 1; }
+
+/* Prev / Next arrows */
+#lb-prev,
+#lb-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 200ms;
+  z-index: 2;
+  padding: 0;
+}
+#lb-prev { left: 1rem; }
+#lb-next { right: 1rem; }
+#lb-prev:hover,
+#lb-next:hover { opacity: 1; }
+#lb-prev.lb-hide,
+#lb-next.lb-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Image frame */
+#lb-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - 9rem);
+  max-height: calc(100vh - 7rem);
+}
+
+#lb-img {
+  max-width: 100%;
+  max-height: calc(100vh - 7rem);
+  object-fit: contain;
+  display: block;
+  opacity: 0;
+  transition: opacity 220ms ease;
+  user-select: none;
+}
+#lb-img.lb-loaded { opacity: 1; }
+
+/* Spinner */
+#lb-spin {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: lb-rotate 0.7s linear infinite;
+}
+@keyframes lb-rotate {
+  to { transform: rotate(360deg); }
+}
+
+/* Counter */
+#lb-count {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+
+/* Make prose images clickable */
+.prose-project img {
+  cursor: zoom-in;
+}

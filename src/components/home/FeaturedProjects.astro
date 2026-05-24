@@ -1,0 +1,58 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  projects: CollectionEntry<'projects'>[];
+}
+const { projects } = Astro.props;
+---
+
+<section class="py-24 md:py-36 bg-[#f8f8f6]">
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+
+    <!-- Section header -->
+    <div class="flex items-baseline justify-between mb-16 md:mb-20">
+      <h2 class="font-serif text-3xl md:text-4xl text-[#1a1a1a]">Selected Work</h2>
+      <a
+        href="/work"
+        class="text-[11px] tracking-[0.18em] uppercase text-[#666] hover:text-accent transition-colors duration-200 border-b border-[#ccc] pb-px"
+      >
+        All Projects →
+      </a>
+    </div>
+
+    <!-- 3-column grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+      {projects.map((project) => (
+        <a href={`/work/${project.id}`} class="project-card reveal group block">
+
+          <!-- Image -->
+          <div class="img-wrap relative overflow-hidden aspect-[4/3] mb-5 bg-[#eee]">
+            <img
+              src={project.data.coverImage}
+              alt={project.data.title}
+              class="card-img w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div class="card-hint">
+              <span style="color:white;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;font-weight:300;">
+                View Project &nbsp;→
+              </span>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <p class="text-[11px] text-[#aaa] tracking-wider uppercase mb-2">
+            {project.data.year} · {project.data.location}
+          </p>
+          <h3 class="card-title-cn font-serif text-[1.35rem] text-[#1a1a1a] mb-1 leading-snug">
+            {project.data.title}
+          </h3>
+          <p class="text-sm text-[#777] leading-relaxed">{project.data.description}</p>
+
+        </a>
+      ))}
+    </div>
+
+  </div>
+</section>

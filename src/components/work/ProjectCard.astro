@@ -1,0 +1,64 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Tag from '../ui/Tag.astro';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+const { project } = Astro.props;
+const { title, subtitle, year, location, tags, description, coverImage } = project.data;
+
+const titleParts = title.split(' · ');
+const titleCN = titleParts[0];
+const titleEN = titleParts[1] ?? null;
+---
+
+<a href={`/work/${project.id}`} class="project-card reveal block cursor-pointer">
+
+  <!-- Image wrapper — ::before = gradient overlay, ::after = not used -->
+  <div class="img-wrap relative overflow-hidden aspect-[3/2] mb-6 bg-[#eee]">
+
+    <img
+      src={coverImage}
+      alt={title}
+      class="card-img w-full h-full object-cover"
+      loading="lazy"
+      decoding="async"
+    />
+
+    <!-- "View Project →" reveal -->
+    <div class="card-hint">
+      <span style="color: white; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 300;">
+        View Project &nbsp;→
+      </span>
+    </div>
+
+  </div>
+
+  <!-- Meta -->
+  <div class="flex items-center gap-2 mb-3 text-[11px] text-[#aaa] tracking-wider uppercase">
+    <span>{year}</span>
+    <span class="text-[#ddd]">·</span>
+    <span>{location}</span>
+  </div>
+
+  <!-- Title -->
+  <h3 class="font-serif font-light leading-tight mb-1">
+    <span class="card-title-cn block text-[1.5rem] text-[#1a1a1a]">{titleCN}</span>
+    {titleEN && (
+      <span class="block text-[0.8rem] text-[#aaa] mt-0.5">{titleEN}</span>
+    )}
+  </h3>
+
+  <!-- Subtitle -->
+  <p class="font-serif text-sm text-[#888] italic mb-3 mt-2">{subtitle}</p>
+
+  <!-- Description -->
+  <p class="text-sm text-[#666] leading-relaxed mb-5">{description}</p>
+
+  <!-- Tags -->
+  <div class="flex flex-wrap gap-2">
+    {tags.slice(0, 3).map((tag) => <Tag label={tag} />)}
+  </div>
+
+</a>

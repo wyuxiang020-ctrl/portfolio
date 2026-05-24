@@ -1,0 +1,107 @@
+---
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import { ClientRouter } from 'astro:transitions';
+import '../../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Yuxiang Wang',
+  description =
+    'Portfolio of Yuxiang Wang — Architecture and Adaptive Reuse researcher at Manchester School of Architecture. Design projects exploring cultural heritage, spatial narrative, and transformation.',
+} = Astro.props;
+
+const pageTitle =
+  title === 'Yuxiang Wang'
+    ? 'Yuxiang Wang — Architecture'
+    : `${title} — Yuxiang Wang`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{pageTitle}</title>
+    <ClientRouter />
+  </head>
+  <body class="bg-white min-h-screen">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+
+  <script>
+    /* ── Scroll reveal ── */
+    function initReveal() {
+      // Enable reveal system (makes .reveal elements invisible until observed)
+      document.documentElement.classList.add('js-reveal');
+
+      const els = document.querySelectorAll<HTMLElement>('.reveal:not(.in)');
+      if (!els.length) return;
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target as HTMLElement;
+            const delay = el.dataset.delay ?? '0';
+            el.style.transitionDelay = delay + 'ms';
+            el.classList.add('in');
+            io.unobserve(el);
+          });
+        },
+        { threshold: 0.06, rootMargin: '0px 0px -24px 0px' }
+      );
+
+      els.forEach((el) => io.observe(el));
+    }
+
+    /* ── Prose image fade-in ── */
+    function initImageFade() {
+      document.querySelectorAll<HTMLImageElement>('.prose-project img').forEach((img) => {
+        if (img.complete && img.naturalWidth) {
+          img.classList.add('img-loaded');
+        } else {
+          img.classList.add('img-loading');
+          img.addEventListener('load', () => {
+            img.classList.replace('img-loading', 'img-loaded');
+          }, { once: true });
+        }
+      });
+    }
+
+    function init() {
+      initReveal();
+      initImageFade();
+    }
+
+    /* astro:page-load fires after every View Transition navigation */
+    document.addEventListener('astro:page-load', init);
+
+    /* Also run immediately — covers initial page load where
+       astro:page-load may fire before this module script executes */
+    init();
+  </script>
+</html>

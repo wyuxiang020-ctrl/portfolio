@@ -1,0 +1,64 @@
+---
+const navItems = [
+  { label: 'Work',    href: '/work'    },
+  { label: 'About',   href: '/about'   },
+  { label: 'Contact', href: '/contact' },
+];
+
+const path = Astro.url.pathname;
+---
+
+<header
+  id="site-header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a
+      href="/"
+      class="font-serif text-xl tracking-[0.2em] text-[#1a1a1a] hover:text-accent transition-colors duration-200 select-none"
+      aria-label="Yuxiang Wang — Home"
+    >
+      YW
+    </a>
+
+    <!-- Nav -->
+    <nav aria-label="Main navigation">
+      <ul class="flex items-center gap-8 list-none m-0 p-0">
+        {navItems.map(({ label, href }) => {
+          const active = path === href || (href !== '/' && path.startsWith(href));
+          return (
+            <li>
+              <a
+                href={href}
+                class={[
+                  'nav-link text-[11px] tracking-[0.18em] uppercase font-sans transition-colors duration-200',
+                  active ? 'text-accent nav-active' : 'text-[#1a1a1a] hover:text-accent',
+                ].join(' ')}
+              >
+                {label}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('site-header');
+
+  function tick() {
+    if (!header) return;
+    if (window.scrollY > 50) {
+      header.classList.add('bg-white/96', 'backdrop-blur-sm', 'border-b', 'border-[#e5e5e5]');
+    } else {
+      header.classList.remove('bg-white/96', 'backdrop-blur-sm', 'border-b', 'border-[#e5e5e5]');
+    }
+  }
+
+  window.addEventListener('scroll', tick, { passive: true });
+  tick();
+</script>

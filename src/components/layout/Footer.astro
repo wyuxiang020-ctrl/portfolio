@@ -1,0 +1,63 @@
+---
+const year = new Date().getFullYear();
+
+const social = [
+  { label: '小红书',   href: '#' },
+  { label: 'Instagram', href: '#' },
+  { label: 'Behance',   href: '#' },
+];
+---
+
+<footer class="border-t border-[#e5e5e5] mt-32">
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12 py-14">
+
+    <!-- Top row -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-10">
+
+      <div>
+        <p class="font-serif text-2xl text-[#1a1a1a] mb-1">Yuxiang Wang</p>
+        <p class="text-[11px] text-[#999] tracking-[0.18em] uppercase">
+          Architecture &amp; Adaptive Reuse
+        </p>
+      </div>
+
+      <div class="flex flex-col md:items-end gap-2">
+        <a
+          href="mailto:m17347819733@163.com"
+          class="text-sm text-[#666] hover:text-accent transition-colors duration-200"
+        >
+          m17347819733@163.com
+        </a>
+        <a
+          href="tel:+8617347819733"
+          class="text-sm text-[#666] hover:text-accent transition-colors duration-200"
+        >
+          +86 173-4781-9733
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-6 border-t border-[#e5e5e5]">
+      <p class="text-[11px] text-[#bbb] tracking-wider">
+        © {year} Yuxiang Wang. All rights reserved.
+      </p>
+
+      <nav aria-label="Social links">
+        <ul class="flex items-center gap-6 list-none m-0 p-0">
+          {social.map(({ label, href }) => (
+            <li>
+              <a
+                href={href}
+                class="text-[11px] text-[#999] hover:text-accent tracking-[0.15em] uppercase transition-colors duration-200"
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</footer>

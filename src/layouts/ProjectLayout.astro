@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import ProjectBanner from '../components/project/ProjectBanner.astro';
+import ProjectMeta from '../components/project/ProjectMeta.astro';
+import ProjectNav from '../components/project/ProjectNav.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'projects'>;
+  prev?: CollectionEntry<'projects'> | null;
+  next?: CollectionEntry<'projects'> | null;
+}
+
+const { entry, prev, next } = Astro.props;
+const {
+  title,
+  subtitle,
+  year,
+  location,
+  area,
+  collaborators,
+  projectType,
+  tags,
+  bannerImage,
+  coverImage,
+  description,
+} = entry.data;
+
+// Split "中文 · English" into two lines
+const titleParts = title.split(' · ');
+const titleCN = titleParts[0];
+const titleEN = titleParts[1] ?? null;
+---
+
+<BaseLayout title={title} description={description}>
+
+  <!-- Header spacer -->
+  <div class="h-[72px]"></div>
+
+  <!-- Banner -->
+  <ProjectBanner src={bannerImage ?? coverImage} alt={title} />
+
+  <!-- Project header -->
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12 mt-12 mb-12">
+
+    <a
+      href="/work"
+      class="inline-block text-[10px] text-[#aaa] tracking-[0.2em] uppercase hover:text-accent transition-colors duration-200 mb-8"
+    >
+      ← Work
+    </a>
+
+    <h1 class="reveal font-serif font-light leading-[1.1] mb-3">
+      <span class="block text-[2.25rem] md:text-[3rem] lg:text-[3.5rem] text-[#1a1a1a]">{titleCN}</span>
+      {titleEN && (
+        <span class="block text-[1.1rem] md:text-[1.3rem] lg:text-[1.5rem] text-[#aaa] font-light mt-1">{titleEN}</span>
+      )}
+    </h1>
+    <p class="reveal font-serif text-lg md:text-xl text-[#888] italic mb-10 max-w-2xl" data-delay="80">{subtitle}</p>
+
+    <ProjectMeta
+      year={year}
+      location={location}
+      area={area}
+      collaborators={collaborators}
+      projectType={projectType}
+      tags={tags}
+    />
+  </div>
+
+  <!-- MDX content -->
+  <div class="max-w-[1200px] mx-auto px-6 md:px-12 mt-16 pb-8">
+    <div class="prose-project">
+      <slot />
+    </div>
+  </div>
+
+  <!-- Prev / Next -->
+  <ProjectNav prev={prev} next={next} />
+
+  <!-- ── Lightbox ─────────────────────────────────────────── -->
+  <div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+
+    <!-- Close -->
+    <button id="lb-close" aria-label="Close lightbox">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Prev -->
+    <button id="lb-prev" aria-label="Previous image">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 18L7 11L14 4" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Image + spinner -->
+    <div id="lb-frame">
+      <div id="lb-spin"></div>
+      <img id="lb-img" src="" alt="" />
+    </div>
+
+    <!-- Next -->
+    <button id="lb-next" aria-label="Next image">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 4L15 11L8 18" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Counter -->
+    <div id="lb-count"></div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var lb      = document.getElementById('lb');
+      var lbImg   = document.getElementById('lb-img');
+      var lbSpin  = document.getElementById('lb-spin');
+      var lbCount = document.getElementById('lb-count');
+      var lbPrev  = document.getElementById('lb-prev');
+      var lbNext  = document.getElementById('lb-next');
+      var lbClose = document.getElementById('lb-close');
+      if (!lb) return;
+
+      /* ── Collect images ── */
+      var imgs = [];
+      var cur  = 0;
+      var savedY = 0;
+
+      function gather() {
+        imgs = Array.from(document.querySelectorAll('.prose-project img'));
+      }
+
+      /* ── Scroll lock (works on iOS too) ── */
+      function lockScroll() {
+        savedY = window.scrollY;
+        document.body.style.position  = 'fixed';
+        document.body.style.top       = '-' + savedY + 'px';
+        document.body.style.width     = '100%';
+        document.body.style.overflowY = 'scroll'; /* prevent layout shift */
+      }
+      function unlockScroll() {
+        document.body.style.position  = '';
+        document.body.style.top       = '';
+        document.body.style.width     = '';
+        document.body.style.overflowY = '';
+        window.scrollTo(0, savedY);
+      }
+
+      /* ── Show image at index ── */
+      function show(index) {
+        cur = index;
+        var src = imgs[cur].getAttribute('src');
+        var alt = imgs[cur].getAttribute('alt') || '';
+
+        /* reset */
+        lbImg.classList.remove('lb-loaded');
+        lbSpin.style.display = 'block';
+
+        /* load */
+        lbImg.onload = function () {
+          lbImg.classList.add('lb-loaded');
+          lbSpin.style.display = 'none';
+        };
+        lbImg.onerror = function () {
+          lbSpin.style.display = 'none';
+        };
+        lbImg.src = src;
+        lbImg.alt = alt;
+
+        /* if browser cached it */
+        if (lbImg.complete && lbImg.naturalWidth) {
+          lbImg.classList.add('lb-loaded');
+          lbSpin.style.display = 'none';
+        }
+
+        /* counter */
+        lbCount.textContent = (cur + 1) + ' / ' + imgs.length;
+
+        /* arrows */
+        lbPrev.classList.toggle('lb-hide', cur === 0);
+        lbNext.classList.toggle('lb-hide', cur === imgs.length - 1);
+      }
+
+      /* ── Open ── */
+      function open(index) {
+        gather();
+        lb.classList.add('lb-open');
+        lockScroll();
+        show(index);
+      }
+
+      /* ── Close ── */
+      function close() {
+        lb.classList.remove('lb-open');
+        unlockScroll();
+        /* clear src after fade */
+        setTimeout(function () {
+          lbImg.src = '';
+          lbImg.classList.remove('lb-loaded');
+        }, 300);
+      }
+
+      /* ── Attach click to images ── */
+      function attachClicks() {
+        gather();
+        imgs.forEach(function (img, i) {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', function () { open(i); });
+        });
+      }
+
+      /* ── Events ── */
+      lbClose.addEventListener('click', close);
+
+      lb.addEventListener('click', function (e) {
+        if (e.target === lb) close();
+      });
+
+      lbPrev.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (cur > 0) show(cur - 1);
+      });
+
+      lbNext.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (cur < imgs.length - 1) show(cur + 1);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (!lb.classList.contains('lb-open')) return;
+        if (e.key === 'Escape')      close();
+        if (e.key === 'ArrowLeft'  && cur > 0)               show(cur - 1);
+        if (e.key === 'ArrowRight' && cur < imgs.length - 1) show(cur + 1);
+      });
+
+      /* ── Init ── */
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', attachClicks);
+      } else {
+        attachClicks();
+      }
+    })();
+  </script>
+
+</BaseLayout>
+

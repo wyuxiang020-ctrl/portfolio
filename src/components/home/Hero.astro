@@ -1,0 +1,82 @@
+---
+// Hero — full-viewport-height, background image, tagline overlay
+---
+
+<section class="relative h-screen flex items-end overflow-hidden">
+
+  <!-- Background image (extra tall for parallax headroom) -->
+  <div class="absolute inset-0">
+    <img
+      id="hero-bg"
+      src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2400&q=85"
+      alt=""
+      aria-hidden="true"
+      class="w-full object-cover absolute inset-x-0"
+      style="height: 150%; top: -25%;"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <!-- Gradient: transparent top → dark bottom -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
+  </div>
+
+  <!-- Text -->
+  <div class="relative z-10 w-full max-w-[1200px] mx-auto px-6 md:px-12 pb-16 md:pb-28">
+
+    <p class="text-white/50 text-[11px] tracking-[0.35em] uppercase mb-8 animate-fade-up animate-delay-100">
+      Manchester School of Architecture &nbsp;·&nbsp; MA Architecture and Adaptive Reuse
+    </p>
+
+    <h1
+      class="font-serif text-white text-[3.5rem] md:text-[5.5rem] lg:text-[7rem] font-light leading-[1.0] mb-6 animate-fade-up animate-delay-200"
+    >
+      Yuxiang<br />Wang
+    </h1>
+
+    <p class="text-white/70 text-sm md:text-base font-light max-w-lg leading-relaxed animate-fade-up animate-delay-300">
+      建筑改造研究生 · 山东 / 重庆 / 曼彻斯特<br />
+      在文化转译与 AI 工具之间寻找新的设计语言
+    </p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div
+    id="hero-ind"
+    class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
+    style="opacity: 0.4; transition: opacity 500ms ease;"
+  >
+    <span class="text-[9px] text-white tracking-[0.3em] uppercase">Scroll</span>
+    <div class="w-px h-8 bg-white animate-pulse"></div>
+  </div>
+
+</section>
+
+<script is:inline>
+  (function () {
+    var img = document.getElementById('hero-bg');
+    var ind = document.getElementById('hero-ind');
+    if (!img) return;
+
+    // Respect prefers-reduced-motion
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced) return;
+
+    var ticking = false;
+
+    function update() {
+      var y = window.scrollY;
+      // Parallax: background moves at 25% scroll speed
+      img.style.transform = 'translateY(' + (y * 0.25) + 'px)';
+      // Scroll indicator fades out after 80px scroll
+      if (ind) ind.style.opacity = y > 80 ? '0' : '0.4';
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+</script>

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /e/Users/WangYuxiang/Documents/ 2>/dev/null | head -20 || ls /c/Users/WangYuxiang/Documents/ 2>/dev/null | head -20)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Start-Sleep -Seconds 4; try { $r = Invoke-WebRequest -Uri \"http://localhost:4321\" -UseBasicParsing -TimeoutSec 5; \"HTTP $\\($r.StatusCode\\)\" } catch { \"Not ready: $_\" })",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(node .\\\\node_modules\\\\astro\\\\bin\\\\astro.mjs build)",
+      "PowerShell($py = \"C:\\\\Users\\\\WangYuxiang\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\"; & $py --version; & $py -m pip --version)",
+      "PowerShell(Set-Location \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\"; $css = Get-Content \"dist\\\\_astro\\\\BaseLayout.g5aB1M6A.css\" -Raw; $i = $css.IndexOf\\(\".relative\"\\); if \\($i -ge 0\\) { $css.Substring\\($i, 40\\) } else { \"NOT FOUND\" })"
+    ]
+  }
+}

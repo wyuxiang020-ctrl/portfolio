@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="Yuxiang Wang — Architecture and Adaptive Reuse researcher. From Weihai to Chongqing to Manchester."
+>
+
+  <div class="h-[72px]"></div>
+
+  <section class="py-16 md:py-24">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+
+      <!-- Page title -->
+      <h1 class="font-serif text-[3.5rem] md:text-[5rem] text-[#1a1a1a] font-light leading-none mb-20 md:mb-28">
+        About
+      </h1>
+
+      <!-- Portrait + Bio -->
+      <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-16 md:gap-24 mb-24 items-start">
+
+        <!-- Portrait -->
+        <div>
+          <div class="aspect-[3/4] overflow-hidden bg-[#eee]">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+              alt="Yuxiang Wang — portrait placeholder"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <p class="text-[10px] text-[#bbb] mt-3 tracking-widest uppercase">Portrait — placeholder</p>
+        </div>
+
+        <!-- Bio -->
+        <div>
+          <p class="font-serif text-[1.6rem] md:text-[1.9rem] text-[#1a1a1a] leading-[1.5] mb-10">
+            我是一位在「遗存」与「新生」之间工作的建筑师。
+          </p>
+
+          <div class="space-y-5 text-[#444] text-[0.95rem] leading-[1.9]">
+            <p>
+              出生于山东威海的海边。五年重庆求学，让我在那座雾气弥漫的山城里学会了如何
+              读懂一个地方的性格——它的地形、它的市井、它的记忆层叠。四川美术学院建筑学
+              本科毕业，专业第一。
+            </p>
+            <p>
+              现就读于英国曼彻斯特建筑学院（MSA），研究方向为建筑改造（Adaptive Reuse）。
+              从重庆三线遗址到英国小镇，从泸沽湖摩梭建筑到曼彻斯特工业街区，我的工作始
+              终关注：当一座建筑的原初功能消逝之后，它如何找到新的存在方式？
+            </p>
+            <p>
+              我对改造的兴趣不止于建筑技术层面，更是文化翻译意义上的——如何让一种时代的
+              记忆，以另一种时代的语言继续讲述。
+            </p>
+            <p>
+              目前，我也在积极探索 AI 工具在设计实践中的可能性：不是用 AI 替代设计判断，
+              而是找到人机协作的新叙事方法。
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Workspace photo -->
+      <div class="mb-28">
+        <div class="aspect-[21/9] overflow-hidden bg-[#eee]">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
+            alt="Studio workspace — placeholder"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <p class="text-[10px] text-[#bbb] mt-3 tracking-widest uppercase">Studio / workspace — placeholder</p>
+      </div>
+
+      <!-- CV columns -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-14 gap-y-20">
+
+        <!-- Education -->
+        <div>
+          <h2 class="font-serif text-2xl text-[#1a1a1a] mb-8 pb-5 border-b border-[#e5e5e5]">
+            Education
+          </h2>
+          <div class="space-y-10">
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2025 – 2027</p>
+              <p class="text-[#1a1a1a] text-sm font-medium mb-1">MA Architecture and Adaptive Reuse</p>
+              <p class="text-sm text-[#777]">Manchester School of Architecture</p>
+              <p class="text-sm text-[#aaa]">Manchester, UK</p>
+            </div>
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2020 – 2025</p>
+              <p class="text-[#1a1a1a] text-sm font-medium mb-1">B.Arch Architecture</p>
+              <p class="text-sm text-[#777]">Sichuan Fine Arts Academy</p>
+              <p class="text-sm text-[#aaa]">Chongqing, China · 专业第一</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards & Exhibitions -->
+        <div>
+          <h2 class="font-serif text-2xl text-[#1a1a1a] mb-8 pb-5 border-b border-[#e5e5e5]">
+            Awards &amp; Exhibitions
+          </h2>
+          <div class="space-y-8">
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2025</p>
+              <p class="text-[#1a1a1a] text-sm mb-1">四川美术学院 2025 届毕业展</p>
+              <p class="text-sm text-[#777]">"1/2" Diary 项目入选</p>
+            </div>
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2023</p>
+              <p class="text-[#1a1a1a] text-sm mb-1">四川美术学院第 27 届本科生年展</p>
+              <p class="text-sm text-[#777]">Continuation and Reconstruction 项目入选</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div>
+          <h2 class="font-serif text-2xl text-[#1a1a1a] mb-8 pb-5 border-b border-[#e5e5e5]">
+            Skills
+          </h2>
+          <div class="space-y-7">
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">Design</p>
+              <p class="text-sm text-[#555] leading-relaxed">
+                Rhino · Grasshopper · SketchUp · AutoCAD · Revit · Lumion · Enscape
+              </p>
+            </div>
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">Creative</p>
+              <p class="text-sm text-[#555] leading-relaxed">Adobe Suite · Procreate · Figma</p>
+            </div>
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">AI Tools</p>
+              <p class="text-sm text-[#555] leading-relaxed">Midjourney · ComfyUI · Claude</p>
+            </div>
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">Languages</p>
+              <p class="text-sm text-[#555] leading-relaxed">
+                中文（母语）· English (Professional)
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>

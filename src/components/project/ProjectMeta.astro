@@ -1,0 +1,43 @@
+---
+interface Props {
+  year: string;
+  location: string;
+  area?: string;
+  collaborators?: string;
+  projectType?: string;
+  tags: string[];
+}
+
+const { year, location, area, collaborators, projectType, tags } = Astro.props;
+
+type MetaItem = { label: string; value: string };
+
+const meta: MetaItem[] = [
+  { label: 'Year',     value: year     },
+  { label: 'Location', value: location },
+  ...(area          ? [{ label: 'Area',          value: area          }] : []),
+  ...(projectType   ? [{ label: 'Type',          value: projectType   }] : []),
+  ...(collaborators ? [{ label: 'Collaborators', value: collaborators }] : []),
+];
+---
+
+<!-- Meta grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-8 gap-y-6 py-10 border-t border-b border-[#e5e5e5]">
+  {meta.map(({ label, value }) => (
+    <div>
+      <p class="text-[10px] text-[#aaa] tracking-[0.2em] uppercase mb-2">{label}</p>
+      <p class="text-sm text-[#1a1a1a] leading-snug">{value}</p>
+    </div>
+  ))}
+</div>
+
+<!-- Tags -->
+{tags.length > 0 && (
+  <div class="flex flex-wrap gap-2 mt-6">
+    {tags.map((tag) => (
+      <span class="text-[10px] tracking-[0.15em] text-[#888] border border-[#e0e0e0] px-3 py-[5px] uppercase">
+        {tag}
+      </span>
+    ))}
+  </div>
+)}

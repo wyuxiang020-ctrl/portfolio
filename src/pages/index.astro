@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import FeaturedProjects from '../components/home/FeaturedProjects.astro';
+import { getCollection } from 'astro:content';
+
+const allProjects = await getCollection('projects');
+const featured = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+---
+
+<BaseLayout>
+  <!-- Hero -->
+  <Hero />
+
+  <!-- Intro -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+        <div>
+          <p class="font-serif text-2xl md:text-3xl text-[#1a1a1a] leading-[1.5] mb-0">
+            我在改造的裂缝中寻找新的可能性——让旧建筑以新的方式与当代生活相遇。
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-center gap-4 text-[#555] text-[0.95rem] leading-[1.85]">
+          <p>
+            Currently pursuing <em>MA Architecture and Adaptive Reuse</em> at Manchester School
+            of Architecture. Previously at Sichuan Fine Arts Academy, where I graduated top of
+            my cohort.
+          </p>
+          <p>
+            My work sits at the intersection of cultural heritage, spatial narrative, and
+            contemporary inhabitation — from post-industrial sites in Chongqing to vernacular
+            traditions around Lugu Lake, and now the mill towns of Lancashire.
+          </p>
+          <a
+            href="/work"
+            class="inline-block mt-2 text-[11px] tracking-[0.18em] uppercase text-accent border-b border-accent pb-px w-fit hover:opacity-70 transition-opacity duration-200"
+          >
+            View All Work →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured projects -->
+  <FeaturedProjects projects={featured} />
+
+</BaseLayout>
