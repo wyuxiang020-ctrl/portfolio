@@ -53,43 +53,50 @@ const pageTitle =
   </body>
 
   <script>
-    /* ── Scroll reveal ── */
-    function initReveal() {
-      // Enable reveal system (makes .reveal elements invisible until observed)
-      document.documentElement.classList.add('js-reveal');
+    /*
+     * All page-level interactivity lives here so it re-runs on every
+     * View Transition navigation via astro:page-load.
+     *
+     * AbortController (_ctrl) carries a signal into every initX() call.
+     * When init() fires for a new page it aborts the previous signal,
+     * which automatically removes all event listeners from the old page.
+     */
 
+    let _ctrl: AbortController | null = null;
+    let _bannerScrollRaf: number | null = null;
+    let _glowRaf: number | null = null;
+
+    /* ── Scroll reveal ──────────────────────────────────────────── */
+    function initReveal() {
+      document.documentElement.classList.add('js-reveal');
       const els = document.querySelectorAll<HTMLElement>('.reveal:not(.in)');
       if (!els.length) return;
-
       const io = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (!entry.isIntersecting) return;
             const el = entry.target as HTMLElement;
-            const delay = el.dataset.delay ?? '0';
-            el.style.transitionDelay = delay + 'ms';
+            el.style.transitionDelay = (el.dataset.delay ?? '0') + 'ms';
             el.classList.add('in');
             io.unobserve(el);
           });
         },
         { threshold: 0.06, rootMargin: '0px 0px -24px 0px' }
       );
-
       els.forEach((el) => io.observe(el));
     }
 
-    /* ── Chapter heading line reveal ── */
+    /* ── Chapter heading line reveal ────────────────────────────── */
     function initHeadingReveal() {
-      const headings = document.querySelectorAll<HTMLElement>('.prose-project h2, .prose-project h3');
+      const headings = document.querySelectorAll<HTMLElement>(
+        '.prose-project h2, .prose-project h3'
+      );
       if (!headings.length) return;
-
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (reduced) {
-        // Instantly reveal all headings — CSS transition:none handles the rest
         headings.forEach((el) => el.classList.add('heading-revealed'));
         return;
       }
-
       const io = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -100,11 +107,10 @@ const pageTitle =
         },
         { threshold: 0.2 }
       );
-
       headings.forEach((el) => io.observe(el));
     }
 
-    /* ── Prose image fade-in ── */
+    /* ── Prose image fade-in ────────────────────────────────────── */
     function initImageFade() {
       document.querySelectorAll<HTMLImageElement>('.prose-project img').forEach((img) => {
         if (img.complete && img.naturalWidth) {
@@ -118,17 +124,180 @@ const pageTitle =
       });
     }
 
+    /* ── Project Banner ─────────────────────────────────────────── */
+    function initBanner(signal: AbortSignal) {
+      /* Cancel any RAF loops still running from the previous page */
+      if (_bannerScrollRaf !== null) { cancelAnimationFrame(_bannerScrollRaf); _bannerScrollRaf = null; }
+      if (_glowRaf !== null)         { cancelAnimationFrame(_glowRaf);         _glowRaf         = null; }
+
+      const wrap = document.querySelector<HTMLElement>('.banner-wrap');
+      const bg   = document.getElementById('bnr-bg')   as HTMLImageElement | null;
+      const main = document.getElementById('bnr-main') as HTMLImageElement | null;
+      const glow = document.getElementById('bnr-glow') as HTMLElement | null;
+      if (!wrap || !bg || !main || !glow) return;
+
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* 1. Entrance zoom: double rAF ensures initial scale(1.07) paints first */
+      if (!reduced) {
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            if (!signal.aborted) main.classList.add('banner-in');
+          });
+        });
+      } else {
+        main.style.scale = '1';
+      }
+
+      /* 2. Parallax — 'translate' property is independent of 'scale' */
+      if (!reduced) {
+        let ticking = false;
+        const onScroll = () => {
+          const y = window.scrollY;
+          main.style.translate = `0 ${(y * 0.22).toFixed(1)}px`;
+          bg.style.translate   = `0 ${(y * 0.50).toFixed(1)}px`;
+          ticking = false;
+          _bannerScrollRaf = null;
+        };
+        window.addEventListener('scroll', () => {
+          if (!ticking) {
+            ticking = true;
+            _bannerScrollRaf = requestAnimationFrame(onScroll);
+          }
+        }, { passive: true, signal });
+      }
+
+      /* 3. Hover breathing glow — pure JS rAF, no CSS transition conflict */
+      if (!reduced) {
+        let glowTarget  = 0;
+        let glowCurrent = 0;
+
+        const tickGlow = () => {
+          if (signal.aborted) { _glowRaf = null; return; }
+          const pulse = 0.13 + 0.07 * Math.sin(Date.now() / 413);
+          glowCurrent = glowTarget > 0
+            ? Math.min(glowCurrent + 0.012, pulse)
+            : Math.max(glowCurrent - 0.006, 0);
+          glow.style.opacity = glowCurrent.toFixed(3);
+          _glowRaf = (glowCurrent > 0.001 || glowTarget > 0)
+            ? requestAnimationFrame(tickGlow)
+            : null;
+        };
+
+        wrap.addEventListener('mouseenter', () => {
+          glowTarget = 1;
+          if (_glowRaf === null) _glowRaf = requestAnimationFrame(tickGlow);
+        }, { signal });
+        wrap.addEventListener('mouseleave', () => { glowTarget = 0; }, { signal });
+      }
+    }
+
+    /* ── Lightbox ───────────────────────────────────────────────── */
+    function initLightbox(signal: AbortSignal) {
+      const lb      = document.getElementById('lb');
+      const lbImg   = document.getElementById('lb-img')   as HTMLImageElement | null;
+      const lbSpin  = document.getElementById('lb-spin');
+      const lbCount = document.getElementById('lb-count');
+      const lbPrev  = document.getElementById('lb-prev');
+      const lbNext  = document.getElementById('lb-next');
+      const lbClose = document.getElementById('lb-close');
+      if (!lb || !lbImg || !lbSpin || !lbCount || !lbPrev || !lbNext || !lbClose) return;
+
+      let imgs: HTMLImageElement[] = [];
+      let cur    = 0;
+      let savedY = 0;
+
+      const gather = () => {
+        imgs = Array.from(document.querySelectorAll<HTMLImageElement>('.prose-project img'));
+      };
+
+      const lockScroll = () => {
+        savedY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top      = `-${savedY}px`;
+        document.body.style.left     = '0';
+        document.body.style.right    = '0';
+      };
+      const unlockScroll = () => {
+        const y = savedY;
+        document.body.style.position = '';
+        document.body.style.top      = '';
+        document.body.style.left     = '';
+        document.body.style.right    = '';
+        window.scrollTo({ top: y, behavior: 'instant' });
+      };
+
+      const show = (index: number) => {
+        cur = index;
+        const src = imgs[cur]?.getAttribute('src') ?? '';
+        const alt = imgs[cur]?.getAttribute('alt') ?? '';
+        lbImg.classList.remove('lb-loaded');
+        lbSpin.style.display = 'block';
+        lbImg.onload  = () => { lbImg.classList.add('lb-loaded'); lbSpin.style.display = 'none'; };
+        lbImg.onerror = () => { lbSpin.style.display = 'none'; };
+        lbImg.src = src;
+        lbImg.alt = alt;
+        if (lbImg.complete && lbImg.naturalWidth) {
+          lbImg.classList.add('lb-loaded');
+          lbSpin.style.display = 'none';
+        }
+        lbCount.textContent = `${cur + 1} / ${imgs.length}`;
+        lbPrev.classList.toggle('lb-hide', cur === 0);
+        lbNext.classList.toggle('lb-hide', cur === imgs.length - 1);
+      };
+
+      const open = (index: number) => {
+        gather();
+        lb.classList.add('lb-open');
+        lockScroll();
+        show(index);
+      };
+
+      const close = () => {
+        lb.classList.remove('lb-open');
+        unlockScroll();
+        setTimeout(() => { lbImg.src = ''; lbImg.classList.remove('lb-loaded'); }, 300);
+      };
+
+      /* Attach zoom cursor + click to each prose image */
+      gather();
+      imgs.forEach((img, i) => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', () => open(i), { signal });
+      });
+
+      lbClose.addEventListener('click', close, { signal });
+      lb.addEventListener('click', (e) => { if (e.target === lb) close(); }, { signal });
+      lbPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (cur > 0) show(cur - 1);
+      }, { signal });
+      lbNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (cur < imgs.length - 1) show(cur + 1);
+      }, { signal });
+      document.addEventListener('keydown', (e) => {
+        if (!lb.classList.contains('lb-open')) return;
+        if (e.key === 'Escape')                                close();
+        if (e.key === 'ArrowLeft'  && cur > 0)                 show(cur - 1);
+        if (e.key === 'ArrowRight' && cur < imgs.length - 1)   show(cur + 1);
+      }, { signal });
+    }
+
+    /* ── Init — runs on every page including View Transition navs ─ */
     function init() {
+      _ctrl?.abort();               /* drop all event listeners from prev page */
+      _ctrl = new AbortController();
+      const { signal } = _ctrl;
+
       initReveal();
       initHeadingReveal();
       initImageFade();
+      initBanner(signal);
+      initLightbox(signal);
     }
 
-    /* astro:page-load fires after every View Transition navigation */
     document.addEventListener('astro:page-load', init);
-
-    /* Also run immediately — covers initial page load where
-       astro:page-load may fire before this module script executes */
-    init();
+    init(); /* initial load — astro:page-load may fire before this executes */
   </script>
 </html>
