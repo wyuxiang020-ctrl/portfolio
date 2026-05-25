@@ -53,6 +53,9 @@ const pageTitle =
   </body>
 
   <script>
+    import PhotoSwipe from 'photoswipe';
+    import 'photoswipe/style.css';
+
     /*
      * All page-level interactivity lives here so it re-runs on every
      * View Transition navigation via astro:page-load.
@@ -65,6 +68,7 @@ const pageTitle =
     let _ctrl: AbortController | null = null;
     let _bannerScrollRaf: number | null = null;
     let _glowRaf: number | null = null;
+    let _pswp: InstanceType<typeof PhotoSwipe> | null = null;
 
     /* ── Scroll reveal ──────────────────────────────────────────── */
     function initReveal() {
@@ -192,96 +196,164 @@ const pageTitle =
       }
     }
 
-    /* ── Lightbox ───────────────────────────────────────────────── */
+    /* ── Lightbox — PhotoSwipe v5 ──────────────────────────────── */
     function initLightbox(signal: AbortSignal) {
-      const lb      = document.getElementById('lb');
-      const lbImg   = document.getElementById('lb-img')   as HTMLImageElement | null;
-      const lbSpin  = document.getElementById('lb-spin');
-      const lbCount = document.getElementById('lb-count');
-      const lbPrev  = document.getElementById('lb-prev');
-      const lbNext  = document.getElementById('lb-next');
-      const lbClose = document.getElementById('lb-close');
-      if (!lb || !lbImg || !lbSpin || !lbCount || !lbPrev || !lbNext || !lbClose) return;
+      const imgs = Array.from(
+        document.querySelectorAll<HTMLImageElement>('.prose-project img')
+      );
+      if (!imgs.length) return;
 
-      let imgs: HTMLImageElement[] = [];
-      let cur    = 0;
-      let savedY = 0;
+      // Default cursor on all prose images
+      imgs.forEach((img) => { img.style.cursor = 'zoom-in'; });
 
-      const gather = () => {
-        imgs = Array.from(document.querySelectorAll<HTMLImageElement>('.prose-project img'));
+      /* Build data source; naturalWidth/Height give true resolution
+         once the image has loaded; fall back to generous defaults.  */
+      const buildDataSource = () =>
+        imgs.map((img) => ({
+          src:    img.src,
+          width:  img.naturalWidth  || 1400,
+          height: img.naturalHeight || 900,
+          alt:    img.alt || '',
+        }));
+
+      const openAt = (startIndex: number) => {
+        if (_pswp) { _pswp.destroy(); _pswp = null; }
+
+        const pswp = new PhotoSwipe({
+          dataSource:              buildDataSource(),
+          index:                   startIndex,
+          zoom:                    true,
+          maxZoomLevel:            5,
+          initialZoomLevel:        'fit',
+          secondaryZoomLevel:      2.5,   /* double-click / double-tap target */
+          imageClickAction:        'zoom',
+          tapAction:               'zoom',
+          doubleTapAction:         'zoom',
+          allowPanToNext:          false, /* don't swipe slides while panning */
+          clickToCloseNonZoomable: true,
+          bgOpacity:               0.93,
+          padding:                 { top: 20, bottom: 56, left: 56, right: 56 },
+        });
+
+        /* ── 1. Wheel-to-zoom anchored at cursor position ──────── */
+        pswp.on('bindEvents', () => {
+          const root = pswp.element as HTMLElement | null;
+          if (!root) return;
+          root.addEventListener(
+            'wheel',
+            (e: WheelEvent) => {
+              e.preventDefault();
+              const slide = pswp.currSlide as any;
+              if (!slide) return;
+              const step  = 0.2;
+              const dir   = e.deltaY < 0 ? step : -step;
+              const initZ = slide.zoomLevels.initial as number;
+              const curr  = slide.currentResolution  as number;
+              const next  = Math.min(Math.max(curr + dir, initZ), 5);
+              if (Math.abs(next - curr) < 0.001) return;
+              const r = root.getBoundingClientRect();
+              slide.zoomTo(next, { x: e.clientX - r.left, y: e.clientY - r.top }, 200);
+            },
+            { passive: false }
+          );
+        });
+
+        /* ── 2. Zoom-level indicator + reset button ─────────────── */
+        pswp.on('uiRegister', () => {
+          pswp.ui?.registerElement({
+            name:     'zoom-indicator',
+            order:    9,
+            isButton: false,
+            appendTo: 'root',
+            onInit(el: HTMLElement) {
+              el.id = 'pswp-zoom-ui';
+              el.innerHTML = `
+                <button id="pswp-reset-btn" aria-label="Reset zoom">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5 1v8M1 5h8" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <span id="pswp-zoom-pct"></span>`;
+
+              el.querySelector('#pswp-reset-btn')?.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                const s = pswp.currSlide as any;
+                if (!s) return;
+                s.zoomTo(
+                  s.zoomLevels.initial,
+                  { x: pswp.viewportSize.x / 2, y: pswp.viewportSize.y / 2 },
+                  300
+                );
+              });
+            },
+          });
+        });
+
+        /* ── 3. Refresh cursor + indicator on every zoom / pan ─── */
+        const refreshUI = () => {
+          const slide = pswp.currSlide as any;
+          const root  = pswp.element  as HTMLElement | null;
+          if (!slide || !root) return;
+          const initZ    = slide.zoomLevels.initial as number;
+          const curr     = slide.currentResolution  as number;
+          const isZoomed = curr > initZ * 1.05;
+          const pct      = Math.round((curr / initZ) * 100);
+
+          const ui    = root.querySelector<HTMLElement>('#pswp-zoom-ui');
+          const pctEl = root.querySelector<HTMLElement>('#pswp-zoom-pct');
+          if (ui)    ui.style.opacity = isZoomed ? '1' : '0';
+          if (pctEl) pctEl.textContent = `${pct}%`;
+          if (!root.dataset.dragging)
+            root.style.cursor = isZoomed ? 'grab' : 'zoom-in';
+        };
+
+        pswp.on('zoomPanUpdate', refreshUI);
+        pswp.on('change',        () => setTimeout(refreshUI, 30));
+
+        /* ── 4. Grabbing cursor while dragging ──────────────────── */
+        pswp.on('pointerDown', () => {
+          const s    = pswp.currSlide as any;
+          const root = pswp.element  as HTMLElement | null;
+          if (!root || !s) return;
+          if (s.currentResolution > s.zoomLevels.initial * 1.05) {
+            root.dataset.dragging = '1';
+            root.style.cursor = 'grabbing';
+          }
+        });
+        pswp.on('pointerUp', () => {
+          const root = pswp.element as HTMLElement | null;
+          if (root) delete root.dataset.dragging;
+          refreshUI();
+        });
+
+        /* ── 5. Arrow keys: pan when zoomed, switch slide at 1x ── */
+        const onKey = (e: KeyboardEvent) => {
+          if (!_pswp || (_pswp as any).isDestroyed) return;
+          const s = (_pswp as any).currSlide;
+          if (!s) return;
+          const isZoomed = s.currentResolution > s.zoomLevels.initial * 1.05;
+          if (isZoomed && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+            e.stopPropagation();
+            e.preventDefault();
+            s.pan.x = (s.pan.x || 0) + (e.key === 'ArrowLeft' ? 80 : -80);
+            s.applyCurrentZoomPan?.();
+          }
+        };
+        document.addEventListener('keydown', onKey, { capture: true });
+
+        pswp.on('destroy', () => {
+          document.removeEventListener('keydown', onKey, { capture: true });
+          _pswp = null;
+        });
+
+        pswp.init();
+        _pswp = pswp;
       };
 
-      const lockScroll = () => {
-        savedY = window.scrollY;
-        document.body.style.position = 'fixed';
-        document.body.style.top      = `-${savedY}px`;
-        document.body.style.left     = '0';
-        document.body.style.right    = '0';
-      };
-      const unlockScroll = () => {
-        const y = savedY;
-        document.body.style.position = '';
-        document.body.style.top      = '';
-        document.body.style.left     = '';
-        document.body.style.right    = '';
-        window.scrollTo({ top: y, behavior: 'instant' });
-      };
-
-      const show = (index: number) => {
-        cur = index;
-        const src = imgs[cur]?.getAttribute('src') ?? '';
-        const alt = imgs[cur]?.getAttribute('alt') ?? '';
-        lbImg.classList.remove('lb-loaded');
-        lbSpin.style.display = 'block';
-        lbImg.onload  = () => { lbImg.classList.add('lb-loaded'); lbSpin.style.display = 'none'; };
-        lbImg.onerror = () => { lbSpin.style.display = 'none'; };
-        lbImg.src = src;
-        lbImg.alt = alt;
-        if (lbImg.complete && lbImg.naturalWidth) {
-          lbImg.classList.add('lb-loaded');
-          lbSpin.style.display = 'none';
-        }
-        lbCount.textContent = `${cur + 1} / ${imgs.length}`;
-        lbPrev.classList.toggle('lb-hide', cur === 0);
-        lbNext.classList.toggle('lb-hide', cur === imgs.length - 1);
-      };
-
-      const open = (index: number) => {
-        gather();
-        lb.classList.add('lb-open');
-        lockScroll();
-        show(index);
-      };
-
-      const close = () => {
-        lb.classList.remove('lb-open');
-        unlockScroll();
-        setTimeout(() => { lbImg.src = ''; lbImg.classList.remove('lb-loaded'); }, 300);
-      };
-
-      /* Attach zoom cursor + click to each prose image */
-      gather();
       imgs.forEach((img, i) => {
-        img.style.cursor = 'zoom-in';
-        img.addEventListener('click', () => open(i), { signal });
+        img.addEventListener('click', () => openAt(i), { signal });
       });
-
-      lbClose.addEventListener('click', close, { signal });
-      lb.addEventListener('click', (e) => { if (e.target === lb) close(); }, { signal });
-      lbPrev.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (cur > 0) show(cur - 1);
-      }, { signal });
-      lbNext.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (cur < imgs.length - 1) show(cur + 1);
-      }, { signal });
-      document.addEventListener('keydown', (e) => {
-        if (!lb.classList.contains('lb-open')) return;
-        if (e.key === 'Escape')                                close();
-        if (e.key === 'ArrowLeft'  && cur > 0)                 show(cur - 1);
-        if (e.key === 'ArrowRight' && cur < imgs.length - 1)   show(cur + 1);
-      }, { signal });
     }
 
     /* ── Init — runs on every page including View Transition navs ─ */
