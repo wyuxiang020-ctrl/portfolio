@@ -45,6 +45,8 @@ const pageTitle =
     <ClientRouter />
   </head>
   <body class="bg-white min-h-screen">
+    <!-- Reading progress bar — JS controls opacity + scaleX -->
+    <div id="read-progress" aria-hidden="true"></div>
     <Header />
     <main>
       <slot />
@@ -64,9 +66,10 @@ const pageTitle =
      * which automatically removes all event listeners from the old page.
      */
 
-    let _ctrl: AbortController | null = null;
+    let _ctrl:            AbortController | null = null;
+    let _animsDone        = false;   /* guard: prevents double-running animations */
     let _bannerScrollRaf: number | null = null;
-    let _glowRaf: number | null = null;
+    let _glowRaf:         number | null = null;
     let _pswp: InstanceType<typeof PhotoSwipe> | null = null;
 
     /* ── Scroll reveal ──────────────────────────────────────────── */
@@ -202,10 +205,19 @@ const pageTitle =
       );
       if (!imgs.length) return;
 
-      imgs.forEach((img) => { img.style.cursor = 'zoom-in'; });
-
-      const openAt = (clickedSrc: string) => {
+      /* openAt receives the actual element (not just a src string) so the
+         index lookup is identity-based and immune to URL normalisation.
+         It is async so we can await decode() and get correct naturalWidth/Height
+         before handing dimensions to PhotoSwipe.                              */
+      const openAt = async (target: HTMLImageElement) => {
         if (_pswp) { _pswp.destroy(); _pswp = null; }
+
+        /* Wait for the clicked image to decode so naturalWidth/Height are
+           correct. Without this, a lazily-loaded image gives 0×0 and PhotoSwipe
+           falls back to 1400×900, miscalculating zoom and image position.     */
+        if (!target.complete || !target.naturalWidth) {
+          try { await target.decode(); } catch { /* network or decode error — proceed anyway */ }
+        }
 
         /* Snapshot scroll — focus-restore on close causes the page to jump */
         const savedScrollY = window.scrollY;
@@ -215,15 +227,18 @@ const pageTitle =
         const liveImgs = Array.from(
           document.querySelectorAll<HTMLImageElement>('.prose-project img')
         );
-        const startIndex = Math.max(
-          0, liveImgs.findIndex((img) => img.src === clickedSrc)
-        );
+
+        /* Identity comparison — robust even when src URLs differ by trailing
+           slash, query string, or protocol normalisation.                     */
+        const startIndex = Math.max(0, liveImgs.indexOf(target));
 
         const pswp = new PhotoSwipe({
           dataSource: liveImgs.map((img) => ({
             src:    img.src,
-            width:  img.naturalWidth  || 1400,
-            height: img.naturalHeight || 900,
+            /* Prefer naturalWidth after load; fall back to rendered size;
+               final fallback keeps PhotoSwipe from crashing on 0×0.         */
+            width:  img.naturalWidth  || img.offsetWidth  || 1400,
+            height: img.naturalHeight || img.offsetHeight || 900,
             alt:    img.alt || '',
           })),
           index:              startIndex,
@@ -269,25 +284,104 @@ const pageTitle =
       };
 
       imgs.forEach((img) => {
-        img.addEventListener('click', () => openAt(img.src), { signal });
+        img.addEventListener('click', () => openAt(img), { signal });
       });
     }
 
-    /* ── Init — runs on every page including View Transition navs ─ */
-    function init() {
-      _pswp?.destroy();             /* close lightbox if open during navigation */
-      _ctrl?.abort();               /* drop all event listeners from prev page  */
-      _ctrl = new AbortController();
-      const { signal } = _ctrl;
+    /* ── Reading progress bar ──────────────────────────────────── */
+    function initReadProgress(signal: AbortSignal) {
+      const bar = document.getElementById('read-progress') as HTMLElement | null;
+      if (!bar) return;
 
+      /* Only visible on project detail pages */
+      if (!document.querySelector('.prose-project')) {
+        bar.classList.remove('rp-visible');
+        bar.style.transform = 'scaleX(0)';
+        return;
+      }
+
+      const update = () => {
+        const scrollY  = window.scrollY;
+        const totalH   = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = totalH > 0 ? Math.min(scrollY / totalH, 1) : 0;
+
+        bar.style.transform = `scaleX(${progress.toFixed(4)})`;
+
+        /* Fade in only after the reader has scrolled a bit */
+        if (scrollY > 100) {
+          bar.classList.add('rp-visible');
+        } else {
+          bar.classList.remove('rp-visible');
+        }
+      };
+
+      window.addEventListener('scroll', update, { passive: true, signal });
+      update(); /* set initial state */
+    }
+
+    /* ── Lifecycle ──────────────────────────────────────────────────
+     *
+     * The root cause of the SPA-navigation bug was timing:
+     *
+     *   astro:page-load  fires AFTER the View Transition animation ends.
+     *   astro:after-swap fires AFTER the body swap but BEFORE the animation.
+     *
+     * When the user navigated home → project, the new DOM (including
+     * .prose-project img elements) existed immediately after the swap, but
+     * click handlers weren't registered until page-load — leaving a window
+     * where clicking did nothing, and PhotoSwipe could open with stale state
+     * from the previous page's AbortController.
+     *
+     * Fix: register lightbox click handlers in astro:after-swap (as early as
+     * possible), and run reveal / banner animations in astro:page-load (after
+     * the transition, so they aren't interrupted by it).
+     */
+
+    document.addEventListener('astro:after-swap', () => {
+      /* New DOM is in place. CSS from the persistent <head> stylesheet is
+         already applied. Register click handlers immediately.              */
+      _animsDone = false;
+      _pswp?.destroy();
+      _ctrl?.abort();
+      _ctrl = new AbortController();
+      initLightbox(_ctrl.signal);
+      initReadProgress(_ctrl.signal);
+    });
+
+    document.addEventListener('astro:page-load', () => {
+      /* Lightbox + progress: init here only on hard-refresh / no-VT
+         fallback (astro:after-swap didn't fire, so _ctrl is null).  */
+      if (!_ctrl) {
+        _ctrl = new AbortController();
+        initLightbox(_ctrl.signal);
+        initReadProgress(_ctrl.signal);
+      }
+      /* Animations: run once per page — guard prevents double-run when
+         both astro:page-load and the direct call below execute.         */
+      if (!_animsDone) {
+        _animsDone = true;
+        initReveal();
+        initHeadingReveal();
+        initImageFade();
+        initBanner(_ctrl.signal);
+      }
+    });
+
+    /* Hard-refresh / initial load guard ────────────────────────────
+     * astro:page-load may fire before this <script> module executes.
+     * If it already ran the guards above are no-ops; otherwise we
+     * bootstrap here so the initial page is never left un-initialised. */
+    if (!_ctrl) {
+      _ctrl = new AbortController();
+      initLightbox(_ctrl.signal);
+      initReadProgress(_ctrl.signal);
+    }
+    if (!_animsDone) {
+      _animsDone = true;
       initReveal();
       initHeadingReveal();
       initImageFade();
-      initBanner(signal);
-      initLightbox(signal);
+      initBanner(_ctrl.signal);
     }
-
-    document.addEventListener('astro:page-load', init);
-    init(); /* initial load — astro:page-load may fire before this executes */
   </script>
 </html>
