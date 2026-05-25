@@ -205,14 +205,23 @@ const pageTitle =
 
       imgs.forEach((img) => { img.style.cursor = 'zoom-in'; });
 
-      const openAt = (startIndex: number) => {
+      const openAt = (clickedSrc: string) => {
         if (_pswp) { _pswp.destroy(); _pswp = null; }
 
         /* Snapshot scroll — focus-restore on close causes the page to jump */
         const savedScrollY = window.scrollY;
 
+        /* Re-query at click time so View Transition navigations never leave
+           a stale image list — stale lists break arrow nav and the counter. */
+        const liveImgs = Array.from(
+          document.querySelectorAll<HTMLImageElement>('.prose-project img')
+        );
+        const startIndex = Math.max(
+          0, liveImgs.findIndex((img) => img.src === clickedSrc)
+        );
+
         const pswp = new PhotoSwipe({
-          dataSource: imgs.map((img) => ({
+          dataSource: liveImgs.map((img) => ({
             src:    img.src,
             width:  img.naturalWidth  || 1400,
             height: img.naturalHeight || 900,
@@ -260,14 +269,15 @@ const pageTitle =
         _pswp = pswp;
       };
 
-      imgs.forEach((img, i) => {
-        img.addEventListener('click', () => openAt(i), { signal });
+      imgs.forEach((img) => {
+        img.addEventListener('click', () => openAt(img.src), { signal });
       });
     }
 
     /* ── Init — runs on every page including View Transition navs ─ */
     function init() {
-      _ctrl?.abort();               /* drop all event listeners from prev page */
+      _pswp?.destroy();             /* close lightbox if open during navigation */
+      _ctrl?.abort();               /* drop all event listeners from prev page  */
       _ctrl = new AbortController();
       const { signal } = _ctrl;
 
