@@ -1,4 +1,8 @@
 @import "tailwindcss";
+/* PhotoSwipe v5 — must be in the main stylesheet so it survives Astro
+   View Transition body swaps (CSS in <script> imports is injected
+   dynamically and is lost on SPA navigation in dev mode).          */
+@import "photoswipe/dist/photoswipe.css";
 
 @theme {
   /* Fonts */
