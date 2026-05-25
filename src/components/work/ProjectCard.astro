@@ -4,8 +4,9 @@ import Tag from '../ui/Tag.astro';
 
 interface Props {
   project: CollectionEntry<'projects'>;
+  delay?: number;
 }
-const { project } = Astro.props;
+const { project, delay = 0 } = Astro.props;
 const { title, subtitle, year, location, tags, description, coverImage } = project.data;
 
 const titleParts = title.split(' · ');
@@ -13,7 +14,7 @@ const titleCN = titleParts[0];
 const titleEN = titleParts[1] ?? null;
 ---
 
-<a href={`/work/${project.id}`} class="project-card reveal block cursor-pointer">
+<a href={`/work/${project.id}`} class="project-card reveal block cursor-pointer" data-delay={delay}>
 
   <!-- Image wrapper — ::before = gradient overlay, ::after = not used -->
   <div class="img-wrap relative overflow-hidden aspect-[3/2] mb-6 bg-[#eee]">

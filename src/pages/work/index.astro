@@ -27,7 +27,7 @@ const sorted = projects.sort((a, b) => a.data.order - b.data.order);
 
       <!-- Project grid: 2 columns -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-24">
-        {sorted.map((project) => <ProjectCard project={project} />)}
+        {sorted.map((project, i) => <ProjectCard project={project} delay={i * 80} />)}
       </div>
 
     </div>
