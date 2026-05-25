@@ -9,7 +9,9 @@
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(node .\\\\node_modules\\\\astro\\\\bin\\\\astro.mjs build)",
       "PowerShell($py = \"C:\\\\Users\\\\WangYuxiang\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\"; & $py --version; & $py -m pip --version)",
-      "PowerShell(Set-Location \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\"; $css = Get-Content \"dist\\\\_astro\\\\BaseLayout.g5aB1M6A.css\" -Raw; $i = $css.IndexOf\\(\".relative\"\\); if \\($i -ge 0\\) { $css.Substring\\($i, 40\\) } else { \"NOT FOUND\" })"
+      "PowerShell(Set-Location \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\"; $css = Get-Content \"dist\\\\_astro\\\\BaseLayout.g5aB1M6A.css\" -Raw; $i = $css.IndexOf\\(\".relative\"\\); if \\($i -ge 0\\) { $css.Substring\\($i, 40\\) } else { \"NOT FOUND\" })",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
