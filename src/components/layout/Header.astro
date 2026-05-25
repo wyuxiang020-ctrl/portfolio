@@ -48,9 +48,10 @@ const path = Astro.url.pathname;
 </header>
 
 <script>
-  const header = document.getElementById('site-header');
-
+  /* Live-query the header on every tick so the reference stays valid after
+     Astro View Transitions swap the <body> (which removes the old element). */
   function tick() {
+    const header = document.getElementById('site-header');
     if (!header) return;
     if (window.scrollY > 50) {
       header.classList.add('bg-white/96', 'backdrop-blur-sm', 'border-b', 'border-[#e5e5e5]');
@@ -60,5 +61,10 @@ const path = Astro.url.pathname;
   }
 
   window.addEventListener('scroll', tick, { passive: true });
-  tick();
+
+  /* Re-run after each SPA navigation so the new header gets its initial
+     scroll-state immediately (scroll position is reset to 0 on nav). */
+  document.addEventListener('astro:page-load', tick);
+
+  tick(); /* initial load */
 </script>

@@ -591,3 +591,53 @@
 @media (prefers-reduced-motion: reduce) {
   #read-progress { transition: none; }
 }
+
+/* ─── Back-to-top button ────────────────────────────────────── */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  color: #1a1a1a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity    260ms ease,
+    transform  260ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+  pointer-events: none;
+}
+
+#back-to-top.btt-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#back-to-top:hover {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(0, 0, 0, 0.16);
+}
+
+#back-to-top:active {
+  transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #back-to-top {
+    transition: opacity 260ms ease;
+    transform: none !important;
+  }
+}
