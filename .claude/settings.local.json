@@ -15,7 +15,17 @@
       "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" status)",
       "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" diff)",
       "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" add .claude/settings.local.json)",
-      "Bash(git -C 'E:\\\\cd ~Documents && mkdir portfolio && cd portfolio' commit -m ' *)"
+      "Bash(git -C 'E:\\\\cd ~Documents && mkdir portfolio && cd portfolio' commit -m ' *)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" add \"public/images/projects/half-diary/gallery-14.png\")",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" remote add origin https://github.com/wyuxiang020-ctrl/portfolio.git)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" cat-file -e ORIG_HEAD)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" show ORIG_HEAD:\"public/images/projects/half-diary/gallery-14.png\")",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" add public/images/)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" status --short)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" add public/images/avatar.jpg src/pages/about.astro)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" log origin/master..HEAD --oneline)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" add src/styles/global.css)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" push origin master)"
     ]
   }
 }
