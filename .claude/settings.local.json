@@ -11,7 +11,11 @@
       "PowerShell($py = \"C:\\\\Users\\\\WangYuxiang\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe\"; & $py --version; & $py -m pip --version)",
       "PowerShell(Set-Location \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\"; $css = Get-Content \"dist\\\\_astro\\\\BaseLayout.g5aB1M6A.css\" -Raw; $i = $css.IndexOf\\(\".relative\"\\); if \\($i -ge 0\\) { $css.Substring\\($i, 40\\) } else { \"NOT FOUND\" })",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" status)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" diff)",
+      "Bash(git -C \"E:\\\\cd ~Documents && mkdir portfolio && cd portfolio\" add .claude/settings.local.json)",
+      "Bash(git -C 'E:\\\\cd ~Documents && mkdir portfolio && cd portfolio' commit -m ' *)"
     ]
   }
 }
