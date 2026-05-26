@@ -115,7 +115,7 @@
 }
 
 .prose-project p {
-  font-size: 0.92rem;      /* slight bump for CJK legibility (was 0.9rem) */
+  font-size: 0.85rem;
   line-height: 1.9;
   color: #333;
   margin-bottom: 1.5em;
