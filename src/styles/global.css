@@ -526,6 +526,81 @@
   .banner-main { transition: none; scale: 1; }
 }
 
+/* ─── Banner: View Full Image button ──────────────────────── */
+.bnr-zoom-wrap {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none; /* let children opt in */
+}
+
+.bnr-zoom-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  color: rgba(255,255,255,0.8);
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 280ms ease, transform 280ms ease;
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.banner-wrap:hover .bnr-zoom-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bnr-zoom-btn {
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(20,20,20,0.60);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.13);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.70;
+  transition: opacity 260ms ease, transform 260ms ease, background 200ms ease;
+}
+
+.banner-wrap:hover .bnr-zoom-btn { opacity: 0.9; }
+
+.bnr-zoom-btn:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px);
+  background: rgba(20,20,20,0.82);
+}
+
+.bnr-zoom-btn:active { transform: translateY(0); }
+
+@media (max-width: 640px) {
+  .bnr-zoom-wrap  { bottom: 16px; right: 16px; }
+  .bnr-zoom-btn   { width: 40px; height: 40px; }
+  .bnr-zoom-label { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bnr-zoom-btn, .bnr-zoom-label { transition: none !important; }
+}
+
+/* Single-image PhotoSwipe (banner) — hide nav arrows + "1/1" counter */
+.pswp--banner .pswp__button--arrow--prev,
+.pswp--banner .pswp__button--arrow--next,
+.pswp--banner .pswp__counter { display: none !important; }
+
 /* ─── PhotoSwipe v5 — theme overrides ──────────────────────── */
 
 /* Critical positioning guard — keeps .pswp fixed to the viewport

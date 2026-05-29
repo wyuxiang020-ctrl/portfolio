@@ -343,6 +343,76 @@ const pageTitle =
       onScroll(); /* set initial visibility */
     }
 
+    /* ── Banner "View Full Image" solo lightbox ────────────────── */
+    function initBannerZoom(signal: AbortSignal) {
+      const btn = document.getElementById('bnr-zoom-btn') as HTMLButtonElement | null;
+      if (!btn) return;
+
+      const src = btn.dataset.src;
+      if (!src) return;
+
+      btn.addEventListener('click', async () => {
+        if (_pswp) { _pswp.destroy(); _pswp = null; }
+
+        /* Decode so naturalWidth/Height are correct before handing to PhotoSwipe */
+        const probe = new Image();
+        probe.src = src;
+        try { await probe.decode(); } catch { /* proceed anyway */ }
+
+        const savedScrollY = window.scrollY;
+        const alt = (document.getElementById('bnr-main') as HTMLImageElement | null)?.alt ?? '';
+
+        const pswp = new PhotoSwipe({
+          dataSource: [{
+            src,
+            width:  probe.naturalWidth  || 1400,
+            height: probe.naturalHeight || 900,
+            alt,
+          }],
+          index:              0,
+          bgOpacity:          0.96,
+          maxZoomLevel:       4,
+          initialZoomLevel:   'fit',
+          secondaryZoomLevel: 2,
+          imageClickAction:   'zoom',
+          tapAction:          'zoom',
+          doubleTapAction:    'zoom',
+          allowPanToNext:     false,
+        });
+
+        /* Mark as banner-only → CSS hides arrows + counter */
+        pswp.on('afterInit', () => {
+          pswp.element?.classList.add('pswp--banner');
+        });
+
+        pswp.on('destroy', () => {
+          _pswp = null;
+          window.scrollTo({ top: savedScrollY, behavior: 'instant' });
+        });
+
+        /* Wheel-to-zoom anchored at cursor — same as gallery lightbox */
+        pswp.on('bindEvents', () => {
+          const root = pswp.element as HTMLElement | null;
+          if (!root) return;
+          root.addEventListener('wheel', (e: WheelEvent) => {
+            e.preventDefault();
+            const slide = pswp.currSlide as any;
+            if (!slide) return;
+            const initZ  = slide.zoomLevels.initial as number;
+            const curr   = slide.currentResolution  as number;
+            const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+            const next   = Math.min(Math.max(curr * factor, initZ), initZ * 4);
+            if (Math.abs(next - curr) < 0.001) return;
+            const r = root.getBoundingClientRect();
+            slide.zoomTo(next, { x: e.clientX - r.left, y: e.clientY - r.top }, 0);
+          }, { passive: false });
+        });
+
+        pswp.init();
+        _pswp = pswp;
+      }, { signal });
+    }
+
     /* ── Lifecycle ──────────────────────────────────────────────────
      *
      * The root cause of the SPA-navigation bug was timing:
@@ -371,6 +441,7 @@ const pageTitle =
       initLightbox(_ctrl.signal);
       initReadProgress(_ctrl.signal);
       initBackToTop(_ctrl.signal);
+      initBannerZoom(_ctrl.signal);
     });
 
     document.addEventListener('astro:page-load', () => {
@@ -381,6 +452,7 @@ const pageTitle =
         initLightbox(_ctrl.signal);
         initReadProgress(_ctrl.signal);
         initBackToTop(_ctrl.signal);
+        initBannerZoom(_ctrl.signal);
       }
       /* Animations: run once per page — guard prevents double-run when
          both astro:page-load and the direct call below execute.         */
@@ -402,6 +474,7 @@ const pageTitle =
       initLightbox(_ctrl.signal);
       initReadProgress(_ctrl.signal);
       initBackToTop(_ctrl.signal);
+      initBannerZoom(_ctrl.signal);
     }
     if (!_animsDone) {
       _animsDone = true;
