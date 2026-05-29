@@ -640,6 +640,69 @@
   cursor: zoom-in;
 }
 
+/* ─── Heading Chinese subtitle (.h-sub) ─────────────────────── */
+.prose-project .h-sub {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.70rem;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-top: -0.85rem;
+  margin-bottom: 2rem;
+}
+
+/* When JS reveal is active, indent to match the h2/h3 text (after line+gap) */
+.js-reveal .prose-project h2 + .h-sub,
+.js-reveal .prose-project h3 + .h-sub {
+  padding-left: 56px;
+}
+
+@media (max-width: 640px) {
+  .js-reveal .prose-project h2 + .h-sub,
+  .js-reveal .prose-project h3 + .h-sub {
+    padding-left: 40px;
+  }
+}
+
+/* ─── Foldable "Read in English" ─────────────────────────────── */
+.prose-project details {
+  margin: -0.4em 0 1.6em;
+  border-left: 2px solid #ebebeb;
+  padding: 0 0 0.2em 1.1em;
+}
+
+.prose-project details summary {
+  font-family: var(--font-sans);
+  font-size: 0.73rem;
+  color: #c8c8c8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  list-style: none;
+  padding: 0.15em 0;
+}
+
+.prose-project details summary::-webkit-details-marker { display: none; }
+.prose-project details summary::before { content: '+ '; }
+.prose-project details[open] summary::before { content: '− '; }
+
+.prose-project details[open] {
+  padding-bottom: 0.6em;
+}
+
+.prose-project details p {
+  font-style: italic;
+  color: #aaa !important;
+  font-size: 0.82rem !important;
+  margin-top: 0.6em;
+  margin-bottom: 0 !important;
+  line-height: 1.85;
+}
+
 /* ─── Reading progress bar ──────────────────────────────────── */
 #read-progress {
   position: fixed;
