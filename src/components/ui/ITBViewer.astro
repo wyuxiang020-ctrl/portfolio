@@ -1,0 +1,100 @@
+---
+import modelAudit from '../../../docs/models/itb-web-audit.json';
+interface Props {
+  modelUrl?: string;
+  modelName?: string;
+  sizeBytes?: number;
+  focusBounds?: number[];
+  note?: string;
+}
+const { modelUrl = '/models/itb.glb', modelName = 'ITB', sizeBytes = modelAudit.outputBytes, focusBounds, note = '基于设计模型的交互展示。图层沿用建模文件名称，颜色和材质经过网页适配；完整设计表达请结合前面的图纸与效果图阅读。' } = Astro.props;
+const size = (sizeBytes / 1024 / 1024).toFixed(1);
+---
+<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
+  <div class="model-heading"><span>空间探索</span><span>{modelName} · 3D</span></div>
+  <div class="model-stage">
+    <div class="model-canvas"></div>
+    <div class="model-intro">
+      <p class="model-title">从另一个角度，理解这栋建筑。</p>
+      <p>旋转查看建筑、切换视角，或暂时隐藏部分图层。</p>
+      <button type="button" data-load>打开 3D 模型 · {size} MB</button>
+    </div>
+    <p class="model-status" role="status" aria-live="polite"></p>
+  </div>
+  <div class="model-tools" hidden>
+    <div class="model-views" role="group" aria-label="预设视角">
+      <button type="button" data-view="overview">总览</button>
+      <button type="button" data-view="top">俯视</button>
+      <button type="button" data-view="front">正面</button>
+      <button type="button" data-view="side">侧面</button>
+      {focusBounds && <button type="button" data-view="site">完整场地</button>}
+      <button type="button" data-reset>重置</button>
+    </div>
+    <details class="model-layers"><summary>图层显示</summary><div data-layers></div></details>
+    <p class="model-help">拖动旋转 · 滚轮缩放 · 右键拖动平移<br />触屏：单指旋转，双指缩放或平移。聚焦模型后可用方向键平移、＋／－缩放。</p>
+    <button type="button" class="model-exit" data-unload>关闭模型</button>
+  </div>
+  <p class="model-note">{note}</p>
+</section>
+<script>
+  const setups = new Map<HTMLElement, () => void>();
+  function setup() {
+    document.querySelectorAll<HTMLElement>('.itb-viewer').forEach(root => {
+      if (setups.has(root) || root.dataset.viewerBound === 'true') return;
+      root.dataset.viewerBound = 'true';
+      const controller = new AbortController();
+      const button = root.querySelector<HTMLButtonElement>('[data-load]')!;
+      const status = root.querySelector<HTMLElement>('.model-status')!;
+      let dispose: (() => void) | undefined;
+      let busy = false;
+      button.addEventListener('click', async () => {
+        if (busy) return;
+        busy = true; button.disabled = true; status.textContent = '正在准备模型…';
+        try {
+          const { mountITBViewer } = await import('../../scripts/itb-viewer');
+          if (controller.signal.aborted) return;
+          dispose = await mountITBViewer(root, controller.signal);
+        } catch (error) {
+          if (!controller.signal.aborted) {
+            status.textContent = '模型暂时无法打开，请重试。你也可以继续浏览项目图纸与图片。';
+            button.textContent = '重新加载模型';
+            console.error('Architectural model viewer:', error);
+          }
+        } finally { busy = false; button.disabled = false; }
+      }, { signal: controller.signal });
+      setups.set(root, () => { controller.abort(); dispose?.(); delete root.dataset.viewerBound; });
+    });
+  }
+  document.addEventListener('astro:page-load', setup);
+  document.addEventListener('astro:before-swap', () => { setups.forEach(dispose => dispose()); setups.clear(); });
+  setup();
+</script>
+<style>
+  .itb-viewer { margin:3rem 0; border:1px solid #d4d0c6; background:#f4f2ed; color:#363b38; }
+  .model-heading { display:flex;justify-content:space-between;padding:1rem 1.2rem;font-size:.75rem;letter-spacing:.12em;border-bottom:1px solid #dedad1; }
+  .model-stage { position:relative;height:480px;isolation:isolate; }
+  .model-canvas { position:absolute;inset:0;overflow:hidden; }
+  .model-canvas :global(canvas) { display:block;width:100%;height:100%;touch-action:none; }
+  .model-canvas :global(canvas:focus-visible) { outline:2px solid #67765a;outline-offset:-3px; }
+  .model-intro { position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:2rem;text-align:center;background:radial-gradient(ellipse at center,#e7e9df,#f4f2ed 75%); }
+  .model-intro p { font-size:.85rem;line-height:1.8; }
+  .model-intro .model-title { font-size:1.3rem;margin-bottom:.5rem; }
+  .itb-viewer button { border:1px solid #babfb3;padding:.5rem .85rem;cursor:pointer;background:transparent;font:inherit;font-size:.8rem;line-height:1.5;color:inherit;min-height:44px; }
+  .itb-viewer button:hover,.itb-viewer button:focus-visible { background:#dde3d5; }
+  .itb-viewer button:disabled { opacity:.5;cursor:wait; }
+  .model-intro button { margin-top:1rem;background:#344335;color:#fff;border-color:#344335; }
+  .model-status { position:absolute;bottom:.65rem;left:1rem;right:1rem;text-align:center;font-size:.75rem;pointer-events:none;background:#f4f2eddd; }
+  .model-status:empty { display:none; }
+  .model-tools { padding:1rem;border-top:1px solid #dedad1; }
+  .model-views { display:flex;gap:.4rem;flex-wrap:wrap; }
+  .model-layers { margin-top:1rem; }
+  .itb-viewer .model-layers { border:0;padding:0; }
+  .itb-viewer .model-layers summary { cursor:pointer;font-size:.85rem;padding:.5rem 0;color:#363b38;opacity:1; }
+  [data-layers] { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem .7rem;margin:.6rem 0;max-height:250px;overflow:auto; }
+  [data-layers] :global(label) { font-size:.75rem;display:flex;gap:.5rem;align-items:center;min-height:44px;overflow-wrap:anywhere; }
+  .model-help,.model-note { font-size:.72rem!important;line-height:1.8;opacity:.8; }
+  .model-help { margin:.8rem 0; }
+  .model-note { padding:.8rem 1.2rem;margin:0!important;border-top:1px solid #dedad1; }
+  [hidden] { display:none!important; }
+  @media(max-width:600px) { .model-stage { height:360px; } .model-intro { padding:1rem; } .model-intro .model-title { font-size:1.1rem; } }
+</style>

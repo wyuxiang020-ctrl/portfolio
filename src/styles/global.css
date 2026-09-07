@@ -110,6 +110,27 @@
 }
 
 /* ─── Project prose ─────────────────────────────────────────── */
+.itb-chapters,
+.project-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .8rem;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: .8rem;
+}
+.itb-chapters a, .project-chapters a { padding: .4rem 0; text-decoration: underline; text-underline-offset: 4px; }
+.prose-project details.itb-research, .prose-project details.project-research { margin: 2rem 0; }
+.prose-project details.itb-research summary, .prose-project details.project-research summary { color: #555; letter-spacing: .03em; padding: .6rem 0; }
+.prose-project details.itb-research p,
+.prose-project details.project-research p {
+  color: #555 !important;
+  font-style: normal;
+  font-size: .8rem !important;
+  margin: .8rem 0 1.5rem !important;
+}
 .prose-project {
   max-width: 72ch;
 }
@@ -124,6 +145,7 @@
 }
 
 .prose-project h2 {
+  scroll-margin-top: 110px;
   font-family: var(--font-serif);
   font-size: 1.6rem;
   color: #1a1a1a;
@@ -638,6 +660,11 @@
 /* Prose images: zoom-in cursor */
 .prose-project img {
   cursor: zoom-in;
+}
+
+.prose-project img:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
 }
 
 /* ─── Heading Chinese subtitle (.h-sub) ─────────────────────── */

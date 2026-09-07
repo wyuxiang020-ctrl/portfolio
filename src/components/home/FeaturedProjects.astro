@@ -1,4 +1,5 @@
 ---
+import OptimizedImage from "../ui/OptimizedImage.astro";
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -28,7 +29,7 @@ const { projects } = Astro.props;
 
           <!-- Image -->
           <div class="img-wrap relative overflow-hidden aspect-[4/3] mb-5 bg-[#eee]">
-            <img
+            <OptimizedImage sizes="(max-width: 767px) calc(100vw - 48px), 340px"
               src={project.data.coverImage}
               alt={project.data.title}
               class="card-img w-full h-full object-cover"

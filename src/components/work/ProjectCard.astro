@@ -1,4 +1,5 @@
 ---
+import OptimizedImage from "../ui/OptimizedImage.astro";
 import type { CollectionEntry } from 'astro:content';
 import Tag from '../ui/Tag.astro';
 
@@ -19,7 +20,7 @@ const titleEN = titleParts[1] ?? null;
   <!-- Image wrapper — ::before = gradient overlay, ::after = not used -->
   <div class="img-wrap relative overflow-hidden aspect-[3/2] mb-6 bg-[#eee]">
 
-    <img
+    <OptimizedImage sizes="(max-width: 767px) calc(100vw - 48px), 530px"
       src={coverImage}
       alt={title}
       class="card-img w-full h-full object-cover"

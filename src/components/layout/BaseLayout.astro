@@ -80,7 +80,7 @@ const pageTitle =
     let _pswp: InstanceType<typeof PhotoSwipe> | null = null;
 
     /* ── Scroll reveal ──────────────────────────────────────────── */
-    function initReveal() {
+    function initReveal(signal: AbortSignal) {
       document.documentElement.classList.add('js-reveal');
       const els = document.querySelectorAll<HTMLElement>('.reveal:not(.in)');
       if (!els.length) return;
@@ -97,10 +97,11 @@ const pageTitle =
         { threshold: 0.06, rootMargin: '0px 0px -24px 0px' }
       );
       els.forEach((el) => io.observe(el));
+      signal.addEventListener('abort', () => io.disconnect(), { once: true });
     }
 
     /* ── Chapter heading line reveal ────────────────────────────── */
-    function initHeadingReveal() {
+    function initHeadingReveal(signal: AbortSignal) {
       const headings = document.querySelectorAll<HTMLElement>(
         '.prose-project h2, .prose-project h3'
       );
@@ -121,18 +122,21 @@ const pageTitle =
         { threshold: 0.2 }
       );
       headings.forEach((el) => io.observe(el));
+      signal.addEventListener('abort', () => io.disconnect(), { once: true });
     }
 
     /* ── Prose image fade-in ────────────────────────────────────── */
-    function initImageFade() {
+    function initImageFade(signal: AbortSignal) {
       document.querySelectorAll<HTMLImageElement>('.prose-project img').forEach((img) => {
-        if (img.complete && img.naturalWidth) {
-          img.classList.add('img-loaded');
+        if (img.complete) {
+          img.classList.remove('img-loading');
+          if (img.naturalWidth) img.classList.add('img-loaded');
         } else {
           img.classList.add('img-loading');
           img.addEventListener('load', () => {
             img.classList.replace('img-loading', 'img-loaded');
-          }, { once: true });
+          }, { once: true, signal });
+          img.addEventListener('error', () => img.classList.remove('img-loading'), { once: true, signal });
         }
       });
     }
@@ -205,93 +209,60 @@ const pageTitle =
       }
     }
 
-    /* ── Lightbox — PhotoSwipe v5 ──────────────────────────────── */
-    function initLightbox(signal: AbortSignal) {
-      const imgs = Array.from(
-        document.querySelectorAll<HTMLImageElement>('.prose-project img')
-      );
-      if (!imgs.length) return;
-
-      /* openAt receives the actual element (not just a src string) so the
-         index lookup is identity-based and immune to URL normalisation.
-         It is async so we can await decode() and get correct naturalWidth/Height
-         before handing dimensions to PhotoSwipe.                              */
-      const openAt = async (target: HTMLImageElement) => {
-        if (_pswp) { _pswp.destroy(); _pswp = null; }
-
-        /* Wait for the clicked image to decode so naturalWidth/Height are
-           correct. Without this, a lazily-loaded image gives 0×0 and PhotoSwipe
-           falls back to 1400×900, miscalculating zoom and image position.     */
-        if (!target.complete || !target.naturalWidth) {
-          try { await target.decode(); } catch { /* network or decode error — proceed anyway */ }
-        }
-
-        /* Snapshot scroll — focus-restore on close causes the page to jump */
-        const savedScrollY = window.scrollY;
-
-        /* Re-query at click time so View Transition navigations never leave
-           a stale image list — stale lists break arrow nav and the counter. */
-        const liveImgs = Array.from(
-          document.querySelectorAll<HTMLImageElement>('.prose-project img')
-        );
-
-        /* Identity comparison — robust even when src URLs differ by trailing
-           slash, query string, or protocol normalisation.                     */
-        const startIndex = Math.max(0, liveImgs.indexOf(target));
-
-        const pswp = new PhotoSwipe({
-          dataSource: liveImgs.map((img) => ({
-            src:    img.src,
-            /* Prefer naturalWidth after load; fall back to rendered size;
-               final fallback keeps PhotoSwipe from crashing on 0×0.         */
-            width:  img.naturalWidth  || img.offsetWidth  || 1400,
-            height: img.naturalHeight || img.offsetHeight || 900,
-            alt:    img.alt || '',
-          })),
-          index:              startIndex,
-          bgOpacity:          0.93,
-          maxZoomLevel:       4,
-          initialZoomLevel:   'fit',
-          secondaryZoomLevel: 2,          /* single-click / tap zoom target */
-          imageClickAction:   'zoom',     /* click toggles fit ↔ secondary  */
-          tapAction:          'zoom',
-          doubleTapAction:    'zoom',
-          allowPanToNext:     false,      /* don't swipe slides while panning */
-        });
-
-        /* ── Restore scroll position when lightbox closes ───────── */
-        pswp.on('destroy', () => {
-          _pswp = null;
-          /* Use instant to override html { scroll-behavior: smooth }   */
+    /* Shared viewer: native wheel handling and scroll-safe focus restoration. */
+    function openViewer(images: HTMLImageElement[], index: number, trigger: HTMLElement, signal: AbortSignal, banner = false) {
+      if (signal.aborted || !trigger.isConnected) return;
+      _pswp?.destroy();
+      const savedScrollY = window.scrollY;
+      const pswp = new PhotoSwipe({
+        dataSource: images.map(img => ({
+          src: img.dataset.fullSrc || img.src,
+          width: Number(img.dataset.fullWidth) || img.naturalWidth || 1400,
+          height: Number(img.dataset.fullHeight) || img.naturalHeight || 900,
+          alt: img.alt || '',
+        })),
+        index,
+        mainClass: banner ? 'pswp--banner' : '',
+        bgOpacity: banner ? 0.96 : 0.93,
+        initialZoomLevel: 'fit',
+        secondaryZoomLevel: 2,
+        maxZoomLevel: 4,
+        wheelToZoom: true,
+        // PhotoSwipe ignores close() while opening. Keep the viewer dismissible immediately.
+        showAnimationDuration: 0,
+        hideAnimationDuration: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 180,
+        returnFocus: false,
+        preload: [0, 1],
+        imageClickAction: 'zoom',
+        tapAction: 'zoom',
+        doubleTapAction: 'zoom',
+        allowPanToNext: false,
+        errorMsg: '图片暂时无法加载，请关闭后重试。',
+      });
+      pswp.on('destroy', () => {
+        if (_pswp === pswp) _pswp = null;
+        if (!signal.aborted && trigger.isConnected) {
+          trigger.focus({ preventScroll: true });
           window.scrollTo({ top: savedScrollY, behavior: 'instant' });
-        });
+        }
+      });
+      _pswp = pswp;
+      pswp.init();
+    }
 
-        /* ── Wheel-to-zoom anchored at cursor ───────────────────── */
-        /* Multiplicative zoom (×1.15 per tick) preserves proportions */
-        /* duration = 0 avoids stacking multiple in-flight animations  */
-        pswp.on('bindEvents', () => {
-          const root = pswp.element as HTMLElement | null;
-          if (!root) return;
-          root.addEventListener('wheel', (e: WheelEvent) => {
-            e.preventDefault();
-            const slide = pswp.currSlide as any;
-            if (!slide) return;
-            const initZ  = slide.zoomLevels.initial as number;
-            const curr   = slide.currentResolution  as number;
-            const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
-            const next   = Math.min(Math.max(curr * factor, initZ), initZ * 4);
-            if (Math.abs(next - curr) < 0.001) return;
-            const r = root.getBoundingClientRect();
-            slide.zoomTo(next, { x: e.clientX - r.left, y: e.clientY - r.top }, 0);
-          }, { passive: false });
-        });
-
-        pswp.init();
-        _pswp = pswp;
-      };
-
-      imgs.forEach((img) => {
-        img.addEventListener('click', () => openAt(img), { signal });
+    function initLightbox(signal: AbortSignal) {
+      const images = Array.from(document.querySelectorAll<HTMLImageElement>('.prose-project img'));
+      images.forEach((img, index) => {
+        img.tabIndex = 0;
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', img.alt ? '查看大图：' + img.alt : '查看图片 ' + (index + 1));
+        img.addEventListener('click', () => openViewer(images, index, img, signal), { signal });
+        img.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openViewer(images, index, img, signal);
+          }
+        }, { signal });
       });
     }
 
@@ -336,82 +307,48 @@ const pageTitle =
       };
 
       btn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
       }, { signal });
 
       window.addEventListener('scroll', onScroll, { passive: true, signal });
       onScroll(); /* set initial visibility */
     }
 
-    /* ── Banner "View Full Image" solo lightbox ────────────────── */
     function initBannerZoom(signal: AbortSignal) {
-      const btn = document.getElementById('bnr-zoom-btn') as HTMLButtonElement | null;
-      if (!btn) return;
-
-      const src = btn.dataset.src;
-      if (!src) return;
-
-      btn.addEventListener('click', async () => {
-        if (_pswp) { _pswp.destroy(); _pswp = null; }
-
-        /* Decode so naturalWidth/Height are correct before handing to PhotoSwipe */
-        const probe = new Image();
-        probe.src = src;
-        try { await probe.decode(); } catch { /* proceed anyway */ }
-
-        const savedScrollY = window.scrollY;
-        const alt = (document.getElementById('bnr-main') as HTMLImageElement | null)?.alt ?? '';
-
-        const pswp = new PhotoSwipe({
-          dataSource: [{
-            src,
-            width:  probe.naturalWidth  || 1400,
-            height: probe.naturalHeight || 900,
-            alt,
-          }],
-          index:              0,
-          bgOpacity:          0.96,
-          maxZoomLevel:       4,
-          initialZoomLevel:   'fit',
-          secondaryZoomLevel: 2,
-          imageClickAction:   'zoom',
-          tapAction:          'zoom',
-          doubleTapAction:    'zoom',
-          allowPanToNext:     false,
-        });
-
-        /* Mark as banner-only → CSS hides arrows + counter */
-        pswp.on('afterInit', () => {
-          pswp.element?.classList.add('pswp--banner');
-        });
-
-        pswp.on('destroy', () => {
-          _pswp = null;
-          window.scrollTo({ top: savedScrollY, behavior: 'instant' });
-        });
-
-        /* Wheel-to-zoom anchored at cursor — same as gallery lightbox */
-        pswp.on('bindEvents', () => {
-          const root = pswp.element as HTMLElement | null;
-          if (!root) return;
-          root.addEventListener('wheel', (e: WheelEvent) => {
-            e.preventDefault();
-            const slide = pswp.currSlide as any;
-            if (!slide) return;
-            const initZ  = slide.zoomLevels.initial as number;
-            const curr   = slide.currentResolution  as number;
-            const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
-            const next   = Math.min(Math.max(curr * factor, initZ), initZ * 4);
-            if (Math.abs(next - curr) < 0.001) return;
-            const r = root.getBoundingClientRect();
-            slide.zoomTo(next, { x: e.clientX - r.left, y: e.clientY - r.top }, 0);
-          }, { passive: false });
-        });
-
-        pswp.init();
-        _pswp = pswp;
-      }, { signal });
+      const btn = document.getElementById('bnr-zoom-btn');
+      const img = document.getElementById('bnr-main') as HTMLImageElement | null;
+      if (!btn || !img) return;
+      btn.addEventListener('click', () => openViewer([img], 0, btn, signal, true), { signal });
     }
+
+    function initHero(signal: AbortSignal) {
+      const img = document.getElementById('hero-bg');
+      const indicator = document.getElementById('hero-ind');
+      if (!img || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      let frame: number | null = null;
+      const update = () => {
+        frame = null;
+        img.style.transform = 'translateY(' + (window.scrollY * 0.25) + 'px)';
+        if (indicator) indicator.style.opacity = window.scrollY > 80 ? '0' : '0.4';
+      };
+      window.addEventListener('scroll', () => {
+        if (frame === null) frame = requestAnimationFrame(update);
+      }, { passive: true, signal });
+      signal.addEventListener('abort', () => { if (frame !== null) cancelAnimationFrame(frame); }, { once: true });
+      update();
+    }
+
+    function cleanup() {
+      // Abort first: destroying an old lightbox must not restore the old page's scroll.
+      _ctrl?.abort();
+      _pswp?.destroy();
+      if (_bannerScrollRaf !== null) cancelAnimationFrame(_bannerScrollRaf);
+      if (_glowRaf !== null) cancelAnimationFrame(_glowRaf);
+      _bannerScrollRaf = _glowRaf = null;
+      _ctrl = null;
+      _animsDone = false;
+    }
+    document.addEventListener('astro:before-swap', cleanup);
 
     /* ── Lifecycle ──────────────────────────────────────────────────
      *
@@ -458,10 +395,11 @@ const pageTitle =
          both astro:page-load and the direct call below execute.         */
       if (!_animsDone) {
         _animsDone = true;
-        initReveal();
-        initHeadingReveal();
-        initImageFade();
+        initReveal(_ctrl.signal);
+        initHeadingReveal(_ctrl.signal);
+        initImageFade(_ctrl.signal);
         initBanner(_ctrl.signal);
+        initHero(_ctrl.signal);
       }
     });
 
@@ -478,10 +416,11 @@ const pageTitle =
     }
     if (!_animsDone) {
       _animsDone = true;
-      initReveal();
-      initHeadingReveal();
-      initImageFade();
+      initReveal(_ctrl.signal);
+      initHeadingReveal(_ctrl.signal);
+      initImageFade(_ctrl.signal);
       initBanner(_ctrl.signal);
+        initHero(_ctrl.signal);
     }
   </script>
 </html>

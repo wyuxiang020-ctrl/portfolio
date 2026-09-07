@@ -50,33 +50,3 @@
   </div>
 
 </section>
-
-<script is:inline>
-  (function () {
-    var img = document.getElementById('hero-bg');
-    var ind = document.getElementById('hero-ind');
-    if (!img) return;
-
-    // Respect prefers-reduced-motion
-    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduced) return;
-
-    var ticking = false;
-
-    function update() {
-      var y = window.scrollY;
-      // Parallax: background moves at 25% scroll speed
-      img.style.transform = 'translateY(' + (y * 0.25) + 'px)';
-      // Scroll indicator fades out after 80px scroll
-      if (ind) ind.style.opacity = y > 80 ? '0' : '0.4';
-      ticking = false;
-    }
-
-    window.addEventListener('scroll', function () {
-      if (!ticking) {
-        requestAnimationFrame(update);
-        ticking = true;
-      }
-    }, { passive: true });
-  })();
-</script>

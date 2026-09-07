@@ -2,6 +2,10 @@
 dist/
 # generated types
 .astro/
+.generated/
+.model-tools/
+.model-work/
+public/optimized/
 
 # dependencies
 node_modules/

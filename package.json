@@ -9,14 +9,26 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "audit:images": "node scripts/audit-images.mjs docs/performance/after-images.json --strict",
+    "benchmark:http": "node scripts/benchmark-http.mjs docs/performance/after-http.json"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.6",
     "@astrojs/sitemap": "^3.7.2",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.7",
+    "meshoptimizer": "^0.25.0",
     "photoswipe": "^5.4.4",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.2.1",
+    "@gltf-transform/extensions": "^4.2.1",
+    "@gltf-transform/functions": "^4.2.1",
+    "gltf-validator": "^2.0.0-dev.3.10",
+    "parse5": "7.3.0",
+    "sharp": "0.34.5"
   }
 }
