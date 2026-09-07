@@ -1,5 +1,6 @@
 ---
-import modelAudit from '../../../docs/models/itb-web-audit.json';
+import { statSync } from 'node:fs';
+import { resolve } from 'node:path';
 interface Props {
   modelUrl?: string;
   modelName?: string;
@@ -7,7 +8,7 @@ interface Props {
   focusBounds?: number[];
   note?: string;
 }
-const { modelUrl = '/models/itb.glb', modelName = 'ITB', sizeBytes = modelAudit.outputBytes, focusBounds, note = '基于设计模型的交互展示。图层沿用建模文件名称，颜色和材质经过网页适配；完整设计表达请结合前面的图纸与效果图阅读。' } = Astro.props;
+const { modelUrl = '/models/itb.glb', modelName = 'ITB', sizeBytes = statSync(resolve('public', modelUrl.slice(1))).size, focusBounds, note = '基于设计模型的交互展示。图层沿用建模文件名称，颜色和材质经过网页适配；完整设计表达请结合前面的图纸与效果图阅读。' } = Astro.props;
 const size = (sizeBytes / 1024 / 1024).toFixed(1);
 ---
 <section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
