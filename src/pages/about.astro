@@ -23,11 +23,11 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
 
         <!-- Portrait -->
         <div>
-          <div class="aspect-[3/4] overflow-hidden bg-[#eee]">
+          <div class="overflow-hidden bg-[#eee]">
             <OptimizedImage sizes="(max-width: 767px) calc(100vw - 48px), 440px"
-              src="/images/avatar.jpg"
-              alt="Yuxiang Wang"
-              class="w-full h-full object-cover"
+              src="/images/yuxiang-portrait.jpg"
+              alt="王誉翔 Yuxiang Wang"
+              class="w-full h-auto"
               loading="lazy"
             />
           </div>
@@ -61,10 +61,12 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
             <!-- 第三段：教育背景 -->
             <p class="text-[#777]">
               <span class="text-[#1a1a1a] font-medium">Currently pursuing</span> MA Architecture and Adaptive Reuse at
-              Manchester School of Architecture (2025–2027).
-              <span class="text-[#1a1a1a] font-medium">Previously</span> B.Arch Architecture from Sichuan Fine Arts Academy
+              Manchester School of Architecture (2025–2026，预计 2026 年 10 月毕业).
+              <span class="text-[#1a1a1a] font-medium">Previously</span> Bachelor of Engineering in Architecture from Sichuan Fine Arts Institute
               (2020–2025), graduated with top academic standing.
             </p>
+
+            <p>2024 年在重庆市设计院有限公司建筑设计六院实习，参与方案深化与图纸优化，使用 CAD、Rhino 和 SketchUp 等工具完成设计表达。</p>
 
             <!-- 第四段：志向 -->
             <p>
@@ -77,19 +79,6 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
 
       </div>
 
-      <!-- Workspace photo -->
-      <div class="mb-28">
-        <div class="aspect-[21/9] overflow-hidden bg-[#eee]">
-          <OptimizedImage sizes="(max-width: 767px) calc(100vw - 48px), 440px"
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
-            alt="Studio workspace — placeholder"
-            class="w-full h-full object-cover"
-            loading="lazy"
-          />
-        </div>
-        <p class="text-[10px] text-[#bbb] mt-3 tracking-widest uppercase">Studio / workspace — placeholder</p>
-      </div>
-
       <!-- CV columns -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-x-14 gap-y-20">
 
@@ -100,15 +89,15 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
           </h2>
           <div class="space-y-10">
             <div>
-              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2025 – 2027</p>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2025.09 – 2026.10（预计）</p>
               <p class="text-[#1a1a1a] text-sm font-medium mb-1">MA Architecture and Adaptive Reuse</p>
               <p class="text-sm text-[#777]">Manchester School of Architecture</p>
               <p class="text-sm text-[#aaa]">Manchester, UK</p>
             </div>
             <div>
               <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2020 – 2025</p>
-              <p class="text-[#1a1a1a] text-sm font-medium mb-1">B.Arch Architecture</p>
-              <p class="text-sm text-[#777]">Sichuan Fine Arts Academy</p>
+              <p class="text-[#1a1a1a] text-sm font-medium mb-1">Bachelor of Engineering in Architecture</p>
+              <p class="text-sm text-[#777]">Sichuan Fine Arts Institute</p>
               <p class="text-sm text-[#aaa]">Chongqing, China · 专业第一</p>
             </div>
           </div>
@@ -120,6 +109,11 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
             Awards &amp; Exhibitions
           </h2>
           <div class="space-y-8">
+            <div>
+              <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2024</p>
+              <p class="text-[#1a1a1a] text-sm mb-1">第八届米兰设计周高校设计竞赛</p>
+              <p class="text-sm text-[#777]">三等奖</p>
+            </div>
             <div>
               <p class="text-[10px] text-[#aaa] tracking-[0.18em] uppercase mb-2">2025</p>
               <p class="text-[#1a1a1a] text-sm mb-1">四川美术学院 2025 届毕业展</p>

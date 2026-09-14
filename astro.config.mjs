@@ -9,7 +9,7 @@ import { prepareImages } from './scripts/prepare-images.mjs';
 await prepareImages(fileURLToPath(new URL('.', import.meta.url)));
 
 export default defineConfig({
-  site: 'https://portfolio-nine-alpha-vjzzxk79fm.vercel.app',
+  site: 'https://yuxiangworks.com',
   vite: {
     plugins: [tailwindcss()],
   },
