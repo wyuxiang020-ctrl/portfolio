@@ -3,7 +3,13 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'meshoptimizer';
 
-export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal) {
+export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal, clickedAt = performance.now()) {
+  const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
+  const sample: Record<string, unknown> = { startedAt: new Date().toISOString(), model: root.dataset.modelUrl, events: [], outcome: 'loading' };
+  samples.push(sample);if (samples.length > 20) samples.shift();
+  const save = () => { root.dataset.modelEvaluation = JSON.stringify(samples); };
+  const record = (action: string) => { const events = sample.events as unknown[];if (events.length < 200) events.push({ action, ms: Math.round(performance.now() - clickedAt) });save(); };
+  save();
   const stage = root.querySelector<HTMLElement>('.model-canvas')!;
   const intro = root.querySelector<HTMLElement>('.model-intro')!;
   const tools = root.querySelector<HTMLElement>('.model-tools')!;
@@ -40,6 +46,7 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal)
     renderer?.dispose();renderer?.forceContextLoss();renderer?.domElement.remove();
     layers.replaceChildren();tools.hidden = true;intro.hidden = false;
     root.dataset.modelState = 'closed';status.textContent = '';
+    record('disposed');
   }
   pageSignal.addEventListener('abort', dispose, { once: true });
   const timeout = setTimeout(() => controller.abort(), 90000);
@@ -70,6 +77,7 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal)
     const data = new Uint8Array(received);let offset = 0;
     for (const chunk of chunks) { data.set(chunk, offset);offset += chunk.length; }
     const downloaded = performance.now();
+    sample.downloadMs = Math.round(downloaded - started);sample.bytes = received;save();
     status.textContent = '正在准备建筑几何…';
     const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(data.buffer, '/models/');
     model = gltf.scene;
@@ -95,13 +103,20 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal)
     controls.target.copy(center);
     function render() {
       frame = 0;if (disposed || !onscreen || document.hidden) return;
+      const renderStarted = performance.now();
       renderer!.render(scene, camera);
+      const submittedAt = performance.now();
+      sample.renderCount = Number(sample.renderCount || 0) + 1;
+      sample.maxRenderSubmissionMs = Math.max(Number(sample.maxRenderSubmissionMs || 0), Math.round(submittedAt - renderStarted));
+      if (sample.clickToFirstRenderSubmittedMs === undefined) sample.clickToFirstRenderSubmittedMs = Math.round(submittedAt - clickedAt);
+      save();
       root.dataset.camera = JSON.stringify({ position:camera.position.toArray(), target:controls!.target.toArray() });
       root.dataset.drawCalls = String(renderer!.info.render.calls);
       root.dataset.triangles = String(renderer!.info.render.triangles);
     }
     function invalidate() { if (!frame && !disposed) frame = requestAnimationFrame(render); }
     function view(name: string) {
+      record(`view:${name}`);
       const directions: Record<string, number[]> = { overview: [-1, .85, 1.1], top: [0, 1, .001], front: [0, .15, 1], side: [1, .15, 0] };
       const direction = new THREE.Vector3(...(directions[name] || directions.overview)).normalize();
       const limitingFov = Math.min(camera.fov * Math.PI / 180, 2 * Math.atan(Math.tan(camera.fov * Math.PI / 360) * camera.aspect));
@@ -117,6 +132,8 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal)
     }
     resize = new ResizeObserver(fit);resize.observe(stage);fit();view('overview');
     controls.addEventListener('change', invalidate);
+    controls.addEventListener('start', () => record('interaction-start'));
+    controls.addEventListener('end', () => record('interaction-end'));
     intersection = new IntersectionObserver(entries => { onscreen = entries[0].isIntersecting;if (onscreen) invalidate(); });intersection.observe(stage);
     document.addEventListener('visibilitychange', invalidate, { signal });
     canvas.addEventListener('keydown', event => {
@@ -127,6 +144,7 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal)
     controls.listenToKeyEvents(canvas);
     root.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(button => button.addEventListener('click', () => view(button.dataset.view!), { signal }));
     root.querySelector('[data-reset]')!.addEventListener('click', () => {
+      record('restore-all');
       model!.children.forEach(layer => { layer.visible = true; });
       layers.querySelectorAll<HTMLInputElement>('input').forEach(input => { input.checked = true; });view('overview');
     }, { signal });
@@ -134,16 +152,17 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal)
       const label = document.createElement('label');const input = document.createElement('input');
       input.type = 'checkbox';input.checked = true;
       label.append(input, document.createTextNode(layer.userData.rhinoLayer || layer.name));layers.append(label);
-      input.addEventListener('change', () => { layer.visible = input.checked;invalidate(); }, { signal });
+      input.addEventListener('change', () => { layer.visible = input.checked;record(`layer:${layer.userData.rhinoLayer || layer.name}:${input.checked}`);invalidate(); }, { signal });
     }
-    root.querySelector('[data-unload]')!.addEventListener('click', () => { dispose();root.querySelector<HTMLButtonElement>('[data-load]')!.focus({ preventScroll: true }); }, { signal });
+    root.querySelector('[data-unload]')!.addEventListener('click', () => { record('close');dispose();root.querySelector<HTMLButtonElement>('[data-load]')!.focus({ preventScroll: true }); }, { signal });
     canvas.addEventListener('webglcontextlost', event => {
       event.preventDefault();dispose();status.textContent = '图形显示已中断，可重新加载模型或继续浏览图纸。';
     }, { signal });
     intro.hidden = true;tools.hidden = false;status.textContent = '';root.dataset.modelState = 'ready';
     render();
+    sample.outcome = 'ready';sample.controlsReadyMs = Math.round(performance.now() - clickedAt);save();
     root.dataset.loadMetrics = JSON.stringify({ downloadMs: Math.round(downloaded - started), firstRenderSubmittedMs: Math.round(performance.now() - started), bytes: received });
     return dispose;
-  } catch (error) { dispose();throw error; }
+  } catch (error) { sample.outcome = pageSignal.aborted ? 'cancelled-or-navigation' : 'failed';sample.error = String(error);save();dispose();throw error; }
   finally { clearTimeout(timeout); }
 }

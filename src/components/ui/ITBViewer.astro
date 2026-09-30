@@ -11,7 +11,7 @@ interface Props {
 const { modelUrl = '/models/itb.glb', modelName = 'ITB', sizeBytes = statSync(resolve('public', modelUrl.slice(1))).size, focusBounds, note = '基于设计模型的交互展示。图层沿用建模文件名称，颜色和材质经过网页适配；完整设计表达请结合前面的图纸与效果图阅读。' } = Astro.props;
 const size = (sizeBytes / 1024 / 1024).toFixed(1);
 ---
-<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
+<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-viewer-version="spatial-ux-2026-09-30-r1" data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
   <div class="model-heading"><span>空间探索</span><span>{modelName} · 3D</span></div>
   <div class="model-stage">
     <div class="model-canvas"></div>
@@ -19,6 +19,7 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
       <p class="model-title">从另一个角度，理解这栋建筑。</p>
       <p>旋转查看建筑、切换视角，或暂时隐藏部分图层。</p>
       <button type="button" data-load>打开 3D 模型 · {size} MB</button>
+      <button type="button" data-cancel hidden>取消加载，继续阅读</button>
     </div>
     <p class="model-status" role="status" aria-live="polite"></p>
   </div>
@@ -29,13 +30,14 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
       <button type="button" data-view="front">正面</button>
       <button type="button" data-view="side">侧面</button>
       {focusBounds && <button type="button" data-view="site">完整场地</button>}
-      <button type="button" data-reset>重置</button>
+      <button type="button" data-reset>恢复全部图层与总览</button>
     </div>
-    <details class="model-layers"><summary>图层显示</summary><div data-layers></div></details>
+    <details class="model-layers"><summary>显示／隐藏构件（取消勾选以隐藏）</summary><div data-layers></div></details>
     <p class="model-help">拖动旋转 · 滚轮缩放 · 右键拖动平移<br />触屏：单指旋转，双指缩放或平移。聚焦模型后可用方向键平移、＋／－缩放。</p>
     <button type="button" class="model-exit" data-unload>关闭模型</button>
   </div>
   <p class="model-note">{note}</p>
+  <button type="button" data-export hidden>下载本次测试记录</button>
 </section>
 <script>
   const setups = new Map<HTMLElement, () => void>();
@@ -46,24 +48,46 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
       const controller = new AbortController();
       const button = root.querySelector<HTMLButtonElement>('[data-load]')!;
       const status = root.querySelector<HTMLElement>('.model-status')!;
+      const cancel = root.querySelector<HTMLButtonElement>('[data-cancel]')!;
+      const exportButton = root.querySelector<HTMLButtonElement>('[data-export]')!;
+      exportButton.hidden = !new URLSearchParams(location.search).has('modelTest');
+      exportButton.addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify({ version: 'spatial-ux-2026-09-30-r1', url: location.href, recordedAt: new Date().toISOString(), userAgent: navigator.userAgent, viewport: [innerWidth, innerHeight], network: '未自动判断；请在任务记录中填写 VPN、运营商与 Wi-Fi/移动网络', samples: JSON.parse(root.dataset.modelEvaluation || '[]') }, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);const link = document.createElement('a');link.href = url;link.download = `${root.dataset.modelName}-3d-test.json`;link.click();setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }, { signal: controller.signal });
       let dispose: (() => void) | undefined;
+      let attempt: AbortController | undefined;
+      cancel.addEventListener('click', () => { attempt?.abort();busy = false;button.disabled = false;cancel.hidden = true;status.textContent = '已取消加载，可以继续阅读。'; }, { signal: controller.signal });
       let busy = false;
       button.addEventListener('click', async () => {
         if (busy) return;
-        busy = true; button.disabled = true; status.textContent = '正在准备模型…';
+        busy = true; button.disabled = true;cancel.hidden = false; status.textContent = '正在准备模型…';
+        attempt = new AbortController();const started = performance.now();
+        let mountStarted = false;
+        const current = attempt;
+        const abort = () => current.abort();controller.signal.addEventListener('abort', abort, { once: true });
         try {
           const { mountITBViewer } = await import('../../scripts/itb-viewer');
-          if (controller.signal.aborted) return;
-          dispose = await mountITBViewer(root, controller.signal);
+          if (current.signal.aborted) return;
+          mountStarted = true;
+          dispose = await mountITBViewer(root, current.signal, started);
         } catch (error) {
-          if (!controller.signal.aborted) {
+          if (attempt === current && !controller.signal.aborted && !current.signal.aborted) {
             status.textContent = '模型暂时无法打开，请重试。你也可以继续浏览项目图纸与图片。';
             button.textContent = '重新加载模型';
             console.error('Architectural model viewer:', error);
           }
-        } finally { busy = false; button.disabled = false; }
+        } finally {
+          controller.signal.removeEventListener('abort', abort);
+          if (!mountStarted) {
+            const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
+            samples.push({ startedAt: new Date().toISOString(), model: root.dataset.modelUrl, outcome: current.signal.aborted ? 'cancelled-before-mount' : 'module-failed', elapsedMs: Math.round(performance.now() - started) });
+            root.dataset.modelEvaluation = JSON.stringify(samples.slice(-20));
+          }
+          if (attempt === current) { busy = false;button.disabled = false;cancel.hidden = true;if (current.signal.aborted && !controller.signal.aborted) status.textContent = '已取消加载，可以继续阅读。'; }
+        }
       }, { signal: controller.signal });
-      setups.set(root, () => { controller.abort(); dispose?.(); delete root.dataset.viewerBound; });
+      setups.set(root, () => { controller.abort();attempt?.abort(); dispose?.(); delete root.dataset.viewerBound; });
     });
   }
   document.addEventListener('astro:page-load', setup);
