@@ -5,10 +5,15 @@ import { MeshoptDecoder } from 'meshoptimizer';
 
 export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal, clickedAt = performance.now()) {
   const measuring = new URLSearchParams(location.search).has('modelTest');
-  const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
-  const sample: Record<string, unknown> = { startedAt: new Date().toISOString(), model: root.dataset.modelUrl, events: [], outcome: 'loading' };
-  samples.push(sample);if (samples.length > 20) samples.shift();
-  const save = () => { if (measuring) root.dataset.modelEvaluation = JSON.stringify(samples); };
+  const sample: Record<string, unknown> = { attemptId: clickedAt, startedAt: new Date().toISOString(), model: root.dataset.modelUrl, events: [], outcome: 'loading' };
+  const save = () => {
+    if (!measuring) return;
+    // A cancelled parser can settle after a newer attempt; merge only its own record.
+    const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
+    const index = samples.findIndex((entry: { attemptId?: number }) => entry.attemptId === clickedAt);
+    if (index === -1) samples.push(sample);else samples[index] = sample;
+    root.dataset.modelEvaluation = JSON.stringify(samples.slice(-20));
+  };
   const record = (action: string) => { if (!measuring) return;const events = sample.events as unknown[];if (events.length < 200) events.push({ action, ms: Math.round(performance.now() - clickedAt) });save(); };
   save();
   const stage = root.querySelector<HTMLElement>('.model-canvas')!;
