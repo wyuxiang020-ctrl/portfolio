@@ -4,11 +4,12 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'meshoptimizer';
 
 export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal, clickedAt = performance.now()) {
+  const measuring = new URLSearchParams(location.search).has('modelTest');
   const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
   const sample: Record<string, unknown> = { startedAt: new Date().toISOString(), model: root.dataset.modelUrl, events: [], outcome: 'loading' };
   samples.push(sample);if (samples.length > 20) samples.shift();
-  const save = () => { root.dataset.modelEvaluation = JSON.stringify(samples); };
-  const record = (action: string) => { const events = sample.events as unknown[];if (events.length < 200) events.push({ action, ms: Math.round(performance.now() - clickedAt) });save(); };
+  const save = () => { if (measuring) root.dataset.modelEvaluation = JSON.stringify(samples); };
+  const record = (action: string) => { if (!measuring) return;const events = sample.events as unknown[];if (events.length < 200) events.push({ action, ms: Math.round(performance.now() - clickedAt) });save(); };
   save();
   const stage = root.querySelector<HTMLElement>('.model-canvas')!;
   const intro = root.querySelector<HTMLElement>('.model-intro')!;

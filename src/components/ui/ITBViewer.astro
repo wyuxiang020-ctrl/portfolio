@@ -79,7 +79,7 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
           }
         } finally {
           controller.signal.removeEventListener('abort', abort);
-          if (!mountStarted) {
+          if (!mountStarted && !exportButton.hidden) {
             const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
             samples.push({ startedAt: new Date().toISOString(), model: root.dataset.modelUrl, outcome: current.signal.aborted ? 'cancelled-before-mount' : 'module-failed', elapsedMs: Math.round(performance.now() - started) });
             root.dataset.modelEvaluation = JSON.stringify(samples.slice(-20));
