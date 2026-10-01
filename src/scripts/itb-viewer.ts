@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'meshoptimizer';
 import { downloadModel } from './model-download';
+import { downloadModelInRanges } from './model-range-download';
 
 export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal, clickedAt = performance.now()) {
   const measuring = new URLSearchParams(location.search).has('modelTest');
@@ -70,11 +71,18 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal,
     canvas.tabIndex = 0;canvas.setAttribute('aria-label', `${root.dataset.modelName || 'ITB'} 建筑三维模型，可旋转、缩放和平移`);
     stage.append(canvas);
     let received = 0;
-    const data = await downloadModel(root.dataset.modelUrl!, signal, (bytes, length) => {
+    const onProgress = (bytes: number, length: number, mode?: string) => {
       received = bytes;
       sample.bytes = received;
+      if (mode) sample.transport = mode;
       status.textContent = length ? `正在加载模型 ${Math.min(100, Math.round(received / length * 100))}%` : `已加载 ${(received / 1048576).toFixed(1)} MB`;
-    }, Number(root.dataset.modelBytes) || 0);
+    };
+    const expectedBytes = Number(root.dataset.modelBytes) || 0;
+    const useRanges = root.dataset.modelTransport === 'ranges' && !!globalThis.crypto?.subtle;
+    sample.requestedTransport = useRanges ? 'ranges' : 'single';
+    const data = useRanges
+      ? await downloadModelInRanges(root.dataset.modelUrl!, signal, onProgress, expectedBytes, root.dataset.modelSha256!)
+      : await downloadModel(root.dataset.modelUrl!, signal, onProgress, expectedBytes);
     const downloaded = performance.now();
     sample.downloadMs = Math.round(downloaded - started);sample.bytes = received;save();
     status.textContent = '正在准备建筑几何…';

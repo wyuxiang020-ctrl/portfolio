@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-01T13:51:53.266Z",
+  "scope": "Node event-controller tests with mocked loader; not browser, WebGL or physical device",
+  "passed": 9,
+  "cases": [
+    "idle-timeout: actionable feedback and retry available",
+    "total-timeout: actionable feedback and retry available",
+    "incomplete: actionable feedback and retry available",
+    "cancel during module import prevents mount",
+    "cancel and immediate reopen: stale rejection cannot unlock or overwrite new attempt",
+    "download failure exposes retry",
+    "page navigation aborts in-flight load",
+    "page navigation disposes ready model",
+    "repeated page-load events do not duplicate load handlers"
+  ]
+}
