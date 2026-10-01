@@ -1,0 +1,1990 @@
+{
+  "at": "2026-10-01T14:10:17.280Z",
+  "source": "public/models/shekua.glb",
+  "output": "public/models/shekua-lite.glb",
+  "sourceHash": "21ab5b2a859f61ad308ec7df9f40c971fa47f3ca23aec36e4536415d0425b74a",
+  "outputHash": "c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905",
+  "before": {
+    "bytes": 23820388,
+    "materials": 319,
+    "textures": 248,
+    "meshes": 588,
+    "bounds": {
+      "min": [
+        -38.681635882241586,
+        -1,
+        -42.40201522983877
+      ],
+      "max": [
+        38.68162707611797,
+        8.199997777433925,
+        42.40201514169293
+      ]
+    },
+    "layers": [
+      {
+        "name": "场地与道路",
+        "nodes": 21,
+        "instances": 281,
+        "triangles": 222672
+      },
+      {
+        "name": "建筑与院落",
+        "nodes": 567,
+        "instances": 4905,
+        "triangles": 1640395
+      }
+    ]
+  },
+  "after": {
+    "bytes": 6091728,
+    "materials": 8,
+    "textures": 3,
+    "meshes": 527,
+    "bounds": {
+      "min": [
+        -38.681635882241586,
+        -1,
+        -42.40201522983877
+      ],
+      "max": [
+        38.68162707611797,
+        8.199997777433925,
+        42.40201514169293
+      ]
+    },
+    "layers": [
+      {
+        "name": "场地与道路",
+        "nodes": 21,
+        "instances": 281,
+        "triangles": 222672
+      },
+      {
+        "name": "建筑与院落",
+        "nodes": 567,
+        "instances": 4905,
+        "triangles": 1640395
+      }
+    ]
+  },
+  "removedBytes": 17728660,
+  "reductionPercent": 74.42641152612627,
+  "note": "Five schematic materials plus three original alpha-mask exceptions (8 materials, 3 small textures total). No triangle decimation or node/layer removal. Existing instancing retained. Re-encoded with 16-bit positions. Decorative color/material realism is deliberately reduced, cutout holes preserved. Original file preserved.",
+  "mapping": [
+    {
+      "source": "Default timber",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "Wood Cherry Original]2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[0035_Tan]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[0014_DarkSalmon]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Blacktop Old 01]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Quartz Light Brown]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Vegetation Grass]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Carpet Pattern Squares Multi]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Formica Blue]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Terrazzo Light Blue]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "原色樱桃木4",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Polished Concrete Old]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Formica Laminate Light]3",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Cherry Original]4",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "Material #7045",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Concrete_Aggregate_Smoke]1",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood_Cherry_Original]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "材料25__Plastic",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Cherry Original]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "原色樱桃木3",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "wangpeng caizhi7",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi14",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Mat_01",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material #1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Cladding Stucco White]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Cherry Original]2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Cladding Stucco White]2",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "[Formica Laminate Light]2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Translucent Glass Blue]",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "饰面222 ",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cladding Stucco White",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "3D66_SU_1577242193233_001",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Plywood Knots]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color M09]1",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color K03]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color A05]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color C05]2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color F04]1",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color E05]3",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "5467",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*114",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[0047_Khaki]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color K08]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color L01]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[0058_Olive]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Floor Light]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "A03 色__Wood",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "om.cn_143",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Z浅木纹",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color B06]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "清玻",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "JianE_Mtl_20225181434482721_2",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "JianE_Mtl_20225181434482721_1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "玫瑰金",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Roofing Shingles Asphalt (1)",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Fencing_Lattice_Natural]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Metal Seamed]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "Metal",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color D05]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "DSCF3954,_bump1__Marble",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~152",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~17",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "01 - Default1",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Water_Pool_Light]1",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "[Metal_Aluminum_Anodized]1",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Water Pool Light]",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "[0072_DarkSeaGreen]1",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*62",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "bark1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "*61",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi98",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi96",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi97",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi92",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi93",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi94",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi95",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "02 - Default1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "vray Material #41527083",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "CS——0013",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "CS——0014",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Sandstone]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Carpet Berber Pattern Gray]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wallpaper Dog Bone]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Stone Brushed Khaki]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Bamboo]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Pavers Driveway Brick]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Grass Light Green]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "*14",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "<Wood-cherry>",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color_005]1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Gold",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color H03]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color G02]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wood Veneer 01]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Carpet Plush Forest]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Stone Sandstone Ashlar Light]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Metal Steel Textured]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Groundcover Sand Smooth]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color M02]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color J02]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color H08]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color E02]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color B03]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color L11]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color M06]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color A02]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Burl-1 Both",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_D05]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*12",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Upholstery Striped Multi-Colored]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_137",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_138",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_141",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_32",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_33",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_142",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "木色主色调__Polished",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "灰色半透明#2",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "材质13",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*97",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "材料111__Polished",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_D05]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*112",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "White_Siding7",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material__67",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material__62",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material__57",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material__60",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "capa1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "pag",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "capa2",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "capa3",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~14",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~16",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~49",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~12",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~15",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~47",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~45",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~13",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~19",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~24",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~10",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~3",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~4",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~54",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~2",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~35",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~8",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~18",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~6",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~25",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~22",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~38",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~55",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~42",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~46",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~52",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~50",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~5",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~100",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~51",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~62",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~73",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~37",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~74",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~53",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~40",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~96",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~82",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~34",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~7",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~83",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~67",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~11",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~64",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~63",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~97",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~76",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~81",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~48",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~79",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~61",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~68",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~89",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~9",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~71",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~57",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~56",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~59",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~58",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~39",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~36",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~26",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~27",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~28",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~29",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~31",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~32",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~33",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material~30",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "boxcromo",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "boxcorpo",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Image222",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Blinds_Cellular_White]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_I17]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_A25]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 56",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "pages 17",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 71",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "pages 10",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 59",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 63",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 60",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "pages 13",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 64",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 67",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 58",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 70",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "pages 15",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Cover 53",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "eiffel-703h16ct-psp-grau",
+      "target": "eiffel-703h16ct-psp-grau",
+      "originalAlpha": "MASK",
+      "reason": "Preserve original alpha cutout and UVs so fences do not become solid panels"
+    },
+    {
+      "source": "[Color_005]2",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_F16]1",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material #40",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material #34",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "vray_bb0049",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material #77",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Material #84",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wood pol",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "15 - Default",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "19 - Default",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "20 - Default1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "21 - Default",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Plastic_construction",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "firewood2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "om.cn_140",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "om.cn_144",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Metal_Rough]1",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "设计师SING的模型专用贴图(QQ群号：469733580) (375)10",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "设计师SING的模型专用贴图(QQ群号：469733580) (375)7",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Vegetation Blur 02]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "Material #2124200905",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "MX360010",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "MX360016",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "MX360013",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "[Wood_Cherry_Original]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Wood_ Floor]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "设计师SING的模型专用贴图(QQ群号：469733580) (375)6",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*71",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*72",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "*73",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "Color_G09",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "八宝模型库www.suclass.com002",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "八宝模型库www.suclass.com001",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "vray_Mtls_max-51",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "VRayMtl_135HUUU",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "VRayMtl_135HUUUR",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Pea Gravel]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "clear_glass Archetectural",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "原色樱桃木1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[0134_DimGray]",
+      "target": "半透明",
+      "originalAlpha": "BLEND",
+      "reason": "transparent surface represented translucently"
+    },
+    {
+      "source": "[Wood Cherry Original]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "饰面木板 022",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[0072_DarkSeaGreen]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Cladding Stucco White]3",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Textile Leaves Green]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wax 02]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Carpet Berber Multi]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Fabric Linen]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Carpet Pattern Leaf Squares Tan]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Leather Red Brown]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Carpet Loop Pattern]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wallpaper Stripe]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Textile Rug Stripes]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Chipboard]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Wax 01]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Resin Turquoise]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Suede Green]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Resin Blue]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Plastic Red]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Cardboard]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color A08]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "<Wood-cherry>2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Wood Plywood Knots]1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Vegetation Bark Ponderosa]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color L16]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[0014_DarkSalmon]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color F06]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Terrazzo Tile Light]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Groundcover Sand Raked]",
+      "target": "植被绿",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color H05]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Fencing Lattice Natural]",
+      "target": "[Fencing Lattice Natural]",
+      "originalAlpha": "MASK",
+      "reason": "Preserve original alpha cutout and UVs so fences do not become solid panels"
+    },
+    {
+      "source": "[Formica Laminate Dark]",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Polished Concrete Old]1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Fencing Picket Concave]",
+      "target": "[Fencing Picket Concave]",
+      "originalAlpha": "MASK",
+      "reason": "Preserve original alpha cutout and UVs so fences do not become solid panels"
+    },
+    {
+      "source": "[Vegetation Bark Maple]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[Color M01]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color J05]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color K03]1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "62_White Oak light wood fine texture-seamless",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "10002",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "ett23523636",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi17",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "12 - Default2",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi19",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi20",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi8",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi1",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "wangpeng caizhi23",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "tx_gold_roof",
+      "target": "深灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source material name"
+    },
+    {
+      "source": "[0011_Seashell]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_001]2",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[Color_A11]",
+      "target": "木色",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[0010_Snow]",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    },
+    {
+      "source": "[0011_Seashell]1",
+      "target": "浅灰",
+      "originalAlpha": "OPAQUE",
+      "reason": "source average color; schematic, not a claim about physical material"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+[{"attemptId":33279.200000047684,"startedAt":"2026-10-01T14:08:49.840Z","model":"/models/shekua.glb","events":[{"action":"view:overview","ms":675}],"outcome":"ready","requestedTransport":"ranges","bytes":23820388,"transport":"full-fallback","downloadMs":224,"renderCount":4,"maxRenderSubmissionMs":1032,"clickToFirstRenderSubmittedMs":1707,"controlsReadyMs":1708}]

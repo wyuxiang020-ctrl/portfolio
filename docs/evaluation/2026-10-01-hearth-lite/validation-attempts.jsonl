@@ -1,0 +1,4 @@
+{"at":"2026-10-01T14:11:46.671Z","passed":false,"elapsedMs":5089,"candidate":{"path":"public/models/shekua-lite.glb","bytes":6091728,"sha256":"c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905"},"failures":["Instance transforms changed"]}
+{"at":"2026-10-01T14:12:50.231Z","passed":true,"elapsedMs":5092,"candidate":{"path":"public/models/shekua-lite.glb","bytes":6091728,"sha256":"c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905"},"failures":[]}
+{"at":"2026-10-01T14:13:45.688Z","passed":true,"elapsedMs":5497,"candidate":{"path":"public/models/shekua-lite.glb","bytes":6091728,"sha256":"c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905"},"failures":[]}
+{"at":"2026-10-01T14:15:40.664Z","passed":true,"elapsedMs":5581,"candidate":{"path":"public/models/shekua-lite.glb","bytes":6091728,"sha256":"c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905"},"failures":[]}

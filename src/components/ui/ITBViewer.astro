@@ -14,7 +14,7 @@ const { modelUrl = '/models/itb.glb', modelName = 'ITB', transport = 'single', s
 const modelHash = transport === 'ranges' ? createHash('sha256').update(readFileSync(resolve('public', modelUrl.slice(1)))).digest('hex') : undefined;
 const size = (sizeBytes / 1024 / 1024).toFixed(1);
 ---
-<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-viewer-version="spatial-ux-2026-10-01-hearth-r2" data-model-transport={transport} data-model-sha256={modelHash} data-model-bytes={sizeBytes} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
+<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-viewer-version="spatial-ux-2026-10-01-hearth-lite" data-model-transport={transport} data-model-sha256={modelHash} data-model-bytes={sizeBytes} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
   <div class="model-heading"><span>空间探索</span><span>{modelName} · 3D</span></div>
   <div class="model-stage">
     <div class="model-canvas"></div>
@@ -55,7 +55,7 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
       const exportButton = root.querySelector<HTMLButtonElement>('[data-export]')!;
       exportButton.hidden = !new URLSearchParams(location.search).has('modelTest');
       exportButton.addEventListener('click', () => {
-        const blob = new Blob([JSON.stringify({ version: 'spatial-ux-2026-10-01-hearth-r2', url: location.href, recordedAt: new Date().toISOString(), userAgent: navigator.userAgent, viewport: [innerWidth, innerHeight], network: '未自动判断；请在任务记录中填写 VPN、运营商与 Wi-Fi/移动网络', samples: JSON.parse(root.dataset.modelEvaluation || '[]') }, null, 2)], { type: 'application/json' });
+        const blob = new Blob([JSON.stringify({ version: 'spatial-ux-2026-10-01-hearth-lite', url: location.href, recordedAt: new Date().toISOString(), userAgent: navigator.userAgent, viewport: [innerWidth, innerHeight], network: '未自动判断；请在任务记录中填写 VPN、运营商与 Wi-Fi/移动网络', samples: JSON.parse(root.dataset.modelEvaluation || '[]') }, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);const link = document.createElement('a');link.href = url;link.download = `${root.dataset.modelName}-3d-test.json`;link.click();setTimeout(() => URL.revokeObjectURL(url), 1000);
       }, { signal: controller.signal });
       let dispose: (() => void) | undefined;

@@ -1,0 +1,2437 @@
+{
+  "at": "2026-10-01T14:15:40.664Z",
+  "type": "automated asset validation",
+  "browserVisualTest": false,
+  "realDeviceTest": false,
+  "validator": "2.0.0-dev.3.10",
+  "validatorOptions": {
+    "maxIssues": 10000,
+    "ignoredIssues": [
+      "UNUSED_OBJECT"
+    ]
+  },
+  "failures": [],
+  "notes": [
+    "Geometry comparison ignores triangle/index ordering but preserves winding; coordinates are rounded to 8 decimal places in each mesh local space.",
+    "Normal vectors may change slightly on repeated Meshopt octahedral encoding. Maximum accepted angular difference is 0.04 radians.",
+    "Instance transforms are compared after composition into world matrices with a 0.00001-unit tolerance. Raw quaternion sign is not a spatial difference (q and -q describe the same rotation).",
+    "Decoded validator input has Meshopt decompressed, GPU instances expanded to nodes and quantized attributes converted to float32; this temporary representation is held in memory and not published."
+  ],
+  "source": {
+    "path": "public/models/shekua.glb",
+    "bytes": 23820388,
+    "sha256": "21ab5b2a859f61ad308ec7df9f40c971fa47f3ca23aec36e4536415d0425b74a"
+  },
+  "candidate": {
+    "path": "public/models/shekua-lite.glb",
+    "bytes": 6091728,
+    "sha256": "c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905"
+  },
+  "compressed": {
+    "source": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 181,
+      "hints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_mesh_gpu_instancing'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/1"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/1"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x551.",
+          "severity": 2,
+          "pointer": "/images/2"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 280x280.",
+          "severity": 2,
+          "pointer": "/images/5"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x661.",
+          "severity": 2,
+          "pointer": "/images/6"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/8"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 680x680.",
+          "severity": 2,
+          "pointer": "/images/9"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x450.",
+          "severity": 2,
+          "pointer": "/images/11"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 250x200.",
+          "severity": 2,
+          "pointer": "/images/16"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 266x480.",
+          "severity": 2,
+          "pointer": "/images/18"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x450.",
+          "severity": 2,
+          "pointer": "/images/19"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x384.",
+          "severity": 2,
+          "pointer": "/images/20"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x384.",
+          "severity": 2,
+          "pointer": "/images/22"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 680x680.",
+          "severity": 2,
+          "pointer": "/images/23"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/24"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x384.",
+          "severity": 2,
+          "pointer": "/images/25"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x363.",
+          "severity": 2,
+          "pointer": "/images/26"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x509.",
+          "severity": 2,
+          "pointer": "/images/27"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/28"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/29"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 640x768.",
+          "severity": 2,
+          "pointer": "/images/31"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 645x768.",
+          "severity": 2,
+          "pointer": "/images/32"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/33"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/34"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 400x379.",
+          "severity": 2,
+          "pointer": "/images/35"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/36"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 480x768.",
+          "severity": 2,
+          "pointer": "/images/39"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 236x236.",
+          "severity": 2,
+          "pointer": "/images/40"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x494.",
+          "severity": 2,
+          "pointer": "/images/41"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/44"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x750.",
+          "severity": 2,
+          "pointer": "/images/45"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 170x720.",
+          "severity": 2,
+          "pointer": "/images/46"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 614x709.",
+          "severity": 2,
+          "pointer": "/images/47"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 283x283.",
+          "severity": 2,
+          "pointer": "/images/48"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 283x283.",
+          "severity": 2,
+          "pointer": "/images/49"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 583x768.",
+          "severity": 2,
+          "pointer": "/images/50"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/51"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/53"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 450x447.",
+          "severity": 2,
+          "pointer": "/images/54"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/55"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/57"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 300x300.",
+          "severity": 2,
+          "pointer": "/images/60"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/61"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/65"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x511.",
+          "severity": 2,
+          "pointer": "/images/70"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x272.",
+          "severity": 2,
+          "pointer": "/images/71"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 640x479.",
+          "severity": 2,
+          "pointer": "/images/72"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 432x432.",
+          "severity": 2,
+          "pointer": "/images/73"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 96x768.",
+          "severity": 2,
+          "pointer": "/images/74"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/75"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 28x279.",
+          "severity": 2,
+          "pointer": "/images/76"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/77"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/78"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x734.",
+          "severity": 2,
+          "pointer": "/images/79"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 650x409.",
+          "severity": 2,
+          "pointer": "/images/80"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 450x579.",
+          "severity": 2,
+          "pointer": "/images/81"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 677x84.",
+          "severity": 2,
+          "pointer": "/images/82"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 660x472.",
+          "severity": 2,
+          "pointer": "/images/84"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 660x490.",
+          "severity": 2,
+          "pointer": "/images/85"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 660x477.",
+          "severity": 2,
+          "pointer": "/images/86"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 660x502.",
+          "severity": 2,
+          "pointer": "/images/87"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x448.",
+          "severity": 2,
+          "pointer": "/images/88"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x116.",
+          "severity": 2,
+          "pointer": "/images/89"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x448.",
+          "severity": 2,
+          "pointer": "/images/90"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x448.",
+          "severity": 2,
+          "pointer": "/images/91"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 460x372.",
+          "severity": 2,
+          "pointer": "/images/95"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x369.",
+          "severity": 2,
+          "pointer": "/images/99"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x92.",
+          "severity": 2,
+          "pointer": "/images/100"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x376.",
+          "severity": 2,
+          "pointer": "/images/101"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x62.",
+          "severity": 2,
+          "pointer": "/images/102"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x368.",
+          "severity": 2,
+          "pointer": "/images/103"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x372.",
+          "severity": 2,
+          "pointer": "/images/104"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x366.",
+          "severity": 2,
+          "pointer": "/images/105"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x361.",
+          "severity": 2,
+          "pointer": "/images/106"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x367.",
+          "severity": 2,
+          "pointer": "/images/107"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x378.",
+          "severity": 2,
+          "pointer": "/images/108"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x368.",
+          "severity": 2,
+          "pointer": "/images/109"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/110"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x372.",
+          "severity": 2,
+          "pointer": "/images/111"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x376.",
+          "severity": 2,
+          "pointer": "/images/112"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x369.",
+          "severity": 2,
+          "pointer": "/images/113"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x364.",
+          "severity": 2,
+          "pointer": "/images/114"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x357.",
+          "severity": 2,
+          "pointer": "/images/115"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x115.",
+          "severity": 2,
+          "pointer": "/images/116"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/117"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x369.",
+          "severity": 2,
+          "pointer": "/images/118"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x364.",
+          "severity": 2,
+          "pointer": "/images/119"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x371.",
+          "severity": 2,
+          "pointer": "/images/120"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x376.",
+          "severity": 2,
+          "pointer": "/images/121"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x376.",
+          "severity": 2,
+          "pointer": "/images/122"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/123"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x378.",
+          "severity": 2,
+          "pointer": "/images/124"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/125"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/126"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x377.",
+          "severity": 2,
+          "pointer": "/images/127"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/128"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x366.",
+          "severity": 2,
+          "pointer": "/images/129"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x366.",
+          "severity": 2,
+          "pointer": "/images/130"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x377.",
+          "severity": 2,
+          "pointer": "/images/131"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x368.",
+          "severity": 2,
+          "pointer": "/images/132"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x361.",
+          "severity": 2,
+          "pointer": "/images/133"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x377.",
+          "severity": 2,
+          "pointer": "/images/134"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x368.",
+          "severity": 2,
+          "pointer": "/images/135"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x368.",
+          "severity": 2,
+          "pointer": "/images/136"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x368.",
+          "severity": 2,
+          "pointer": "/images/137"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x378.",
+          "severity": 2,
+          "pointer": "/images/138"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x377.",
+          "severity": 2,
+          "pointer": "/images/139"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/140"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x378.",
+          "severity": 2,
+          "pointer": "/images/141"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/142"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x376.",
+          "severity": 2,
+          "pointer": "/images/143"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x366.",
+          "severity": 2,
+          "pointer": "/images/144"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/145"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/146"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 512x373.",
+          "severity": 2,
+          "pointer": "/images/147"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 480x480.",
+          "severity": 2,
+          "pointer": "/images/162"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x397.",
+          "severity": 2,
+          "pointer": "/images/163"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 623x300.",
+          "severity": 2,
+          "pointer": "/images/165"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x90.",
+          "severity": 2,
+          "pointer": "/images/166"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 425x300.",
+          "severity": 2,
+          "pointer": "/images/167"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 450x80.",
+          "severity": 2,
+          "pointer": "/images/168"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 497x300.",
+          "severity": 2,
+          "pointer": "/images/169"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 508x300.",
+          "severity": 2,
+          "pointer": "/images/170"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 426x300.",
+          "severity": 2,
+          "pointer": "/images/171"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x108.",
+          "severity": 2,
+          "pointer": "/images/172"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 484x300.",
+          "severity": 2,
+          "pointer": "/images/173"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 484x300.",
+          "severity": 2,
+          "pointer": "/images/174"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 452x300.",
+          "severity": 2,
+          "pointer": "/images/175"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 524x300.",
+          "severity": 2,
+          "pointer": "/images/176"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x141.",
+          "severity": 2,
+          "pointer": "/images/177"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 511x300.",
+          "severity": 2,
+          "pointer": "/images/178"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 308x703.",
+          "severity": 2,
+          "pointer": "/images/179"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/180"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/181"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 493x484.",
+          "severity": 2,
+          "pointer": "/images/183"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 266x274.",
+          "severity": 2,
+          "pointer": "/images/184"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 261x768.",
+          "severity": 2,
+          "pointer": "/images/185"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 766x768.",
+          "severity": 2,
+          "pointer": "/images/186"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x663.",
+          "severity": 2,
+          "pointer": "/images/187"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/188"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/189"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 511x768.",
+          "severity": 2,
+          "pointer": "/images/190"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/191"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 411x596.",
+          "severity": 2,
+          "pointer": "/images/193"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 640x768.",
+          "severity": 2,
+          "pointer": "/images/194"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x286.",
+          "severity": 2,
+          "pointer": "/images/199"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 526x728.",
+          "severity": 2,
+          "pointer": "/images/200"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x251.",
+          "severity": 2,
+          "pointer": "/images/201"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/202"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 639x768.",
+          "severity": 2,
+          "pointer": "/images/203"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 673x682.",
+          "severity": 2,
+          "pointer": "/images/204"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 761x768.",
+          "severity": 2,
+          "pointer": "/images/205"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/209"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 400x400.",
+          "severity": 2,
+          "pointer": "/images/211"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 432x432.",
+          "severity": 2,
+          "pointer": "/images/213"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/215"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/217"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/219"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/220"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 400x400.",
+          "severity": 2,
+          "pointer": "/images/221"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/222"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 400x400.",
+          "severity": 2,
+          "pointer": "/images/223"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 341x341.",
+          "severity": 2,
+          "pointer": "/images/224"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/225"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 500x500.",
+          "severity": 2,
+          "pointer": "/images/229"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 400x400.",
+          "severity": 2,
+          "pointer": "/images/232"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x600.",
+          "severity": 2,
+          "pointer": "/images/233"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x175.",
+          "severity": 2,
+          "pointer": "/images/234"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/236"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x697.",
+          "severity": 2,
+          "pointer": "/images/237"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 646x646.",
+          "severity": 2,
+          "pointer": "/images/238"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x768.",
+          "severity": 2,
+          "pointer": "/images/239"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 600x399.",
+          "severity": 2,
+          "pointer": "/images/240"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 330x220.",
+          "severity": 2,
+          "pointer": "/images/241"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x388.",
+          "severity": 2,
+          "pointer": "/images/242"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x576.",
+          "severity": 2,
+          "pointer": "/images/243"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x639.",
+          "severity": 2,
+          "pointer": "/images/244"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 229x160.",
+          "severity": 2,
+          "pointer": "/images/245"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 768x545.",
+          "severity": 2,
+          "pointer": "/images/246"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 89x110.",
+          "severity": 2,
+          "pointer": "/images/247"
+        }
+      ],
+      "truncated": false
+    },
+    "candidate": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 4,
+      "hints": 0,
+      "messages": [
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_mesh_gpu_instancing'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/0"
+        },
+        {
+          "code": "UNSUPPORTED_EXTENSION",
+          "message": "Cannot validate an extension as it is not supported by the validator: 'EXT_meshopt_compression'.",
+          "severity": 2,
+          "pointer": "/extensionsUsed/1"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 308x703.",
+          "severity": 2,
+          "pointer": "/images/0"
+        },
+        {
+          "code": "IMAGE_NPOT_DIMENSIONS",
+          "message": "Image has non-power-of-two dimensions: 256x175.",
+          "severity": 2,
+          "pointer": "/images/2"
+        }
+      ],
+      "truncated": false
+    }
+  },
+  "decodeBothMs": 205,
+  "geometry": {
+    "nodesCompared": 590,
+    "primitivePairsCompared": 710,
+    "distinctPrimitivePairsCompared": 710,
+    "triangleReferencesCompared": 790128,
+    "maxNodeMatrixDifference": 2.299552948798808e-14,
+    "maxInstanceValueDifference": 1.4142135381698608,
+    "maxInstanceWorldMatrixDifference": 9.536742524574038e-7,
+    "instancesCompared": 5044,
+    "maxNormalAngleRadians": 0.009450392701242167,
+    "unmatchedNormalVertices": 0,
+    "positionAndWindingMismatches": [],
+    "cutoutPrimitivesCompared": 4,
+    "layers": [
+      "场地与道路",
+      "建筑与院落"
+    ]
+  },
+  "palette": {
+    "materials": 8,
+    "textures": 3,
+    "cutoutMaterials": [
+      {
+        "name": "eiffel-703h16ct-psp-grau",
+        "cutoff": 0.4,
+        "textureSHA256": "62cae050710ce77bf203320924ea58398cb472a61744e1e400016b06b335d60d"
+      },
+      {
+        "name": "[Fencing Lattice Natural]",
+        "cutoff": 0.4,
+        "textureSHA256": "dd1bbba2644727e2028f8fcebaf15f12186cea5a05cbc0bd583d18f6ee5b68f1"
+      },
+      {
+        "name": "[Fencing Picket Concave]",
+        "cutoff": 0.4,
+        "textureSHA256": "8ddce1fbd12501e09f54fceca8ad15cb1555c48b9ccc60866085a0f12932f89b"
+      }
+    ]
+  },
+  "decoded": {
+    "source": {
+      "nodes": 5634,
+      "bounds": {
+        "min": [
+          -38.68163568825669,
+          0.0003005441253902674,
+          -42.40201522983877
+        ],
+        "max": [
+          38.681626882133074,
+          9.361712632073102,
+          42.40201514169293
+        ]
+      },
+      "bytes": 54392276,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 179,
+        "hints": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/1"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x551.",
+            "severity": 2,
+            "pointer": "/images/2"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 280x280.",
+            "severity": 2,
+            "pointer": "/images/5"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x661.",
+            "severity": 2,
+            "pointer": "/images/6"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/8"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 680x680.",
+            "severity": 2,
+            "pointer": "/images/9"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x450.",
+            "severity": 2,
+            "pointer": "/images/11"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 250x200.",
+            "severity": 2,
+            "pointer": "/images/16"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 266x480.",
+            "severity": 2,
+            "pointer": "/images/18"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x450.",
+            "severity": 2,
+            "pointer": "/images/19"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x384.",
+            "severity": 2,
+            "pointer": "/images/20"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x384.",
+            "severity": 2,
+            "pointer": "/images/22"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 680x680.",
+            "severity": 2,
+            "pointer": "/images/23"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/24"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x384.",
+            "severity": 2,
+            "pointer": "/images/25"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x363.",
+            "severity": 2,
+            "pointer": "/images/26"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x509.",
+            "severity": 2,
+            "pointer": "/images/27"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/28"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/29"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 640x768.",
+            "severity": 2,
+            "pointer": "/images/31"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 645x768.",
+            "severity": 2,
+            "pointer": "/images/32"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/33"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/34"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 400x379.",
+            "severity": 2,
+            "pointer": "/images/35"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/36"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 480x768.",
+            "severity": 2,
+            "pointer": "/images/39"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 236x236.",
+            "severity": 2,
+            "pointer": "/images/40"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x494.",
+            "severity": 2,
+            "pointer": "/images/41"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/44"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x750.",
+            "severity": 2,
+            "pointer": "/images/45"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 170x720.",
+            "severity": 2,
+            "pointer": "/images/46"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 614x709.",
+            "severity": 2,
+            "pointer": "/images/47"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 283x283.",
+            "severity": 2,
+            "pointer": "/images/48"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 283x283.",
+            "severity": 2,
+            "pointer": "/images/49"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 583x768.",
+            "severity": 2,
+            "pointer": "/images/50"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/51"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/53"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 450x447.",
+            "severity": 2,
+            "pointer": "/images/54"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/55"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/57"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 300x300.",
+            "severity": 2,
+            "pointer": "/images/60"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/61"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/65"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x511.",
+            "severity": 2,
+            "pointer": "/images/70"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x272.",
+            "severity": 2,
+            "pointer": "/images/71"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 640x479.",
+            "severity": 2,
+            "pointer": "/images/72"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 432x432.",
+            "severity": 2,
+            "pointer": "/images/73"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 96x768.",
+            "severity": 2,
+            "pointer": "/images/74"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/75"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 28x279.",
+            "severity": 2,
+            "pointer": "/images/76"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/77"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/78"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x734.",
+            "severity": 2,
+            "pointer": "/images/79"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 650x409.",
+            "severity": 2,
+            "pointer": "/images/80"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 450x579.",
+            "severity": 2,
+            "pointer": "/images/81"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 677x84.",
+            "severity": 2,
+            "pointer": "/images/82"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 660x472.",
+            "severity": 2,
+            "pointer": "/images/84"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 660x490.",
+            "severity": 2,
+            "pointer": "/images/85"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 660x477.",
+            "severity": 2,
+            "pointer": "/images/86"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 660x502.",
+            "severity": 2,
+            "pointer": "/images/87"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x448.",
+            "severity": 2,
+            "pointer": "/images/88"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x116.",
+            "severity": 2,
+            "pointer": "/images/89"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x448.",
+            "severity": 2,
+            "pointer": "/images/90"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x448.",
+            "severity": 2,
+            "pointer": "/images/91"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 460x372.",
+            "severity": 2,
+            "pointer": "/images/95"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x369.",
+            "severity": 2,
+            "pointer": "/images/99"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x92.",
+            "severity": 2,
+            "pointer": "/images/100"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x376.",
+            "severity": 2,
+            "pointer": "/images/101"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x62.",
+            "severity": 2,
+            "pointer": "/images/102"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x368.",
+            "severity": 2,
+            "pointer": "/images/103"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x372.",
+            "severity": 2,
+            "pointer": "/images/104"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x366.",
+            "severity": 2,
+            "pointer": "/images/105"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x361.",
+            "severity": 2,
+            "pointer": "/images/106"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x367.",
+            "severity": 2,
+            "pointer": "/images/107"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x378.",
+            "severity": 2,
+            "pointer": "/images/108"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x368.",
+            "severity": 2,
+            "pointer": "/images/109"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/110"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x372.",
+            "severity": 2,
+            "pointer": "/images/111"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x376.",
+            "severity": 2,
+            "pointer": "/images/112"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x369.",
+            "severity": 2,
+            "pointer": "/images/113"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x364.",
+            "severity": 2,
+            "pointer": "/images/114"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x357.",
+            "severity": 2,
+            "pointer": "/images/115"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x115.",
+            "severity": 2,
+            "pointer": "/images/116"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/117"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x369.",
+            "severity": 2,
+            "pointer": "/images/118"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x364.",
+            "severity": 2,
+            "pointer": "/images/119"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x371.",
+            "severity": 2,
+            "pointer": "/images/120"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x376.",
+            "severity": 2,
+            "pointer": "/images/121"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x376.",
+            "severity": 2,
+            "pointer": "/images/122"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/123"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x378.",
+            "severity": 2,
+            "pointer": "/images/124"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/125"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/126"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x377.",
+            "severity": 2,
+            "pointer": "/images/127"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/128"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x366.",
+            "severity": 2,
+            "pointer": "/images/129"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x366.",
+            "severity": 2,
+            "pointer": "/images/130"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x377.",
+            "severity": 2,
+            "pointer": "/images/131"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x368.",
+            "severity": 2,
+            "pointer": "/images/132"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x361.",
+            "severity": 2,
+            "pointer": "/images/133"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x377.",
+            "severity": 2,
+            "pointer": "/images/134"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x368.",
+            "severity": 2,
+            "pointer": "/images/135"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x368.",
+            "severity": 2,
+            "pointer": "/images/136"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x368.",
+            "severity": 2,
+            "pointer": "/images/137"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x378.",
+            "severity": 2,
+            "pointer": "/images/138"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x377.",
+            "severity": 2,
+            "pointer": "/images/139"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/140"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x378.",
+            "severity": 2,
+            "pointer": "/images/141"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/142"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x376.",
+            "severity": 2,
+            "pointer": "/images/143"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x366.",
+            "severity": 2,
+            "pointer": "/images/144"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/145"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/146"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 512x373.",
+            "severity": 2,
+            "pointer": "/images/147"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 480x480.",
+            "severity": 2,
+            "pointer": "/images/162"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x397.",
+            "severity": 2,
+            "pointer": "/images/163"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 623x300.",
+            "severity": 2,
+            "pointer": "/images/165"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x90.",
+            "severity": 2,
+            "pointer": "/images/166"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 425x300.",
+            "severity": 2,
+            "pointer": "/images/167"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 450x80.",
+            "severity": 2,
+            "pointer": "/images/168"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 497x300.",
+            "severity": 2,
+            "pointer": "/images/169"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 508x300.",
+            "severity": 2,
+            "pointer": "/images/170"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 426x300.",
+            "severity": 2,
+            "pointer": "/images/171"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x108.",
+            "severity": 2,
+            "pointer": "/images/172"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 484x300.",
+            "severity": 2,
+            "pointer": "/images/173"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 484x300.",
+            "severity": 2,
+            "pointer": "/images/174"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 452x300.",
+            "severity": 2,
+            "pointer": "/images/175"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 524x300.",
+            "severity": 2,
+            "pointer": "/images/176"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x141.",
+            "severity": 2,
+            "pointer": "/images/177"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 511x300.",
+            "severity": 2,
+            "pointer": "/images/178"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 308x703.",
+            "severity": 2,
+            "pointer": "/images/179"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/180"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/181"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 493x484.",
+            "severity": 2,
+            "pointer": "/images/183"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 266x274.",
+            "severity": 2,
+            "pointer": "/images/184"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 261x768.",
+            "severity": 2,
+            "pointer": "/images/185"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 766x768.",
+            "severity": 2,
+            "pointer": "/images/186"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x663.",
+            "severity": 2,
+            "pointer": "/images/187"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/188"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/189"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 511x768.",
+            "severity": 2,
+            "pointer": "/images/190"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/191"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 411x596.",
+            "severity": 2,
+            "pointer": "/images/193"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 640x768.",
+            "severity": 2,
+            "pointer": "/images/194"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x286.",
+            "severity": 2,
+            "pointer": "/images/199"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 526x728.",
+            "severity": 2,
+            "pointer": "/images/200"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x251.",
+            "severity": 2,
+            "pointer": "/images/201"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/202"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 639x768.",
+            "severity": 2,
+            "pointer": "/images/203"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 673x682.",
+            "severity": 2,
+            "pointer": "/images/204"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 761x768.",
+            "severity": 2,
+            "pointer": "/images/205"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/209"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 400x400.",
+            "severity": 2,
+            "pointer": "/images/211"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 432x432.",
+            "severity": 2,
+            "pointer": "/images/213"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/215"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/217"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/219"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/220"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 400x400.",
+            "severity": 2,
+            "pointer": "/images/221"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/222"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 400x400.",
+            "severity": 2,
+            "pointer": "/images/223"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 341x341.",
+            "severity": 2,
+            "pointer": "/images/224"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/225"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 500x500.",
+            "severity": 2,
+            "pointer": "/images/229"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 400x400.",
+            "severity": 2,
+            "pointer": "/images/232"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x600.",
+            "severity": 2,
+            "pointer": "/images/233"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x175.",
+            "severity": 2,
+            "pointer": "/images/234"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/236"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x697.",
+            "severity": 2,
+            "pointer": "/images/237"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 646x646.",
+            "severity": 2,
+            "pointer": "/images/238"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x768.",
+            "severity": 2,
+            "pointer": "/images/239"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 600x399.",
+            "severity": 2,
+            "pointer": "/images/240"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 330x220.",
+            "severity": 2,
+            "pointer": "/images/241"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x388.",
+            "severity": 2,
+            "pointer": "/images/242"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x576.",
+            "severity": 2,
+            "pointer": "/images/243"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x639.",
+            "severity": 2,
+            "pointer": "/images/244"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 229x160.",
+            "severity": 2,
+            "pointer": "/images/245"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 768x545.",
+            "severity": 2,
+            "pointer": "/images/246"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 89x110.",
+            "severity": 2,
+            "pointer": "/images/247"
+          }
+        ],
+        "truncated": false
+      }
+    },
+    "candidate": {
+      "nodes": 5634,
+      "bounds": {
+        "min": [
+          -38.68163568825669,
+          0.0003005441253902674,
+          -42.40201522983877
+        ],
+        "max": [
+          38.681626882133074,
+          9.361712632073102,
+          42.40201514169293
+        ]
+      },
+      "bytes": 24775360,
+      "validation": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 18,
+        "hints": 0,
+        "messages": [
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 308x703.",
+            "severity": 2,
+            "pointer": "/images/0"
+          },
+          {
+            "code": "IMAGE_NPOT_DIMENSIONS",
+            "message": "Image has non-power-of-two dimensions: 256x175.",
+            "severity": 2,
+            "pointer": "/images/2"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 701 degenerate triangles (out of 75419).",
+            "severity": 2,
+            "pointer": "/meshes/122/primitives/1/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 164 degenerate triangles (out of 22794).",
+            "severity": 2,
+            "pointer": "/meshes/182/primitives/0/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 25 degenerate triangles (out of 3536).",
+            "severity": 2,
+            "pointer": "/meshes/182/primitives/1/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 14 degenerate triangles (out of 67656).",
+            "severity": 2,
+            "pointer": "/meshes/294/primitives/0/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 6 degenerate triangles (out of 3549).",
+            "severity": 2,
+            "pointer": "/meshes/352/primitives/0/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 4 degenerate triangles (out of 32).",
+            "severity": 2,
+            "pointer": "/meshes/369/primitives/0/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 2 degenerate triangles (out of 43).",
+            "severity": 2,
+            "pointer": "/meshes/370/primitives/9/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 6 degenerate triangles (out of 1852).",
+            "severity": 2,
+            "pointer": "/meshes/412/primitives/4/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 4 degenerate triangles (out of 2264).",
+            "severity": 2,
+            "pointer": "/meshes/412/primitives/5/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 3 degenerate triangles (out of 120).",
+            "severity": 2,
+            "pointer": "/meshes/412/primitives/6/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 14 degenerate triangles (out of 2499).",
+            "severity": 2,
+            "pointer": "/meshes/413/primitives/0/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 2 degenerate triangles (out of 2356).",
+            "severity": 2,
+            "pointer": "/meshes/413/primitives/1/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 1045 degenerate triangles (out of 10946).",
+            "severity": 2,
+            "pointer": "/meshes/413/primitives/2/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 480 degenerate triangles (out of 63138).",
+            "severity": 2,
+            "pointer": "/meshes/413/primitives/3/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 12 degenerate triangles (out of 1680).",
+            "severity": 2,
+            "pointer": "/meshes/506/primitives/0/indices"
+          },
+          {
+            "code": "ACCESSOR_INDEX_TRIANGLE_DEGENERATE",
+            "message": "Indices accessor contains 2 degenerate triangles (out of 810).",
+            "severity": 2,
+            "pointer": "/meshes/508/primitives/0/indices"
+          }
+        ],
+        "truncated": false
+      }
+    }
+  },
+  "expandedBoundsMaxDifference": 0,
+  "elapsedMs": 5581,
+  "passed": true
+}
