@@ -7,13 +7,14 @@ import { brotliCompressSync } from 'node:zlib';
 import { build } from 'esbuild';
 import assert from 'node:assert/strict';
 
-const outputDir = 'docs/evaluation/2026-10-01-hearth';
+const outputDir = process.argv[2] || 'docs/evaluation/2026-10-01-hearth';
 const { outputFiles } = await build({ entryPoints: ['src/scripts/model-range-download.ts'], bundle: true, write: false, platform: 'node', format: 'esm', target: 'node22' });
 const { downloadModelInRanges } = await import('data:text/javascript;base64,' + Buffer.from(outputFiles[0].contents).toString('base64'));
 const models = { itb: await readFile('public/models/itb.glb'), hearth: await readFile('public/models/shekua.glb') };
 const hash = bytes => createHash('sha256').update(Buffer.from(bytes)).digest('hex');
 const hashes = Object.fromEntries(Object.entries(models).map(([key, bytes]) => [key, hash(bytes)]));
 const chunkBytes = 256 * 1024;
+const probeBytes = Math.min(16 * 1024, chunkBytes);
 const ordinary = { chunkBytes, concurrency: 4, idleMs: 1500, totalMs: 10000 };
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 const runs = new Map();
@@ -51,13 +52,13 @@ const server = http.createServer((req, res) => {
   if (run.kind === 'trickle') { stall(); interval(() => res.write(run.data.subarray(start, start + 64)), 35); return; }
   if ((run.kind === 'later-200' || run.kind === 'fallback-deadline') && start > 0) { complete(200, run.data, { etag: '"model-v1"' }); return; }
   if (run.kind === '503' && start > 0) {
-    if (start === chunkBytes) { later(() => { head(503); res.end(); }, 25); } else stall();
+    if (start === probeBytes) { later(() => { head(503); res.end(); }, 25); } else stall();
     return;
   }
   if (run.kind === 'disconnect' && start > 0) {
-    stall(); if (start === chunkBytes) later(() => res.destroy(), 25); return;
+    stall(); if (start === probeBytes) later(() => res.destroy(), 25); return;
   }
-  if (run.kind === 'one-stall' && start === chunkBytes) { stall(); return; }
+  if (run.kind === 'one-stall' && start === probeBytes) { stall(); return; }
   const headers = { 'content-range': `bytes ${start}-${end}/${run.data.length}`, etag: '"model-v1"' };
   let body = run.data.subarray(start, end + 1);
   if (run.kind === 'missing-etag') delete headers.etag;
@@ -101,6 +102,11 @@ try {
     const data = await transfer(context, undefined, (received, total) => { assert.ok(received >= last); assert.ok(received <= context.run.data.length); assert.equal(total, context.run.data.length); last = received; });
     assert.equal(hash(data), hashes.hearth); assert.equal(last, context.run.data.length);
     assert.ok(context.run.maxActive <= 4); assert.ok(context.run.maxActive > 1);
+    assert.equal(context.run.requests[0].end, probeBytes - 1);
+    assert.equal(context.run.requests[1].start, probeBytes);
+    const segments = [...context.run.requests].sort((a,b) => a.start-b.start);
+    for (let i=1;i<segments.length;i++) assert.equal(segments[i].start, segments[i-1].end+1, 'No gap or overlap after short probe');
+    assert.equal(segments.at(-1).end, context.run.data.length-1);
     assert.ok(context.run.requests.slice(1).every(r => r.ifRange === '"model-v1"'));
   });
   await test('first 200 is consumed once as a complete response', async () => {

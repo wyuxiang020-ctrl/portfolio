@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-01T14:47:39.366Z",
+  "scope": "Read-only Node VM reproduction using the actual Astro controller with deferred mocked module and download; software failure fixture, not browser/network/user/LLM evidence.",
+  "trigger": "Reject model download with HTTP 503, then reject module import in the same event turn.",
+  "before": {
+    "outcome": "module-failed",
+    "error": "Error: first HTTP 503",
+    "errorCode": "http",
+    "elapsedMs": 1,
+    "correct": false
+  },
+  "cause": "The later rejection overwrote shared failurePhase before the Promise.all catch logged the first rejection.",
+  "fix": "Only the first preparation rejection can assign failurePhase; regression covers both rejection orders.",
+  "afterEvidence": "lifecycle-tests.json and lifecycle-attempts.jsonl"
+}

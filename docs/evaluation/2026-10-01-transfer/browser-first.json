@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-01T14:48:15.826Z",
+  "scope": "Local production build in Codex IAB; agent-operated browser, not human/phone/mainland network",
+  "version": "spatial-ux-2026-10-01-parallel-load",
+  "samples": [
+    {
+      "attemptId": 9249.399999976158,
+      "startedAt": "2026-10-01T14:47:39.779Z",
+      "model": "/models/shekua-lite.glb",
+      "bytes": 6091728,
+      "downloadStartedMs": 0,
+      "requestedTransport": "ranges",
+      "transport": "full-fallback",
+      "firstProgressMs": 10,
+      "moduleReadyMs": 29,
+      "downloadFinishedMs": 35,
+      "downloadMs": 35,
+      "events": [
+        {
+          "action": "view:overview",
+          "ms": 126
+        },
+        {
+          "action": "view:top",
+          "ms": 7828
+        },
+        {
+          "action": "layer:场地与道路:false",
+          "ms": 8385
+        },
+        {
+          "action": "restore-all",
+          "ms": 35197
+        },
+        {
+          "action": "view:overview",
+          "ms": 35197
+        },
+        {
+          "action": "close",
+          "ms": 35474
+        },
+        {
+          "action": "disposed",
+          "ms": 35490
+        }
+      ],
+      "outcome": "ready",
+      "parseMs": 76,
+      "renderCount": 7,
+      "maxRenderSubmissionMs": 104,
+      "clickToFirstRenderSubmittedMs": 230,
+      "controlsReadyMs": 230
+    },
+    {
+      "attemptId": 45011.89999997616,
+      "startedAt": "2026-10-01T14:48:15.541Z",
+      "model": "/models/shekua-lite.glb",
+      "bytes": 6091728,
+      "downloadStartedMs": 0,
+      "requestedTransport": "ranges",
+      "moduleReadyMs": 2,
+      "transport": "full-fallback",
+      "firstProgressMs": 8,
+      "downloadFinishedMs": 23,
+      "downloadMs": 23,
+      "events": [
+        {
+          "action": "view:overview",
+          "ms": 91
+        }
+      ],
+      "outcome": "ready",
+      "parseMs": 57,
+      "renderCount": 4,
+      "maxRenderSubmissionMs": 99,
+      "clickToFirstRenderSubmittedMs": 191,
+      "controlsReadyMs": 191
+    }
+  ]
+}

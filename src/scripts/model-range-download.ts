@@ -34,8 +34,8 @@ export async function downloadModelInRanges(
     return buffer;
   }
 
-  async function segment(start: number): Promise<boolean> {
-    const end = Math.min(start + options.chunkBytes, expectedBytes) - 1;
+  async function segment(start: number, size = options.chunkBytes): Promise<boolean> {
+    const end = Math.min(start + size, expectedBytes) - 1;
     const request = new AbortController();
     const abort = () => request.abort(ranges.signal.reason);
     ranges.signal.addEventListener('abort', abort, { once: true });
@@ -61,19 +61,19 @@ export async function downloadModelInRanges(
       }
       const reader = response.body?.getReader();
       if (!reader) throw new ModelDownloadError('network', 'No response stream');
-      const size = full ? expectedBytes : end - start + 1;
+      const responseSize = full ? expectedBytes : end - start + 1;
       let received = 0;
       while (true) {
         const { value, done } = await reader.read();if (done) break;
         request.signal.throwIfAborted();
         if (!value.length) continue;
         touch();
-        if (received + value.length > size) throw incomplete('Range longer than expected');
+        if (received + value.length > responseSize) throw incomplete('Range longer than expected');
         output.set(value, (full ? 0 : start) + received);received += value.length;
         if (full) onProgress(received, expectedBytes, 'full');
       }
       request.signal.throwIfAborted();
-      if (received !== size) throw incomplete('Truncated model range');
+      if (received !== responseSize) throw incomplete('Truncated model range');
       if (!full) { completed += received;onProgress(completed, expectedBytes, 'ranges'); }
       return full;
     } catch (error) {
@@ -88,9 +88,12 @@ export async function downloadModelInRanges(
   try {
     attempt.signal.throwIfAborted();onProgress(0, expectedBytes);
     try {
-      const full = await segment(0);
+      // Only enough data to establish the strong version validator is needed
+      // before opening workers. A full 512 KiB probe delays all parallel work.
+      const probeBytes = Math.min(16 * 1024, options.chunkBytes);
+      const full = await segment(0, probeBytes);
       if (!full) {
-        let next = options.chunkBytes;
+        let next = probeBytes;
         for (let i = 0; i < options.concurrency; i++) workers.push((async () => {
           while (next < expectedBytes) {
             ranges.signal.throwIfAborted();

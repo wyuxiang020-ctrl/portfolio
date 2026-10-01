@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-01T14:49:27.723Z",
+  "scope": "Local intentional HTTP503 on first model request, real browser GLB on retry; no real public outage",
+  "version": "spatial-ux-2026-10-01-parallel-load",
+  "samples": [
+    {
+      "attemptId": 195.60000002384186,
+      "startedAt": "2026-10-01T14:49:19.512Z",
+      "model": "/models/shekua-lite.glb",
+      "bytes": 0,
+      "downloadStartedMs": 0,
+      "requestedTransport": "ranges",
+      "downloadMs": 12,
+      "outcome": "download-failed",
+      "error": "ModelDownloadError: Model HTTP 503",
+      "errorCode": "http",
+      "elapsedMs": 13
+    },
+    {
+      "attemptId": 8145.100000023842,
+      "startedAt": "2026-10-01T14:49:27.462Z",
+      "model": "/models/shekua-lite.glb",
+      "bytes": 6091728,
+      "downloadStartedMs": 0,
+      "requestedTransport": "ranges",
+      "moduleReadyMs": 4,
+      "transport": "full",
+      "firstProgressMs": 27,
+      "downloadFinishedMs": 42,
+      "downloadMs": 42,
+      "events": [
+        {
+          "action": "view:overview",
+          "ms": 123
+        }
+      ],
+      "outcome": "ready",
+      "parseMs": 64,
+      "renderCount": 4,
+      "maxRenderSubmissionMs": 102,
+      "clickToFirstRenderSubmittedMs": 226,
+      "controlsReadyMs": 226
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-01T14:44:04.418Z",
+  "scope": "Node event-controller tests with mocked module and transport; no browser, GPU, real network, device or LLM. Timeline values are deterministic simulation, not observed user improvement.",
+  "passed": 15,
+  "cases": [
+    "idle-timeout: actionable feedback and retry available",
+    "total-timeout: actionable feedback and retry available",
+    "incomplete: actionable feedback and retry available",
+    "cancel during module import prevents mount",
+    "cancel and immediate reopen: stale rejection cannot unlock or overwrite new attempt",
+    "download failure exposes retry",
+    "page navigation aborts in-flight load",
+    "page navigation disposes ready model",
+    "repeated page-load events do not duplicate load handlers",
+    "no preload before click; download starts before module resolves; exact prepared buffer reaches mount once",
+    "deterministic timeline: 40 ms module and 100 ms model overlap; mount at 100 ms vs serial 140 ms (simulation)",
+    "module failure aborts pending download, preserves module error, and allows successful retry",
+    "download failure is visible without waiting for module; late module resolution cannot mount",
+    "cancel during parallel preparation records immediately; reopen ignores stale progress and stale module",
+    "page leave aborts preparation download and prevents late mount"
+  ]
+}
