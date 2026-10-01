@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'meshoptimizer';
+import { downloadModel } from './model-download';
 
 export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal, clickedAt = performance.now()) {
   const measuring = new URLSearchParams(location.search).has('modelTest');
@@ -55,7 +56,6 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal,
     record('disposed');
   }
   pageSignal.addEventListener('abort', dispose, { once: true });
-  const timeout = setTimeout(() => controller.abort(), 90000);
   try {
     root.dataset.modelState = 'loading';
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'low-power' });
@@ -69,23 +69,16 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal,
     const canvas = renderer.domElement;
     canvas.tabIndex = 0;canvas.setAttribute('aria-label', `${root.dataset.modelName || 'ITB'} 建筑三维模型，可旋转、缩放和平移`);
     stage.append(canvas);
-    const response = await fetch(root.dataset.modelUrl!, { signal });
-    if (!response.ok) throw new Error(`Model HTTP ${response.status}`);
-    const length = Number(response.headers.get('content-length'));
-    const chunks: Uint8Array[] = [];let received = 0;
-    const reader = response.body?.getReader();
-    if (!reader) throw new Error('No response stream');
-    while (true) {
-      const { done, value } = await reader.read();if (done) break;
-      chunks.push(value);received += value.length;
+    let received = 0;
+    const data = await downloadModel(root.dataset.modelUrl!, signal, (bytes, length) => {
+      received = bytes;
+      sample.bytes = received;
       status.textContent = length ? `正在加载模型 ${Math.min(100, Math.round(received / length * 100))}%` : `已加载 ${(received / 1048576).toFixed(1)} MB`;
-    }
-    const data = new Uint8Array(received);let offset = 0;
-    for (const chunk of chunks) { data.set(chunk, offset);offset += chunk.length; }
+    }, Number(root.dataset.modelBytes) || 0);
     const downloaded = performance.now();
     sample.downloadMs = Math.round(downloaded - started);sample.bytes = received;save();
     status.textContent = '正在准备建筑几何…';
-    const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(data.buffer, '/models/');
+    const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(data, '/models/');
     model = gltf.scene;
     if (disposed || signal.aborted) { disposeModel(model);throw new Error('Model loading cancelled'); }
     scene.add(model);
@@ -169,6 +162,5 @@ export async function mountITBViewer(root: HTMLElement, pageSignal: AbortSignal,
     sample.outcome = 'ready';sample.controlsReadyMs = Math.round(performance.now() - clickedAt);save();
     root.dataset.loadMetrics = JSON.stringify({ downloadMs: Math.round(downloaded - started), firstRenderSubmittedMs: Math.round(performance.now() - started), bytes: received });
     return dispose;
-  } catch (error) { sample.outcome = pageSignal.aborted ? 'cancelled-or-navigation' : 'failed';sample.error = String(error);save();dispose();throw error; }
-  finally { clearTimeout(timeout); }
+  } catch (error) { sample.outcome = pageSignal.aborted ? 'cancelled-or-navigation' : 'failed';sample.error = String(error);sample.elapsedMs = Math.round(performance.now() - clickedAt);sample.errorCode = (error as { code?: string })?.code;save();dispose();throw error; }
 }

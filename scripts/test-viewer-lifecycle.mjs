@@ -20,6 +20,12 @@ function setup() {
   return {root,nodes,document,imports,mounts};
 }
 const cases=[];
+for (const [code, hint] of [['idle-timeout','45 秒'],['total-timeout','5 分钟'],['incomplete','完整']]) {
+  const x=setup();x.nodes['[data-load]'].click();x.imports.shift()();await tick();
+  x.mounts[0].no(Object.assign(new Error(code),{code}));await tick();
+  assert.ok(x.nodes['.model-status'].textContent.includes(hint));
+  assert.equal(x.nodes['[data-load]'].disabled,false);cases.push(`${code}: actionable feedback and retry available`);
+}
 {
   const x=setup();x.nodes['[data-load]'].click();assert.equal(x.nodes['[data-cancel]'].hidden,false);
   x.nodes['[data-cancel]'].click();assert.equal(x.nodes['[data-load]'].disabled,false);

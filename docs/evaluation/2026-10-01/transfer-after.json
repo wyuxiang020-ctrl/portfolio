@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-01T13:26:58.850Z",
+  "mode": "after",
+  "environment": "Node 24 Windows, local HTTP, real unchanged ITB GLB served in 100 timed chunks. Controlled software test, not real public-network/GLB render/user test. No LLM API or response replay.",
+  "elapsedMs": 101048,
+  "outcome": "complete",
+  "bytes": 6539052,
+  "sha256Matches": true
+}

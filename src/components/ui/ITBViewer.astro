@@ -11,7 +11,7 @@ interface Props {
 const { modelUrl = '/models/itb.glb', modelName = 'ITB', sizeBytes = statSync(resolve('public', modelUrl.slice(1))).size, focusBounds, note = '基于设计模型的交互展示。图层沿用建模文件名称，颜色和材质经过网页适配；完整设计表达请结合前面的图纸与效果图阅读。' } = Astro.props;
 const size = (sizeBytes / 1024 / 1024).toFixed(1);
 ---
-<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-viewer-version="spatial-ux-2026-09-30-r1" data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
+<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-viewer-version="spatial-ux-2026-10-01-r1" data-model-bytes={sizeBytes} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
   <div class="model-heading"><span>空间探索</span><span>{modelName} · 3D</span></div>
   <div class="model-stage">
     <div class="model-canvas"></div>
@@ -52,7 +52,7 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
       const exportButton = root.querySelector<HTMLButtonElement>('[data-export]')!;
       exportButton.hidden = !new URLSearchParams(location.search).has('modelTest');
       exportButton.addEventListener('click', () => {
-        const blob = new Blob([JSON.stringify({ version: 'spatial-ux-2026-09-30-r1', url: location.href, recordedAt: new Date().toISOString(), userAgent: navigator.userAgent, viewport: [innerWidth, innerHeight], network: '未自动判断；请在任务记录中填写 VPN、运营商与 Wi-Fi/移动网络', samples: JSON.parse(root.dataset.modelEvaluation || '[]') }, null, 2)], { type: 'application/json' });
+        const blob = new Blob([JSON.stringify({ version: 'spatial-ux-2026-10-01-r1', url: location.href, recordedAt: new Date().toISOString(), userAgent: navigator.userAgent, viewport: [innerWidth, innerHeight], network: '未自动判断；请在任务记录中填写 VPN、运营商与 Wi-Fi/移动网络', samples: JSON.parse(root.dataset.modelEvaluation || '[]') }, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);const link = document.createElement('a');link.href = url;link.download = `${root.dataset.modelName}-3d-test.json`;link.click();setTimeout(() => URL.revokeObjectURL(url), 1000);
       }, { signal: controller.signal });
       let dispose: (() => void) | undefined;
@@ -73,7 +73,13 @@ const size = (sizeBytes / 1024 / 1024).toFixed(1);
           dispose = await mountITBViewer(root, current.signal, started);
         } catch (error) {
           if (attempt === current && !controller.signal.aborted && !current.signal.aborted) {
-            status.textContent = '模型暂时无法打开，请重试。你也可以继续浏览项目图纸与图片。';
+            const code = (error as { code?: string })?.code;
+            const messages: Record<string, string> = {
+              'idle-timeout': '网络已 45 秒没有收到模型数据。可以重试，或继续阅读图纸与图片。',
+              'total-timeout': '本次模型下载已等待 5 分钟。可以换用更稳定的网络后重试，或继续阅读图纸。',
+              'incomplete': '模型数据没有完整到达，请重新加载。你也可以继续浏览图纸与图片。',
+            };
+            status.textContent = messages[code || ''] || '模型暂时无法打开，请重试。你也可以继续浏览项目图纸与图片。';
             button.textContent = '重新加载模型';
             console.error('Architectural model viewer:', error);
           }

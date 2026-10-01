@@ -1,0 +1,4 @@
+2026-10-01 test harness startup failed before requests: SyntaxError missing ) after argument list.
+Cause: source extraction kept TypeScript non-null assertion in new Function JavaScript.
+Correction: transpile extracted old production fetch body with existing esbuild before invoking it.
+Classification: test harness error, not a website/model failure. No network or model performance result from this attempt.
