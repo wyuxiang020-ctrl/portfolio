@@ -1,13 +1,12 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import ProjectCard from '../../components/work/ProjectCard.astro';
+import ProjectTimeline from '../../components/work/ProjectTimeline.astro';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
-const sorted = projects.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<BaseLayout title="Work" description="Selected architecture projects by Yuxiang Wang, 2023–present.">
+<BaseLayout title="全部项目" description="王誉翔的全部建筑作品，按时间呈现建筑改造、文化遗产与社区空间的设计探索。">
 
   <div class="h-[72px]"></div>
 
@@ -17,18 +16,14 @@ const sorted = projects.sort((a, b) => a.data.order - b.data.order);
       <!-- Page header -->
       <div class="mb-20 md:mb-28 max-w-xl">
         <h1 class="reveal font-serif text-[3.5rem] md:text-[5rem] text-[#1a1a1a] font-light leading-none mb-6">
-          Work
+          全部项目 <span class="text-2xl text-[#737971]">/ {projects.length}</span>
         </h1>
         <p class="reveal text-[#777] text-base leading-relaxed" data-delay="80">
-          Selected projects, 2023 – present. Academic research, live briefs, and design
-          explorations across adaptive reuse, heritage, and community architecture.
+          {projects.length} 个项目，按年份由近及远排列。每一项探索都从具体的场地与生活出发，连接调研、设计推演和空间表达。
         </p>
       </div>
 
-      <!-- Project grid: 2 columns -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-24">
-        {sorted.map((project, i) => <ProjectCard project={project} delay={i * 80} />)}
-      </div>
+      <ProjectTimeline projects={projects} headingLevel="h2" />
 
     </div>
   </section>

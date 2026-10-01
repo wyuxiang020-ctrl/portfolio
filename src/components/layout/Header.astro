@@ -1,8 +1,8 @@
 ---
 const navItems = [
-  { label: 'Work',    href: '/work'    },
-  { label: 'About',   href: '/about'   },
-  { label: 'Contact', href: '/contact' },
+  { label: '全部作品', href: '/work'    },
+  { label: '关于',     href: '/about'   },
+  { label: '联系',     href: '/contact' },
 ];
 
 const path = Astro.url.pathname;
@@ -17,15 +17,15 @@ const path = Astro.url.pathname;
     <!-- Logo -->
     <a
       href="/"
-      class="font-serif text-xl tracking-[0.2em] text-[#1a1a1a] hover:text-accent transition-colors duration-200 select-none"
-      aria-label="Yuxiang Wang — Home"
+      class="font-serif text-lg sm:text-xl tracking-[0.12em] text-[#1a1a1a] hover:text-accent transition-colors duration-200 select-none shrink-0"
+      aria-label="王誉翔 Yuxiang Wang — 首页"
     >
-      YW
+      王誉翔<span lang="en" class="hidden md:inline ml-3 text-[11px] tracking-[0.08em]">Yuxiang Wang</span>
     </a>
 
     <!-- Nav -->
-    <nav aria-label="Main navigation">
-      <ul class="flex items-center gap-8 list-none m-0 p-0">
+    <nav aria-label="主导航">
+      <ul class="flex items-center gap-5 sm:gap-8 list-none m-0 p-0">
         {navItems.map(({ label, href }) => {
           const active = path === href || (href !== '/' && path.startsWith(href));
           return (
@@ -33,9 +33,10 @@ const path = Astro.url.pathname;
               <a
                 href={href}
                 class={[
-                  'nav-link text-[11px] tracking-[0.18em] uppercase font-sans transition-colors duration-200',
+                  'nav-link text-[12px] tracking-[0.08em] font-sans transition-colors duration-200 whitespace-nowrap',
                   active ? 'text-accent nav-active' : 'text-[#1a1a1a] hover:text-accent',
                 ].join(' ')}
+                aria-current={active ? 'page' : undefined}
               >
                 {label}
               </a>

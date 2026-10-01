@@ -1,0 +1,105 @@
+{
+  "version": "portfolio-timeline-2026-10-01",
+  "checkedAt": "2026-10-01T15:53:15.690Z",
+  "environment": {
+    "url": "http://127.0.0.1:4322/",
+    "build": "Astro static production build",
+    "browser": "Codex In-app Browser",
+    "desktopViewport": "1265×714 observed",
+    "narrowViewportRequested": "375×812",
+    "narrowDOMWidth": 360,
+    "network": "local loopback; external hero image rendered; VPN/proxy state not established",
+    "realMobile": false,
+    "humanParticipants": 0,
+    "authorSelfTest": false
+  },
+  "checks": [
+    {
+      "name": "Desktop hero Chinese and English names visible after entrance animation",
+      "result": "pass"
+    },
+    {
+      "name": "Home all-projects link navigates to #all-projects",
+      "result": "pass",
+      "sectionTop": 96.14
+    },
+    {
+      "name": "Seven chronological rows with preserved date ranges",
+      "result": "pass"
+    },
+    {
+      "name": "Three featured images load",
+      "result": "pass",
+      "imageNaturalWidths": [
+        340,
+        340,
+        340
+      ],
+      "projects": [
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary"
+      ]
+    },
+    {
+      "name": "Narrow timeline and hero stable horizontal layout",
+      "result": "pass",
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "name": "Narrow timeline opens hearth project",
+      "result": "pass",
+      "url": "/work/grandmothers-hearth"
+    },
+    {
+      "name": "Hearth metadata contains 王誉翔 Yuxiang Wang · 刘涵 Han Liu",
+      "result": "pass"
+    },
+    {
+      "name": "Hearth top return link opens all-projects page with seven rows",
+      "result": "pass",
+      "url": "/work"
+    },
+    {
+      "name": "Narrow all-projects page stable layout",
+      "result": "pass",
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "name": "Home link restores Chinese-name hero",
+      "result": "pass"
+    }
+  ],
+  "observations": [
+    {
+      "name": "Immediate hero screenshot before entrance animation completed",
+      "result": "text not visible in first capture; later visible, no code change"
+    },
+    {
+      "name": "All-projects page during client navigation",
+      "first": {
+        "clientWidth": 360,
+        "scrollWidth": 375
+      },
+      "settled": {
+        "clientWidth": 360,
+        "scrollWidth": 360
+      },
+      "result": "transient observation, no persistent overflow or claimed fix"
+    },
+    {
+      "name": "viewportReview binding missing on first resize attempt",
+      "result": "tool setup only; bound documented viewport capability and proceeded"
+    }
+  ],
+  "boundaries": {
+    "realDevices": "untested",
+    "readerUsability": "untested",
+    "AIModelCalls": "none",
+    "fixedResponseReplay": "none",
+    "publicBrowserUI": "not part of local evidence",
+    "claimedEfficiencyImprovement": false
+  }
+}
