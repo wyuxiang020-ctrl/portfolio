@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-02T16:58:12.123Z",
+  "kind": "local production HTML checks",
+  "title": "暂驻之间｜临时咖啡馆",
+  "expectedOrder": [
+    "grandmothers-hearth",
+    "hard-hat-cafe",
+    "iterative-learning",
+    "half-diary",
+    "symsensory",
+    "continuation",
+    "gather-living"
+  ],
+  "results": [
+    {
+      "route": "index.html",
+      "checks": {
+        "noOldName": true,
+        "newName": true,
+        "correctVersion": true,
+        "order": true
+      },
+      "pass": true
+    },
+    {
+      "route": "work/index.html",
+      "checks": {
+        "noOldName": true,
+        "newName": true,
+        "correctVersion": true,
+        "order": true
+      },
+      "pass": true
+    },
+    {
+      "route": "work/hard-hat-cafe/index.html",
+      "checks": {
+        "noOldName": true,
+        "newName": true,
+        "correctVersion": true
+      },
+      "pass": true
+    },
+    {
+      "route": "work/grandmothers-hearth/index.html",
+      "checks": {
+        "noOldName": true,
+        "newName": true,
+        "correctVersion": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}
