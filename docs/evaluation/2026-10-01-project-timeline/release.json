@@ -1,0 +1,24 @@
+{
+  "version": "portfolio-timeline-2026-10-01",
+  "commit": "4413e662d28fb975fa8ece04edceeb4681b51cb8",
+  "previousCommit": "3831d5a58d10e21239f5d37e2a6c8efd4ddc1319",
+  "branch": "master",
+  "url": "https://yuxiangworks.com/",
+  "deploymentUrl": "https://vercel.com/yuxiang-wang-s-projects/portfolio/CHNB9gvUPjUoQCj3T4tnPNuRg2Li",
+  "status": "published_and_public_content_verified",
+  "deploymentStartedAt": "2026-10-01T15:54:14Z",
+  "deploymentCompletedAt": "2026-10-01T15:58:13Z",
+  "publicVerifiedAt": "2026-10-01T15:59:54.281Z",
+  "publicPagesVerified": 5,
+  "publicEvidence": "public-release-check.json",
+  "localBrowserEvidence": "browser-checks.json",
+  "staticEvidence": "static-checks.json",
+  "boundaries": {
+    "realPhone": "untested",
+    "readerParticipants": 0,
+    "authorSelfTest": "untested",
+    "mainlandWithoutVPN": "not established",
+    "screenshots": "local production build",
+    "threeD": "unchanged from previous commit"
+  }
+}
