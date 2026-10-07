@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import ProjectTimeline from '../../components/work/ProjectTimeline.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+---
+
+<BaseLayout title="全部项目" description="王誉翔的全部建筑作品，按时间呈现建筑改造、文化遗产与社区空间的设计探索。">
+
+  <div class="h-[72px]"></div>
+
+  <section class="py-16 md:py-24">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+
+      <!-- Page header -->
+      <div class="mb-20 md:mb-28 max-w-xl">
+        <h1 class="reveal font-serif text-[3.5rem] md:text-[5rem] text-[#1a1a1a] font-light leading-none mb-6">
+          全部项目 <span class="text-2xl text-[#737971]">/ {projects.length}</span>
+        </h1>
+        <p class="reveal text-[#777] text-base leading-relaxed" data-delay="80">
+          {projects.length} 个项目，按年份由近及远排列。每一项探索都从具体的场地与生活出发，连接调研、设计推演和空间表达。
+        </p>
+      </div>
+
+      <ProjectTimeline projects={projects} headingLevel="h2" />
+
+    </div>
+  </section>
+
+</BaseLayout>

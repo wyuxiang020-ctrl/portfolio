@@ -1,0 +1,33 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ProjectScreens from '../components/cases/ProjectScreens.astro';
+import EvidencePanel from '../components/cases/EvidencePanel.astro';
+import type { AIProject } from '../data/ai-projects';
+import '../styles/cases.css';
+interface Props { project: AIProject; }
+const { project } = Astro.props;
+---
+<BaseLayout title={project.title + ' · 王誉翔'} description={project.description} wide>
+  <article class={'case-page case-' + project.key} data-gallery-group={project.id}>
+    <header class="case-intro" id="top">
+      <a class="case-back" href="/ai/">← AI 与数字产品</a>
+      <p class="case-kicker">{project.number} / {project.english}</p>
+      <h1>{project.title}<span>{project.subtitle}</span></h1>
+      <p class="case-lead">{project.lead}</p>
+      <p class="case-status">{project.status}</p>
+      <dl class="case-facts"><div><dt>我的角色</dt><dd>{project.role}</dd></div><div><dt>项目时间</dt><dd>{project.period}</dd></div><div><dt>项目范围</dt><dd>{project.scope}</dd></div></dl>
+      <div class="case-entry-links"><a href="#product-view">看产品界面 ↓</a><a href="#evidence">核对证据 ↓</a>{project.repo && <a href={project.repo} target="_blank" rel="noreferrer">项目源码 ↗</a>}</div>
+    </header>
+    <section class="case-overview" id="overview" aria-labelledby="overview-heading">
+      <p class="case-kicker" id="overview-heading">一分钟概览 / AT A GLANCE</p>
+      <div class="overview-grid">{project.summary.map(([name, text]) => <div><h2>{name}</h2><p>{text}</p></div>)}</div>
+    </section>
+    <ProjectScreens project={project.key} />
+    <div class="case-layout" id="full-case">
+      <aside class="case-sidebar"><p class="case-kicker">案例章节</p><nav aria-label="本案例章节">{project.chapters.map(([id, title], i) => <a href={'#' + id}><span>0{i + 1}</span>{title}</a>)}<a href="#evidence"><span>↗</span>证据与源码</a></nav></aside>
+      <div class="case-content"><slot /></div>
+    </div>
+    <EvidencePanel project={project.key} repo={project.repo} />
+    <nav class="case-next" aria-label="继续阅读"><a href="/ai/">← 全部数字产品</a><a href="/architecture/">建筑与空间 →</a><a href="/resume/">完整简历 ↗</a></nav>
+  </article>
+</BaseLayout>

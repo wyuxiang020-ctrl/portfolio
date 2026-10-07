@@ -1,0 +1,11 @@
+* text=auto eol=lf
+# Preserve source and published evidence byte-for-byte for SHA-256 verification.
+public/** -text
+docs/source-snapshots/** -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pdf binary
+*.glb binary
+*.bin binary

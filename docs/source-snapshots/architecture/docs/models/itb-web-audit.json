@@ -1,0 +1,44 @@
+{
+  "outputBytes": 6539052,
+  "workingBytes": 41427860,
+  "simplification": {
+    "layerNames": [
+      "屋顶花园",
+      "Layer0"
+    ],
+    "uniqueCandidateTrianglesBefore": 235217,
+    "uniqueCandidateTrianglesAfter": 223067,
+    "relativeErrorLimit": 0.0005,
+    "lockBorder": true
+  },
+  "nodes": 249,
+  "instances": 8986,
+  "triangles": 2607683,
+  "primitives": 249,
+  "beforeBounds": {
+    "min": [
+      -17.7923583984375,
+      -7.384032800793617,
+      -24.44707489013672
+    ],
+    "max": [
+      17.7923583984375,
+      7.3840328007936815,
+      24.44707489013672
+    ]
+  },
+  "afterBounds": {
+    "min": [
+      -17.7923583984375,
+      -7.38394214812494,
+      -24.44707489013672
+    ],
+    "max": [
+      17.7923583984375,
+      7.384136461462106,
+      24.44707489013672
+    ]
+  },
+  "layerCount": 23,
+  "note": "Draw calls and GPU timing require browser measurement. Bounds are conservative for instances. Textures are basic Rhino bitmaps, not complete Enscape materials."
+}

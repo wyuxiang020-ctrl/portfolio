@@ -1,0 +1,19 @@
+{
+  "scope": "Local HTTP fault proxy software verification, no browser UI. Query separates acceptance from fresh demo path.",
+  "results": [
+    {
+      "attempt": 1,
+      "status": 503,
+      "bytes": 30,
+      "elapsedMs": 50,
+      "sha256Matches": false
+    },
+    {
+      "attempt": 2,
+      "status": 200,
+      "bytes": 6539052,
+      "elapsedMs": 76,
+      "sha256Matches": true
+    }
+  ]
+}

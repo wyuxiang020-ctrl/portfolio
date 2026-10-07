@@ -1,0 +1,6 @@
+---
+import { getCollection } from 'astro:content';
+export async function getStaticPaths(){return (await getCollection('architecture')).map(entry=>({params:{slug:entry.id}}));}
+const destination=`/architecture/${Astro.params.slug}/`;
+---
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><title>项目地址已迁移</title><meta name="robots" content="noindex"/><link rel="canonical" href={`https://yuxiangworks.com${destination}`}/><meta http-equiv="refresh" content={`0;url=${destination}`}/></head><body><a href={destination}>项目地址已迁移，继续阅读 →</a><script is:inline define:vars={{destination}}>location.replace(destination+location.search+location.hash);</script></body></html>

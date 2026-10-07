@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#203d47"/><stop offset="1" stop-color="#10252e"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity=".22"/></filter></defs>
+<rect width="640" height="480" fill="url(#bg)"/>
+<g fill="none" stroke="#69b4aa" stroke-width="2"><path d="M244 199H297V260H354"/><path d="M244 311H277V260"/></g>
+<circle cx="298" cy="260" r="7" fill="#7de0cb"/>
+<g filter="url(#shadow)"><rect x="76" y="89" width="178" height="230" rx="7" fill="#7b9fa3" transform="rotate(-9 165 204)"/><rect x="88" y="103" width="178" height="230" rx="7" fill="#bad0ce" transform="rotate(-4 177 218)"/><rect x="102" y="117" width="178" height="230" rx="7" fill="#e2ece7"/>
+<rect x="125" y="144" width="58" height="9" rx="3" fill="#3f696a"/><path d="M125 178H256M125 196H241M125 214H256M125 258H250M125 276H239M125 294H256M125 312H203" stroke="#99b4b2" stroke-width="5"/><rect x="119" y="224" width="144" height="21" rx="3" fill="#84bcb0"/></g>
+<g filter="url(#shadow)"><rect x="351" y="189" width="206" height="162" rx="10" fill="#dce9e4"/><rect x="372" y="210" width="58" height="20" rx="4" fill="#2e6565"/><text x="401" y="224" text-anchor="middle" fill="#e6f9f1" font-family="Arial,sans-serif" font-size="12">RAG</text><path d="M372 253H532M372 271H513M372 289H497" stroke="#8aa7a6" stroke-width="6"/><rect x="371" y="310" width="38" height="21" rx="4" fill="#94c8bc"/><text x="390" y="325" text-anchor="middle" fill="#244c4b" font-family="Arial,sans-serif" font-size="13">[1]</text></g>
+<text x="105" y="395" fill="#a8c7c6" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">DOCUMENT → EVIDENCE</text>
+</svg>

@@ -1,0 +1,31 @@
+<dialog class="gallery-dialog" aria-label="项目图片浏览" aria-describedby="gallery-caption">
+  <div class="gallery-shell">
+    <div class="gallery-toolbar"><span>图片浏览 <span class="gallery-hint">· 滚轮或方向键切换，点击图片关闭</span></span><div><span class="gallery-count" aria-live="polite"></span><button type="button" class="gallery-close" aria-label="关闭图片浏览">×</button></div></div>
+    <div class="gallery-stage"><img class="gallery-image" alt="" /></div>
+    <div class="gallery-bottom"><div class="gallery-bottom-controls"><button type="button" class="gallery-prev" aria-label="上一张图片">←</button><span class="gallery-status" role="status" aria-live="polite"></span><button type="button" class="gallery-next" aria-label="下一张图片">→</button></div><p id="gallery-caption" class="gallery-caption"></p></div>
+  </div>
+</dialog>
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>('.gallery-dialog')!;
+  const image = dialog.querySelector<HTMLImageElement>('.gallery-image')!;
+  const status = dialog.querySelector<HTMLElement>('.gallery-status')!;
+  const count = dialog.querySelector<HTMLElement>('.gallery-count')!;
+  const caption = dialog.querySelector<HTMLElement>('.gallery-caption')!;
+  const images = [...document.querySelectorAll<HTMLImageElement>('main img[data-full-src], main img[data-gallery]')].filter(img=>!img.closest('a')&&!img.closest('[data-no-gallery]'));
+  let group: HTMLImageElement[] = [], index = 0, opener: HTMLElement | null = null, scrollY = 0, originalOverflow = '', lastWheel = 0, touchX = 0;
+  const label = (img: HTMLImageElement) => img.closest('figure')?.querySelector('figcaption')?.textContent?.trim() || img.getAttribute('alt') || img.nextElementSibling?.textContent?.trim() || '项目图纸与图片';
+  function render() { const active=group[index]; image.src=active.dataset.fullSrc||active.currentSrc||active.src; image.alt=label(active); caption.textContent=label(active); count.textContent=`${index+1}/${group.length}`; status.textContent=index===group.length-1?'后面没有其他图片了':index===0?'第一张图片':''; }
+  function step(delta:number) { const next=index+delta; if(next<0){status.textContent='前面没有其他图片了';return;} if(next>=group.length){status.textContent='后面没有其他图片了';return;} index=next;render(); }
+  function open(img:HTMLImageElement) { opener=img; scrollY=window.scrollY;originalOverflow=document.body.style.overflow; const key=img.closest('[data-gallery-group]'); group=key?images.filter(i=>i.closest('[data-gallery-group]')===key):images; index=group.indexOf(img);render();dialog.showModal();document.body.style.overflow='hidden';dialog.querySelector<HTMLButtonElement>('.gallery-close')!.focus(); }
+  function close(){if(dialog.open)dialog.close();}
+  for(const img of images){img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-haspopup','dialog');img.setAttribute('aria-label',`放大图片：${label(img)}`);img.addEventListener('click',()=>open(img));img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);}});}
+  dialog.querySelector('.gallery-close')!.addEventListener('click',close);image.addEventListener('click',close);
+  dialog.querySelector('.gallery-prev')!.addEventListener('click',()=>step(-1));dialog.querySelector('.gallery-next')!.addEventListener('click',()=>step(1));
+  dialog.addEventListener('close',()=>{document.body.style.overflow=originalOverflow;image.removeAttribute('src');opener?.focus({preventScroll:true});window.scrollTo({top:scrollY,behavior:'instant'});});
+  dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();step(1);}if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();step(-1);}if(e.key==='Home'){e.preventDefault();index=0;render();}if(e.key==='End'){e.preventDefault();index=group.length-1;render();}});
+  dialog.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)<10)return;e.preventDefault();if(Date.now()-lastWheel>240){step(e.deltaY>0?1:-1);lastWheel=Date.now();}},{passive:false});
+  dialog.querySelector('.gallery-stage')!.addEventListener('click',e=>{if(e.target!==image)close();});
+  dialog.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;},{passive:true});
+  dialog.addEventListener('touchend',e=>{const delta=e.changedTouches[0].clientX-touchX;if(Math.abs(delta)>65){e.preventDefault();step(delta<0?1:-1);}},{passive:false});
+  image.addEventListener('error',()=>{status.textContent='图片加载失败，请切换后重试';});
+</script>

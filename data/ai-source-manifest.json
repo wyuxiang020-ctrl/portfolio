@@ -1,0 +1,162 @@
+{
+  "checkedDate": "2026-10-07",
+  "sourceRoot": "E:\\ai作品网站\\portfolio",
+  "handling": "Read-only current worktree import; no original files modified; public resources selectively copied",
+  "files": [
+    {
+      "source": "app/projects/knowledge-copilot/page.tsx",
+      "bytes": 15419,
+      "sha256": "7ac089f89ad708f441cd39504cc1ecee49ee7432d9703a370377dbbd3005b132"
+    },
+    {
+      "source": "app/projects/gym/page.tsx",
+      "bytes": 18078,
+      "sha256": "c29102589f870112c7328e8e99f0d6cc39b77a40af34f3b758f063066c0132be"
+    },
+    {
+      "source": "app/projects/spatial-portfolio/page.tsx",
+      "bytes": 16383,
+      "sha256": "41ae51027ad768799aedfcc929d8ac36519c325620df5c2888907b8ba1af8587"
+    },
+    {
+      "source": "app/components/case-overview.tsx",
+      "bytes": 7526,
+      "sha256": "2cfa379be49fc5dcb613ddc5383b9aaec1bf75119c5814e1ed491dcba3ade418"
+    },
+    {
+      "source": "app/components/case-showcase.tsx",
+      "bytes": 3087,
+      "sha256": "c9f22f395d558bdf42518260023ff05d3c91490250a17e025bda82fd6f16a0c3"
+    },
+    {
+      "source": "app/components/body-visuals.tsx",
+      "bytes": 3667,
+      "sha256": "b21b5dd013b6ebfb4805de1656d5f78ae5c0144936e542fae88ac5cb5b8a01ab"
+    },
+    {
+      "source": "app/components/project-gallery.tsx",
+      "bytes": 2891,
+      "sha256": "ed68c74588c7b1ce1885ae0fb949237293e5df7b65e9b17ff9b2e29e538270ee"
+    },
+    {
+      "source": "app/data/evidence.json",
+      "bytes": 17490,
+      "sha256": "cc5e07de8b2912e2578c6a2447a820d1085aadd1b53e3def5d38afbc1597c9e0"
+    },
+    {
+      "source": "app/data/food-evidence.json",
+      "bytes": 3696,
+      "sha256": "0e5c9274aac0da4ff0975323b69d22362df211d6bdba86e343ba145c0dc65185"
+    },
+    {
+      "source": "public/media/gym-confirm.png",
+      "bytes": 38645,
+      "sha256": "afb8424d387c180a05ccb38f574b26340cc04014481866ff2dd49ef530322661"
+    },
+    {
+      "source": "public/media/gym-import.png",
+      "bytes": 44297,
+      "sha256": "3e759b7f2a2bc3d06ff3c5dbc3ddca04a77370fefa5d5be761b39e9d9c4674de"
+    },
+    {
+      "source": "public/media/gym-meal-summary.png",
+      "bytes": 359527,
+      "sha256": "e8591b41da18fdf820e2fdacaf470d08f819e0c3dddb0f1b366dd759ff18f11e"
+    },
+    {
+      "source": "public/media/gym-partial.png",
+      "bytes": 42628,
+      "sha256": "2b24f35210ca54893838af0780e17e7a14bc4ce46c7ba78fe86c443526cdc528"
+    },
+    {
+      "source": "public/media/gym-plan-hd.png",
+      "bytes": 513147,
+      "sha256": "b59e8cba3c4b8a834e912cfb598697cd14abe0d156a602eb8f2f5dca0da07ca1"
+    },
+    {
+      "source": "public/media/knowledge-answer.png",
+      "bytes": 72762,
+      "sha256": "a4f415b9c0238533030a880065496b02c4700404c7fa0d8e29fcc8af731b91f0"
+    },
+    {
+      "source": "public/media/knowledge-architecture-hd.png",
+      "bytes": 322028,
+      "sha256": "135dc0dc6bfa690b8c4b0f405dd797760d9bd826ee26e77388f81c87422bfe82"
+    },
+    {
+      "source": "public/media/knowledge-chunks.png",
+      "bytes": 60724,
+      "sha256": "7d260f227a33000be2bf4817456217570ae7f9d229be4360fd19a38e4959cbfb"
+    },
+    {
+      "source": "public/media/knowledge-citation.png",
+      "bytes": 81077,
+      "sha256": "9ee55f9a2917053ed2fd83b36c8ca242c5fd392c76c509fca2a63f4d71799a70"
+    },
+    {
+      "source": "public/media/knowledge-library.png",
+      "bytes": 49068,
+      "sha256": "3584677c6ba4cc21a803a648a0d43cbd972452a3f0ce5559bfd6e56877bb7f73"
+    },
+    {
+      "source": "public/media/meal-01-chicken-rice-broccoli.png",
+      "bytes": 2565572,
+      "sha256": "ae60d532ea22a613e96ac2226d12428c93f9db3d2f923dd86ce134d853ca732e"
+    },
+    {
+      "source": "public/media/meal-02-oatmeal-fruit-walnuts.png",
+      "bytes": 2733519,
+      "sha256": "6ad37c60db67dacd74b32912b5538a608e62a03a619beb4e62880307f84a7756"
+    },
+    {
+      "source": "public/media/meal-03-noodles-egg-bokchoy.png",
+      "bytes": 2385328,
+      "sha256": "a7cfe8ee62af5e97b6a1373ff3e132c1ee833672fa74d611f15ad7540bd49431"
+    },
+    {
+      "source": "public/media/meal-04-yogurt-strawberry-granola.png",
+      "bytes": 2407916,
+      "sha256": "040629902cd466f6f696bec66fca9f9f4e6d5f3cfada967f5c9f67b03b1244a0"
+    },
+    {
+      "source": "public/media/spatial-court.png",
+      "bytes": 367781,
+      "sha256": "e4ae223030771a2d8112780794e99a76980196e0ed8d6514c12c8e3ba361c8c0"
+    },
+    {
+      "source": "public/media/spatial-home.png",
+      "bytes": 4604224,
+      "sha256": "0d11abe9dfee7ddaa9cae30fd43ca4633b5c1e2c0421c8fcd5ab5074f34894bb"
+    },
+    {
+      "source": "public/media/spatial-selected.png",
+      "bytes": 1343708,
+      "sha256": "4e03e13a0a14e4c7d3327c1d10678d6e2ad351c1838248a872df7584275b6165"
+    },
+    {
+      "source": "public/evidence/gym-photo-estimates.json",
+      "bytes": 4204,
+      "sha256": "f8c1f83fad72f60c9f3b8d486b2a6755ed6a11f16d9d6f62d669ed6df0dac9e0"
+    },
+    {
+      "source": "public/evidence/gym-workout-r4-review.md",
+      "bytes": 4102,
+      "sha256": "5906520fe6bcceb0396baec63320d00f6cd2cc223091d0d9e546449298942e25"
+    },
+    {
+      "source": "public/evidence/gym-workout-r4.md",
+      "bytes": 3362,
+      "sha256": "ed93c4634132a9ca48f80f1bf94affb8f6949f3c91195876c6a359e85059ca4d"
+    },
+    {
+      "source": "public/evidence/knowledge-phase9.md",
+      "bytes": 7111,
+      "sha256": "933ae9b58deea3ae526db882488f7e595d3f42f096e6d29573b3e4d3d66b8359"
+    },
+    {
+      "source": "public/evidence/spatial-production.md",
+      "bytes": 1965,
+      "sha256": "2ab51b117b768346d860b5bf36f56ba9deded1ec3744a7138be50a1cd0652e39"
+    }
+  ]
+}

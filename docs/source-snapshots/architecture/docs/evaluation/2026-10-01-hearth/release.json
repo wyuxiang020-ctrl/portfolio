@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-01T13:57:34Z",
+  "version": "spatial-ux-2026-10-01-hearth-r2",
+  "git": "b5f14b9eb4ad93e4292d8033c0c6dbc9dce95a67",
+  "deployment": "dpl_F5A5rThQPk8pmgNwDCbX1gprroH5",
+  "deploymentStatus": "success",
+  "environment": "Anonymous curl HTTPS, no cookies, explicit proxy bypass; actual VPN unknown. Pages and script consistency only; full public transfer proof saved separately; not browser/device acceptance.",
+  "checks": [
+    {
+      "url": "https://yuxiangworks.com/work/grandmothers-hearth/?modelTest=1",
+      "status": "200",
+      "bytes": 56234,
+      "seconds": 1.117,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": true,
+      "versionPresent": true,
+      "rangeEnabled": true,
+      "originalHashPresent": true
+    },
+    {
+      "url": "https://yuxiangworks.com/work/iterative-learning/?modelTest=1",
+      "status": "200",
+      "bytes": 52220,
+      "seconds": 1.676,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": true,
+      "versionPresent": true,
+      "rangeEnabled": false,
+      "originalHashPresent": false
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/itb-viewer.D1NUmgDi.js",
+      "status": "200",
+      "bytes": 709327,
+      "seconds": 20.74,
+      "curlExit": 0,
+      "matchesLocalBuild": true
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/ITBViewer.astro_astro_type_script_index_0_lang.BJIeIx5c.js",
+      "status": "200",
+      "bytes": 4166,
+      "seconds": 0.836,
+      "curlExit": 0,
+      "matchesLocalBuild": true
+    }
+  ]
+}

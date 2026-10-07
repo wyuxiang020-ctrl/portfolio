@@ -1,0 +1,185 @@
+{
+  "status": "local_implemented_not_deployed",
+  "checkedDate": "2026-10-07",
+  "canonicalOrigin": "https://yuxiangworks.com",
+  "normalization": "验收无尾斜杠与有尾斜杠地址；正式切换后逐项设置永久重定向",
+  "assetPolicy": "公开的 downloads/evidence/media/images/models 等资源逐项核对，不直接通配全部路径到首页",
+  "fragmentPolicy": "URL 的 #片段不发送给服务器；目标页面保留原锚点。发布时需在真实浏览器抽测跨域跳转后片段仍定位正确，不能仅检查HTTP状态。",
+  "routes": [
+    {
+      "kind": "landing",
+      "from": "https://ai.yuxiangworks.com/",
+      "to": "https://yuxiangworks.com/ai/",
+      "preservedFragments": [
+        "top",
+        "content",
+        "about",
+        "about-title",
+        "projects",
+        "projects-title",
+        "experience",
+        "experience-title",
+        "contact"
+      ],
+      "action": "target_ready_host_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "listing",
+      "from": "https://yuxiangworks.com/work/",
+      "to": "https://yuxiangworks.com/architecture/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "resume",
+      "from": "https://ai.yuxiangworks.com/resume/",
+      "to": "https://yuxiangworks.com/resume/",
+      "action": "target_ready_host_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "download",
+      "from": "https://ai.yuxiangworks.com/downloads/yuxiang-wang-resume.pdf",
+      "to": "https://yuxiangworks.com/downloads/yuxiang-wang-resume.pdf",
+      "action": "target_ready_host_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "ai_case",
+      "title": "建筑项目知识助手",
+      "sourceFile": "E:/ai作品网站/portfolio/app/projects/knowledge-copilot/page.tsx",
+      "from": "https://ai.yuxiangworks.com/projects/knowledge-copilot",
+      "to": "https://yuxiangworks.com/projects/knowledge-copilot/",
+      "preservedFragments": [
+        "top",
+        "overview",
+        "product-view",
+        "full-case",
+        "problem",
+        "experience",
+        "decisions",
+        "architecture",
+        "evaluation",
+        "reflection",
+        "evidence"
+      ],
+      "action": "target_ready_host_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "ai_case",
+      "title": "AI 健身与饮食记录",
+      "sourceFile": "E:/ai作品网站/portfolio/app/projects/gym/page.tsx",
+      "from": "https://ai.yuxiangworks.com/projects/gym",
+      "to": "https://yuxiangworks.com/projects/gym/",
+      "preservedFragments": [
+        "top",
+        "overview",
+        "product-view",
+        "full-case",
+        "problem",
+        "strategy",
+        "photo-nutrition",
+        "architecture",
+        "evaluation",
+        "reflection",
+        "evidence"
+      ],
+      "action": "target_ready_host_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "ai_case",
+      "title": "建筑作品与交互式 3D",
+      "sourceFile": "E:/ai作品网站/portfolio/app/projects/spatial-portfolio/page.tsx",
+      "from": "https://ai.yuxiangworks.com/projects/spatial-portfolio",
+      "to": "https://yuxiangworks.com/projects/spatial-portfolio/",
+      "preservedFragments": [
+        "top",
+        "overview",
+        "product-view",
+        "full-case",
+        "problem",
+        "experience",
+        "decisions",
+        "delivery",
+        "evaluation",
+        "reflection",
+        "evidence"
+      ],
+      "action": "target_ready_host_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "延续与重构 · Continuation and Reconstruction",
+      "sourceFile": "E:/cd portfolio/src/content/projects/continuation.mdx",
+      "from": "https://yuxiangworks.com/work/continuation/",
+      "to": "https://yuxiangworks.com/architecture/continuation/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "「20+」青年集合住宅 · Gather Living",
+      "sourceFile": "E:/cd portfolio/src/content/projects/gather-living.mdx",
+      "from": "https://yuxiangworks.com/work/gather-living/",
+      "to": "https://yuxiangworks.com/architecture/gather-living/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "祖母的火塘 · Grandmother's Hearth",
+      "sourceFile": "E:/cd portfolio/src/content/projects/grandmothers-hearth.mdx",
+      "from": "https://yuxiangworks.com/work/grandmothers-hearth/",
+      "to": "https://yuxiangworks.com/architecture/grandmothers-hearth/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "½ 日记——大院时光 · \"1/2\" Diary — Courtyard Chronicles",
+      "sourceFile": "E:/cd portfolio/src/content/projects/half-diary.mdx",
+      "from": "https://yuxiangworks.com/work/half-diary/",
+      "to": "https://yuxiangworks.com/architecture/half-diary/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "暂驻之间｜临时咖啡馆 · Hard Hat Café",
+      "sourceFile": "E:/cd portfolio/src/content/projects/hard-hat-cafe.mdx",
+      "from": "https://yuxiangworks.com/work/hard-hat-cafe/",
+      "to": "https://yuxiangworks.com/architecture/hard-hat-cafe/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "迭代学习 · The Architecture of Iterative Learning",
+      "sourceFile": "E:/cd portfolio/src/content/projects/iterative-learning.mdx",
+      "from": "https://yuxiangworks.com/work/iterative-learning/",
+      "to": "https://yuxiangworks.com/architecture/iterative-learning/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    },
+    {
+      "kind": "architecture_case",
+      "title": "新五感设计 · SYMSENSORY FIBER REALM",
+      "sourceFile": "E:/cd portfolio/src/content/projects/symsensory.mdx",
+      "from": "https://yuxiangworks.com/work/symsensory/",
+      "to": "https://yuxiangworks.com/architecture/symsensory/",
+      "action": "local_html_compatibility_ready_http_redirect_pending",
+      "localTargetReady": true
+    }
+  ],
+  "localCompatibility": "Eight /work/ HTML compatibility pages preserve query/hash. Real HTTP 301 and old AI hostname redirects are deployment-only and not enabled.",
+  "assetCompatibility": {
+    "preservedAiPublicPaths": true,
+    "extraLegacyMediaManifest": "data/legacy-media-manifest.json",
+    "architectureAssetsManifest": "data/architecture-assets.json",
+    "note": "Known referenced architecture originals retain their paths; unknown historical links require pre-release access-log audit."
+  }
+}

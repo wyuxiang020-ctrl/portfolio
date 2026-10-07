@@ -1,0 +1,46 @@
+{
+  "environment": {
+    "os": "Windows host",
+    "browser": "Codex in-app browser",
+    "cpu": "Unavailable: system query access denied",
+    "gpu": "Unavailable: system query access denied",
+    "network": "localhost, not a public transfer test",
+    "vpn": "unknown",
+    "cache": "not cleared or controlled",
+    "operator": "automated agent, not author or recruited user"
+  },
+  "checks": {
+    "modelVisible": true,
+    "topView": true,
+    "sideView": true,
+    "hideSiteLayer": true,
+    "restoreAll": true,
+    "keyboardZoomChangedCamera": true,
+    "closeState": "closed",
+    "canvasCountAfterClose": 0,
+    "reopenReady": true,
+    "injected503ShowsRetry": true,
+    "retryReady": true
+  },
+  "narrow": {
+    "kind": "desktop viewport simulation, not physical mobile",
+    "requested": [
+      390,
+      844
+    ],
+    "observedDocumentClientWidth": 375,
+    "observedScrollWidth": 375,
+    "horizontalOverflow": false,
+    "touchGestures": "not tested"
+  },
+  "sampleCounts": {
+    "originalInitialLoad": 1,
+    "liteInitialLoad": 1,
+    "liteReopen": 1,
+    "injected503AndRetry": 1
+  },
+  "actualLLMCalls": 0,
+  "fixedAIResponseReplay": false,
+  "humanTests": "not tested",
+  "authorSelfTest": "not tested"
+}

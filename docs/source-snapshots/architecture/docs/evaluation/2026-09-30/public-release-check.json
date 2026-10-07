@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://yuxiangworks.com/",
+    "status": "200",
+    "bytes": 12354,
+    "seconds": 1.453,
+    "curlExit": 0,
+    "versionPresent": false
+  },
+  {
+    "url": "https://yuxiangworks.com/work/iterative-learning/?modelTest=1",
+    "status": "200",
+    "bytes": 52156,
+    "seconds": 2.327,
+    "curlExit": 0,
+    "hasViewer": true,
+    "hasCancel": true,
+    "versionPresent": true
+  },
+  {
+    "url": "https://yuxiangworks.com/work/grandmothers-hearth/?modelTest=1",
+    "status": "200",
+    "bytes": 56084,
+    "seconds": 1.156,
+    "curlExit": 0,
+    "hasViewer": true,
+    "hasCancel": true,
+    "versionPresent": true
+  }
+]

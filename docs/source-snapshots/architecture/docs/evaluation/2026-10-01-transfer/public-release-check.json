@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-01T14:57:55.528Z",
+  "version": "spatial-ux-2026-10-01-parallel-load",
+  "git": "3831d5a58d10e21239f5d37e2a6c8efd4ddc1319",
+  "environment": "Anonymous Node HTTPS GET from current Windows host; no login cookies; VPN/tunnel unknown. Not mainland-direct, physical-device or public browser UI acceptance.",
+  "checks": [
+    {
+      "path": "/work/grandmothers-hearth/?modelTest=1",
+      "status": 200,
+      "ms": 1415,
+      "bytes": 56294,
+      "versionPresent": true,
+      "model": "/models/shekua-lite.glb"
+    },
+    {
+      "path": "/work/iterative-learning/?modelTest=1",
+      "status": 200,
+      "ms": 661,
+      "bytes": 52224,
+      "versionPresent": true,
+      "model": "/models/itb.glb"
+    },
+    {
+      "path": "/_astro/itb-viewer.DqnZTcYy.js",
+      "status": 200,
+      "ms": 3960,
+      "bytes": 704418,
+      "matchesLocalBuild": true
+    },
+    {
+      "path": "/_astro/ITBViewer.astro_astro_type_script_index_0_lang.CB3Ynxc_.js",
+      "status": 200,
+      "ms": 566,
+      "bytes": 10325,
+      "matchesLocalBuild": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import Gallery from '../components/Gallery.astro';
+import { profile } from '../data/profile';
+interface Props { title?: string; description?: string; wide?: boolean; home?: boolean }
+const { title = `${profile.name} · AI 产品与空间实践`, description = `${profile.tagline}。通过知识助手、健身记录与交互式作品集，呈现问题定义、产品决策和验证过程。`, wide = false, home = false } = Astro.props;
+const path = Astro.url.pathname;
+const links = [{href:'/ai/',label:'AI 与数字产品'}, {href:'/architecture/',label:'建筑与空间'}, {href:'/about/',label:'关于'}, {href:'/resume/',label:'简历'}];
+const canonical = new URL(path, Astro.site);
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#11191d" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="zh_CN" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class:list={[{ 'is-home': home, 'is-wide': wide }]}>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <header class="site-header">
+      <a href="/" class="wordmark" aria-label={`${profile.name}，返回首页`}>{profile.enName.split(' ').map(part => part[0]).join('')}<span class="wordmark-dot">.</span><span class="wordmark-name">{profile.name}</span></a>
+      <nav class="desktop-nav" aria-label="主导航">{links.map(link=><a href={link.href} aria-current={path.startsWith(link.href)?'page':undefined}>{link.label}</a>)}<a class="contact-link" href="/contact/">联系 ↗</a></nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">菜单 <span aria-hidden="true">＋</span></button>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="手机导航" hidden>{links.map(link=><a href={link.href} aria-current={path.startsWith(link.href)?'page':undefined}>{link.label}</a>)}<a href="/contact/">联系 ↗</a></nav>
+    </header>
+    <main id="main-content" tabindex="-1"><slot /></main>
+    <footer class="site-footer"><a href="/">{profile.name} <span lang="en">{profile.enName.toUpperCase()}</span></a><p>从空间中的问题，到可以验证的产品。</p><div><a href="/resume/">完整简历 ↗</a><a href="/contact/">联系我 ↗</a><a href="#main-content">回到顶部 ↑</a></div><small>© 2026 {profile.name}</small></footer>
+    <Gallery />
+    <script>
+      const menu = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('#mobile-nav');
+      function closeMenu() { if(menu && nav) { menu.setAttribute('aria-expanded','false'); nav.hidden = true; } }
+      menu?.addEventListener('click',()=>{ const expanded=menu.getAttribute('aria-expanded')==='true'; menu.setAttribute('aria-expanded',String(!expanded)); if(nav) nav.hidden=expanded; });
+      nav?.addEventListener('click',e=>{ if((e.target as HTMLElement).closest('a')) closeMenu(); });
+      document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu?.getAttribute('aria-expanded')==='true'){closeMenu();menu.focus();}});
+      window.matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches) closeMenu();});
+    </script>
+  </body>
+</html>

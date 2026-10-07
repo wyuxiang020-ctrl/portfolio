@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-01",
+  "conditions": "Anonymous curl.exe 8.21.0 on current Windows host; no cookies or API keys; no explicit proxy used (curl proxy_used=0). VPN/tunnel status unknown, so not evidence of mainland China direct access. TLS verified. n=1 per request variant. No model geometry changed. Byte ranges do not prove complete GLB download or browser render.",
+  "head": {
+    "url": "https://yuxiangworks.com/models/shekua.glb",
+    "acceptEncoding": "br, gzip",
+    "status": 200,
+    "contentEncoding": "br",
+    "contentLength": null,
+    "vary": null,
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "cache": "MISS",
+    "edge": "hnd1",
+    "ageSeconds": 0,
+    "observedUtc": "2026-10-01T13:41:20Z"
+  },
+  "ranges": [
+    {
+      "url": "https://yuxiangworks.com/models/shekua.glb",
+      "acceptEncoding": "identity",
+      "requested": "0-262143",
+      "status": 206,
+      "bytes": 262144,
+      "firstByteSeconds": 0.935801,
+      "totalSeconds": 8.530431,
+      "speedBytesPerSecond": 30730,
+      "contentEncoding": null,
+      "contentRange": "bytes 0-262143/23820388",
+      "contentLength": 262144,
+      "cache": "HIT",
+      "ageSeconds": 23,
+      "sha256": "305AAB2766E5DD9EDA475FFABF81F77B94C93A0728FAA86A0C0718157D83A0AE"
+    },
+    {
+      "url": "https://yuxiangworks.com/models/shekua.glb",
+      "acceptEncoding": "br, gzip",
+      "requested": "0-262143",
+      "status": 206,
+      "bytes": 262144,
+      "firstByteSeconds": 1.201533,
+      "totalSeconds": 4.11077,
+      "speedBytesPerSecond": 63770,
+      "contentEncoding": null,
+      "contentRange": "bytes 0-262143/23820388",
+      "contentLength": 262144,
+      "cache": "HIT",
+      "ageSeconds": 58,
+      "sha256": "305AAB2766E5DD9EDA475FFABF81F77B94C93A0728FAA86A0C0718157D83A0AE"
+    },
+    {
+      "url": "https://portfolio-nine-alpha-vjzzxk79fm.vercel.app/models/shekua.glb",
+      "acceptEncoding": "identity",
+      "requested": "0-262143",
+      "status": 0,
+      "bytes": 0,
+      "totalSeconds": 12.013673,
+      "curlExit": 28,
+      "failure": "Connection timed out after 12013 milliseconds"
+    }
+  ],
+  "conclusion": "Range requests are supported and return raw bytes, including when br is accepted. Full HEAD negotiates Brotli. Edge cache is active, but browser Cache-Control requires revalidation. No evidence that bypassing custom domain helps. Small per-request samples cannot establish full-download speed or user success rate."
+}

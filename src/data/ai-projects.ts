@@ -1,0 +1,58 @@
+export const projects = [
+  {
+    id: 'knowledge-copilot', key: 'knowledge', number: '01', title: '建筑项目知识助手',
+    subtitle: '让每个判断，有据可查。',
+    description: '从建筑项目资料中查找、比较与核验答案。把检索、生成和引用分开评估，让产品判断回到证据。',
+    image: '/media/knowledge-answer.png', href: '/projects/knowledge-copilot/', label: 'RAG · 引用追溯 · 评估',
+    english: 'PROJECT KNOWLEDGE COPILOT',
+    lead: '面向建筑与设计团队的 AI 知识助手。用自然语言查找、比较历史项目，并从回答中的引用回到原始资料，核验每个判断的依据。',
+    status: '可运行本地 MVP · 公开在线体验与演示视频尚未提供',
+    role: '产品定义、架构判断、评估与验收', period: '2026.05 — 2026.08，后续持续迭代',
+    scope: '本人主导 · AI 辅助开发', repo: 'https://github.com/wyuxiang020-ctrl/Project-Knowledge-Copilot',
+    summary: [
+      ['问题', '找到相关项目后，仍需判断回答是否有原文支持。'],
+      ['选择', '将检索与生成分开评估；项目均衡未补齐有效证据，因此不设为默认。'],
+      ['结果', '4 道比较题需覆盖 11 次目标项目：目标出现 9/11 → 11/11，有效证据仍为 6/11。'],
+      ['边界', '小样本真实资料测试；不代表企业采用、节省工时或普遍准确率。'],
+    ],
+    chapters: [['problem','问题与洞察'],['experience','核心体验'],['decisions','产品决策'],['architecture','系统设计'],['evaluation','评估证据'],['reflection','复盘与边界']],
+  },
+  {
+    id: 'gym', key: 'gym', number: '02', title: 'AI 健身与饮食记录',
+    subtitle: '让 AI 帮忙，让自己确认。',
+    description: '复用训练计划，解析文字与餐食照片。让 AI 输出成为可编辑草稿，由用户决定哪些内容写入记录。',
+    image: '/media/gym-plan-thumb.webp', href: '/projects/gym/', label: '多模态 · 人工确认 · 评测',
+    english: 'AI FITNESS WORKSPACE / GYM',
+    lead: '一款移动端优先的健身与饮食记录工具。复用训练计划，解析文字与餐食照片，将模型输出变成可修改、可确认的记录。',
+    status: '个人 MVP · 当前为受保护预览，公开体验入口待确认',
+    role: '产品定义、AI 设计、评测与验收', period: '2026.08 — 2026.09 材料，持续迭代',
+    scope: '移动端优先 · 本地记录 PWA', repo: '',
+    summary: [
+      ['问题', '重复填写计划已有信息，补录时又容易把模型猜测写成事实。'],
+      ['选择', '常规记录复用计划；AI 只生成可编辑草稿，用户确认后写入。'],
+      ['结果', '20 条合成解析回归，边界题 6/8 → 8/8；延迟中位数 5.29 → 6.405 秒。'],
+      ['边界', '个人场景与合成 API 测试；尚无真人编辑率、节省时间或留存证据。'],
+    ],
+    chapters: [['problem','背景与问题'],['strategy','产品策略'],['photo-nutrition','照片与营养估算'],['architecture','AI 与人工确认'],['evaluation','评测驱动迭代'],['reflection','交付与复盘']],
+  },
+  {
+    id: 'spatial-portfolio', key: 'spatial', number: '03', title: '交互式建筑作品集',
+    subtitle: '从阅读图纸，到探索空间。',
+    description: '将 PDF 和专业模型转成分层阅读、高清图纸与按需 3D。记录信息架构、资源加载与交互恢复的产品取舍。',
+    image: '/media/spatial-selected-thumb.webp', href: '/projects/spatial-portfolio/', label: '信息架构 · 3D 交互 · AI 辅助开发',
+    english: 'ARCHITECTURE PORTFOLIO & INTERACTIVE 3D',
+    lead: '以真实建筑资料为基础，将 PDF 展示转化为支持分层阅读、高清图纸查看和真实 3D 探索的网站。我负责目标、需求优先级、内容方向与验收要求，借助 Claude Code 和 Codex 持续迭代。',
+    status: '2026.09 已有生产发布记录 · AI 用于开发协作',
+    role: '需求与优先级、内容方向、验收', period: '2026.04 — 至今',
+    scope: '原建筑站 11 个页面、7 个建筑项目', repo: 'https://github.com/wyuxiang020-ctrl/portfolio',
+    summary: [
+      ['问题', '长 PDF 与大型专业模型，让访客难以快速理解设计并深入查看空间。'],
+      ['选择', '内容分层；高清图纸与真实 3D 按需打开，退出后保留阅读位置。'],
+      ['结果', '原建筑站交付 11 个页面、两个模型；2026.09.07 归档生产发布记录。'],
+      ['边界', '这是 AI 辅助开发实践；尚无访客端 AI、真实用户任务测试或完整真机验证。'],
+    ],
+    chapters: [['problem','问题与目标'],['experience','产品体验'],['decisions','关键取舍'],['delivery','实现与协作'],['evaluation','验证证据'],['reflection','边界与下一步']],
+  },
+] as const;
+
+export type AIProject = (typeof projects)[number];

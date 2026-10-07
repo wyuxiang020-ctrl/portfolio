@@ -1,0 +1,167 @@
+{
+  "at": "2026-10-01T14:43:47.830Z",
+  "conditions": "Sequential anonymous public Node fetch samples on same host. VPN/tunnel unknown. No network emulation; uncontrolled live network. Full request advertises br,gzip like a modern HTTPS browser. Not user efficiency or physical mobile testing.",
+  "samples": [
+    {
+      "mode": "ranges",
+      "requests": [
+        {
+          "range": "bytes=0-16383",
+          "startMs": 10,
+          "status": 206,
+          "headerMs": 776,
+          "encoding": null,
+          "length": "16384",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=16384-540671",
+          "startMs": 778,
+          "status": 206,
+          "headerMs": 1312,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=540672-1064959",
+          "startMs": 779,
+          "status": 206,
+          "headerMs": 1601,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=1064960-1589247",
+          "startMs": 780,
+          "status": 206,
+          "headerMs": 1396,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=1589248-2113535",
+          "startMs": 780,
+          "status": 206,
+          "headerMs": 1311,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=2113536-2637823",
+          "startMs": 10287,
+          "status": 206,
+          "headerMs": 11040,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=2637824-3162111",
+          "startMs": 11823,
+          "status": 206,
+          "headerMs": 11923,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=3162112-3686399",
+          "startMs": 21385,
+          "status": 206,
+          "headerMs": 23133,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=3686400-4210687",
+          "startMs": 23644,
+          "status": 206,
+          "headerMs": 23807,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=4210688-4734975",
+          "startMs": 25685,
+          "status": 206,
+          "headerMs": 25791,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=4734976-5259263",
+          "startMs": 34883,
+          "status": 206,
+          "headerMs": 35665,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=5259264-5783551",
+          "startMs": 40115,
+          "status": 206,
+          "headerMs": 40745,
+          "encoding": null,
+          "length": "524288",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        },
+        {
+          "range": "bytes=5783552-6091727",
+          "startMs": 45850,
+          "status": 206,
+          "headerMs": 47437,
+          "encoding": null,
+          "length": "308176",
+          "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+          "cache": "HIT"
+        }
+      ],
+      "progress": [
+        {
+          "ms": 10287,
+          "received": 540672
+        },
+        {
+          "ms": 21384,
+          "received": 1589248
+        },
+        {
+          "ms": 34883,
+          "received": 3162112
+        },
+        {
+          "ms": 45850,
+          "received": 4210688
+        },
+        {
+          "ms": 56279,
+          "received": 5783552
+        }
+      ],
+      "result": "complete",
+      "ms": 62026,
+      "decodedBytes": 6091728,
+      "hashMatches": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-30T14:09:30.723Z",
+  "scope": "Node event-controller tests with mocked loader; not browser, WebGL or physical device",
+  "passed": 6,
+  "cases": [
+    "cancel during module import prevents mount",
+    "cancel and immediate reopen: stale rejection cannot unlock or overwrite new attempt",
+    "download failure exposes retry",
+    "page navigation aborts in-flight load",
+    "page navigation disposes ready model",
+    "repeated page-load events do not duplicate load handlers"
+  ]
+}

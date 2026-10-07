@@ -1,0 +1,157 @@
+---
+import { statSync, readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { resolve } from 'node:path';
+interface Props {
+  modelUrl?: string;
+  modelName?: string;
+  sizeBytes?: number;
+  focusBounds?: number[];
+  note?: string;
+  transport?: 'single' | 'ranges';
+}
+const { modelUrl = '/models/itb.glb', modelName = 'ITB', transport = 'single', sizeBytes = statSync(resolve('public', modelUrl.slice(1))).size, focusBounds, note = '基于设计模型的交互展示。图层沿用建模文件名称，颜色和材质经过网页适配；完整设计表达请结合前面的图纸与效果图阅读。' } = Astro.props;
+const modelHash = transport === 'ranges' ? createHash('sha256').update(readFileSync(resolve('public', modelUrl.slice(1)))).digest('hex') : undefined;
+const size = (sizeBytes / 1024 / 1024).toFixed(1);
+---
+<section class="itb-viewer" aria-label={`${modelName} 交互建筑模型`} data-viewer-version="spatial-ux-2026-10-01-parallel-load" data-model-transport={transport} data-model-sha256={modelHash} data-model-bytes={sizeBytes} data-model-url={modelUrl} data-model-name={modelName} data-focus-bounds={focusBounds ? JSON.stringify(focusBounds) : undefined}>
+  <div class="model-heading"><span>空间探索</span><span>{modelName} · 3D</span></div>
+  <div class="model-stage">
+    <div class="model-canvas"></div>
+    <div class="model-intro">
+      <p class="model-title">从另一个角度，理解这栋建筑。</p>
+      <p>旋转查看建筑、切换视角，或暂时隐藏部分图层。</p>
+      <button type="button" data-load>打开 3D 模型 · {size} MB</button>
+      <button type="button" data-cancel hidden>取消加载，继续阅读</button>
+    </div>
+    <p class="model-status" role="status" aria-live="polite"></p>
+  </div>
+  <div class="model-tools" hidden>
+    <div class="model-views" role="group" aria-label="预设视角">
+      <button type="button" data-view="overview">总览</button>
+      <button type="button" data-view="top">俯视</button>
+      <button type="button" data-view="front">正面</button>
+      <button type="button" data-view="side">侧面</button>
+      {focusBounds && <button type="button" data-view="site">完整场地</button>}
+      <button type="button" data-reset>恢复全部图层与总览</button>
+    </div>
+    <details class="model-layers"><summary>显示／隐藏构件（取消勾选以隐藏）</summary><div data-layers></div></details>
+    <p class="model-help">拖动旋转 · 滚轮缩放 · 右键拖动平移<br />触屏：单指旋转，双指缩放或平移。聚焦模型后可用方向键平移、＋／－缩放。</p>
+    <button type="button" class="model-exit" data-unload>关闭模型</button>
+  </div>
+  <p class="model-note">{note}</p>
+  <button type="button" data-export hidden>下载本次测试记录</button>
+</section>
+<script>
+  import { prepareModel, type ModelPreparationMetrics } from '../../scripts/model-preparation';
+  const setups = new Map<HTMLElement, () => void>();
+  function setup() {
+    document.querySelectorAll<HTMLElement>('.itb-viewer').forEach(root => {
+      if (setups.has(root) || root.dataset.viewerBound === 'true') return;
+      root.dataset.viewerBound = 'true';
+      const controller = new AbortController();
+      const button = root.querySelector<HTMLButtonElement>('[data-load]')!;
+      const status = root.querySelector<HTMLElement>('.model-status')!;
+      const cancel = root.querySelector<HTMLButtonElement>('[data-cancel]')!;
+      const exportButton = root.querySelector<HTMLButtonElement>('[data-export]')!;
+      exportButton.hidden = !new URLSearchParams(location.search).has('modelTest');
+      exportButton.addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify({ version: 'spatial-ux-2026-10-01-parallel-load', url: location.href, recordedAt: new Date().toISOString(), userAgent: navigator.userAgent, viewport: [innerWidth, innerHeight], network: '未自动判断；请在任务记录中填写 VPN、运营商与 Wi-Fi/移动网络', samples: JSON.parse(root.dataset.modelEvaluation || '[]') }, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);const link = document.createElement('a');link.href = url;link.download = `${root.dataset.modelName}-3d-test.json`;link.click();setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }, { signal: controller.signal });
+      let dispose: (() => void) | undefined;
+      let attempt: AbortController | undefined;
+      cancel.addEventListener('click', () => { attempt?.abort();busy = false;button.disabled = false;cancel.hidden = true;root.dataset.modelState = 'closed';status.textContent = '已取消加载，可以继续阅读。'; }, { signal: controller.signal });
+      let busy = false;
+      button.addEventListener('click', async () => {
+        if (busy) return;
+        busy = true; button.disabled = true;cancel.hidden = false;root.dataset.modelState = 'loading'; status.textContent = '正在准备模型…';
+        attempt = new AbortController();const started = performance.now();
+        let mountStarted = false;
+        const current = attempt;
+        // Separate transfer cancellation from user cancellation so module errors keep their real cause.
+        const transfer = new AbortController();
+        const metrics: ModelPreparationMetrics = { bytes: 0 };
+        let failurePhase = 'preparation';
+        let cancelWait: (reason?: unknown) => void;
+        const cancelled = new Promise<never>((_, reject) => { cancelWait = reject; });
+        const stop = () => { transfer.abort(current.signal.reason);cancelWait(current.signal.reason); };
+        current.signal.addEventListener('abort', stop, { once: true });
+        const abort = () => current.abort();controller.signal.addEventListener('abort', abort, { once: true });
+        try {
+          const asset = prepareModel(root.dataset, transfer.signal, (received, length) => {
+            if (attempt !== current || current.signal.aborted) return;
+            status.textContent = length ? `正在加载模型 ${Math.min(100, Math.round(received / length * 100))}%` : `已加载 ${(received / 1048576).toFixed(1)} MB`;
+          }, started, metrics).then(value => {
+            if (attempt === current && !current.signal.aborted && metrics.moduleReadyMs === undefined) status.textContent = '模型已下载，正在准备查看器…';
+            return value;
+          }, error => { if (failurePhase === 'preparation') failurePhase = 'download';throw error; });
+          const viewer = import('../../scripts/itb-viewer').then(value => {
+            metrics.moduleReadyMs = Math.round(performance.now() - started);return value;
+          }, error => { if (failurePhase === 'preparation') failurePhase = 'module';throw error; });
+          // Promise.all observes both rejections immediately; cancellation need not wait for an import.
+          const [{ mountITBViewer }, prepared] = await Promise.race([Promise.all([viewer, asset]), cancelled]);
+          if (current.signal.aborted) return;
+          mountStarted = true;
+          dispose = await mountITBViewer(root, current.signal, started, prepared);
+        } catch (error) {
+          transfer.abort(error);
+          if (!mountStarted && attempt === current) root.dataset.modelState = 'closed';
+          if (attempt === current && !controller.signal.aborted && !current.signal.aborted) {
+            const code = (error as { code?: string })?.code;
+            const messages: Record<string, string> = {
+              'idle-timeout': '网络已 45 秒没有收到模型数据。可以重试，或继续阅读图纸与图片。',
+              'total-timeout': '本次模型下载已等待 5 分钟。可以换用更稳定的网络后重试，或继续阅读图纸。',
+              'incomplete': '模型数据没有完整到达，请重新加载。你也可以继续浏览图纸与图片。',
+            };
+            status.textContent = messages[code || ''] || '模型暂时无法打开，请重试。你也可以继续浏览项目图纸与图片。';
+            button.textContent = '重新加载模型';
+            console.error('Architectural model viewer:', error);
+          }
+          if (!mountStarted && !exportButton.hidden) {
+            const samples = JSON.parse(root.dataset.modelEvaluation || '[]');
+            samples.push({ attemptId: started, startedAt: new Date(Date.now() - (performance.now() - started)).toISOString(), model: root.dataset.modelUrl, ...metrics, outcome: current.signal.aborted ? 'cancelled-before-mount' : `${failurePhase}-failed`, error: String(error), errorCode: (error as { code?: string })?.code, elapsedMs: Math.round(performance.now() - started) });
+            root.dataset.modelEvaluation = JSON.stringify(samples.slice(-20));
+          }
+        } finally {
+          controller.signal.removeEventListener('abort', abort);
+          current.signal.removeEventListener('abort', stop);transfer.abort();
+          if (attempt === current) { busy = false;button.disabled = false;cancel.hidden = true;if (current.signal.aborted && !controller.signal.aborted) status.textContent = '已取消加载，可以继续阅读。'; }
+        }
+      }, { signal: controller.signal });
+      setups.set(root, () => { controller.abort();attempt?.abort(); dispose?.(); delete root.dataset.viewerBound; });
+    });
+  }
+  document.addEventListener('astro:page-load', setup);
+  document.addEventListener('astro:before-swap', () => { setups.forEach(dispose => dispose()); setups.clear(); });
+  setup();
+</script>
+<style>
+  .itb-viewer { margin:3rem 0; border:1px solid #d4d0c6; background:#f4f2ed; color:#363b38; }
+  .model-heading { display:flex;justify-content:space-between;padding:1rem 1.2rem;font-size:.75rem;letter-spacing:.12em;border-bottom:1px solid #dedad1; }
+  .model-stage { position:relative;height:480px;isolation:isolate; }
+  .model-canvas { position:absolute;inset:0;overflow:hidden; }
+  .model-canvas :global(canvas) { display:block;width:100%;height:100%;touch-action:none; }
+  .model-canvas :global(canvas:focus-visible) { outline:2px solid #67765a;outline-offset:-3px; }
+  .model-intro { position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:2rem;text-align:center;background:radial-gradient(ellipse at center,#e7e9df,#f4f2ed 75%); }
+  .model-intro p { font-size:.85rem;line-height:1.8; }
+  .model-intro .model-title { font-size:1.3rem;margin-bottom:.5rem; }
+  .itb-viewer button { border:1px solid #babfb3;padding:.5rem .85rem;cursor:pointer;background:transparent;font:inherit;font-size:.8rem;line-height:1.5;color:inherit;min-height:44px; }
+  .itb-viewer button:hover,.itb-viewer button:focus-visible { background:#dde3d5; }
+  .itb-viewer button:disabled { opacity:.5;cursor:wait; }
+  .model-intro button { margin-top:1rem;background:#344335;color:#fff;border-color:#344335; }
+  .model-status { position:absolute;bottom:.65rem;left:1rem;right:1rem;text-align:center;font-size:.75rem;pointer-events:none;background:#f4f2eddd; }
+  .model-status:empty { display:none; }
+  .model-tools { padding:1rem;border-top:1px solid #dedad1; }
+  .model-views { display:flex;gap:.4rem;flex-wrap:wrap; }
+  .model-layers { margin-top:1rem; }
+  .itb-viewer .model-layers { border:0;padding:0; }
+  .itb-viewer .model-layers summary { cursor:pointer;font-size:.85rem;padding:.5rem 0;color:#363b38;opacity:1; }
+  [data-layers] { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem .7rem;margin:.6rem 0;max-height:250px;overflow:auto; }
+  [data-layers] :global(label) { font-size:.75rem;display:flex;gap:.5rem;align-items:center;min-height:44px;overflow-wrap:anywhere; }
+  .model-help,.model-note { font-size:.72rem!important;line-height:1.8;opacity:.8; }
+  .model-help { margin:.8rem 0; }
+  .model-note { padding:.8rem 1.2rem;margin:0!important;border-top:1px solid #dedad1; }
+  [hidden] { display:none!important; }
+  @media(max-width:600px) { .model-stage { height:360px; } .model-intro { padding:1rem; } .model-intro .model-title { font-size:1.1rem; } }
+</style>

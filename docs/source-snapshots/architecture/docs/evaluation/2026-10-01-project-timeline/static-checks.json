@@ -1,0 +1,621 @@
+{
+  "recordedAt": "2026-10-01T15:52:01.694Z",
+  "kind": "automated_static_production_html_checks",
+  "scope": "parse5 inspection of the current local dist build and read-only Git/source comparison",
+  "version": "portfolio-timeline-2026-10-01",
+  "baselineCommit": "3831d5a58d10e21239f5d37e2a6c8efd4ddc1319",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.16.0",
+    "network": "not used",
+    "browser": "not used",
+    "humanParticipants": 0,
+    "realDevice": "not tested"
+  },
+  "limitations": [
+    "Static checks do not execute JavaScript, render layout, measure performance, verify live deployment, or establish user outcomes.",
+    "Same-year ordering follows the existing editorial order; exact completion months are not asserted.",
+    "3D unchanged verification compares tracked sources and model assets with HEAD; it does not re-test runtime model interactions."
+  ],
+  "durationMs": 1405,
+  "summary": {
+    "passed": 85,
+    "failed": 0,
+    "total": 85
+  },
+  "checks": [
+    {
+      "name": "production_html_page_count",
+      "status": "pass",
+      "expected": 11,
+      "actual": 11,
+      "pages": [
+        "about/index.html",
+        "contact/index.html",
+        "index.html",
+        "work/continuation/index.html",
+        "work/gather-living/index.html",
+        "work/grandmothers-hearth/index.html",
+        "work/half-diary/index.html",
+        "work/hard-hat-cafe/index.html",
+        "work/index.html",
+        "work/iterative-learning/index.html",
+        "work/symsensory/index.html"
+      ]
+    },
+    {
+      "name": "about/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "about/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "about/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "关于 — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "about/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "about/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "contact/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "contact/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "contact/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "Contact — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "contact/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "contact/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "index.html: branded_document_title",
+      "status": "pass",
+      "actual": "王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/continuation/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/continuation/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/continuation/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "延续与重构 · Continuation and Reconstruction — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/continuation/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/continuation/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/gather-living/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/gather-living/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/gather-living/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "「20+」青年集合住宅 · Gather Living — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/gather-living/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/gather-living/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/grandmothers-hearth/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/grandmothers-hearth/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/grandmothers-hearth/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "祖母的火塘 · Grandmother's Hearth — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/grandmothers-hearth/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/grandmothers-hearth/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/ITBViewer.astro_astro_type_script_index_0_lang.CB3Ynxc_.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/half-diary/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/half-diary/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/half-diary/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "½ 日记——大院时光 · \"1/2\" Diary — Courtyard Chronicles — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/half-diary/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/half-diary/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/hard-hat-cafe/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/hard-hat-cafe/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/hard-hat-cafe/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "安全帽咖啡馆 · Hard Hat Café — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/hard-hat-cafe/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/hard-hat-cafe/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "全部项目 — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/iterative-learning/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/iterative-learning/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/iterative-learning/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "迭代学习 · The Architecture of Iterative Learning — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/iterative-learning/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/iterative-learning/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/ITBViewer.astro_astro_type_script_index_0_lang.CB3Ynxc_.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "work/symsensory/index.html: chinese_document_language",
+      "status": "pass",
+      "actual": "zh-CN"
+    },
+    {
+      "name": "work/symsensory/index.html: visible_chinese_identity",
+      "status": "pass",
+      "headerText": "王誉翔Yuxiang Wang 全部作品 关于 联系"
+    },
+    {
+      "name": "work/symsensory/index.html: branded_document_title",
+      "status": "pass",
+      "actual": "新五感设计 · SYMSENSORY FIBER REALM — 王誉翔 Yuxiang Wang｜Architecture"
+    },
+    {
+      "name": "work/symsensory/index.html: version",
+      "status": "pass",
+      "actual": "portfolio-timeline-2026-10-01"
+    },
+    {
+      "name": "work/symsensory/index.html: local_script_links_exist",
+      "status": "pass",
+      "scripts": [
+        "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+        "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js"
+      ]
+    },
+    {
+      "name": "index.html: exactly_seven_timeline_projects",
+      "status": "pass",
+      "actual": 7
+    },
+    {
+      "name": "index.html: timeline_order",
+      "status": "pass",
+      "expected": [
+        "hard-hat-cafe",
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary",
+        "symsensory",
+        "continuation",
+        "gather-living"
+      ],
+      "actual": [
+        "hard-hat-cafe",
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary",
+        "symsensory",
+        "continuation",
+        "gather-living"
+      ]
+    },
+    {
+      "name": "index.html: descriptions_and_date_ranges_match_source",
+      "status": "pass",
+      "dates": [
+        {
+          "project": "hard-hat-cafe",
+          "year": "2026"
+        },
+        {
+          "project": "grandmothers-hearth",
+          "year": "2026"
+        },
+        {
+          "project": "iterative-learning",
+          "year": "2025–2026"
+        },
+        {
+          "project": "half-diary",
+          "year": "2024–2025"
+        },
+        {
+          "project": "symsensory",
+          "year": "2024"
+        },
+        {
+          "project": "continuation",
+          "year": "2023"
+        },
+        {
+          "project": "gather-living",
+          "year": "2023"
+        }
+      ]
+    },
+    {
+      "name": "index.html: timeline_heading_level",
+      "status": "pass",
+      "expected": "h3"
+    },
+    {
+      "name": "index.html: all_timeline_entries_are_links",
+      "status": "pass"
+    },
+    {
+      "name": "work/index.html: exactly_seven_timeline_projects",
+      "status": "pass",
+      "actual": 7
+    },
+    {
+      "name": "work/index.html: timeline_order",
+      "status": "pass",
+      "expected": [
+        "hard-hat-cafe",
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary",
+        "symsensory",
+        "continuation",
+        "gather-living"
+      ],
+      "actual": [
+        "hard-hat-cafe",
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary",
+        "symsensory",
+        "continuation",
+        "gather-living"
+      ]
+    },
+    {
+      "name": "work/index.html: descriptions_and_date_ranges_match_source",
+      "status": "pass",
+      "dates": [
+        {
+          "project": "hard-hat-cafe",
+          "year": "2026"
+        },
+        {
+          "project": "grandmothers-hearth",
+          "year": "2026"
+        },
+        {
+          "project": "iterative-learning",
+          "year": "2025–2026"
+        },
+        {
+          "project": "half-diary",
+          "year": "2024–2025"
+        },
+        {
+          "project": "symsensory",
+          "year": "2024"
+        },
+        {
+          "project": "continuation",
+          "year": "2023"
+        },
+        {
+          "project": "gather-living",
+          "year": "2023"
+        }
+      ]
+    },
+    {
+      "name": "work/index.html: timeline_heading_level",
+      "status": "pass",
+      "expected": "h2"
+    },
+    {
+      "name": "work/index.html: all_timeline_entries_are_links",
+      "status": "pass"
+    },
+    {
+      "name": "home_and_work_timeline_orders_match",
+      "status": "pass"
+    },
+    {
+      "name": "homepage_exact_featured_projects",
+      "status": "pass",
+      "expected": [
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary"
+      ],
+      "actual": [
+        "grandmothers-hearth",
+        "iterative-learning",
+        "half-diary"
+      ]
+    },
+    {
+      "name": "homepage_chinese_name_in_primary_heading",
+      "status": "pass",
+      "heading": "王誉翔 Yuxiang Wang"
+    },
+    {
+      "name": "homepage_all_projects_anchor_exists",
+      "status": "pass"
+    },
+    {
+      "name": "homepage_explicit_total_project_count",
+      "status": "pass"
+    },
+    {
+      "name": "hard-hat-cafe: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/hard-hat-cafe/"
+    },
+    {
+      "name": "grandmothers-hearth: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/grandmothers-hearth/"
+    },
+    {
+      "name": "iterative-learning: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/iterative-learning/"
+    },
+    {
+      "name": "half-diary: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/half-diary/"
+    },
+    {
+      "name": "symsensory: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/symsensory/"
+    },
+    {
+      "name": "continuation: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/continuation/"
+    },
+    {
+      "name": "gather-living: project_deep_link_exists",
+      "status": "pass",
+      "route": "/work/gather-living/"
+    },
+    {
+      "name": "grandmothers-hearth: front_collaborator_credit",
+      "status": "pass",
+      "actual": "合作署名 王誉翔 Yuxiang Wang · 刘涵 Han Liu"
+    },
+    {
+      "name": "grandmothers-hearth: closing_collaborator_credit",
+      "status": "pass",
+      "actual": "项目合作：王誉翔 Yuxiang Wang · 刘涵 Han Liu。图文整合自前期研究与 2026 年 5—8 月成果作品集；页面展示设计方案、实体模型与效果图。"
+    },
+    {
+      "name": "iterative-learning: front_collaborator_credit",
+      "status": "pass",
+      "actual": "合作署名 王誉翔 Yuxiang Wang · 刘涵 Han Liu"
+    },
+    {
+      "name": "iterative-learning: closing_collaborator_credit",
+      "status": "pass",
+      "actual": "项目协作：王誉翔 Yuxiang Wang · 刘涵 Han Liu。作品集指导教师：Gareth Puttock，Manchester School of Architecture。前期研究页中的外部案例保留原有标注，作为设计参考展示。"
+    },
+    {
+      "name": "hero_image_url_unchanged_from_head",
+      "status": "pass",
+      "head": "3831d5a58d10e21239f5d37e2a6c8efd4ddc1319",
+      "expected": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2400&q=85",
+      "actual": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2400&q=85"
+    },
+    {
+      "name": "no_3d_viewer_script_or_model_changes",
+      "status": "pass",
+      "trackedChanges": [],
+      "untrackedChanges": [],
+      "paths": [
+        "src/components/ui/ITBViewer.astro",
+        "src/scripts",
+        "public/models"
+      ]
+    },
+    {
+      "name": "no_added_or_changed_astro_script_blocks",
+      "status": "pass",
+      "inspectedFiles": [
+        "src/components/home/FeaturedProjects.astro",
+        "src/components/home/Hero.astro",
+        "src/components/layout/BaseLayout.astro",
+        "src/components/layout/Footer.astro",
+        "src/components/layout/Header.astro",
+        "src/components/project/ProjectMeta.astro",
+        "src/components/project/ProjectNav.astro",
+        "src/layouts/ProjectLayout.astro",
+        "src/pages/about.astro",
+        "src/pages/index.astro",
+        "src/pages/work/[slug].astro",
+        "src/pages/work/index.astro",
+        "src/components/work/ProjectTimeline.astro"
+      ],
+      "scriptChanges": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+import evidence from '../../data/ai-evidence.json';
+interface Props { project: string; repo: string; }
+const { project, repo } = Astro.props;
+const items = evidence.filter(item => item.project === project);
+---
+<section class="evidence-panel" id="evidence" aria-labelledby="evidence-heading">
+  <p class="case-kicker">证据与技术附录 / EVIDENCE</p>
+  <h2 id="evidence-heading">结论，可以回到记录。</h2>
+  <p>以下为已有项目记录的归档或节选。此次网站合并保留文件与结论，未重新运行模型评测；原始运行、定向复测和用户验证分别说明。</p>
+  {repo && <p><a href={repo} target="_blank" rel="noreferrer">查看项目源码与技术文档 ↗</a></p>}
+  {project === 'gym' && <p><a href="/evidence/gym-photo-estimates.json" download>下载照片营养估算 · FP-01–FP-04 数据节选 ↓</a></p>}
+  <div class="evidence-list">{items.map(item => <article>
+    <span class="evidence-type">{item.type}</span><h3>{item.title}</h3><p>{item.note}</p>
+    <details><summary>阅读完整归档{item.excerpt ? '节选' : ''}</summary><pre>{item.content}</pre></details>
+    <a href={'/evidence/' + item.file} download>下载记录 · Markdown ↓</a>
+  </article>)}</div>
+  <p class="method-note">原归档日期：2026.09.07；合并日期：2026.10.07。下载文件附原始来源与 SHA-256，便于核对文件对应关系，哈希不构成独立验证。技术指标与供应商配置描述均为项目记录当时的状态。</p>
+</section>

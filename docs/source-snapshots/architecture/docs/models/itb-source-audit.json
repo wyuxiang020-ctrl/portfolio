@@ -1,0 +1,1560 @@
+{
+  "source": "E:\\ITB\\ITB最终细化.3dm",
+  "source_bytes": 158640942,
+  "rhino3dm_version": "8.32.2",
+  "archive_version": 80,
+  "units": "UnitSystem.Meters",
+  "read_and_inspect_seconds": 2.45,
+  "objects_including_block_members": 9008,
+  "geometry_types": {
+    "ArcCurve": 21,
+    "LineCurve": 345,
+    "PolyCurve": 29,
+    "Mesh": 1701,
+    "InstanceReference": 2323,
+    "Brep": 4138,
+    "GeometryBase": 4,
+    "NurbsCurve": 41,
+    "PolylineCurve": 312,
+    "Extrusion": 92,
+    "Hatch": 2
+  },
+  "top_level_objects": 8591,
+  "visible_top_level_objects": 4184,
+  "layers": [
+    {
+      "index": 33,
+      "name": "屋顶花园",
+      "visible": true,
+      "top_level_objects": 984,
+      "visible_top_level_objects": 322,
+      "types": {
+        "GeometryBase": 1,
+        "Brep": 296,
+        "PolylineCurve": 43,
+        "Extrusion": 2,
+        "PolyCurve": 3,
+        "InstanceReference": 373,
+        "Mesh": 266
+      },
+      "visible_root_cached_triangles": 1239627,
+      "expanded_cached_triangles": 4392142
+    },
+    {
+      "index": 30,
+      "name": "Layer0",
+      "visible": true,
+      "top_level_objects": 2276,
+      "visible_top_level_objects": 1062,
+      "types": {
+        "InstanceReference": 1596,
+        "Mesh": 680
+      },
+      "visible_root_cached_triangles": 895336,
+      "expanded_cached_triangles": 1934598
+    },
+    {
+      "index": 26,
+      "name": "拱形屋顶",
+      "visible": true,
+      "top_level_objects": 654,
+      "visible_top_level_objects": 295,
+      "types": {
+        "Brep": 595,
+        "PolylineCurve": 33,
+        "PolyCurve": 3,
+        "NurbsCurve": 17,
+        "ArcCurve": 6
+      },
+      "visible_root_cached_triangles": 192579,
+      "expanded_cached_triangles": 388202
+    },
+    {
+      "index": 51,
+      "name": "Fbx_Root",
+      "visible": true,
+      "top_level_objects": 492,
+      "visible_top_level_objects": 492,
+      "types": {
+        "Mesh": 492
+      },
+      "visible_root_cached_triangles": 109456,
+      "expanded_cached_triangles": 109456
+    },
+    {
+      "index": 1,
+      "name": "WALL",
+      "visible": true,
+      "top_level_objects": 633,
+      "visible_top_level_objects": 317,
+      "types": {
+        "Brep": 633
+      },
+      "visible_root_cached_triangles": 50386,
+      "expanded_cached_triangles": 100760
+    },
+    {
+      "index": 50,
+      "name": "砖墙",
+      "visible": true,
+      "top_level_objects": 246,
+      "visible_top_level_objects": 246,
+      "types": {
+        "InstanceReference": 243,
+        "Brep": 3
+      },
+      "visible_root_cached_triangles": 74520,
+      "expanded_cached_triangles": 74520
+    },
+    {
+      "index": 19,
+      "name": "连廊_框架",
+      "visible": true,
+      "top_level_objects": 452,
+      "visible_top_level_objects": 226,
+      "types": {
+        "Brep": 452
+      },
+      "visible_root_cached_triangles": 13644,
+      "expanded_cached_triangles": 27288
+    },
+    {
+      "index": 28,
+      "name": "梁柱结构",
+      "visible": true,
+      "top_level_objects": 518,
+      "visible_top_level_objects": 252,
+      "types": {
+        "Brep": 492,
+        "NurbsCurve": 1,
+        "PolylineCurve": 1,
+        "Extrusion": 24
+      },
+      "visible_root_cached_triangles": 12278,
+      "expanded_cached_triangles": 25118
+    },
+    {
+      "index": 21,
+      "name": "连廊支架",
+      "visible": true,
+      "top_level_objects": 100,
+      "visible_top_level_objects": 50,
+      "types": {
+        "Brep": 48,
+        "Extrusion": 52
+      },
+      "visible_root_cached_triangles": 8984,
+      "expanded_cached_triangles": 17560
+    },
+    {
+      "index": 23,
+      "name": "台阶",
+      "visible": true,
+      "top_level_objects": 887,
+      "visible_top_level_objects": 541,
+      "types": {
+        "Brep": 878,
+        "PolylineCurve": 1,
+        "NurbsCurve": 1,
+        "PolyCurve": 4,
+        "Extrusion": 3
+      },
+      "visible_root_cached_triangles": 8478,
+      "expanded_cached_triangles": 16338
+    },
+    {
+      "index": 6,
+      "name": "WINDOW::排风管道",
+      "visible": true,
+      "top_level_objects": 16,
+      "visible_top_level_objects": 8,
+      "types": {
+        "Brep": 16
+      },
+      "visible_root_cached_triangles": 4096,
+      "expanded_cached_triangles": 8192
+    },
+    {
+      "index": 47,
+      "name": "周边建筑",
+      "visible": false,
+      "top_level_objects": 669,
+      "visible_top_level_objects": 0,
+      "types": {
+        "LineCurve": 312,
+        "Brep": 91,
+        "Extrusion": 1,
+        "PolylineCurve": 223,
+        "NurbsCurve": 22,
+        "PolyCurve": 18,
+        "Hatch": 2
+      },
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 8177
+    },
+    {
+      "index": 0,
+      "name": "新建1",
+      "visible": true,
+      "top_level_objects": 138,
+      "visible_top_level_objects": 69,
+      "types": {
+        "Brep": 138
+      },
+      "visible_root_cached_triangles": 2462,
+      "expanded_cached_triangles": 5610
+    },
+    {
+      "index": 8,
+      "name": "WINDOW::窗架",
+      "visible": true,
+      "top_level_objects": 152,
+      "visible_top_level_objects": 76,
+      "types": {
+        "Brep": 152
+      },
+      "visible_root_cached_triangles": 2684,
+      "expanded_cached_triangles": 5368
+    },
+    {
+      "index": 20,
+      "name": "连廊玻璃",
+      "visible": true,
+      "top_level_objects": 37,
+      "visible_top_level_objects": 18,
+      "types": {
+        "Brep": 37
+      },
+      "visible_root_cached_triangles": 2572,
+      "expanded_cached_triangles": 4586
+    },
+    {
+      "index": 49,
+      "name": "图层 05",
+      "visible": true,
+      "top_level_objects": 47,
+      "visible_top_level_objects": 47,
+      "types": {
+        "Brep": 37,
+        "PolylineCurve": 5,
+        "Extrusion": 2,
+        "GeometryBase": 3
+      },
+      "visible_root_cached_triangles": 2960,
+      "expanded_cached_triangles": 2960
+    },
+    {
+      "index": 37,
+      "name": "红砖",
+      "visible": true,
+      "top_level_objects": 9,
+      "visible_top_level_objects": 9,
+      "types": {
+        "Brep": 9
+      },
+      "visible_root_cached_triangles": 2282,
+      "expanded_cached_triangles": 2282
+    },
+    {
+      "index": 27,
+      "name": "屋顶部分",
+      "visible": true,
+      "top_level_objects": 47,
+      "visible_top_level_objects": 20,
+      "types": {
+        "Brep": 40,
+        "LineCurve": 6,
+        "PolylineCurve": 1
+      },
+      "visible_root_cached_triangles": 1095,
+      "expanded_cached_triangles": 2199
+    },
+    {
+      "index": 24,
+      "name": "方形体块",
+      "visible": true,
+      "top_level_objects": 120,
+      "visible_top_level_objects": 75,
+      "types": {
+        "Brep": 120
+      },
+      "visible_root_cached_triangles": 898,
+      "expanded_cached_triangles": 1438
+    },
+    {
+      "index": 11,
+      "name": "H steel",
+      "visible": true,
+      "top_level_objects": 20,
+      "visible_top_level_objects": 10,
+      "types": {
+        "Brep": 20
+      },
+      "visible_root_cached_triangles": 440,
+      "expanded_cached_triangles": 880
+    },
+    {
+      "index": 10,
+      "name": "floor",
+      "visible": true,
+      "top_level_objects": 31,
+      "visible_top_level_objects": 18,
+      "types": {
+        "Brep": 29,
+        "Extrusion": 2
+      },
+      "visible_root_cached_triangles": 210,
+      "expanded_cached_triangles": 408
+    },
+    {
+      "index": 2,
+      "name": "墙体",
+      "visible": true,
+      "top_level_objects": 23,
+      "visible_top_level_objects": 14,
+      "types": {
+        "Brep": 17,
+        "Extrusion": 6
+      },
+      "visible_root_cached_triangles": 190,
+      "expanded_cached_triangles": 284
+    },
+    {
+      "index": 29,
+      "name": "图层 08",
+      "visible": true,
+      "top_level_objects": 10,
+      "visible_top_level_objects": 10,
+      "types": {
+        "Brep": 10
+      },
+      "visible_root_cached_triangles": 264,
+      "expanded_cached_triangles": 264
+    },
+    {
+      "index": 59,
+      "name": "Make2D::隐藏线::图层 07",
+      "visible": true,
+      "top_level_objects": 30,
+      "visible_top_level_objects": 7,
+      "types": {
+        "PolylineCurve": 5,
+        "Brep": 24,
+        "LineCurve": 1
+      },
+      "visible_root_cached_triangles": 28,
+      "expanded_cached_triangles": 250
+    },
+    {
+      "index": 3,
+      "name": "屋顶",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 4,
+      "name": "Pillar",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 5,
+      "name": "WINDOW",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 7,
+      "name": "WINDOW::窗玻璃",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 9,
+      "name": "柱子",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 12,
+      "name": "梁",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 13,
+      "name": "梁::桁架",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 14,
+      "name": "梁::支撑架",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 15,
+      "name": "梁::BIG",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 16,
+      "name": "梁::主梁",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 17,
+      "name": "梁::次梁",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 18,
+      "name": "定位轴线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 22,
+      "name": "卷帘",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 25,
+      "name": "图层 01",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 31,
+      "name": "图层 02",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 32,
+      "name": "图层 03",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 34,
+      "name": "3d piso",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 35,
+      "name": "LAYOUT 1 PAV",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 36,
+      "name": "家具",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 38,
+      "name": "图层 04",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 39,
+      "name": "PKNG-TSRP",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 40,
+      "name": "0",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 41,
+      "name": "paths",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 42,
+      "name": "buildings",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 43,
+      "name": "parks",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 44,
+      "name": "3T_BAR",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 45,
+      "name": "minor_roads",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 46,
+      "name": "DIM_SYMB",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 48,
+      "name": "修改",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 52,
+      "name": "Make2D",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 53,
+      "name": "Make2D::可见线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 54,
+      "name": "Make2D::可见线::曲线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 55,
+      "name": "Make2D::可见线::场景轮廓线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 56,
+      "name": "Make2D::可见线::截平面交线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 57,
+      "name": "Make2D::隐藏线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    },
+    {
+      "index": 58,
+      "name": "Make2D::隐藏线::曲线",
+      "visible": true,
+      "top_level_objects": 0,
+      "visible_top_level_objects": 0,
+      "types": {},
+      "visible_root_cached_triangles": 0,
+      "expanded_cached_triangles": 0
+    }
+  ],
+  "materials_in_table": 5345,
+  "distinct_direct_object_material_indices": 5213,
+  "instance_definitions": 80,
+  "blocks": [
+    {
+      "name": "Component9#3 01",
+      "members": 1,
+      "top_level_instances": 70,
+      "cached_triangles_per_instance": 50871
+    },
+    {
+      "name": "87bf7630-015d-013d-3bca 01",
+      "members": 3,
+      "top_level_instances": 290,
+      "cached_triangles_per_instance": 2856
+    },
+    {
+      "name": "Component4#3 01",
+      "members": 1,
+      "top_level_instances": 140,
+      "cached_triangles_per_instance": 3468
+    },
+    {
+      "name": "87bcdbe0-015d-013d-4a22 01",
+      "members": 3,
+      "top_level_instances": 374,
+      "cached_triangles_per_instance": 994
+    },
+    {
+      "name": "87bd9eb0-015d-013d-5943 01",
+      "members": 3,
+      "top_level_instances": 374,
+      "cached_triangles_per_instance": 994
+    },
+    {
+      "name": "SimLab#1 01",
+      "members": 1,
+      "top_level_instances": 24,
+      "cached_triangles_per_instance": 5906
+    },
+    {
+      "name": "Component8 01",
+      "members": 2,
+      "top_level_instances": 5,
+      "cached_triangles_per_instance": 19162
+    },
+    {
+      "name": "Component7#3 01",
+      "members": 1,
+      "top_level_instances": 7,
+      "cached_triangles_per_instance": 3902
+    },
+    {
+      "name": "组件#58 01",
+      "members": 6,
+      "top_level_instances": 56,
+      "cached_triangles_per_instance": 480
+    },
+    {
+      "name": "组件#59 01",
+      "members": 6,
+      "top_level_instances": 56,
+      "cached_triangles_per_instance": 454
+    },
+    {
+      "name": "书店书柜书架展柜展架置物架 ID191716 01",
+      "members": 1,
+      "top_level_instances": 3,
+      "cached_triangles_per_instance": 8316
+    },
+    {
+      "name": "Component5#4 01",
+      "members": 1,
+      "top_level_instances": 28,
+      "cached_triangles_per_instance": 746
+    },
+    {
+      "name": "87bfa140-015d-013d-8ea0 01",
+      "members": 1,
+      "top_level_instances": 187,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "组件#785 01",
+      "members": 8,
+      "top_level_instances": 88,
+      "cached_triangles_per_instance": 80
+    },
+    {
+      "name": "新中式推拉门 ID194546 02",
+      "members": 5,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 5400
+    },
+    {
+      "name": "Component56#1 01",
+      "members": 1,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 5136
+    },
+    {
+      "name": "组件#48 01",
+      "members": 4,
+      "top_level_instances": 14,
+      "cached_triangles_per_instance": 316
+    },
+    {
+      "name": "组件#46 01",
+      "members": 4,
+      "top_level_instances": 12,
+      "cached_triangles_per_instance": 327
+    },
+    {
+      "name": "87bf4f40-015d-013d-5f50 01",
+      "members": 1,
+      "top_level_instances": 302,
+      "cached_triangles_per_instance": 12
+    },
+    {
+      "name": "h0030 01",
+      "members": 1,
+      "top_level_instances": 6,
+      "cached_triangles_per_instance": 588
+    },
+    {
+      "name": "EWRWRWRWERW 01",
+      "members": 1,
+      "top_level_instances": 28,
+      "cached_triangles_per_instance": 92
+    },
+    {
+      "name": "Component4#1 01",
+      "members": 2,
+      "top_level_instances": 6,
+      "cached_triangles_per_instance": 406
+    },
+    {
+      "name": "书架中间立柱 01",
+      "members": 1,
+      "top_level_instances": 24,
+      "cached_triangles_per_instance": 88
+    },
+    {
+      "name": "Grupo#104 01",
+      "members": 1,
+      "top_level_instances": 48,
+      "cached_triangles_per_instance": 42
+    },
+    {
+      "name": "Component52 01",
+      "members": 2,
+      "top_level_instances": 2,
+      "cached_triangles_per_instance": 720
+    },
+    {
+      "name": "组件#23 01",
+      "members": 7,
+      "top_level_instances": 16,
+      "cached_triangles_per_instance": 87
+    },
+    {
+      "name": "书架收尾端立柱 01",
+      "members": 1,
+      "top_level_instances": 8,
+      "cached_triangles_per_instance": 172
+    },
+    {
+      "name": "Component2 01",
+      "members": 3,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 612
+    },
+    {
+      "name": "Component48 01",
+      "members": 2,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 540
+    },
+    {
+      "name": "组件#4 01",
+      "members": 1,
+      "top_level_instances": 4,
+      "cached_triangles_per_instance": 106
+    },
+    {
+      "name": "Component53 01",
+      "members": 1,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 280
+    },
+    {
+      "name": "组件#5 01",
+      "members": 1,
+      "top_level_instances": 2,
+      "cached_triangles_per_instance": 106
+    },
+    {
+      "name": "Component46 01",
+      "members": 1,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 184
+    },
+    {
+      "name": "Component6#3 01",
+      "members": 1,
+      "top_level_instances": 28,
+      "cached_triangles_per_instance": 2
+    },
+    {
+      "name": "Component47 01",
+      "members": 1,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component55 01",
+      "members": 1,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component44 01",
+      "members": 1,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 36
+    },
+    {
+      "name": "柱子",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 2
+    },
+    {
+      "name": "87ba1ec0-015d-013d-2cc3 01",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 960
+    },
+    {
+      "name": "栏杆070#2 01",
+      "members": 26,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 23648
+    },
+    {
+      "name": "网红书架#1 01",
+      "members": 92,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 10016
+    },
+    {
+      "name": "Component 01",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 188
+    },
+    {
+      "name": "Component3 01",
+      "members": 2,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 108
+    },
+    {
+      "name": "Component4 01",
+      "members": 2,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 316
+    },
+    {
+      "name": "Component49 01",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 660
+    },
+    {
+      "name": "Component51 01",
+      "members": 2,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 60
+    },
+    {
+      "name": "Component50 01",
+      "members": 2,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 720
+    },
+    {
+      "name": "Component45 01",
+      "members": 6,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 2244
+    },
+    {
+      "name": "Component54 01",
+      "members": 3,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 5460
+    },
+    {
+      "name": "Component1 01",
+      "members": 3,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 8316
+    },
+    {
+      "name": "现代书架书柜木架装饰架装饰柜 ID340913 01",
+      "members": 92,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 47585
+    },
+    {
+      "name": "2 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 320
+    },
+    {
+      "name": "Component9#1 02",
+      "members": 0,
+      "top_level_instances": 1,
+      "cached_triangles_per_instance": 0
+    },
+    {
+      "name": "$车$00000001",
+      "members": 42,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 0
+    },
+    {
+      "name": "Component26 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 280
+    },
+    {
+      "name": "Component28 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component29 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component30 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 120
+    },
+    {
+      "name": "Component31 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component32 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component33 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component34 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component35 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component36 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component37 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component38 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component39 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component40 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component41 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component42 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component43 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component44 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component45 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component46 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component47 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component48 02",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 44
+    },
+    {
+      "name": "Component27 02",
+      "members": 22,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 1280
+    },
+    {
+      "name": "Component100 03",
+      "members": 1,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 280
+    },
+    {
+      "name": "组件#66 01",
+      "members": 7,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 54
+    },
+    {
+      "name": "组件#51 01",
+      "members": 6,
+      "top_level_instances": 0,
+      "cached_triangles_per_instance": 76
+    }
+  ],
+  "stored_mesh_vertices": 1588206,
+  "stored_mesh_triangles": 1244127,
+  "objects_with_missing_render_mesh_parts": 46,
+  "missing_render_mesh_parts": 46,
+  "expanded_triangles_visible_roots": 2625469,
+  "embedded_file_paths": [
+    "E:\\ITB\\ITB最终细化_embedded_files\\836043.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\836107.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\836178.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\Metal_Seamed.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\Texture.png",
+    "E:\\ITB\\ITB最终细化_embedded_files\\木纹.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\木饰面板.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\22232.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\22233.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\41ture (2).jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\47bb0dc255d2c4330e84ccadf4970890.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\dxz-2-5dsd2.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\Texture.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\现代风格入户门房门单开门指纹密码锁.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\现代风格电视柜餐边柜花瓶摆件盆栽落地灯.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\6-11.jpg",
+    "E:\\ITB\\ITB最终细化_embedded_files\\6-11.jpg",
+    "F:\\素材\\ps资料\\平面\\地面铺装\\设计气象台 (539).jpg",
+    "F:\\素材\\ps资料\\平面\\地面铺装\\设计气象台 (594).jpg"
+  ],
+  "named_views": 7,
+  "named_view_names": [
+    "Enscape 已命名视图 1",
+    "Enscape 已命名视图 2",
+    "Enscape 已命名视图 3",
+    "Enscape 已命名视图 4",
+    "Enscape 已命名视图 5",
+    "Enscape 已命名视图 6",
+    "Enscape 已命名视图 7"
+  ],
+  "missing_mesh_objects": [
+    {
+      "type": "Extrusion",
+      "layer": "屋顶花园",
+      "definition_member": false,
+      "visible": false,
+      "id": "6a03a139-b399-41ca-a521-d4daf2d25d39"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "d2578df6-88bb-4658-9b9c-5bec22193377"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "9564f2d3-0c32-4dce-a844-8e7211d95651"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "122a4c68-52dd-4d58-93f8-d0fa346f2626"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "5bfdf803-8479-4168-9b6d-a00e673dcb76"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "fa5e01c7-9b74-4c53-8204-db4158193a7f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "7506fda7-a68d-4f69-9d02-02d73cd45a9c"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "340d5abd-5207-4dd3-98d0-7de8a397be64"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "d34223f9-6ef6-4266-8860-5dc6431ef12b"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "9e238b75-4642-41c0-8668-fbf00d441bfb"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "38964a97-990a-4bc6-9a10-bbe95c448898"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "floor",
+      "definition_member": false,
+      "visible": false,
+      "id": "e64a9485-a74f-4f16-8c34-24fb7171cad2"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "墙体",
+      "definition_member": false,
+      "visible": false,
+      "id": "c2958974-62ab-4359-8692-2d66cad3122c"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "043673f3-420b-4dd4-9822-9576648d97ef"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "8839bb94-ec4c-4b98-ab65-b355095a9be6"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "e1291fe8-f455-4fc7-8c92-472e438986fa"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "12763e0b-fca6-4055-bb15-9a0fbe6ef90f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "de29670d-9b76-4115-ab54-6e952069cdd6"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "011e4514-845a-4213-ac05-ddf09f14b374"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "66ce55af-97ab-4f55-9b69-3eede5dd2315"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "6da5c644-2edc-472d-acbb-9e639fad1f5a"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "51379c44-dc12-4d21-9270-a6a656da09f0"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "ffe514f1-3346-4f60-8bf4-a8d60d6c635d"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "7bedb355-5609-4b3b-b08e-fec69f2e0a9a"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "97efbc44-9b78-4e0d-ae49-fa25f21345de"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "ea688bdc-e09e-436b-9342-8df0440bf78d"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "5b4cab93-caf8-4505-afc3-ca8f421d6306"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "e87220d3-52ee-4a76-8814-60dec60aeea3"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "连廊支架",
+      "definition_member": false,
+      "visible": false,
+      "id": "0d9ad129-f72c-448d-a1ad-f8b58db16fe9"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "墙体",
+      "definition_member": false,
+      "visible": false,
+      "id": "a91ffce3-dbd3-42c2-afee-7bacd594e6e1"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "墙体",
+      "definition_member": false,
+      "visible": false,
+      "id": "9ce1d391-9515-4ed0-b936-9be3b3d27d3f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "台阶",
+      "definition_member": false,
+      "visible": false,
+      "id": "ba1b86f2-e15b-4683-871d-48201c43ad8f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "台阶",
+      "definition_member": false,
+      "visible": false,
+      "id": "9c589ebb-e7c0-4fdb-b66f-f33c729eb6df"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "10d2bd18-bb98-4295-a2de-9cf310d1de1f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "42776ceb-a5cd-40cb-9a02-27a8a4452391"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "ea1db050-463c-47c3-8d69-cacea9a9ea2f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "2ea3dc89-49ec-43dc-9d89-41a438da67bc"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "eee2bf3c-8036-4ec5-8aa2-6714c8e40a7f"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "8bee3380-d060-4942-97d2-aecea8ae67b1"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "235d8258-b0f7-4099-a7bc-7dfa9c3d2277"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "bd6f445a-56fb-4efc-a010-d77c71b11223"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "ab59cb52-d501-4ead-935b-aed0ec5b847d"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "f7807c73-fd40-48c2-bee7-cb0446eb0f5b"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "a5e6a9a1-55f2-428b-9d50-cbb4faa5d3e3"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "梁柱结构",
+      "definition_member": false,
+      "visible": false,
+      "id": "f0672591-0320-43ec-ad39-97bf1038bc98"
+    },
+    {
+      "type": "Extrusion",
+      "layer": "周边建筑",
+      "definition_member": false,
+      "visible": true,
+      "id": "196bca11-3341-45ca-ba4c-c58261c11e62"
+    }
+  ],
+  "notes": [
+    "Read-only; original not modified or uploaded.",
+    "Mesh quads counted as two triangles.",
+    "Expanded counts repeat block geometry per instance; they ignore hidden block-member states and exclude geometry without cached meshes. These are not final GLB size or rendered GPU triangle counts.",
+    "Material index usage does not resolve by-layer/by-parent/render-material bindings; it is not a safe purge list."
+  ]
+}

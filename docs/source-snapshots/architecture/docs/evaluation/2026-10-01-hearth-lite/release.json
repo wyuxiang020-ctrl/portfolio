@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-01T14:26:25Z",
+  "version": "spatial-ux-2026-10-01-hearth-lite",
+  "git": "7a3ab091a01cd6889512e3ff1790b770108614b2",
+  "deployment": "C5HwB6RwxKzsyzSZYyvTfKiQdba1",
+  "deploymentStatus": "success",
+  "deploymentCompletedAt": "2026-10-01T14:20:57Z",
+  "environment": "Anonymous curl HTTPS with proxy bypass; VPN/tunnel unknown. Not mainland-direct or physical-phone acceptance. Public model separately downloaded by Node: n=1, 88662ms, complete hash match.",
+  "checks": [
+    {
+      "url": "https://yuxiangworks.com/work/grandmothers-hearth/?modelTest=1",
+      "status": "200",
+      "bytes": 56292,
+      "seconds": 0.745,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": true,
+      "versionPresent": true,
+      "liteModelPresent": true
+    },
+    {
+      "url": "https://yuxiangworks.com/work/iterative-learning/?modelTest=1",
+      "status": "200",
+      "bytes": 52222,
+      "seconds": 1.385,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": true,
+      "versionPresent": true,
+      "liteModelPresent": false
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/itb-viewer.D1NUmgDi.js",
+      "status": "200",
+      "bytes": 709327,
+      "seconds": 29.898,
+      "curlExit": 0,
+      "matchesLocalBuild": true
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/ITBViewer.astro_astro_type_script_index_0_lang.WXD1wDuC.js",
+      "status": "200",
+      "bytes": 4168,
+      "seconds": 0.858,
+      "curlExit": 0,
+      "matchesLocalBuild": true
+    }
+  ]
+}

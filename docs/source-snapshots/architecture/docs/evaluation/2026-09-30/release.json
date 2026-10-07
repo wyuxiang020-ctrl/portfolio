@@ -1,0 +1,41 @@
+{
+  "verifiedAt": "2026-09-30T14:12:54Z",
+  "version": "spatial-ux-2026-09-30-r1",
+  "git": "b494d9d5a87e1aa39f5852da6033e04261aa503e",
+  "deployment": "dpl_2CzyjDipm7tWrnuYBa9VrE1usZ1y",
+  "deploymentStatus": "success",
+  "origin": "https://yuxiangworks.com",
+  "environment": "Anonymous curl, proxy bypass, VPN unknown. HTTP/assets checks only; no browser rendering or real device acceptance.",
+  "checks": [
+    {
+      "url": "https://yuxiangworks.com/work/iterative-learning/?modelTest=1",
+      "status": "200",
+      "bytes": 52156,
+      "seconds": 2.109,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": true,
+      "versionPresent": true,
+      "hasExport": true
+    },
+    {
+      "url": "https://yuxiangworks.com/work/grandmothers-hearth/?modelTest=1",
+      "status": "200",
+      "bytes": 56084,
+      "seconds": 3.643,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": true,
+      "versionPresent": true,
+      "hasExport": true
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/itb-viewer.EPDDZshn.js",
+      "status": "200",
+      "bytes": 704857,
+      "seconds": 34.184,
+      "curlExit": 0,
+      "matchesLocalBuild": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+HTTP/1.1 206 Partial Content
+Vary: Origin
+Content-Length: 32
+Content-Type: model/gltf-binary
+Last-Modified: Sun, 06 Sep 2026 03:55:56 GMT
+ETag: W/"6539052-1788666956009"
+Cache-Control: no-cache
+Content-Range: bytes 0-31/6539052
+Accept-Ranges: bytes
+Date: Wed, 07 Oct 2026 05:56:01 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

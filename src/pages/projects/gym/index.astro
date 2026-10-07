@@ -1,0 +1,7 @@
+---
+import CaseLayout from '../../../layouts/CaseLayout.astro';
+import Content from '../../../content/ai/gym.astro';
+import { projects } from '../../../data/ai-projects';
+const project = projects.find(item => item.id === 'gym')!;
+---
+<CaseLayout project={project}><Content /></CaseLayout>

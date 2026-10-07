@@ -1,0 +1,51 @@
+[
+  {
+    "source": "/media/spatial-home.png",
+    "output": "/media/spatial-home-thumb.webp",
+    "width": 900,
+    "originalBytes": 4604224,
+    "outputBytes": 72602
+  },
+  {
+    "source": "/media/spatial-selected.png",
+    "output": "/media/spatial-selected-thumb.webp",
+    "width": 1200,
+    "originalBytes": 1343708,
+    "outputBytes": 84796
+  },
+  {
+    "source": "/media/gym-plan-hd.png",
+    "output": "/media/gym-plan-thumb.webp",
+    "width": 450,
+    "originalBytes": 513147,
+    "outputBytes": 40280
+  },
+  {
+    "source": "/media/meal-01-chicken-rice-broccoli.png",
+    "output": "/media/meal-01-chicken-rice-broccoli-thumb.webp",
+    "width": 640,
+    "originalBytes": 2565572,
+    "outputBytes": 79784
+  },
+  {
+    "source": "/media/meal-02-oatmeal-fruit-walnuts.png",
+    "output": "/media/meal-02-oatmeal-fruit-walnuts-thumb.webp",
+    "width": 640,
+    "originalBytes": 2733519,
+    "outputBytes": 88558
+  },
+  {
+    "source": "/media/meal-03-noodles-egg-bokchoy.png",
+    "output": "/media/meal-03-noodles-egg-bokchoy-thumb.webp",
+    "width": 640,
+    "originalBytes": 2385328,
+    "outputBytes": 57072
+  },
+  {
+    "source": "/media/meal-04-yogurt-strawberry-granola.png",
+    "output": "/media/meal-04-yogurt-strawberry-granola-thumb.webp",
+    "width": 640,
+    "originalBytes": 2407916,
+    "outputBytes": 77076
+  }
+]

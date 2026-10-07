@@ -1,0 +1,808 @@
+@import "tailwindcss";
+/* PhotoSwipe v5 — must be in the main stylesheet so it survives Astro
+   View Transition body swaps (CSS in <script> imports is injected
+   dynamically and is lost on SPA navigation in dev mode).          */
+@import "photoswipe/dist/photoswipe.css";
+
+@theme {
+  /* Fonts */
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Brand colours */
+  --color-accent:       #2D4A3E;
+  --color-accent-light: #3d6354;
+  --color-text:         #1a1a1a;
+  --color-muted:        #666666;
+  --color-border:       #e5e5e5;
+  --color-bg:           #ffffff;
+  --color-surface:      #f8f8f6;
+}
+
+/* ─── Project card hover interactions ──────────────────────── */
+
+/* Image zoom */
+.project-card .card-img {
+  display: block;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .card-img {
+  transform: scale(1.04);
+}
+
+/* Gradient overlay via ::before — immune to ad-blockers */
+.project-card .img-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.project-card:hover .img-wrap::before {
+  opacity: 1;
+}
+
+/* "View Project →" text */
+.project-card .card-hint {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity   500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.project-card:hover .card-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card .card-title-cn {
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-card:hover .card-title-cn {
+  color: #2D4A3E;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card .card-img,
+  .project-card .img-wrap::before,
+  .project-card .card-hint,
+  .project-card .card-title-cn {
+    transition: none !important;
+  }
+}
+
+/* ─── Base ──────────────────────────────────────────────────── */
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #1a1a1a;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable; /* reserve scrollbar space — prevents layout shift on lock/unlock */
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+  }
+}
+
+/* ─── Project prose ─────────────────────────────────────────── */
+.itb-chapters,
+.project-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .8rem;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: .8rem;
+}
+.itb-chapters a, .project-chapters a { padding: .4rem 0; text-decoration: underline; text-underline-offset: 4px; }
+.prose-project details.itb-research, .prose-project details.project-research { margin: 2rem 0; }
+.prose-project details.itb-research summary, .prose-project details.project-research summary { color: #555; letter-spacing: .03em; padding: .6rem 0; }
+.prose-project details.itb-research p,
+.prose-project details.project-research p {
+  color: #555 !important;
+  font-style: normal;
+  font-size: .8rem !important;
+  margin: .8rem 0 1.5rem !important;
+}
+.prose-project {
+  max-width: 72ch;
+}
+
+.prose-project p {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 1.5em;
+  word-break: keep-all;    /* no mid-word breaks in CJK; Latin wraps normally */
+  overflow-wrap: break-word; /* break long Latin tokens (URLs etc.) if needed */
+}
+
+.prose-project h2 {
+  scroll-margin-top: 110px;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-top: 3em;
+  margin-bottom: 0.75em;
+  line-height: 1.2;
+}
+
+.prose-project h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* ─── Chapter heading line reveal ──────────────────────────── */
+/* Only activates once JS runs (js-reveal on <html>), so no-JS
+   users see normal headings with no indent or invisible state. */
+
+.js-reveal .prose-project h2,
+.js-reveal .prose-project h3 {
+  position: relative;
+  padding-left: 56px; /* 40px line + 16px gap */
+  transition:
+    opacity   600ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.js-reveal .prose-project h2::before,
+.js-reveal .prose-project h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 1px;
+  background: #2D4A3E;
+  transition: width 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Not-yet-revealed: hidden */
+.js-reveal .prose-project h2:not(.heading-revealed),
+.js-reveal .prose-project h3:not(.heading-revealed) {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+/* Revealed: line slides in */
+.js-reveal .prose-project h2.heading-revealed::before,
+.js-reveal .prose-project h3.heading-revealed::before {
+  width: 40px;
+}
+
+/* Mobile: shorter line */
+@media (max-width: 640px) {
+  .js-reveal .prose-project h2,
+  .js-reveal .prose-project h3 {
+    padding-left: 40px; /* 24px line + 16px gap */
+  }
+  .js-reveal .prose-project h2.heading-revealed::before,
+  .js-reveal .prose-project h3.heading-revealed::before {
+    width: 24px;
+  }
+}
+
+/* Reduced motion: skip all animation */
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .prose-project h2,
+  .js-reveal .prose-project h3 {
+    transition: none;
+  }
+  .js-reveal .prose-project h2::before,
+  .js-reveal .prose-project h3::before {
+    transition: none;
+  }
+  .js-reveal .prose-project h2:not(.heading-revealed),
+  .js-reveal .prose-project h3:not(.heading-revealed) {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.prose-project ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.6em;
+}
+
+.prose-project ul li {
+  padding-left: 1.25em;
+  position: relative;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 0.4em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.prose-project ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #2D4A3E;
+}
+
+.prose-project ol {
+  list-style: decimal;
+  padding-left: 1.25em;
+  margin-bottom: 1.6em;
+  color: #444;
+  line-height: 1.8;
+}
+
+.prose-project blockquote {
+  border-left: 2px solid #2D4A3E;
+  padding: 0.5em 0 0.5em 1.5em;
+  margin: 2.5em 0;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #2a2a2a;
+  line-height: 1.6;
+}
+
+.prose-project strong {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.prose-project img {
+  width: 100%;
+  height: auto;
+  margin: 2.5em 0;
+}
+
+/* Full-bleed image */
+.img-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.img-full img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* Two-up image grid */
+.img-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2.5em 0;
+}
+
+/* Three-up image grid */
+.img-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 2.5em 0;
+}
+
+/* Two-up with forced equal height — crops both images to align top/bottom */
+.img-two-crop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2.5em 0;
+  align-items: stretch;
+}
+
+.img-two-crop img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Solo large image — full prose width, generous vertical space */
+.img-solo {
+  margin: 2.5em 0;
+  width: 100%;
+}
+
+.img-solo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  font-size: 0.72rem;
+  color: #999;
+  letter-spacing: 0.03em;
+  margin-top: -1.5em;
+  margin-bottom: 2.5em;
+  line-height: 1.6;
+}
+
+/* Technical data table */
+.prose-project table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-size: 0.85rem;
+}
+
+.prose-project th,
+.prose-project td {
+  text-align: left;
+  padding: 0.6em 1em;
+  border-bottom: 1px solid #e5e5e5;
+  color: #444;
+}
+
+.prose-project th {
+  font-weight: 500;
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.prose-project tr:last-child td {
+  border-bottom: none;
+}
+
+/* ─── Animations ────────────────────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.animate-fade-up               { animation: fade-up 0.7s ease forwards; }
+.animate-delay-100             { animation-delay: 0.1s; opacity: 0; }
+.animate-delay-200             { animation-delay: 0.2s; opacity: 0; }
+.animate-delay-300             { animation-delay: 0.3s; opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ─── Scroll reveal ─────────────────────────────────────────── */
+/* .js-reveal is added to <html> by JS — elements are visible until JS runs */
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity   650ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 650ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.js-reveal .reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ─── Nav animated underline ────────────────────────────────── */
+.nav-link {
+  position: relative;
+  padding-bottom: 3px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 260ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link:hover::after,
+.nav-link.nav-active::after {
+  width: 100%;
+}
+
+/* ─── View transition: gentle fade ─────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation: 220ms ease both vt-fade-out;
+  }
+  ::view-transition-new(root) {
+    animation: 280ms ease both vt-fade-in;
+  }
+  @keyframes vt-fade-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes vt-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}
+
+/* ─── Prose image fade-in ───────────────────────────────────── */
+.prose-project img.img-loading {
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+.prose-project img.img-loaded {
+  opacity: 1;
+}
+
+/* ─── Project Banner ────────────────────────────────────────── */
+.banner-wrap {
+  position: relative;
+  width: 100%;
+  height: 68vh;
+  max-height: 820px;
+  overflow: hidden;
+  background: #111;
+}
+
+/* Blurred ambient background — oversized so parallax has room */
+.banner-bg {
+  position: absolute;
+  width: 100%;
+  height: 160%;
+  top: -30%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(32px) brightness(0.78) saturate(1.7);
+  pointer-events: none;
+  /* translate property set by JS — kept separate from filter */
+}
+
+/* Light darkening overlay */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.16);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Main image
+   ─ 'scale' (CSS Level 2 individual property) is animated by CSS transition
+   ─ 'translate' (CSS Level 2 individual property) is set by JS for parallax
+   These compose independently — zero conflict.                             */
+.banner-main {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  z-index: 2;
+  scale: 1.07;                                           /* entrance start  */
+  transition: scale 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.banner-main.banner-in {
+  scale: 1.0;                                            /* entrance end    */
+}
+
+/* JS-driven hover glow layer */
+#bnr-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: radial-gradient(
+    ellipse at 50% 42%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.2) 38%,
+    transparent 62%
+  );
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Bottom gradient — 60 px */
+.banner-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-main { transition: none; scale: 1; }
+}
+
+/* ─── Banner: View Full Image button ──────────────────────── */
+.bnr-zoom-wrap {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none; /* let children opt in */
+}
+
+.bnr-zoom-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  color: rgba(255,255,255,0.8);
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 280ms ease, transform 280ms ease;
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.banner-wrap:hover .bnr-zoom-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bnr-zoom-btn {
+  pointer-events: auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(20,20,20,0.60);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.13);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.70;
+  transition: opacity 260ms ease, transform 260ms ease, background 200ms ease;
+}
+
+.banner-wrap:hover .bnr-zoom-btn { opacity: 0.9; }
+
+.bnr-zoom-btn:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px);
+  background: rgba(20,20,20,0.82);
+}
+
+.bnr-zoom-btn:active { transform: translateY(0); }
+
+@media (max-width: 640px) {
+  .bnr-zoom-wrap  { bottom: 16px; right: 16px; }
+  .bnr-zoom-btn   { width: 40px; height: 40px; }
+  .bnr-zoom-label { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bnr-zoom-btn, .bnr-zoom-label { transition: none !important; }
+}
+
+/* Single-image PhotoSwipe (banner) — hide nav arrows + "1/1" counter */
+.pswp--banner .pswp__button--arrow--prev,
+.pswp--banner .pswp__button--arrow--next,
+.pswp--banner .pswp__counter { display: none !important; }
+
+/* ─── PhotoSwipe v5 — theme overrides ──────────────────────── */
+
+/* Critical positioning guard — keeps .pswp fixed to the viewport
+   regardless of CSS cascade order or Tailwind layer interactions. */
+.pswp {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Arrow navigation buttons */
+.pswp__button--arrow {
+  opacity: 0.75;
+  transition: opacity 200ms;
+}
+.pswp__button--arrow:hover { opacity: 1; }
+
+/* Close button */
+.pswp__button--close {
+  opacity: 0.75;
+  transition: opacity 200ms;
+}
+.pswp__button--close:hover { opacity: 1; }
+
+/* Slide counter  e.g. "3 / 12" */
+.pswp__counter {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+/* Prose images: zoom-in cursor */
+.prose-project img {
+  cursor: zoom-in;
+}
+
+.prose-project img:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* ─── Heading Chinese subtitle (.h-sub) ─────────────────────── */
+.prose-project .h-sub {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.70rem;
+  font-weight: 400;
+  color: #c0c0c0;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-top: -0.85rem;
+  margin-bottom: 2rem;
+}
+
+/* When JS reveal is active, indent to match the h2/h3 text (after line+gap) */
+.js-reveal .prose-project h2 + .h-sub,
+.js-reveal .prose-project h3 + .h-sub {
+  padding-left: 56px;
+}
+
+@media (max-width: 640px) {
+  .js-reveal .prose-project h2 + .h-sub,
+  .js-reveal .prose-project h3 + .h-sub {
+    padding-left: 40px;
+  }
+}
+
+/* ─── Foldable "Read in English" ─────────────────────────────── */
+.prose-project details {
+  margin: -0.4em 0 1.6em;
+  border-left: 2px solid #ebebeb;
+  padding: 0 0 0.2em 1.1em;
+}
+
+.prose-project details summary {
+  font-family: var(--font-sans);
+  font-size: 0.73rem;
+  color: #c8c8c8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  list-style: none;
+  padding: 0.15em 0;
+}
+
+.prose-project details summary::-webkit-details-marker { display: none; }
+.prose-project details summary::before { content: '+ '; }
+.prose-project details[open] summary::before { content: '− '; }
+
+.prose-project details[open] {
+  padding-bottom: 0.6em;
+}
+
+.prose-project details p {
+  font-style: italic;
+  color: #aaa !important;
+  font-size: 0.82rem !important;
+  margin-top: 0.6em;
+  margin-bottom: 0 !important;
+  line-height: 1.85;
+}
+
+/* ─── Reading progress bar ──────────────────────────────────── */
+#read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-accent);   /* #2D4A3E */
+  transform-origin: left center;
+  transform: scaleX(0);
+  z-index: 9998;                     /* above header (z-50 = 50) */
+  opacity: 0;
+  transition:
+    opacity    400ms ease,
+    transform   80ms linear;
+  pointer-events: none;
+  will-change: transform;
+}
+
+#read-progress.rp-visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #read-progress { transition: none; }
+}
+
+/* ─── Back-to-top button ────────────────────────────────────── */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  color: #1a1a1a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity    260ms ease,
+    transform  260ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+  pointer-events: none;
+}
+
+#back-to-top.btt-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#back-to-top:hover {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(0, 0, 0, 0.16);
+}
+
+#back-to-top:active {
+  transform: translateY(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #back-to-top {
+    transition: opacity 260ms ease;
+    transform: none !important;
+  }
+}

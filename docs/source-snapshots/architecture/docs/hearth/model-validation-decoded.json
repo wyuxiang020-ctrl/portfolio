@@ -1,0 +1,4344 @@
+{
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-09-06T09:59:26.107Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 179,
+    "numHints": 0,
+    "messages": [
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/1"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x551.",
+        "severity": 2,
+        "pointer": "/images/2"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 280x280.",
+        "severity": 2,
+        "pointer": "/images/5"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x661.",
+        "severity": 2,
+        "pointer": "/images/6"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/8"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 680x680.",
+        "severity": 2,
+        "pointer": "/images/9"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x450.",
+        "severity": 2,
+        "pointer": "/images/11"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 250x200.",
+        "severity": 2,
+        "pointer": "/images/16"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 266x480.",
+        "severity": 2,
+        "pointer": "/images/18"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x450.",
+        "severity": 2,
+        "pointer": "/images/19"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 256x384.",
+        "severity": 2,
+        "pointer": "/images/20"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 256x384.",
+        "severity": 2,
+        "pointer": "/images/22"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 680x680.",
+        "severity": 2,
+        "pointer": "/images/23"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/24"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 256x384.",
+        "severity": 2,
+        "pointer": "/images/25"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x363.",
+        "severity": 2,
+        "pointer": "/images/26"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x509.",
+        "severity": 2,
+        "pointer": "/images/27"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/28"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/29"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 640x768.",
+        "severity": 2,
+        "pointer": "/images/31"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 645x768.",
+        "severity": 2,
+        "pointer": "/images/32"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/33"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/34"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 400x379.",
+        "severity": 2,
+        "pointer": "/images/35"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/36"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 480x768.",
+        "severity": 2,
+        "pointer": "/images/39"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 236x236.",
+        "severity": 2,
+        "pointer": "/images/40"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x494.",
+        "severity": 2,
+        "pointer": "/images/41"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/44"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x750.",
+        "severity": 2,
+        "pointer": "/images/45"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 170x720.",
+        "severity": 2,
+        "pointer": "/images/46"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 614x709.",
+        "severity": 2,
+        "pointer": "/images/47"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 283x283.",
+        "severity": 2,
+        "pointer": "/images/48"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 283x283.",
+        "severity": 2,
+        "pointer": "/images/49"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 583x768.",
+        "severity": 2,
+        "pointer": "/images/50"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/51"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/53"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 450x447.",
+        "severity": 2,
+        "pointer": "/images/54"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/55"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/57"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 300x300.",
+        "severity": 2,
+        "pointer": "/images/60"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/61"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/65"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x511.",
+        "severity": 2,
+        "pointer": "/images/70"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 256x272.",
+        "severity": 2,
+        "pointer": "/images/71"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 640x479.",
+        "severity": 2,
+        "pointer": "/images/72"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 432x432.",
+        "severity": 2,
+        "pointer": "/images/73"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 96x768.",
+        "severity": 2,
+        "pointer": "/images/74"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/75"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 28x279.",
+        "severity": 2,
+        "pointer": "/images/76"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/77"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/78"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x734.",
+        "severity": 2,
+        "pointer": "/images/79"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 650x409.",
+        "severity": 2,
+        "pointer": "/images/80"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 450x579.",
+        "severity": 2,
+        "pointer": "/images/81"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 677x84.",
+        "severity": 2,
+        "pointer": "/images/82"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 660x472.",
+        "severity": 2,
+        "pointer": "/images/84"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 660x490.",
+        "severity": 2,
+        "pointer": "/images/85"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 660x477.",
+        "severity": 2,
+        "pointer": "/images/86"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 660x502.",
+        "severity": 2,
+        "pointer": "/images/87"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x448.",
+        "severity": 2,
+        "pointer": "/images/88"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x116.",
+        "severity": 2,
+        "pointer": "/images/89"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x448.",
+        "severity": 2,
+        "pointer": "/images/90"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x448.",
+        "severity": 2,
+        "pointer": "/images/91"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 460x372.",
+        "severity": 2,
+        "pointer": "/images/95"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x369.",
+        "severity": 2,
+        "pointer": "/images/99"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x92.",
+        "severity": 2,
+        "pointer": "/images/100"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x376.",
+        "severity": 2,
+        "pointer": "/images/101"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x62.",
+        "severity": 2,
+        "pointer": "/images/102"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x368.",
+        "severity": 2,
+        "pointer": "/images/103"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x372.",
+        "severity": 2,
+        "pointer": "/images/104"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x366.",
+        "severity": 2,
+        "pointer": "/images/105"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x361.",
+        "severity": 2,
+        "pointer": "/images/106"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x367.",
+        "severity": 2,
+        "pointer": "/images/107"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x378.",
+        "severity": 2,
+        "pointer": "/images/108"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x368.",
+        "severity": 2,
+        "pointer": "/images/109"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/110"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x372.",
+        "severity": 2,
+        "pointer": "/images/111"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x376.",
+        "severity": 2,
+        "pointer": "/images/112"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x369.",
+        "severity": 2,
+        "pointer": "/images/113"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x364.",
+        "severity": 2,
+        "pointer": "/images/114"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x357.",
+        "severity": 2,
+        "pointer": "/images/115"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x115.",
+        "severity": 2,
+        "pointer": "/images/116"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/117"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x369.",
+        "severity": 2,
+        "pointer": "/images/118"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x364.",
+        "severity": 2,
+        "pointer": "/images/119"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x371.",
+        "severity": 2,
+        "pointer": "/images/120"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x376.",
+        "severity": 2,
+        "pointer": "/images/121"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x376.",
+        "severity": 2,
+        "pointer": "/images/122"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/123"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x378.",
+        "severity": 2,
+        "pointer": "/images/124"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/125"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/126"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x377.",
+        "severity": 2,
+        "pointer": "/images/127"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/128"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x366.",
+        "severity": 2,
+        "pointer": "/images/129"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x366.",
+        "severity": 2,
+        "pointer": "/images/130"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x377.",
+        "severity": 2,
+        "pointer": "/images/131"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x368.",
+        "severity": 2,
+        "pointer": "/images/132"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x361.",
+        "severity": 2,
+        "pointer": "/images/133"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x377.",
+        "severity": 2,
+        "pointer": "/images/134"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x368.",
+        "severity": 2,
+        "pointer": "/images/135"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x368.",
+        "severity": 2,
+        "pointer": "/images/136"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x368.",
+        "severity": 2,
+        "pointer": "/images/137"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x378.",
+        "severity": 2,
+        "pointer": "/images/138"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x377.",
+        "severity": 2,
+        "pointer": "/images/139"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/140"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x378.",
+        "severity": 2,
+        "pointer": "/images/141"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/142"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x376.",
+        "severity": 2,
+        "pointer": "/images/143"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x366.",
+        "severity": 2,
+        "pointer": "/images/144"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/145"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/146"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 512x373.",
+        "severity": 2,
+        "pointer": "/images/147"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 480x480.",
+        "severity": 2,
+        "pointer": "/images/162"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x397.",
+        "severity": 2,
+        "pointer": "/images/163"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 623x300.",
+        "severity": 2,
+        "pointer": "/images/165"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x90.",
+        "severity": 2,
+        "pointer": "/images/166"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 425x300.",
+        "severity": 2,
+        "pointer": "/images/167"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 450x80.",
+        "severity": 2,
+        "pointer": "/images/168"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 497x300.",
+        "severity": 2,
+        "pointer": "/images/169"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 508x300.",
+        "severity": 2,
+        "pointer": "/images/170"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 426x300.",
+        "severity": 2,
+        "pointer": "/images/171"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x108.",
+        "severity": 2,
+        "pointer": "/images/172"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 484x300.",
+        "severity": 2,
+        "pointer": "/images/173"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 484x300.",
+        "severity": 2,
+        "pointer": "/images/174"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 452x300.",
+        "severity": 2,
+        "pointer": "/images/175"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 524x300.",
+        "severity": 2,
+        "pointer": "/images/176"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x141.",
+        "severity": 2,
+        "pointer": "/images/177"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 511x300.",
+        "severity": 2,
+        "pointer": "/images/178"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 308x703.",
+        "severity": 2,
+        "pointer": "/images/179"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/180"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/181"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 493x484.",
+        "severity": 2,
+        "pointer": "/images/183"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 266x274.",
+        "severity": 2,
+        "pointer": "/images/184"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 261x768.",
+        "severity": 2,
+        "pointer": "/images/185"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 766x768.",
+        "severity": 2,
+        "pointer": "/images/186"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x663.",
+        "severity": 2,
+        "pointer": "/images/187"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/188"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/189"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 511x768.",
+        "severity": 2,
+        "pointer": "/images/190"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/191"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 411x596.",
+        "severity": 2,
+        "pointer": "/images/193"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 640x768.",
+        "severity": 2,
+        "pointer": "/images/194"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 256x286.",
+        "severity": 2,
+        "pointer": "/images/199"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 526x728.",
+        "severity": 2,
+        "pointer": "/images/200"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x251.",
+        "severity": 2,
+        "pointer": "/images/201"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/202"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 639x768.",
+        "severity": 2,
+        "pointer": "/images/203"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 673x682.",
+        "severity": 2,
+        "pointer": "/images/204"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 761x768.",
+        "severity": 2,
+        "pointer": "/images/205"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/209"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 400x400.",
+        "severity": 2,
+        "pointer": "/images/211"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 432x432.",
+        "severity": 2,
+        "pointer": "/images/213"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/215"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/217"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/219"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/220"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 400x400.",
+        "severity": 2,
+        "pointer": "/images/221"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/222"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 400x400.",
+        "severity": 2,
+        "pointer": "/images/223"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 341x341.",
+        "severity": 2,
+        "pointer": "/images/224"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/225"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 500x500.",
+        "severity": 2,
+        "pointer": "/images/229"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 400x400.",
+        "severity": 2,
+        "pointer": "/images/232"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x600.",
+        "severity": 2,
+        "pointer": "/images/233"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 256x175.",
+        "severity": 2,
+        "pointer": "/images/234"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/236"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x697.",
+        "severity": 2,
+        "pointer": "/images/237"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 646x646.",
+        "severity": 2,
+        "pointer": "/images/238"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x768.",
+        "severity": 2,
+        "pointer": "/images/239"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 600x399.",
+        "severity": 2,
+        "pointer": "/images/240"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 330x220.",
+        "severity": 2,
+        "pointer": "/images/241"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x388.",
+        "severity": 2,
+        "pointer": "/images/242"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x576.",
+        "severity": 2,
+        "pointer": "/images/243"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x639.",
+        "severity": 2,
+        "pointer": "/images/244"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 229x160.",
+        "severity": 2,
+        "pointer": "/images/245"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 768x545.",
+        "severity": 2,
+        "pointer": "/images/246"
+      },
+      {
+        "code": "IMAGE_NPOT_DIMENSIONS",
+        "message": "Image has non-power-of-two dimensions: 89x110.",
+        "severity": 2,
+        "pointer": "/images/247"
+      }
+    ],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "glTF-Transform v4.2.1",
+    "extensionsUsed": [
+      "EXT_texture_webp",
+      "KHR_mesh_quantization"
+    ],
+    "extensionsRequired": [
+      "EXT_texture_webp",
+      "KHR_mesh_quantization"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 37306480
+      },
+      {
+        "pointer": "/images/0",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/1",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/2",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 551,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/3",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/4",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/5",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 280,
+          "height": 280,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/6",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 661,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/7",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/8",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/9",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 680,
+          "height": 680,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/10",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/11",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 450,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/12",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/13",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/14",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/15",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/16",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 250,
+          "height": 200,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/17",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 64,
+          "height": 64,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/18",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 266,
+          "height": 480,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/19",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 450,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/20",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 384,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/21",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/22",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 384,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/23",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 680,
+          "height": 680,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/24",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/25",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 384,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/26",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 363,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/27",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 509,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/28",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/29",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/30",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/31",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 640,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/32",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 645,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/33",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/34",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/35",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 400,
+          "height": 379,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/36",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/37",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 128,
+          "height": 128,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/38",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 128,
+          "height": 128,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/39",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 480,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/40",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 236,
+          "height": 236,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/41",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 494,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/42",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/43",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/44",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/45",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 750,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/46",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 170,
+          "height": 720,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/47",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 614,
+          "height": 709,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/48",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 283,
+          "height": 283,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/49",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 283,
+          "height": 283,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/50",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 583,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/51",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/52",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/53",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/54",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 450,
+          "height": 447,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/55",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/56",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/57",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/58",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/59",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/60",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 300,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/61",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/62",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/63",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/64",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/65",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/66",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/67",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 128,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/68",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/69",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/70",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 511,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/71",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 272,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/72",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 640,
+          "height": 479,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/73",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 432,
+          "height": 432,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/74",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 96,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/75",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/76",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 28,
+          "height": 279,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/77",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/78",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/79",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 734,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/80",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 650,
+          "height": 409,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/81",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 450,
+          "height": 579,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/82",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 677,
+          "height": 84,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/83",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 128,
+          "height": 128,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/84",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 660,
+          "height": 472,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/85",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 660,
+          "height": 490,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/86",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 660,
+          "height": 477,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/87",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 660,
+          "height": 502,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/88",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 448,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/89",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 116,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/90",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 448,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/91",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 448,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/92",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/93",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/94",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/95",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 460,
+          "height": 372,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/96",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/97",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/98",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/99",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 369,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/100",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 92,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/101",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 376,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/102",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 62,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/103",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 368,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/104",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 372,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/105",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 366,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/106",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 361,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/107",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 367,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/108",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 378,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/109",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 368,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/110",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/111",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 372,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/112",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 376,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/113",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 369,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/114",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 364,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/115",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 357,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/116",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 115,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/117",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/118",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 369,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/119",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 364,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/120",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 371,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/121",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 376,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/122",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 376,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/123",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/124",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 378,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/125",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/126",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/127",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 377,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/128",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/129",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 366,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/130",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 366,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/131",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 377,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/132",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 368,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/133",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 361,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/134",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 377,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/135",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 368,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/136",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 368,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/137",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 368,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/138",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 378,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/139",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 377,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/140",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/141",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 378,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/142",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/143",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 376,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/144",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 366,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/145",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/146",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/147",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 373,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/148",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/149",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/150",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/151",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/152",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/153",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/154",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/155",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/156",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/157",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/158",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/159",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/160",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/161",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/162",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 480,
+          "height": 480,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/163",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 397,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/164",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/165",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 623,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/166",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 90,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/167",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 425,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/168",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 450,
+          "height": 80,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/169",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 497,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/170",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 508,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/171",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 426,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/172",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 108,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/173",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 484,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/174",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 484,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/175",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 452,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/176",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 524,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/177",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 141,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/178",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 511,
+          "height": 300,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/179",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 308,
+          "height": 703,
+          "format": "rgba",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/180",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/181",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/182",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/183",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 493,
+          "height": 484,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/184",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 266,
+          "height": 274,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/185",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 261,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/186",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 766,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/187",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 663,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/188",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/189",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/190",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 511,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/191",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/192",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 128,
+          "height": 128,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/193",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 411,
+          "height": 596,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/194",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 640,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/195",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/196",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 32,
+          "height": 32,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/197",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 32,
+          "height": 32,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/198",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/199",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 286,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/200",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 526,
+          "height": 728,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/201",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 251,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/202",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/203",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 639,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/204",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 673,
+          "height": 682,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/205",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 761,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/206",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 512,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/207",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/208",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/209",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/210",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/211",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 400,
+          "height": 400,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/212",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/213",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 432,
+          "height": 432,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/214",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/215",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/216",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/217",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/218",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/219",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/220",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/221",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 400,
+          "height": 400,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/222",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/223",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 400,
+          "height": 400,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/224",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 341,
+          "height": 341,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/225",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/226",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/227",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/228",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 512,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/229",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 500,
+          "height": 500,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/230",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/231",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 64,
+          "height": 64,
+          "format": "rgba",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/232",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 400,
+          "height": 400,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/233",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 600,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/234",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 256,
+          "height": 175,
+          "format": "rgba",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/235",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 128,
+          "height": 256,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/236",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/237",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 697,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/238",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 646,
+          "height": 646,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/239",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 768,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/240",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 600,
+          "height": 399,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/241",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 330,
+          "height": 220,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/242",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 388,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/243",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 576,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/244",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 639,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/245",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 229,
+          "height": 160,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/246",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 768,
+          "height": 545,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      },
+      {
+        "pointer": "/images/247",
+        "mimeType": "image/webp",
+        "storage": "buffer-view",
+        "image": {
+          "width": 89,
+          "height": 110,
+          "format": "rgb",
+          "primaries": "srgb",
+          "transfer": "srgb",
+          "bits": 8
+        }
+      }
+    ],
+    "animationCount": 0,
+    "materialCount": 319,
+    "hasMorphTargets": false,
+    "hasSkins": false,
+    "hasTextures": true,
+    "hasDefaultScene": true,
+    "drawCallCount": 710,
+    "totalVertexCount": 1262380,
+    "totalTriangleCount": 790128,
+    "maxUVs": 1,
+    "maxInfluences": 0,
+    "maxAttributes": 3
+  }
+}

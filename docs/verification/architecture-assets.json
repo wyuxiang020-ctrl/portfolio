@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-07T06:02:19.507Z",
+  "scope": "Local asset byte integrity, GLB self-containment, responsive references, image alternatives and explicit chapter anchors. Not browser or online acceptance.",
+  "publicBytes": 567395090,
+  "publicMiB": 541.1101245880127,
+  "contentFiles": 7,
+  "imageReferences": 199,
+  "captions": 166,
+  "checks": [
+    {
+      "name": "Source public asset identity and local presence",
+      "checked": 830,
+      "passed": true
+    },
+    {
+      "name": "Architecture collection contains required seven projects",
+      "checked": 7,
+      "passed": true
+    }
+  ],
+  "failures": []
+}

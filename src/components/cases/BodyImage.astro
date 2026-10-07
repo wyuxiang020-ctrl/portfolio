@@ -1,0 +1,10 @@
+---
+interface Props { src: string; title: string; caption: string; width: number; height: number; }
+const { src, title, caption, width, height } = Astro.props;
+const path = '/media/' + src;
+const kind = src === 'knowledge-architecture-hd.png' ? '产品架构说明图，非运行截图 · ' : src === 'gym-meal-summary.png' ? '实际产品界面 · 合成演示记录，非真人健康数据 · ' : '';
+---
+<figure class="body-evidence-image">
+  <img src={path} data-gallery="project" data-full-src={path} alt={title} width={width} height={height} loading="lazy" decoding="async" />
+  <figcaption>{kind && <span class="media-kind">{kind}</span>}<b>{title}</b><p>{caption} · 点击查看完整图片</p></figcaption>
+</figure>

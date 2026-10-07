@@ -1,0 +1,38 @@
+---
+interface Props { project: 'knowledge' | 'gym' | 'spatial'; }
+const { project } = Astro.props;
+const screens = {
+  knowledge: [
+    ['knowledge-answer.png', '自然语言提问 → 带引用回答', '在隔离 Demo 中实际提问虚构的北光档案馆材料与结构。截图记录一次生成结果，不作为完整评测结论。', 1265, 712],
+    ['knowledge-citation.png', '点击引用 → 核对原文片段', '引用 [1] 指向被使用的技术摘要，高亮对应证据。语义匹配数值仅用于排序。', 1265, 712],
+    ['knowledge-library.png', '选择项目 → 查看入库文档', '按项目管理设计说明和技术摘要，解析、切分、向量化分阶段呈现。', 1265, 712],
+    ['knowledge-chunks.png', '展开技术详情 → 查看切分结果', '展示 chunk 编号、片段内容、token 估计与向量化状态；截图时没有重新入库。', 1265, 712],
+  ],
+  gym: [
+    ['gym-plan-hd.png', '01 / 准备计划', '选择训练日、动作与目标组次。', 708, 1688],
+    ['gym-import.png', '02 / 导入训练', '复用计划，组次默认未完成。', 415, 899],
+    ['gym-partial.png', '03 / 逐组确认', '计划与实际分开，保留部分完成。', 415, 899],
+    ['gym-confirm.png', 'AI 补录 / 检查草稿', '未知重量保留提示，用户编辑后确认。', 415, 899],
+  ],
+  spatial: [
+    ['spatial-selected.png', '先看概览，再选择阅读深度', '原建筑网站真实截图，展示三个精选设计项目。具体设计内容已迁入本站建筑与空间栏目。', 1929, 1260],
+    ['spatial-home.png', '首页 / 建立阅读起点', '原建筑站首页截图，用于记录合并前的信息组织。', 2487, 1353],
+    ['spatial-court.png', '按需打开 / 探索真实模型', '原火塘查看器截图。查看完整设计和实际模型，请进入本站对应建筑项目。', 1173, 1332],
+  ],
+};
+const title = { knowledge: '找到、理解，再核验。', gym: '先复用计划，再核对事实。', spatial: '读懂图纸，再走近空间。' }[project];
+const derivatives: Record<string,string> = { 'spatial-home.png': 'spatial-home-thumb.webp', 'spatial-selected.png': 'spatial-selected-thumb.webp', 'gym-plan-hd.png': 'gym-plan-thumb.webp' };
+---
+<section class="project-screens" id="product-view" aria-labelledby="screens-heading">
+  <p class="case-kicker">产品界面 / PRODUCT IN CONTEXT</p>
+  <h2 id="screens-heading">{title}</h2>
+  <p>{project === 'spatial' ? '来自用户提供的真实建筑网站截图。这里记录产品与实现过程，建筑设计本身在独立项目页中展开。' : '真实产品界面 · 合成演示数据。截图记录产品状态，不是真人使用记录；点击图片可进入当前项目图集。'}</p>
+  <div class={'screens-grid screens-' + project}>
+    {screens[project].map(([src, heading, caption, width, height]) => <figure>
+      <img src={'/media/' + (derivatives[String(src)] || src)} data-gallery="project" data-full-src={'/media/' + src} alt={String(heading)} width={Number(width)} height={Number(height)} loading="lazy" decoding="async" />
+      <figcaption><span class="media-kind">{project === 'spatial' ? '原建筑网站实际截图 · ' : '实际产品截图 · 合成演示数据，非真人记录 · '}</span><b>{heading}</b><p>{caption}</p></figcaption>
+    </figure>)}
+  </div>
+  {project === 'knowledge' && <ol class="flow-strip" aria-label="产品链路示意，非交互演示"><li><span>01 / SCOPE</span>限定项目提问</li><li><span>02 / RETRIEVE</span>检索原文片段</li><li><span>03 / ANSWER</span>生成带引用回答</li><li><span>04 / VERIFY</span>回到原始 PDF 核验</li></ol>}
+  {project === 'spatial' && <div class="case-entry-links"><a href="/architecture/grandmothers-hearth/#interactive-model">进入火塘 3D →</a><a href="/architecture/iterative-learning/#interactive-model">进入迭代学习 3D →</a><a href="/architecture/">全部建筑设计 →</a></div>}
+</section>

@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-01T14:55:12Z",
+  "attempts": 1,
+  "target": "https://yuxiangworks.com/work/grandmothers-hearth/?modelTest=1#interactive-model",
+  "result": "browser automation API getTab timed out and reset after 30 seconds",
+  "interpretation": "Public browser UI acceptance unverified. This is a tool timeout, not evidence that the website or GLB failed to load. Local real-browser checks and public Node requests are recorded separately."
+}

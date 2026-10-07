@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import OptimizedImage from '../../components/ui/OptimizedImage.astro';
+import { getCollection } from 'astro:content';
+import { architectureNotes, architectureOrder } from '../../data/architecture-projects';
+const projects = (await getCollection('architecture')).sort((a,b) => architectureOrder.indexOf(a.id) - architectureOrder.indexOf(b.id));
+---
+<BaseLayout title="建筑与空间 · 王誉翔" description="7 个建筑与空间项目：以真实图纸、设计研究和可探索模型，呈现王誉翔的专业背景与空间思考。" wide>
+  <div class="container">
+    <header class="page-header"><p class="eyebrow">SELECTED ARCHITECTURE / 2023—2026</p><h1>先理解人与场所，<br />再让空间回应。</h1><p class="lead">从重庆到曼彻斯特，关注已有建筑如何继续被使用，以及日常生活怎样塑造空间。这里保留完整研究、图纸与模型，呈现产品实践背后的专业训练。</p><a class="text-link" href="/projects/spatial-portfolio/">了解作品集的交互设计与实现 <span>↗</span></a></header>
+    <div class="architecture-grid">{projects.map((entry, index) => <a class:list={['architecture-card', { 'architecture-card-first': index === 0 }]} href={`/architecture/${entry.id}/`}>
+      <div class="architecture-image"><OptimizedImage src={entry.data.coverImage} alt={architectureNotes[entry.id].title} loading={index < 2 ? 'eager' : 'lazy'} gallery={false} sizes="(max-width: 760px) calc(100vw - 46px), (max-width: 1000px) 46vw, 540px" /><span class="architecture-card-arrow" aria-hidden="true">↗</span></div>
+      <div class="architecture-card-caption"><span class="architecture-number">0{index + 1}</span><div><p>{entry.data.year} <span> / </span> {architectureNotes[entry.id].discipline}</p><h2>{architectureNotes[entry.id].title}</h2><p class="architecture-summary">{entry.data.description}</p></div></div>
+    </a>)}</div>
+    <p class="architecture-list-note">课程设计与合作提案均保留原项目性质；各详情页说明参与角色、素材来源与证据边界。3D 模型仅在点击后加载。</p>
+  </div>
+</BaseLayout>
+<style>
+ .architecture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:65px 35px}.architecture-card{display:block;min-width:0}.architecture-image{aspect-ratio:1.5;overflow:hidden;background:#1b2729;position:relative}.architecture-image :global(img){display:block;width:100%;height:100%;object-fit:cover;transition:transform .55s ease,filter .4s;filter:saturate(.84)}.architecture-card:hover .architecture-image :global(img),.architecture-card:focus-visible .architecture-image :global(img){transform:scale(1.025);filter:saturate(1)}.architecture-card-arrow{position:absolute;bottom:16px;right:17px;background:#11191ddb;border:1px solid #ffffff25;width:37px;height:37px;border-radius:50%;display:grid;place-items:center;color:white;font-size:18px}.architecture-card-caption{display:grid;grid-template-columns:26px 1fr;gap:14px;margin-top:22px}.architecture-number{font-size:10px;color:var(--quiet);padding-top:2px}.architecture-card-caption p{font-size:10px;letter-spacing:.03em;margin-bottom:9px}.architecture-card-caption p span{padding:0 5px;color:var(--line)}.architecture-card-caption h2{font-size:23px;margin-bottom:13px;transition:color .2s}.architecture-card:hover h2{color:var(--accent)}.architecture-card-caption .architecture-summary{font-size:12px;line-height:1.9;margin-bottom:0;max-width:440px}.architecture-list-note{font-size:11px;color:var(--quiet);border-top:1px solid var(--line);margin-top:65px;padding-top:22px;max-width:700px}
+ @media(max-width:760px){.architecture-grid{grid-template-columns:1fr;gap:38px}.architecture-card-caption{margin-top:18px;gap:8px}.architecture-card-caption h2{font-size:21px}.architecture-card-caption .architecture-summary{font-size:12px}.architecture-card-caption p{font-size:10px}.architecture-list-note{margin-top:40px}}
+</style>

@@ -1,0 +1,106 @@
+{
+  "recordedAt": "2026-09-06T10:05:16.870Z",
+  "method": "Unique local HTML img src file sizes per page; not browser transfer, srcset selection, or loading duration. Original lightbox files excluded unless used by img src.",
+  "pages": [
+    {
+      "route": "/about/",
+      "images": 2,
+      "lazy": 2,
+      "dimensioned": 1,
+      "responsive": 1,
+      "localDefaultSrcBytes": 144146,
+      "externalImages": 1
+    },
+    {
+      "route": "/contact/",
+      "images": 0,
+      "lazy": 0,
+      "dimensioned": 0,
+      "responsive": 0,
+      "localDefaultSrcBytes": 0,
+      "externalImages": 0
+    },
+    {
+      "route": "/",
+      "images": 4,
+      "lazy": 3,
+      "dimensioned": 3,
+      "responsive": 3,
+      "localDefaultSrcBytes": 393518,
+      "externalImages": 1
+    },
+    {
+      "route": "/work/continuation/",
+      "images": 25,
+      "lazy": 23,
+      "dimensioned": 25,
+      "responsive": 25,
+      "localDefaultSrcBytes": 2496032,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/gather-living/",
+      "images": 25,
+      "lazy": 23,
+      "dimensioned": 25,
+      "responsive": 25,
+      "localDefaultSrcBytes": 1804908,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/grandmothers-hearth/",
+      "images": 51,
+      "lazy": 49,
+      "dimensioned": 51,
+      "responsive": 51,
+      "localDefaultSrcBytes": 5266518,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/half-diary/",
+      "images": 21,
+      "lazy": 19,
+      "dimensioned": 21,
+      "responsive": 21,
+      "localDefaultSrcBytes": 2212020,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/hard-hat-cafe/",
+      "images": 23,
+      "lazy": 21,
+      "dimensioned": 23,
+      "responsive": 23,
+      "localDefaultSrcBytes": 1702280,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/",
+      "images": 7,
+      "lazy": 7,
+      "dimensioned": 7,
+      "responsive": 7,
+      "localDefaultSrcBytes": 923486,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/iterative-learning/",
+      "images": 46,
+      "lazy": 44,
+      "dimensioned": 46,
+      "responsive": 46,
+      "localDefaultSrcBytes": 4030442,
+      "externalImages": 0
+    },
+    {
+      "route": "/work/symsensory/",
+      "images": 22,
+      "lazy": 20,
+      "dimensioned": 22,
+      "responsive": 22,
+      "localDefaultSrcBytes": 2029826,
+      "externalImages": 0
+    }
+  ],
+  "missing": []
+}

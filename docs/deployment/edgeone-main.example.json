@@ -1,0 +1,108 @@
+{
+  "redirects": [
+    {
+      "statusCode": 302,
+      "source": "/work",
+      "destination": "/architecture/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/",
+      "destination": "/architecture/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/continuation",
+      "destination": "/architecture/continuation/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/continuation/",
+      "destination": "/architecture/continuation/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/gather-living",
+      "destination": "/architecture/gather-living/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/gather-living/",
+      "destination": "/architecture/gather-living/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/grandmothers-hearth",
+      "destination": "/architecture/grandmothers-hearth/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/grandmothers-hearth/",
+      "destination": "/architecture/grandmothers-hearth/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/half-diary",
+      "destination": "/architecture/half-diary/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/half-diary/",
+      "destination": "/architecture/half-diary/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/hard-hat-cafe",
+      "destination": "/architecture/hard-hat-cafe/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/hard-hat-cafe/",
+      "destination": "/architecture/hard-hat-cafe/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/iterative-learning",
+      "destination": "/architecture/iterative-learning/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/iterative-learning/",
+      "destination": "/architecture/iterative-learning/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/symsensory",
+      "destination": "/architecture/symsensory/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/work/symsensory/",
+      "destination": "/architecture/symsensory/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/models/*",
+      "headers": [
+        {
+          "value": "model/gltf-binary",
+          "key": "Content-Type"
+        },
+        {
+          "value": "public, max-age=3600, must-revalidate",
+          "key": "Cache-Control"
+        }
+      ]
+    },
+    {
+      "source": "/_astro/*",
+      "headers": [
+        {
+          "value": "public, max-age=31536000, immutable",
+          "key": "Cache-Control"
+        }
+      ]
+    }
+  ]
+}

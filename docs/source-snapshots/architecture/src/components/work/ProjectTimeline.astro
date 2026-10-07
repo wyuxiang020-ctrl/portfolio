@@ -1,0 +1,61 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import OptimizedImage from '../ui/OptimizedImage.astro';
+import { compareProjectsByYear } from '../../lib/projects';
+
+interface Props { projects: CollectionEntry<'projects'>[]; headingLevel?: 'h2' | 'h3'; }
+const { projects, headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+const sorted = [...projects].sort(compareProjectsByYear);
+---
+
+<ol class="project-timeline" aria-label="全部项目，按年份由近及远">
+  {sorted.map(project => {
+    const [titleCN, titleEN] = project.data.title.split(' · ');
+    return (
+      <li class="timeline-item" data-project-id={project.id}>
+        <p class="timeline-year">{project.data.year}</p>
+        <a class="timeline-link" href={`/work/${project.id}`}>
+          <div class="timeline-image">
+            <OptimizedImage src={project.data.coverImage} alt="" sizes="(max-width: 639px) 88px, 156px" loading="lazy" />
+          </div>
+          <div class="timeline-copy">
+            <Heading class="timeline-title">{titleCN}</Heading>
+            {titleEN && <p class="timeline-title-en" lang="en">{titleEN}</p>}
+            <p class="timeline-description">{project.data.description}</p>
+            {project.data.collaborators && <p class="timeline-credits">合作署名 · {project.data.collaborators}</p>}
+            <span class="timeline-action">查看项目 <span aria-hidden="true">↗</span></span>
+          </div>
+        </a>
+      </li>
+    );
+  })}
+</ol>
+
+<style>
+  .project-timeline { list-style: none; padding: 0; margin: 0; }
+  .timeline-item { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 2rem; border-top: 1px solid #e0e5e0; padding: 2rem 0; }
+  .timeline-item:last-child { border-bottom: 1px solid #e0e5e0; }
+  .timeline-year { padding-top: .35rem; margin: 0; font-size: .85rem; letter-spacing: .04em; color: #58685e; font-variant-numeric: tabular-nums; }
+  .timeline-link { display: grid; grid-template-columns: 156px minmax(0, 1fr); gap: 1.75rem; align-items: start; color: inherit; text-decoration: none; border-radius: 4px; }
+  .timeline-link:focus-visible { outline: 2px solid #2d4a3e; outline-offset: 8px; }
+  .timeline-image { overflow: hidden; background: #f0f1ed; aspect-ratio: 4 / 3; border: 1px solid #eceee8; }
+  .timeline-image :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .timeline-copy { min-width: 0; }
+  .timeline-title { font-size: 1.35rem; line-height: 1.5; margin: 0; color: #1a1a1a; transition: color 160ms ease; }
+  .timeline-title-en { font-size: .8rem; line-height: 1.55; color: #737971; margin: .15rem 0 0; }
+  .timeline-description { font-size: .95rem; line-height: 1.85; color: #4d564e; margin: .85rem 0 0; }
+  .timeline-credits { font-size: .78rem; line-height: 1.8; color: #687467; margin: .7rem 0 0; }
+  .timeline-action { display: inline-block; color: #2d4a3e; font-size: .8rem; margin-top: .9rem; border-bottom: 1px solid #b8c5b9; padding-bottom: 2px; }
+  .timeline-link:hover .timeline-title { color: #2d4a3e; }
+  @media (max-width: 767px) {
+    .timeline-item { grid-template-columns: 1fr; gap: .85rem; padding: 1.75rem 0; }
+    .timeline-year { padding: 0; }
+  }
+  @media (max-width: 639px) {
+    .timeline-link { grid-template-columns: 88px minmax(0, 1fr); gap: 1rem; }
+    .timeline-title { font-size: 1.1rem; }
+    .timeline-description { font-size: .9rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { .timeline-title { transition: none; } }
+</style>

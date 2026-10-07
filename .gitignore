@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+tmp/
+dist/
+.astro/
+.env*
+!.env.example
+*.log
+.DS_Store
+docs/qa/browser-profile/

@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-01T15:59:54.281Z",
+  "base": "https://yuxiangworks.com",
+  "version": "portfolio-timeline-2026-10-01",
+  "method": "Anonymous public HTTP requests; no browser session or credentials",
+  "network": "Current host route; VPN/proxy state unknown. Not evidence of China mainland direct access.",
+  "sampleCount": 5,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "durationMs": 752,
+      "version": "portfolio-timeline-2026-10-01",
+      "heading": "王誉翔 Yuxiang Wang",
+      "checks": {
+        "http200": true,
+        "correctVersion": true,
+        "chineseName": true,
+        "chineseLanguage": true,
+        "allSevenInOrder": true,
+        "correctFeatured": true,
+        "allProjectsAnchor": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/work",
+      "status": 200,
+      "durationMs": 1220,
+      "version": "portfolio-timeline-2026-10-01",
+      "heading": "全部项目 / 7",
+      "checks": {
+        "http200": true,
+        "correctVersion": true,
+        "chineseName": true,
+        "chineseLanguage": true,
+        "allSevenInOrder": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "durationMs": 970,
+      "version": "portfolio-timeline-2026-10-01",
+      "heading": "关于王誉翔\nYuxiang Wang",
+      "checks": {
+        "http200": true,
+        "correctVersion": true,
+        "chineseName": true,
+        "chineseLanguage": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/work/grandmothers-hearth",
+      "status": 200,
+      "durationMs": 1849,
+      "version": "portfolio-timeline-2026-10-01",
+      "heading": "祖母的火塘 Grandmother's Hearth",
+      "checks": {
+        "http200": true,
+        "correctVersion": true,
+        "chineseName": true,
+        "chineseLanguage": true,
+        "bilingualCredits": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/work/iterative-learning",
+      "status": 200,
+      "durationMs": 2276,
+      "version": "portfolio-timeline-2026-10-01",
+      "heading": "迭代学习 The Architecture of Iterative Learning",
+      "checks": {
+        "http200": true,
+        "correctVersion": true,
+        "chineseName": true,
+        "chineseLanguage": true,
+        "bilingualCredits": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

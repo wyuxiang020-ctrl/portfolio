@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-02T17:07:20.199Z",
+  "commit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3",
+  "method": "Anonymous public HTTP; not browser or real-device testing",
+  "network": "VPN/proxy state unknown; not a mainland direct-access result",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "requestMs": 1125,
+      "checks": {
+        "http200": true,
+        "newName": true,
+        "oldNameAbsent": true,
+        "version": true,
+        "order": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/work",
+      "status": 200,
+      "requestMs": 928,
+      "checks": {
+        "http200": true,
+        "newName": true,
+        "oldNameAbsent": true,
+        "version": true,
+        "order": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/work/hard-hat-cafe",
+      "status": 200,
+      "requestMs": 1062,
+      "checks": {
+        "http200": true,
+        "newName": true,
+        "oldNameAbsent": true,
+        "version": true
+      },
+      "pass": true
+    },
+    {
+      "route": "/work/grandmothers-hearth",
+      "status": 200,
+      "requestMs": 940,
+      "checks": {
+        "http200": true,
+        "newName": true,
+        "oldNameAbsent": true,
+        "version": true
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

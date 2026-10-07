@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-01T14:52:59.527Z",
+  "scope": "Local agent-operated browser smoke check for shared viewer, not real mobile or public network",
+  "version": "spatial-ux-2026-10-01-parallel-load",
+  "samples": [
+    {
+      "attemptId": 17087.299999952316,
+      "startedAt": "2026-10-01T14:52:59.081Z",
+      "model": "/models/itb.glb",
+      "bytes": 6539052,
+      "downloadStartedMs": 0,
+      "requestedTransport": "single",
+      "transport": "single",
+      "firstProgressMs": 12,
+      "moduleReadyMs": 25,
+      "downloadFinishedMs": 41,
+      "downloadMs": 41,
+      "events": [
+        {
+          "action": "view:overview",
+          "ms": 109
+        }
+      ],
+      "outcome": "ready",
+      "parseMs": 48,
+      "renderCount": 4,
+      "maxRenderSubmissionMs": 325,
+      "clickToFirstRenderSubmittedMs": 435,
+      "controlsReadyMs": 435
+    }
+  ]
+}

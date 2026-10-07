@@ -1,0 +1,1077 @@
+{
+  "date": "2026-10-07",
+  "scope": "Selected current source and useful uncommitted text records; excludes account config, secrets, dependencies, git history, unused generated binaries. Original public files preserved in source; migrated assets have separate manifests.",
+  "files": [
+    {
+      "source": "E:\\ai作品网站\\portfolio\\package.json",
+      "destination": "docs/source-snapshots/ai/package.json",
+      "bytes": 1617,
+      "sha256": "e493704ff96dde6c5daa83193967d9fb99697f586d6788c984799c558504ae74",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\portable\\build.mjs",
+      "destination": "docs/source-snapshots/ai/portable/build.mjs",
+      "bytes": 2089,
+      "sha256": "80139f6208e57efd11a31895759a933432d09da32037d17d3628fd590f7f6c68",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\README.md",
+      "destination": "docs/source-snapshots/ai/README.md",
+      "bytes": 1712,
+      "sha256": "ba249bcd8784b5f914d318e78dae09ee96752d90a487778897d5467a2cf71d9d",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\ambient-light.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/ambient-light.tsx",
+      "bytes": 1141,
+      "sha256": "b30b65d844718e14622f1425cf88d977f123abb92af37dff4143f91227770504",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\body-visuals.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/body-visuals.tsx",
+      "bytes": 3667,
+      "sha256": "b21b5dd013b6ebfb4805de1656d5f78ae5c0144936e542fae88ac5cb5b8a01ab",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\case-overview.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/case-overview.tsx",
+      "bytes": 7526,
+      "sha256": "2cfa379be49fc5dcb613ddc5383b9aaec1bf75119c5814e1ed491dcba3ade418",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\case-showcase.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/case-showcase.tsx",
+      "bytes": 3087,
+      "sha256": "c9f22f395d558bdf42518260023ff05d3c91490250a17e025bda82fd6f16a0c3",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\image-lightbox.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/image-lightbox.tsx",
+      "bytes": 2988,
+      "sha256": "3cd3bb0a485c017979822bff1f03f991ab0df983c3c1d19409863db39464e287",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\portfolio-navigation.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/portfolio-navigation.tsx",
+      "bytes": 1173,
+      "sha256": "1c092d0a756f5c88a7f431ccea7548380df2fe1ca1a9a9f6c8a6768648a29000",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\project-gallery.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/project-gallery.tsx",
+      "bytes": 2891,
+      "sha256": "ed68c74588c7b1ce1885ae0fb949237293e5df7b65e9b17ff9b2e29e538270ee",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\components\\reading-navigation.tsx",
+      "destination": "docs/source-snapshots/ai/app/components/reading-navigation.tsx",
+      "bytes": 1334,
+      "sha256": "8751f135037c87fb041bdb1314f906b030a4096abb25c3821d4962b1afc04ce0",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\data\\evidence.json",
+      "destination": "docs/source-snapshots/ai/app/data/evidence.json",
+      "bytes": 17490,
+      "sha256": "cc5e07de8b2912e2578c6a2447a820d1085aadd1b53e3def5d38afbc1597c9e0",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\data\\food-evidence.json",
+      "destination": "docs/source-snapshots/ai/app/data/food-evidence.json",
+      "bytes": 3696,
+      "sha256": "0e5c9274aac0da4ff0975323b69d22362df211d6bdba86e343ba145c0dc65185",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\editorial.css",
+      "destination": "docs/source-snapshots/ai/app/editorial.css",
+      "bytes": 33375,
+      "sha256": "4ec62d63f63992891a6635fd4d3250484bf2df286b470bfe76d5b2e5ed2e279c",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\globals.css",
+      "destination": "docs/source-snapshots/ai/app/globals.css",
+      "bytes": 13913,
+      "sha256": "d5e3385f6c45eb2fa9eb0a92ecc5ef2dfbffee6b54d4734c4f1c73d9b7a26f77",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\layout.tsx",
+      "destination": "docs/source-snapshots/ai/app/layout.tsx",
+      "bytes": 697,
+      "sha256": "dd381e427fed5c9fc15d6af972d7aeb044f453c2c24f5335d2de7790fa1e33a7",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\page.tsx",
+      "destination": "docs/source-snapshots/ai/app/page.tsx",
+      "bytes": 7016,
+      "sha256": "0df12406a512dc19fc065b7728e4fdd7a59be5854b8bd6afad707377965134a1",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\portfolio-refinements.css",
+      "destination": "docs/source-snapshots/ai/app/portfolio-refinements.css",
+      "bytes": 14191,
+      "sha256": "1882bd4d76e27982be173b1df503d0d3b951120f69d0b986f8b99adb54b6099c",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\projects\\gym\\page.tsx",
+      "destination": "docs/source-snapshots/ai/app/projects/gym/page.tsx",
+      "bytes": 18078,
+      "sha256": "c29102589f870112c7328e8e99f0d6cc39b77a40af34f3b758f063066c0132be",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\projects\\knowledge-copilot\\page.tsx",
+      "destination": "docs/source-snapshots/ai/app/projects/knowledge-copilot/page.tsx",
+      "bytes": 15419,
+      "sha256": "7ac089f89ad708f441cd39504cc1ecee49ee7432d9703a370377dbbd3005b132",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\projects\\spatial-portfolio\\page.tsx",
+      "destination": "docs/source-snapshots/ai/app/projects/spatial-portfolio/page.tsx",
+      "bytes": 16383,
+      "sha256": "41ae51027ad768799aedfcc929d8ac36519c325620df5c2888907b8ba1af8587",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\resume\\page.tsx",
+      "destination": "docs/source-snapshots/ai/app/resume/page.tsx",
+      "bytes": 7375,
+      "sha256": "49d20fa8b0913ae6767b649b187a4defd285f078b8d0dd038ce950d1d068881e",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\ai作品网站\\portfolio\\app\\resume\\print-button.tsx",
+      "destination": "docs/source-snapshots/ai/app/resume/print-button.tsx",
+      "bytes": 169,
+      "sha256": "c3ee282e523c29609f1bbf4bef19728a162a1eaf4438eefdafa080460bafd798",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "source": "E:\\cd portfolio\\package.json",
+      "destination": "docs/source-snapshots/architecture/package.json",
+      "bytes": 936,
+      "sha256": "b95a32f016d7f7ee0593332e7c13143cc3bd03f2568bc3417c18c79dad684e8b",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\astro.config.mjs",
+      "destination": "docs/source-snapshots/architecture/astro.config.mjs",
+      "bytes": 516,
+      "sha256": "306537ced335b0b778ebc2d3f892e85db7fbf95aba9cf2768be62bad7c628bce",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\README.md",
+      "destination": "docs/source-snapshots/architecture/README.md",
+      "bytes": 1604,
+      "sha256": "9d5901b9a7c76174e6372535975a00056ecfb6a057c5101c64199e894e56aad3",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\PROJECT_CHECKUP.md",
+      "destination": "docs/source-snapshots/architecture/PROJECT_CHECKUP.md",
+      "bytes": 4990,
+      "sha256": "f6f73829210a596c77511f076bb4374012d07406bb3620ae8213bfb8ec76d106",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\AI-PRODUCT-PORTFOLIO-CASE-STUDY.md",
+      "destination": "docs/source-snapshots/architecture/docs/AI-PRODUCT-PORTFOLIO-CASE-STUDY.md",
+      "bytes": 29909,
+      "sha256": "0f1c588bcbff1400ceed10a5378f37457f149c7910d023ce1617ad7d054659b7",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\home\\FeaturedProjects.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/home/FeaturedProjects.astro",
+      "bytes": 3073,
+      "sha256": "eba2f0ac52e9e4a6a2e092935395c503a376b05b55934da52aee9af9f6d100c0",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\home\\Hero.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/home/Hero.astro",
+      "bytes": 2030,
+      "sha256": "b7f38b88da5ddc8a85ee61851dd804f0f6d43fb03efb8450db1553e0ca785afd",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\layout\\BaseLayout.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/layout/BaseLayout.astro",
+      "bytes": 17450,
+      "sha256": "5cdf57a4b6640c560373a2333d99a6ab1474364c51a1b65d3fd23f4e2ff497a5",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\layout\\Footer.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/layout/Footer.astro",
+      "bytes": 2039,
+      "sha256": "46631c3e53adb25f3893c3e3a85874fd90ee1495949f6fcf58d338865d850244",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\layout\\Header.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/layout/Header.astro",
+      "bytes": 2377,
+      "sha256": "41126ddd68b4e6a086d5f15fb709ae073d59d03c5495d89dde174d9e98d1ec94",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\project\\ProjectBanner.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/project/ProjectBanner.astro",
+      "bytes": 1491,
+      "sha256": "210df5bbd825e2930b6de84efd3ee603e2952da1197b539e31fd22a7f2a57a71",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\project\\ProjectMeta.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/project/ProjectMeta.astro",
+      "bytes": 1308,
+      "sha256": "cf04abd4451caf57cb18672a58e5372b087eab308940f3acc77ecc17ac975ede",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\project\\ProjectNav.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/project/ProjectNav.astro",
+      "bytes": 1823,
+      "sha256": "e64bddc5626146293a0efe96db72f8ed68925646a62a6b9b05b106f22ab24c31",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\ui\\ITBViewer.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/ui/ITBViewer.astro",
+      "bytes": 12259,
+      "sha256": "68f1a3819c2afd09c55890bd6dbdc20178e9d2fb7deeed459f3ed1fe0bc8ca96",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\ui\\OptimizedImage.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/ui/OptimizedImage.astro",
+      "bytes": 1043,
+      "sha256": "d1a59e26db3e7a11751a39ecec6b6760a2a0df87fcf0379d73c4d0d917da0dd8",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\ui\\Tag.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/ui/Tag.astro",
+      "bytes": 223,
+      "sha256": "aae5c280e3df7a71bc8f50857f62ffda69b141fe903325e3b10526d1c4cf1806",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\work\\ProjectCard.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/work/ProjectCard.astro",
+      "bytes": 2004,
+      "sha256": "9d9aa5a465af5bff434063033c9406ba4ecec62166ea747c63a4dddd40192188",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\components\\work\\ProjectTimeline.astro",
+      "destination": "docs/source-snapshots/architecture/src/components/work/ProjectTimeline.astro",
+      "bytes": 3478,
+      "sha256": "db6707d30f84fab67e7106d329e4c03a063153526fac3766530239137e97cc40",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\continuation.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/continuation.mdx",
+      "bytes": 14796,
+      "sha256": "92fffdff2498093ca54ad98290673925efc786be3fe6838d0c628561be1af4e1",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\gather-living.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/gather-living.mdx",
+      "bytes": 11043,
+      "sha256": "87d44593245ec2662b2b559f1e7c168c4946f9609702efce0b7664c4bab3ffbe",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\grandmothers-hearth.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/grandmothers-hearth.mdx",
+      "bytes": 24294,
+      "sha256": "a4610782a2067982e6aa1cdc053f2be2aa4653f4603aa4e3898264a2ad81ff99",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\half-diary.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/half-diary.mdx",
+      "bytes": 14484,
+      "sha256": "9bbc7af52ce36efced01fdc4c471cffd13a34814fde4e2ae8be55964be97684e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\hard-hat-cafe.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/hard-hat-cafe.mdx",
+      "bytes": 10384,
+      "sha256": "47f948f9f88f8a91f7d7e27900a47012b3a64139f2ae0338a2a1b7dde2b22486",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\iterative-learning.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/iterative-learning.mdx",
+      "bytes": 21366,
+      "sha256": "d7827f6bc2bc4f63e1b996799dbcf92d5b0a35d4b0d9c0c88c582cd95fb9ad58",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content\\projects\\symsensory.mdx",
+      "destination": "docs/source-snapshots/architecture/src/content/projects/symsensory.mdx",
+      "bytes": 14988,
+      "sha256": "7df12d414953521ce87dbde1e13e3d3b2c4873d4657c3f09706fdd6281716d36",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\content.config.ts",
+      "destination": "docs/source-snapshots/architecture/src/content.config.ts",
+      "bytes": 1351,
+      "sha256": "d92632c80d178d6295eaf883b6ff506dc9a28c160eaadca6ef683139a829244c",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\layouts\\ProjectLayout.astro",
+      "destination": "docs/source-snapshots/architecture/src/layouts/ProjectLayout.astro",
+      "bytes": 2173,
+      "sha256": "cde013d269ef3896218f2372ab7a9ca94786c1790335f20280f05b41267dec52",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\lib\\projects.ts",
+      "destination": "docs/source-snapshots/architecture/src/lib/projects.ts",
+      "bytes": 637,
+      "sha256": "b93090830a5c2892303c9d07e25be646357b27998b0be45e26f06242d9b1c6f4",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\pages\\about.astro",
+      "destination": "docs/source-snapshots/architecture/src/pages/about.astro",
+      "bytes": 8218,
+      "sha256": "d6bb461500b81f857d43a6ad4726077bb1ca11c681c45b10a7a910506dbbc1d3",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\pages\\contact.astro",
+      "destination": "docs/source-snapshots/architecture/src/pages/contact.astro",
+      "bytes": 3030,
+      "sha256": "9a7401764695d4d2c2a79791ca6cbfbc3660511013ef2f7e0e964e67bd668bc7",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\pages\\index.astro",
+      "destination": "docs/source-snapshots/architecture/src/pages/index.astro",
+      "bytes": 2730,
+      "sha256": "9786168f014cb82ba47d321df166b62eec625d08f804b43742eb4e0aa695df5e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\pages\\work\\index.astro",
+      "destination": "docs/source-snapshots/architecture/src/pages/work/index.astro",
+      "bytes": 1197,
+      "sha256": "5a77f8b5b17d98241ba6880122481fc998ed02c99ded9d45df62221fcd0c805d",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\pages\\work\\[slug].astro",
+      "destination": "docs/source-snapshots/architecture/src/pages/work/[slug].astro",
+      "bytes": 688,
+      "sha256": "0294fa504298de24622d9d1694f3b90b159d4f09040236dfddf85eae89d9fdaa",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\scripts\\itb-viewer.ts",
+      "destination": "docs/source-snapshots/architecture/src/scripts/itb-viewer.ts",
+      "bytes": 10993,
+      "sha256": "1652e05b662c7bef564f0ffd0b00a4ecf64471cb964e855549cf2389b3b941ef",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\scripts\\model-download.ts",
+      "destination": "docs/source-snapshots/architecture/src/scripts/model-download.ts",
+      "bytes": 2674,
+      "sha256": "0d982389de368180359486a57fdfd06863db714ff5bd7bd3591b54010d89ad70",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\scripts\\model-preparation.ts",
+      "destination": "docs/source-snapshots/architecture/src/scripts/model-preparation.ts",
+      "bytes": 2130,
+      "sha256": "6e8c7ab20bcc4c6e332b043659a3e9035d1d698346e90fbe703b93b62a836ab4",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\scripts\\model-range-download.ts",
+      "destination": "docs/source-snapshots/architecture/src/scripts/model-range-download.ts",
+      "bytes": 6918,
+      "sha256": "ed8b63ee727bb3177428ba4854548bdd7f0e343b819b3205ff7f0c748cfd1c50",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\src\\styles\\global.css",
+      "destination": "docs/source-snapshots/architecture/src/styles/global.css",
+      "bytes": 19757,
+      "sha256": "5427835016d7256100e486babf10d67329a92f1caacd5396e72f394f89d5cfad",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\CASE.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/CASE.md",
+      "bytes": 1842,
+      "sha256": "dfdcb0bf1b5acbe4d055eec391d62c48df7a32c0c2f68dd870252db6e81ab5a9",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\lifecycle-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/lifecycle-tests.json",
+      "bytes": 516,
+      "sha256": "844279176825133619016f2cdc05edf4f34050b77881a41e89e152325edb16a6",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\model-retries.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/model-retries.json",
+      "bytes": 826,
+      "sha256": "9e50ec3d4518e44aa8412963f6a95b60c57d485fdd2ec943e391951d4b40b224",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\public-before.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/public-before.json",
+      "bytes": 120752,
+      "sha256": "1e8d96fbc0d077f962856e2afdcf3c18b816f3dc132b2379f44bf43f99dacd31",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\public-release-check.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/public-release-check.json",
+      "bytes": 671,
+      "sha256": "a1acc669fdc999e112ff18b0961fb776dee7d02feee8a1ee448f5f6f99c1cfd2",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\README.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/README.md",
+      "bytes": 5533,
+      "sha256": "2ee59d9c783efdb384bf5442f5d58e7b31cd03f4bcc757ef42f98a900d0c5944",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\release.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/release.json",
+      "bytes": 1234,
+      "sha256": "b3f5490f7187cc40b49e66991aaeb958b7cbff3d4d9b4cef6d77cbd4817e7113",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-09-30\\TASKS.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-09-30/TASKS.md",
+      "bytes": 3994,
+      "sha256": "c66169c7aba36d9d22d2e0f36824b94530d857fff90810112217f04253adae19",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\CASE.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/CASE.md",
+      "bytes": 1909,
+      "sha256": "5e2368a5838e6e8d3d35d0ab973aac70d902e2aeb17cdc50b1cb71b9916877ad",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\download-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/download-tests.json",
+      "bytes": 1160,
+      "sha256": "ca8bce517b3e85e22ffce8919f946f42c567227221271d3ee67542cd9147adff",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\harness-first-failure.txt",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/harness-first-failure.txt",
+      "bytes": 410,
+      "sha256": "b46ceb3c20f37eb894431ec015516667839e406d090385602811330fcbf5e4e9",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\lifecycle-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/lifecycle-tests.json",
+      "bytes": 701,
+      "sha256": "53a913ed7ea954955958f1135a3edb5023c965eaea9f40fb47a6b6f58254998d",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\public-models.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/public-models.json",
+      "bytes": 740,
+      "sha256": "9f8c3be00bb09985df64a32237c91c63051fe943c678cbb9c30396dd1056b9d5",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\README.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/README.md",
+      "bytes": 7630,
+      "sha256": "fafd072ea15d1296da27d50ed91d2540f462c29ef2fe08c25d73685faed67b34",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\recovery-demo.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/recovery-demo.json",
+      "bytes": 417,
+      "sha256": "228138aac8f679fc1b81569683cefc65b5fce15ca1e7ede6ccb3d1e54df76fcc",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\release.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/release.json",
+      "bytes": 1362,
+      "sha256": "1f6d2881986dcbbc6058ea436ff4790364b9422402077c100ec11f487a5785b2",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\transfer-after.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/transfer-after.json",
+      "bytes": 353,
+      "sha256": "d77675027662614e9c9ff86356b3a99d8ed94729fee951c450f5df1392c5ecdc",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01\\transfer-before.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01/transfer-before.json",
+      "bytes": 359,
+      "sha256": "f459ade8197a4815b486ba8b87e060450fba6aaae3a1892437ae6779a90f5fb6",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\CASE.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/CASE.md",
+      "bytes": 1368,
+      "sha256": "e972d8517b68f5b8f60297dc22e6b3347945fd07390c15ef9431d7914e5fe928",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\delivery-parallel-range-probe.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/delivery-parallel-range-probe.json",
+      "bytes": 5796,
+      "sha256": "95d3667d319d0dc2df850851a29c2b175b8dc093e549870bb06bf3b06db0b8ac",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\delivery-range-probes.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/delivery-range-probes.json",
+      "bytes": 2525,
+      "sha256": "9a515e683f3e4f772cf5b1ab3b51034c28ad4b067b5a4109a384d52f96696704",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\lifecycle-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/lifecycle-tests.json",
+      "bytes": 701,
+      "sha256": "bfdfde213e790994fd896be923079c0316b5e281792dcadbfb41ad8636399f78",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\public-ranges-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/public-ranges-first.json",
+      "bytes": 13864,
+      "sha256": "b68fbf8ef1803164379fdbc92b894a047a34d37eb0d514c1f9b0291a0ac28f93",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\range-alias.headers.txt",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/range-alias.headers.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\range-br.headers.txt",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/range-br.headers.txt",
+      "bytes": 555,
+      "sha256": "ab45ccb48cc3d767f6bd5ed899777789d9824fff80b5c1d85eab6ec9fbc9cb74",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\range-identity.headers.txt",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/range-identity.headers.txt",
+      "bytes": 555,
+      "sha256": "89ed89b0d182c69dea3d787f7bf4e9770e1709e6b49e553efee02c283b7ebd4e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\range-tests-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/range-tests-first.json",
+      "bytes": 9763,
+      "sha256": "c7772165cfbeb34bcd64f24777a4e44bf818245824ee9f47961a6956a653059e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\range-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/range-tests.json",
+      "bytes": 9763,
+      "sha256": "5cc165dc9dbc5ac571b488837b8a3c3254e67e7c1425cde58eea33eed7804686",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\README.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/README.md",
+      "bytes": 4912,
+      "sha256": "046cab148c1df91eb7aab6aaf53e7899732bc8c5dd2a5730ab7fe3c1d677bedb",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth\\release.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth/release.json",
+      "bytes": 1592,
+      "sha256": "d46266aed4e473850ef1249cc3e7b40562a8bf6340c76fd42b11dc742f394657",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\after-browser.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/after-browser.json",
+      "bytes": 971,
+      "sha256": "839819635588044360217ac463c0fc86d9fa5415fdfd8beefd0615ddada5d64e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\before-browser.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/before-browser.json",
+      "bytes": 364,
+      "sha256": "fcfc1b930f65f41e1423b7bcf1e8d7c0aea9e8d907e7e32e775dced452d96c6a",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\browser-checks.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/browser-checks.json",
+      "bytes": 1270,
+      "sha256": "3944096850bb415316a4c85bac0c0b42aa108daf7c77d74bb2cb9d6f5cb48598",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\CASE.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/CASE.md",
+      "bytes": 1778,
+      "sha256": "3d391fdb9d4ac1feb28bf9ca31e68c754918dbec47877ec915a612248e406cb4",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\lifecycle-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/lifecycle-tests.json",
+      "bytes": 701,
+      "sha256": "79bff9ef8212da4e450908b469fc757e7999d33a7c753feb8ef95ce5f5e4a53e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\model.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/model.json",
+      "bytes": 61443,
+      "sha256": "c023e5bb56510e64e4a6d778000937c5eca48c5b403430cdf62b7d97cb47dc03",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\public-lite-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/public-lite-first.json",
+      "bytes": 4053,
+      "sha256": "7837ce61ae90441672213c63c94216cb64d999e92fbff4e72b35c6b778c9e025",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\README.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/README.md",
+      "bytes": 7920,
+      "sha256": "187158d487b3912b49efc5933d69feb1379ad28f46fced86136c70372f0cef39",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\recovery-browser.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/recovery-browser.json",
+      "bytes": 639,
+      "sha256": "5948627db144b0f985541e57f74717e61ca4654034163961cb8cc438cafc3528",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\release.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/release.json",
+      "bytes": 1579,
+      "sha256": "23fe073a69ecdfb4077072be1ad2665e630bc9aae36b11f6a7ed77903a5662a0",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\validation-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/validation-first.json",
+      "bytes": 74130,
+      "sha256": "66ee00a0a6f813e4f86be6803aad1e760b0047f952213f60cd8cf0f7364a7950",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-hearth-lite\\validation.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-hearth-lite/validation.json",
+      "bytes": 82104,
+      "sha256": "ffd6917e713a6489e237ece3df51f5d60ef6d4df0d04ab2dcfcc19dba218d0e5",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\browser-checks.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/browser-checks.json",
+      "bytes": 2886,
+      "sha256": "12fba505b9f244fbce23e0bdf93faa5f46bb65dc96c868c9a0b8a36c7a09da7b",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\public-recheck-2026-10-03.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/public-recheck-2026-10-03.json",
+      "bytes": 2356,
+      "sha256": "2b795e894e9a734e1f70e836fbbfd5401ef7f2fc5bbfe98603a8fa85504ce99c",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\public-release-check.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/public-release-check.json",
+      "bytes": 2358,
+      "sha256": "42bfa6bed1782afa11c97548ba58bd7ecd86dd51bffcc119fc19a5cda7856187",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\README.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/README.md",
+      "bytes": 5020,
+      "sha256": "4d8b4f33eebf2cd1b0b9b62a31e296f42be4e3f6a4ca75b86ab69295d7b863f8",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\release.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/release.json",
+      "bytes": 956,
+      "sha256": "d6e8ef25ae4a16e5cb8b201e8ca24e960d0f6de54ae116818652de5fe6341fa2",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\static-checks.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/static-checks.json",
+      "bytes": 19071,
+      "sha256": "6b581ee2ad069803af0c9ae325586ebdcfb9fb8b2f1937975b095564d56fe4b6",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-project-timeline\\verify-public.mjs",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-project-timeline/verify-public.mjs",
+      "bytes": 3202,
+      "sha256": "dc419fd3d4fe970dbeaf0f3a957e3a6d4fd734621d7c6c6b6a19a1fe47861ec1",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\browser-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/browser-first.json",
+      "bytes": 2013,
+      "sha256": "32508da07a1db5a2ad0653869447fb0d93f51abad7daf130629c391ea792b9b7",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\browser-itb.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/browser-itb.json",
+      "bytes": 867,
+      "sha256": "28ede9dcc03f3f82e86f74114e3228c2995d9cb08932ec63bfbf034a11664817",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\browser-public.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/browser-public.json",
+      "bytes": 447,
+      "sha256": "4a750496d3c0d83754cb08d1574dbcb49b40253947d73c10813f7bd134682017",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\browser-recovery.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/browser-recovery.json",
+      "bytes": 1265,
+      "sha256": "c624221c80da9dc945fe98d0e86569db717d59164ebfd725d808dd579c5322a8",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\CASE.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/CASE.md",
+      "bytes": 1645,
+      "sha256": "eafeab3b3bdc33cc3f128275e1b25357193d5214cf3ca34b5690feb97f9dbed6",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\first-failure-phase-race.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/first-failure-phase-race.json",
+      "bytes": 791,
+      "sha256": "2ffbeba9bc8dddbe33add2287a4fb8d7cb05017900eea5d55da85bff54f41938",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\lifecycle-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/lifecycle-first.json",
+      "bytes": 1391,
+      "sha256": "7f3442957dcc5ad6d8a21702e5d3acfbdee4491ece1293c7e4cb142129e24e6e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\lifecycle-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/lifecycle-tests.json",
+      "bytes": 1569,
+      "sha256": "4bd49ef044fa1e4372906a8d0159e76801a26ab8f08eb011e557ac918a52a514",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\preparation-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/preparation-first.json",
+      "bytes": 1698,
+      "sha256": "cf393b5f947ec8e3b789e96ee355010106309fba83b3246ab062c647d7f0dcb7",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\preparation-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/preparation-tests.json",
+      "bytes": 1698,
+      "sha256": "cf393b5f947ec8e3b789e96ee355010106309fba83b3246ab062c647d7f0dcb7",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\public-release-check.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/public-release-check.json",
+      "bytes": 1077,
+      "sha256": "753c7dd83cb46c14435691c561a6c9bdeda3e3678069f9b38eb373c1a568c7b8",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\range-tests-first.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/range-tests-first.json",
+      "bytes": 9762,
+      "sha256": "649341be0e15b92df4f5512567bbd9c5383a0f233b8c3f01e16082330f73e918",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\range-tests.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/range-tests.json",
+      "bytes": 9762,
+      "sha256": "649341be0e15b92df4f5512567bbd9c5383a0f233b8c3f01e16082330f73e918",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\README.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/README.md",
+      "bytes": 7602,
+      "sha256": "8283dfadb092e6f52d5ddebc090082ee9bdf2df7f3a9c157b8f4b4a2a710f591",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\release.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/release.json",
+      "bytes": 812,
+      "sha256": "602148eed4d2a7159a820fc8308701dbbe8615cf49c1496a7831ddc36f75e31e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\transfer-comparison.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/transfer-comparison.json",
+      "bytes": 5215,
+      "sha256": "c6739ba8782e8ef7de286ebc261db684c4e1813a30bf91757d555f1e0639247e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\transfer-small-probe.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/transfer-small-probe.json",
+      "bytes": 4595,
+      "sha256": "3705a360f76fbd2b3eee08fa73b496b4abba82df4e4e8b1c6d68c84da29fa876",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-01-transfer\\verify-release.mjs",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-01-transfer/verify-release.mjs",
+      "bytes": 1756,
+      "sha256": "e6acdc5b3c9d32db9d2c0d0e607e7e165057f89500a87339e62f8f1df495f916",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-03-cafe-name\\local-checks.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-03-cafe-name/local-checks.json",
+      "bytes": 1122,
+      "sha256": "b1ec5119d17c1ca5645c1d8e8dfc7e5bf43d08c91b49039c4504365309163d15",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\2026-10-03-cafe-name\\public-checks.json",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/2026-10-03-cafe-name/public-checks.json",
+      "bytes": 1296,
+      "sha256": "39624b91925baeaf2dcae0b4c92b1f4ba7c67ed505d77421b4cdbc1d659f9ee7",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\evaluation\\LATEST.md",
+      "destination": "docs/source-snapshots/architecture/docs/evaluation/LATEST.md",
+      "bytes": 2981,
+      "sha256": "c1bda549b1375698d289aef832012761557b6419c7eb4a1669a9d81eb9f60eb5",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\design\\2026-10-01-personal-site-references.md",
+      "destination": "docs/source-snapshots/architecture/docs/design/2026-10-01-personal-site-references.md",
+      "bytes": 5092,
+      "sha256": "2b143fd883402ad51c9341f7195e32998ef6f0edca813ed8fa0e03fc1dcacb7b",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\current-project-images.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/current-project-images.json",
+      "bytes": 2421,
+      "sha256": "d44faca1e9f3b26cc4121d8b3f53deed6fc7207e70b2d5bb5886a7e1ad956989",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-export.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-export.json",
+      "bytes": 4108,
+      "sha256": "51e00debbdaf712a259a9146f96a29aaafed41642bdddb81ac59669bb0239a0c",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\ITB-IMPLEMENTATION.md",
+      "destination": "docs/source-snapshots/architecture/docs/models/ITB-IMPLEMENTATION.md",
+      "bytes": 7277,
+      "sha256": "90807d223fcfc4a23d8e230be129409f6ac418173b244415cf117e7f2e48319b",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-portfolio-assets.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-portfolio-assets.json",
+      "bytes": 12108,
+      "sha256": "460b9b78c0a21bcd91edb6d31737f5956251f86623cca7d093c02ba1575e4335",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\ITB-PORTFOLIO-WEB.md",
+      "destination": "docs/source-snapshots/architecture/docs/models/ITB-PORTFOLIO-WEB.md",
+      "bytes": 3709,
+      "sha256": "9ab203a1fa9c24f158dde8edce8695010b04dac0443e63b883efbf93a55f4837",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\ITB-PROCESSING-PLAN.md",
+      "destination": "docs/source-snapshots/architecture/docs/models/ITB-PROCESSING-PLAN.md",
+      "bytes": 4786,
+      "sha256": "b48be2804712e997f550a010444a75ddf1f7047f11c93e4d38c26542814b65cf",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-source-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-source-audit.json",
+      "bytes": 40897,
+      "sha256": "fba80955eba5c57494140895ecb97a8ca7a1f7dc3f76f02f5e3a6bf085451a93",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-validation-decoded.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-validation-decoded.json",
+      "bytes": 3448,
+      "sha256": "adc3a43c9df18c95118be0715ceb853f192982aa332594af1ea75a803e92761d",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-validation-web.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-validation-web.json",
+      "bytes": 3885,
+      "sha256": "7b762ac8e2e8ee7afd354eef14679746eec74cd643673d464e595912804f640e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-validation-working.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-validation-working.json",
+      "bytes": 6709,
+      "sha256": "6d8b4d524ca6cca8e3faa59f25c97108664f8ce69b8f5e9ad9cb28e39a337603",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\models\\itb-web-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/models/itb-web-audit.json",
+      "bytes": 995,
+      "sha256": "25ca5d8254ed3829192996b96e5a8c31e731d6ca37469eb6fc99fc035e6f5f39",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\image-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/image-audit.json",
+      "bytes": 2427,
+      "sha256": "13376964ec0a6ef5286e144cabf63ff8157082cb26b8ff2e2fcae1f8d94e8d82",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\MODEL-IMPLEMENTATION.md",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/MODEL-IMPLEMENTATION.md",
+      "bytes": 6970,
+      "sha256": "8fdb61f8ac48fb29df2b031287fb95dbbf03317dda60e286a1febbd4fef5d14a",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\model-page-image-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/model-page-image-audit.json",
+      "bytes": 2427,
+      "sha256": "83fcfbb3b00ba5ae36bd3387806eb269764da69cad0ebf6ba09938c5b07f9a47",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\model-source-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/model-source-audit.json",
+      "bytes": 2855,
+      "sha256": "3b7df2cb90d65950f5c4f45100ae0f504da772fbdd93ffd59799ec8dfceb4b4f",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\model-transform-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/model-transform-audit.json",
+      "bytes": 12952,
+      "sha256": "9ff796a56f6b904eeda12dcd9520c0ddd00b1f1ec7099dffe25642bb02efedb5",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\model-validation-decoded.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/model-validation-decoded.json",
+      "bytes": 109396,
+      "sha256": "295cd55abb063053a00385264f8484606be60d5808fd52a3e842452983bbaa70",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\model-validation-web.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/model-validation-web.json",
+      "bytes": 110069,
+      "sha256": "91b9f1b54c3f1474507f2ea233ee135bc8ccc4267d631537a2b339204fe6d438",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\model-web-audit.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/model-web-audit.json",
+      "bytes": 889,
+      "sha256": "d935b7f1203c588c3d1e404bdc0c65ad37c90a48f11eb534f8c3521c9dc5c9f4",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\portfolio-assets.json",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/portfolio-assets.json",
+      "bytes": 16577,
+      "sha256": "1f6d951c175cda6044632f47b0bb84fd81d83a792a5dddd3cc05523001d4ec24",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    },
+    {
+      "source": "E:\\cd portfolio\\docs\\hearth\\PORTFOLIO-WEB.md",
+      "destination": "docs/source-snapshots/architecture/docs/hearth/PORTFOLIO-WEB.md",
+      "bytes": 5281,
+      "sha256": "ee9228631dec0f6a034ca5a813183997b6f64d8f8104b7e29af410549741686e",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    }
+  ]
+}

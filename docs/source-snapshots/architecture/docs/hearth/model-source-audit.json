@@ -1,0 +1,154 @@
+{
+  "source": "C:\\Users\\WangYuxiang\\Desktop\\shekua 网站模型.skb",
+  "sourceBytes": 308684623,
+  "loadStatus": 0,
+  "uniqueFacesTessellated": 627220,
+  "meshes": 2121,
+  "nodes": 66546,
+  "materials": 373,
+  "textures": 292,
+  "layers": [
+    {
+      "name": "Layer0",
+      "visible": true
+    },
+    {
+      "name": "瓦片",
+      "visible": true
+    },
+    {
+      "name": "Layer0000",
+      "visible": true
+    },
+    {
+      "name": "Layer000",
+      "visible": true
+    },
+    {
+      "name": "接平面",
+      "visible": true
+    },
+    {
+      "name": "ZHU",
+      "visible": true
+    },
+    {
+      "name": "椽",
+      "visible": true
+    },
+    {
+      "name": "枋",
+      "visible": true
+    },
+    {
+      "name": "柱",
+      "visible": true
+    },
+    {
+      "name": "梁",
+      "visible": true
+    },
+    {
+      "name": "Layer00",
+      "visible": true
+    },
+    {
+      "name": "家具",
+      "visible": true
+    },
+    {
+      "name": "Fixtures",
+      "visible": true
+    },
+    {
+      "name": "井干",
+      "visible": true
+    },
+    {
+      "name": "屋顶",
+      "visible": true
+    },
+    {
+      "name": "默认",
+      "visible": true
+    },
+    {
+      "name": "柱子",
+      "visible": true
+    },
+    {
+      "name": "后门",
+      "visible": true
+    },
+    {
+      "name": "栏杆",
+      "visible": true
+    },
+    {
+      "name": "二层美人靠",
+      "visible": true
+    },
+    {
+      "name": "木楞子",
+      "visible": true
+    },
+    {
+      "name": "轴网",
+      "visible": true
+    },
+    {
+      "name": "屋顶架子",
+      "visible": true
+    },
+    {
+      "name": "屋檐门梁",
+      "visible": true
+    },
+    {
+      "name": "承重柱子",
+      "visible": true
+    },
+    {
+      "name": "二层支架",
+      "visible": true
+    },
+    {
+      "name": "斜坡部分",
+      "visible": true
+    },
+    {
+      "name": "图层05",
+      "visible": true
+    },
+    {
+      "name": "木板",
+      "visible": true
+    },
+    {
+      "name": "WALL",
+      "visible": true
+    },
+    {
+      "name": "草稿",
+      "visible": true
+    },
+    {
+      "name": "来凤轩",
+      "visible": true
+    }
+  ],
+  "exportedTopLevelTags": [
+    "未分组几何",
+    "Layer0",
+    "瓦片"
+  ],
+  "skipped": {
+    "hiddenEntities": 278
+  },
+  "seconds": 124.16222429275513,
+  "limitations": [
+    "Hidden entities/tags excluded; edges, guides, annotation text and section-plane clipping not exported.",
+    "Base-color textures and opacity retained; render-engine lighting and advanced PBR settings not reproduced.",
+    "Back-only materials use reversed faces; distinct front/back materials use the front material double-sided."
+  ]
+}

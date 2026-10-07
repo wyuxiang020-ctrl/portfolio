@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-01T14:23:44.703Z",
+  "modelFile": "shekua-lite.glb",
+  "conditions": "Anonymous Node fetch, actual public GLB compared with the local file, no explicit proxy/auth. VPN unknown. <=4 workers,512KiB chunks,45s per-request idle,300s shared deadline. Real transfer/hash/decode software verification, NOT browser GPU or user study. n=1; historical comparisons are not controlled.",
+  "expectedHash": "c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905",
+  "outcome": "downloaded-verified-decoded",
+  "bytes": 6091728,
+  "downloadMs": 88662,
+  "decodeMs": 95,
+  "sha256Matches": true,
+  "meshes": 527,
+  "materials": 8,
+  "requests": [
+    {
+      "range": "bytes=0-524287",
+      "ifRange": null,
+      "status": 206,
+      "contentRange": "bytes 0-524287/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 3247
+    },
+    {
+      "range": "bytes=524288-1048575",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 524288-1048575/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 3384
+    },
+    {
+      "range": "bytes=1048576-1572863",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 1048576-1572863/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 1922
+    },
+    {
+      "range": "bytes=1572864-2097151",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 1572864-2097151/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 771
+    },
+    {
+      "range": "bytes=2097152-2621439",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 2097152-2621439/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 4012
+    },
+    {
+      "range": "bytes=2621440-3145727",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 2621440-3145727/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 905
+    },
+    {
+      "range": "bytes=3145728-3670015",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 3145728-3670015/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 104
+    },
+    {
+      "range": "bytes=3670016-4194303",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 3670016-4194303/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 1610
+    },
+    {
+      "range": "bytes=4194304-4718591",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 4194304-4718591/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 203
+    },
+    {
+      "range": "bytes=4718592-5242879",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 4718592-5242879/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 539
+    },
+    {
+      "range": "bytes=5242880-5767167",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 5242880-5767167/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 164
+    },
+    {
+      "range": "bytes=5767168-6091727",
+      "ifRange": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "status": 206,
+      "contentRange": "bytes 5767168-6091727/6091728",
+      "encoding": null,
+      "etag": "\"3491fab50f1fc5360416fb71fa8f41fc\"",
+      "headerMs": 372
+    }
+  ]
+}

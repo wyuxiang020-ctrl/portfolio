@@ -1,0 +1,13 @@
+// Local-only failure injection server for browser cancellation/retry checks.
+// It serves the built output; never use this diagnostic server for deployment.
+import http from 'node:http';
+import { stat, readFile, appendFile, mkdir } from 'node:fs/promises';
+import { createReadStream } from 'node:fs';
+import path from 'node:path';
+const root=path.resolve('dist');
+await mkdir('docs/qa',{recursive:true});
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.glb':'model/gltf-binary','.pdf':'application/pdf','.json':'application/json'};
+http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://127.0.0.1:4322');let file=path.resolve(root,'.'+decodeURIComponent(url.pathname));if(!file.startsWith(root+path.sep)&&file!==root){res.writeHead(403).end();return;}let info=await stat(file).catch(()=>null);if(info?.isDirectory()){file=path.join(file,'index.html');info=await stat(file).catch(()=>null);}if(!info){res.writeHead(404).end('Not found');return;}
+ const isModel=file.endsWith('.glb');if(isModel){const config=JSON.parse(await readFile('docs/qa/network-mode.json','utf8').catch(()=>'{}'));await appendFile('docs/qa/model-requests.ndjson',JSON.stringify({time:new Date().toISOString(),path:url.pathname,range:req.headers.range||null,mode:config.mode||'healthy'})+'\n');if(config.mode==='fail'){res.writeHead(503,{'Retry-After':'0'}).end('Intentional local QA failure');return;}if(config.mode==='slow')await new Promise(resolve=>{const timeout=setTimeout(resolve,12000);res.on('close',()=>{clearTimeout(timeout);resolve();});});if(res.destroyed)return;}
+ const headers={'Content-Type':mime[path.extname(file)]||'application/octet-stream','Accept-Ranges':'bytes','Cache-Control':'no-store'};let start=0,end=info.size-1,status=200;if(req.headers.range){const match=/^bytes=(\d+)-(\d*)$/.exec(req.headers.range);if(!match){res.writeHead(416,{'Content-Range':`bytes */${info.size}`}).end();return;}start=Number(match[1]);end=match[2]?Math.min(Number(match[2]),end):end;if(start>end){res.writeHead(416,{'Content-Range':`bytes */${info.size}`}).end();return;}status=206;headers['Content-Range']=`bytes ${start}-${end}/${info.size}`;}headers['Content-Length']=end-start+1;res.writeHead(status,headers);if(req.method==='HEAD')res.end();else createReadStream(file,{start,end}).pipe(res);
+}catch(e){if(!res.headersSent)res.writeHead(500);res.end(String(e));}}).listen(4322,'127.0.0.1',()=>console.log('Local QA server: http://127.0.0.1:4322 (network-mode.json controls model faults)'));

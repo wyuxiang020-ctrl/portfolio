@@ -1,0 +1,4514 @@
+{
+  "at": "2026-09-30T13:59:36Z",
+  "environment": "Anonymous curl GET, no cookies, explicit proxy bypass. Windows ProxyEnable=0 observed; VPN/tunnel/routing and physical device NOT verified. Not certified mainland direct. One request per URL; six concurrent, 60s timeout. HTTP audit is not browser UX.",
+  "results": [
+    {
+      "url": "https://yuxiangworks.com/",
+      "status": "200",
+      "bytes": 12354,
+      "seconds": 2.832,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/work/",
+      "status": "200",
+      "bytes": 21685,
+      "seconds": 2.412,
+      "curlExit": 0,
+      "hasViewer": false,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/about/",
+      "status": "200",
+      "bytes": 11016,
+      "seconds": 3.191,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/contact/",
+      "status": "200",
+      "bytes": 6937,
+      "seconds": 2.721,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/work/continuation/",
+      "status": "200",
+      "bytes": 32620,
+      "seconds": 2.853,
+      "curlExit": 0,
+      "hasViewer": false,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/work/gather-living/",
+      "status": "200",
+      "bytes": 28749,
+      "seconds": 4.133,
+      "curlExit": 0,
+      "hasViewer": false,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/work/grandmothers-hearth/",
+      "status": "200",
+      "bytes": 55779,
+      "seconds": 3.968,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/work/half-diary/",
+      "status": "200",
+      "bytes": 31342,
+      "seconds": 2.048,
+      "curlExit": 0,
+      "hasViewer": false,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/work/hard-hat-cafe/",
+      "status": "200",
+      "bytes": 27473,
+      "seconds": 1.799,
+      "curlExit": 0,
+      "hasViewer": false,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/work/iterative-learning/",
+      "status": "200",
+      "bytes": 51851,
+      "seconds": 0.537,
+      "curlExit": 0,
+      "hasViewer": true,
+      "hasCancel": false
+    },
+    {
+      "url": "https://yuxiangworks.com/work/symsensory/",
+      "status": "200",
+      "bytes": 31858,
+      "seconds": 6.619,
+      "curlExit": 0,
+      "hasViewer": false,
+      "hasCancel": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap",
+      "status": "200",
+      "bytes": 2474,
+      "seconds": 2.76,
+      "curlExit": 0
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2400&q=85",
+      "status": "200",
+      "bytes": 425770,
+      "seconds": 60.127,
+      "curlExit": 28,
+      "error": "curl: (28) Operation timed out after 60005 milliseconds with 425770 out of 838714 bytes received"
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/BaseLayout.BE0HqeRO.css",
+      "status": "200",
+      "bytes": 39374,
+      "seconds": 0.757,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CITsdAXW.js",
+      "status": "200",
+      "bytes": 66220,
+      "seconds": 5.095,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CAqDO0tx.js",
+      "status": "200",
+      "bytes": 15896,
+      "seconds": 1.046,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/_astro/ITBViewer.astro_astro_type_script_index_0_lang.D4M_aVLO.js",
+      "status": "200",
+      "bytes": 2259,
+      "seconds": 1.57,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/03612f8b16463687-1600.webp",
+      "status": "200",
+      "bytes": 95244,
+      "seconds": 0.844,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/03612f8b16463687-480.webp",
+      "status": "200",
+      "bytes": 15854,
+      "seconds": 0.778,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/03612f8b16463687-960.webp",
+      "status": "200",
+      "bytes": 44990,
+      "seconds": 5.239,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0361e8ccbbf0332d-1600.webp",
+      "status": "200",
+      "bytes": 201986,
+      "seconds": 2.851,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0361e8ccbbf0332d-480.webp",
+      "status": "200",
+      "bytes": 31184,
+      "seconds": 1.213,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0361e8ccbbf0332d-960.webp",
+      "status": "200",
+      "bytes": 96772,
+      "seconds": 2.984,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/04a1cf16af530dec-1600.webp",
+      "status": "200",
+      "bytes": 185740,
+      "seconds": 3.359,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/04a1cf16af530dec-480.webp",
+      "status": "200",
+      "bytes": 34508,
+      "seconds": 0.853,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/04a1cf16af530dec-960.webp",
+      "status": "200",
+      "bytes": 98256,
+      "seconds": 2.311,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/072d79a624388b88-1600.webp",
+      "status": "200",
+      "bytes": 207974,
+      "seconds": 8.864,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/072d79a624388b88-480.webp",
+      "status": "200",
+      "bytes": 36734,
+      "seconds": 1.651,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/072d79a624388b88-960.webp",
+      "status": "200",
+      "bytes": 110994,
+      "seconds": 1.057,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/079af4882aac3aca-1600.webp",
+      "status": "200",
+      "bytes": 128570,
+      "seconds": 3.42,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/079af4882aac3aca-480.webp",
+      "status": "200",
+      "bytes": 18666,
+      "seconds": 0.706,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/079af4882aac3aca-960.webp",
+      "status": "200",
+      "bytes": 60528,
+      "seconds": 1.424,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0931bdac8a4d98aa-1600.webp",
+      "status": "200",
+      "bytes": 442268,
+      "seconds": 14.984,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0931bdac8a4d98aa-480.webp",
+      "status": "200",
+      "bytes": 34234,
+      "seconds": 1.814,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0931bdac8a4d98aa-960.webp",
+      "status": "200",
+      "bytes": 153720,
+      "seconds": 3.005,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/09c9beb7e2de2e6b-1600.webp",
+      "status": "200",
+      "bytes": 90314,
+      "seconds": 1.123,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/09c9beb7e2de2e6b-480.webp",
+      "status": "200",
+      "bytes": 12022,
+      "seconds": 12.691,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/09c9beb7e2de2e6b-960.webp",
+      "status": "200",
+      "bytes": 37590,
+      "seconds": 2.157,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/09f7b8f94f45d9bb-1600.webp",
+      "status": "200",
+      "bytes": 224192,
+      "seconds": 3.761,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/09f7b8f94f45d9bb-480.webp",
+      "status": "200",
+      "bytes": 35430,
+      "seconds": 1.322,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/09f7b8f94f45d9bb-960.webp",
+      "status": "200",
+      "bytes": 103650,
+      "seconds": 1.215,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0aca7cab2fc0ab26-1340.webp",
+      "status": "200",
+      "bytes": 327588,
+      "seconds": 10.801,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0aca7cab2fc0ab26-480.webp",
+      "status": "200",
+      "bytes": 51418,
+      "seconds": 1.404,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0aca7cab2fc0ab26-960.webp",
+      "status": "200",
+      "bytes": 186118,
+      "seconds": 10.394,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0b12c469fdaed03b-1600.webp",
+      "status": "200",
+      "bytes": 366202,
+      "seconds": 17.834,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0b12c469fdaed03b-480.webp",
+      "status": "200",
+      "bytes": 35462,
+      "seconds": 1.616,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0b12c469fdaed03b-960.webp",
+      "status": "200",
+      "bytes": 135806,
+      "seconds": 7.413,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0e7a467099e01775-1600.webp",
+      "status": "200",
+      "bytes": 122268,
+      "seconds": 9.339,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0e7a467099e01775-480.webp",
+      "status": "200",
+      "bytes": 12762,
+      "seconds": 2.886,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/0e7a467099e01775-960.webp",
+      "status": "200",
+      "bytes": 46008,
+      "seconds": 2.721,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/10043bcb00fac643-1600.webp",
+      "status": "200",
+      "bytes": 229264,
+      "seconds": 5.88,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/10043bcb00fac643-480.webp",
+      "status": "200",
+      "bytes": 27476,
+      "seconds": 1.002,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/10043bcb00fac643-960.webp",
+      "status": "200",
+      "bytes": 95718,
+      "seconds": 1.982,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/111b1ae180763bda-1600.webp",
+      "status": "200",
+      "bytes": 64190,
+      "seconds": 0.953,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/111b1ae180763bda-480.webp",
+      "status": "200",
+      "bytes": 8922,
+      "seconds": 0.893,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/111b1ae180763bda-960.webp",
+      "status": "200",
+      "bytes": 28682,
+      "seconds": 0.642,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1126cb61a3bb8ef7-1600.webp",
+      "status": "200",
+      "bytes": 65956,
+      "seconds": 0.877,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1126cb61a3bb8ef7-480.webp",
+      "status": "200",
+      "bytes": 9284,
+      "seconds": 1.117,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1126cb61a3bb8ef7-960.webp",
+      "status": "200",
+      "bytes": 30424,
+      "seconds": 1.004,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/11f42453d70f5783-1489.webp",
+      "status": "200",
+      "bytes": 127422,
+      "seconds": 2.398,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/11f42453d70f5783-480.webp",
+      "status": "200",
+      "bytes": 20656,
+      "seconds": 1.786,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/11f42453d70f5783-960.webp",
+      "status": "200",
+      "bytes": 65770,
+      "seconds": 1.725,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1515791f750954b6-1600.webp",
+      "status": "200",
+      "bytes": 205304,
+      "seconds": 2.058,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1515791f750954b6-480.webp",
+      "status": "200",
+      "bytes": 19954,
+      "seconds": 2.716,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1515791f750954b6-960.webp",
+      "status": "200",
+      "bytes": 73850,
+      "seconds": 1.101,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/177d017cf8c57562-1600.webp",
+      "status": "200",
+      "bytes": 159462,
+      "seconds": 2.678,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/177d017cf8c57562-480.webp",
+      "status": "200",
+      "bytes": 24186,
+      "seconds": 1.743,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/177d017cf8c57562-960.webp",
+      "status": "200",
+      "bytes": 72826,
+      "seconds": 1.187,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/195c3fab0099ee2b-1600.webp",
+      "status": "200",
+      "bytes": 182876,
+      "seconds": 6.121,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/195c3fab0099ee2b-480.webp",
+      "status": "200",
+      "bytes": 22974,
+      "seconds": 1.02,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/195c3fab0099ee2b-960.webp",
+      "status": "200",
+      "bytes": 77322,
+      "seconds": 0.827,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1a19243fcebe8e8a-1600.webp",
+      "status": "200",
+      "bytes": 638264,
+      "seconds": 14.778,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1a19243fcebe8e8a-480.webp",
+      "status": "200",
+      "bytes": 54824,
+      "seconds": 1.775,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1a19243fcebe8e8a-960.webp",
+      "status": "200",
+      "bytes": 249774,
+      "seconds": 1.797,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1ae0f11cc223c389-1507.webp",
+      "status": "200",
+      "bytes": 56660,
+      "seconds": 2.323,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1ae0f11cc223c389-480.webp",
+      "status": "200",
+      "bytes": 10472,
+      "seconds": 0.79,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1ae0f11cc223c389-960.webp",
+      "status": "200",
+      "bytes": 31166,
+      "seconds": 1.04,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1b529e47e86f7c67-1600.webp",
+      "status": "200",
+      "bytes": 205348,
+      "seconds": 5.844,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1b529e47e86f7c67-480.webp",
+      "status": "200",
+      "bytes": 30108,
+      "seconds": 1.204,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/1b529e47e86f7c67-960.webp",
+      "status": "200",
+      "bytes": 99152,
+      "seconds": 2.035,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/206a9a550e39ea19-1600.webp",
+      "status": "200",
+      "bytes": 294246,
+      "seconds": 6.6,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/206a9a550e39ea19-480.webp",
+      "status": "200",
+      "bytes": 41878,
+      "seconds": 0.886,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/206a9a550e39ea19-960.webp",
+      "status": "200",
+      "bytes": 139978,
+      "seconds": 3.497,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/21063b61b9c6d8df-1087.webp",
+      "status": "200",
+      "bytes": 55904,
+      "seconds": 1.378,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/21063b61b9c6d8df-480.webp",
+      "status": "200",
+      "bytes": 17470,
+      "seconds": 0.969,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/21063b61b9c6d8df-960.webp",
+      "status": "200",
+      "bytes": 45826,
+      "seconds": 0.864,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/21a839ed9f38c923-1600.webp",
+      "status": "200",
+      "bytes": 158080,
+      "seconds": 1.321,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/21a839ed9f38c923-480.webp",
+      "status": "200",
+      "bytes": 20198,
+      "seconds": 1.142,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/21a839ed9f38c923-960.webp",
+      "status": "200",
+      "bytes": 68314,
+      "seconds": 1.675,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2256bafaf8ba241a-1123.webp",
+      "status": "200",
+      "bytes": 98514,
+      "seconds": 2.524,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2256bafaf8ba241a-480.webp",
+      "status": "200",
+      "bytes": 14474,
+      "seconds": 1.259,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2256bafaf8ba241a-960.webp",
+      "status": "200",
+      "bytes": 64512,
+      "seconds": 0.873,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2290070d14677727-1600.webp",
+      "status": "200",
+      "bytes": 319508,
+      "seconds": 24.215,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2290070d14677727-480.webp",
+      "status": "200",
+      "bytes": 32988,
+      "seconds": 2.256,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2290070d14677727-960.webp",
+      "status": "200",
+      "bytes": 121000,
+      "seconds": 1.497,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/22a65caa34bd58bf-1600.webp",
+      "status": "200",
+      "bytes": 148110,
+      "seconds": 1.018,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/22a65caa34bd58bf-480.webp",
+      "status": "200",
+      "bytes": 21350,
+      "seconds": 0.757,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/22a65caa34bd58bf-960.webp",
+      "status": "200",
+      "bytes": 65838,
+      "seconds": 0.965,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/233df35d9a317295-1600.webp",
+      "status": "200",
+      "bytes": 106478,
+      "seconds": 2.377,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/233df35d9a317295-480.webp",
+      "status": "200",
+      "bytes": 10260,
+      "seconds": 1.83,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/233df35d9a317295-960.webp",
+      "status": "200",
+      "bytes": 36010,
+      "seconds": 0.844,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/273714a47118b44b-1600.webp",
+      "status": "200",
+      "bytes": 204978,
+      "seconds": 1.928,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/273714a47118b44b-480.webp",
+      "status": "200",
+      "bytes": 26404,
+      "seconds": 1.964,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/273714a47118b44b-960.webp",
+      "status": "200",
+      "bytes": 87090,
+      "seconds": 8.408,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/27f105acd664b3a5-1600.webp",
+      "status": "200",
+      "bytes": 170900,
+      "seconds": 4.345,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/27f105acd664b3a5-480.webp",
+      "status": "200",
+      "bytes": 32352,
+      "seconds": 2.066,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/27f105acd664b3a5-960.webp",
+      "status": "200",
+      "bytes": 86712,
+      "seconds": 1.598,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/27fedc1ab5632817-1600.webp",
+      "status": "200",
+      "bytes": 123420,
+      "seconds": 1.211,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/27fedc1ab5632817-480.webp",
+      "status": "200",
+      "bytes": 20852,
+      "seconds": 1.65,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/27fedc1ab5632817-960.webp",
+      "status": "200",
+      "bytes": 58016,
+      "seconds": 2.522,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/29eb2fc83e2c8e48-1600.webp",
+      "status": "200",
+      "bytes": 357798,
+      "seconds": 9.094,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/29eb2fc83e2c8e48-480.webp",
+      "status": "200",
+      "bytes": 36010,
+      "seconds": 0.818,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/29eb2fc83e2c8e48-960.webp",
+      "status": "200",
+      "bytes": 139908,
+      "seconds": 3.331,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/29f965290864e3ea-1600.webp",
+      "status": "200",
+      "bytes": 151676,
+      "seconds": 2.078,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/29f965290864e3ea-480.webp",
+      "status": "200",
+      "bytes": 25338,
+      "seconds": 0.665,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/29f965290864e3ea-960.webp",
+      "status": "200",
+      "bytes": 74266,
+      "seconds": 4.483,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ad9bf07722a70b1-1600.webp",
+      "status": "200",
+      "bytes": 74730,
+      "seconds": 2.632,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ad9bf07722a70b1-480.webp",
+      "status": "200",
+      "bytes": 14352,
+      "seconds": 0.528,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ad9bf07722a70b1-960.webp",
+      "status": "200",
+      "bytes": 39706,
+      "seconds": 0.747,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2af99e47d717a320-1600.webp",
+      "status": "200",
+      "bytes": 247592,
+      "seconds": 9.768,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2af99e47d717a320-480.webp",
+      "status": "200",
+      "bytes": 30354,
+      "seconds": 0.759,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2af99e47d717a320-960.webp",
+      "status": "200",
+      "bytes": 103730,
+      "seconds": 1.604,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2c457129ffeded61-1600.webp",
+      "status": "200",
+      "bytes": 232168,
+      "seconds": 1.527,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2c457129ffeded61-480.webp",
+      "status": "200",
+      "bytes": 39254,
+      "seconds": 1.536,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2c457129ffeded61-960.webp",
+      "status": "200",
+      "bytes": 120834,
+      "seconds": 12.673,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2d86e87244aff2ec-1286.webp",
+      "status": "200",
+      "bytes": 117754,
+      "seconds": 3.573,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2d86e87244aff2ec-480.webp",
+      "status": "200",
+      "bytes": 13518,
+      "seconds": 9.518,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2d86e87244aff2ec-960.webp",
+      "status": "200",
+      "bytes": 57514,
+      "seconds": 0.929,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ea3e2c914be4548-1198.webp",
+      "status": "200",
+      "bytes": 294294,
+      "seconds": 5.859,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ea3e2c914be4548-480.webp",
+      "status": "200",
+      "bytes": 57888,
+      "seconds": 4.107,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ea3e2c914be4548-960.webp",
+      "status": "200",
+      "bytes": 203210,
+      "seconds": 1.767,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ee7cfd53ff397bc-1600.webp",
+      "status": "200",
+      "bytes": 132490,
+      "seconds": 2.123,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ee7cfd53ff397bc-480.webp",
+      "status": "200",
+      "bytes": 20416,
+      "seconds": 1.134,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/2ee7cfd53ff397bc-960.webp",
+      "status": "200",
+      "bytes": 62166,
+      "seconds": 2.366,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/30ab9b149a532d2d-1600.webp",
+      "status": "200",
+      "bytes": 119646,
+      "seconds": 3.023,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/30ab9b149a532d2d-480.webp",
+      "status": "200",
+      "bytes": 11694,
+      "seconds": 1.206,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/30ab9b149a532d2d-960.webp",
+      "status": "200",
+      "bytes": 43284,
+      "seconds": 1.355,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/31c54b46022d1ba8-1600.webp",
+      "status": "200",
+      "bytes": 184336,
+      "seconds": 5.01,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/31c54b46022d1ba8-480.webp",
+      "status": "200",
+      "bytes": 28334,
+      "seconds": 0.748,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/31c54b46022d1ba8-960.webp",
+      "status": "200",
+      "bytes": 89662,
+      "seconds": 4.042,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/353cd82ebaa2f0cf-1600.webp",
+      "status": "200",
+      "bytes": 179580,
+      "seconds": 12.467,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/353cd82ebaa2f0cf-480.webp",
+      "status": "200",
+      "bytes": 28568,
+      "seconds": 1.894,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/353cd82ebaa2f0cf-960.webp",
+      "status": "200",
+      "bytes": 87816,
+      "seconds": 3.352,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/353d556fe76fd7a2-1600.webp",
+      "status": "200",
+      "bytes": 158940,
+      "seconds": 8.333,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/353d556fe76fd7a2-480.webp",
+      "status": "200",
+      "bytes": 21356,
+      "seconds": 1.093,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/353d556fe76fd7a2-960.webp",
+      "status": "200",
+      "bytes": 69060,
+      "seconds": 1.287,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/38936a19d644f77e-1600.webp",
+      "status": "200",
+      "bytes": 432876,
+      "seconds": 14.156,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/38936a19d644f77e-480.webp",
+      "status": "200",
+      "bytes": 58194,
+      "seconds": 0.876,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/38936a19d644f77e-960.webp",
+      "status": "200",
+      "bytes": 192910,
+      "seconds": 1.458,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/39e8a9ab9b808017-1600.webp",
+      "status": "200",
+      "bytes": 139772,
+      "seconds": 1.16,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/39e8a9ab9b808017-480.webp",
+      "status": "200",
+      "bytes": 23992,
+      "seconds": 0.772,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/39e8a9ab9b808017-960.webp",
+      "status": "200",
+      "bytes": 69626,
+      "seconds": 1.094,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3de2ebe88c663a19-1600.webp",
+      "status": "200",
+      "bytes": 159762,
+      "seconds": 1.462,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3de2ebe88c663a19-480.webp",
+      "status": "200",
+      "bytes": 24670,
+      "seconds": 1.551,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3de2ebe88c663a19-960.webp",
+      "status": "200",
+      "bytes": 73198,
+      "seconds": 1.013,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3f38205938bcd7bc-480.webp",
+      "status": "200",
+      "bytes": 82870,
+      "seconds": 1.477,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3f38205938bcd7bc-837.webp",
+      "status": "200",
+      "bytes": 234798,
+      "seconds": 5.803,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3fe6ec8c12fa11fd-480.webp",
+      "status": "200",
+      "bytes": 68576,
+      "seconds": 1.278,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/3fe6ec8c12fa11fd-832.webp",
+      "status": "200",
+      "bytes": 157176,
+      "seconds": 1.615,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/41272af9e5d22ca1-1160.webp",
+      "status": "200",
+      "bytes": 121668,
+      "seconds": 4.538,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/41272af9e5d22ca1-480.webp",
+      "status": "200",
+      "bytes": 38996,
+      "seconds": 0.915,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/41272af9e5d22ca1-960.webp",
+      "status": "200",
+      "bytes": 97474,
+      "seconds": 3.181,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/43f41067010fdf1a-1600.webp",
+      "status": "200",
+      "bytes": 120834,
+      "seconds": 5.286,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/43f41067010fdf1a-480.webp",
+      "status": "200",
+      "bytes": 18420,
+      "seconds": 1.237,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/43f41067010fdf1a-960.webp",
+      "status": "200",
+      "bytes": 56834,
+      "seconds": 1.921,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/455e364b524b1c7a-1600.webp",
+      "status": "200",
+      "bytes": 127484,
+      "seconds": 3.379,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/455e364b524b1c7a-480.webp",
+      "status": "200",
+      "bytes": 21288,
+      "seconds": 0.908,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/455e364b524b1c7a-960.webp",
+      "status": "200",
+      "bytes": 62124,
+      "seconds": 0.954,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/465166d7be25e1db-1600.webp",
+      "status": "200",
+      "bytes": 188616,
+      "seconds": 3.737,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/465166d7be25e1db-480.webp",
+      "status": "200",
+      "bytes": 29884,
+      "seconds": 2.18,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/465166d7be25e1db-960.webp",
+      "status": "200",
+      "bytes": 86050,
+      "seconds": 1.125,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/46c4930e0e55babb-1600.webp",
+      "status": "200",
+      "bytes": 114432,
+      "seconds": 1.29,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/46c4930e0e55babb-480.webp",
+      "status": "200",
+      "bytes": 22272,
+      "seconds": 2.308,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/46c4930e0e55babb-960.webp",
+      "status": "200",
+      "bytes": 61150,
+      "seconds": 3.705,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/47384d1d7dc3957c-1600.webp",
+      "status": "200",
+      "bytes": 64062,
+      "seconds": 2.183,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/47384d1d7dc3957c-480.webp",
+      "status": "200",
+      "bytes": 10228,
+      "seconds": 1.058,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/47384d1d7dc3957c-960.webp",
+      "status": "200",
+      "bytes": 29966,
+      "seconds": 1.662,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4898b88e5ad9ab62-1600.webp",
+      "status": "200",
+      "bytes": 193854,
+      "seconds": 4.649,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4898b88e5ad9ab62-480.webp",
+      "status": "200",
+      "bytes": 22798,
+      "seconds": 0.541,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4898b88e5ad9ab62-960.webp",
+      "status": "200",
+      "bytes": 82452,
+      "seconds": 1.126,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/48f3b99d80139811-1600.webp",
+      "status": "200",
+      "bytes": 366806,
+      "seconds": 6.895,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/48f3b99d80139811-480.webp",
+      "status": "200",
+      "bytes": 38838,
+      "seconds": 0.831,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/48f3b99d80139811-960.webp",
+      "status": "200",
+      "bytes": 133956,
+      "seconds": 6.068,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4a0b229edcfd0743-1600.webp",
+      "status": "200",
+      "bytes": 522394,
+      "seconds": 9.857,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4a0b229edcfd0743-480.webp",
+      "status": "200",
+      "bytes": 62446,
+      "seconds": 2.037,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4a0b229edcfd0743-960.webp",
+      "status": "200",
+      "bytes": 226656,
+      "seconds": 2.202,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4acd6d58439616db-1600.webp",
+      "status": "200",
+      "bytes": 565470,
+      "seconds": 18.038,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4acd6d58439616db-480.webp",
+      "status": "200",
+      "bytes": 47876,
+      "seconds": 1.09,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4acd6d58439616db-960.webp",
+      "status": "200",
+      "bytes": 213002,
+      "seconds": 5.087,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4c996b5ba4a2668b-1600.webp",
+      "status": "200",
+      "bytes": 225814,
+      "seconds": 4.79,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4c996b5ba4a2668b-480.webp",
+      "status": "200",
+      "bytes": 32926,
+      "seconds": 1.354,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4c996b5ba4a2668b-960.webp",
+      "status": "200",
+      "bytes": 101904,
+      "seconds": 1.599,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d17b04112a30e60-1600.webp",
+      "status": "200",
+      "bytes": 78454,
+      "seconds": 1.322,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d17b04112a30e60-480.webp",
+      "status": "200",
+      "bytes": 13738,
+      "seconds": 0.584,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d17b04112a30e60-960.webp",
+      "status": "200",
+      "bytes": 39392,
+      "seconds": 1.721,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d5c7bfcbe4bdfb4-1600.webp",
+      "status": "200",
+      "bytes": 83478,
+      "seconds": 0.894,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d5c7bfcbe4bdfb4-480.webp",
+      "status": "200",
+      "bytes": 10546,
+      "seconds": 2.256,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d5c7bfcbe4bdfb4-960.webp",
+      "status": "200",
+      "bytes": 35814,
+      "seconds": 0.813,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d87c8ff5673b835-1600.webp",
+      "status": "200",
+      "bytes": 436564,
+      "seconds": 7.55,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d87c8ff5673b835-480.webp",
+      "status": "200",
+      "bytes": 44766,
+      "seconds": 1.946,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4d87c8ff5673b835-960.webp",
+      "status": "200",
+      "bytes": 144354,
+      "seconds": 7.504,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4f0199b73f369f6d-1600.webp",
+      "status": "200",
+      "bytes": 187980,
+      "seconds": 1.361,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4f0199b73f369f6d-480.webp",
+      "status": "200",
+      "bytes": 29508,
+      "seconds": 1.559,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4f0199b73f369f6d-960.webp",
+      "status": "200",
+      "bytes": 89824,
+      "seconds": 4.424,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4f875d485a990c39-1600.webp",
+      "status": "200",
+      "bytes": 127636,
+      "seconds": 1.537,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4f875d485a990c39-480.webp",
+      "status": "200",
+      "bytes": 18360,
+      "seconds": 1.403,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/4f875d485a990c39-960.webp",
+      "status": "200",
+      "bytes": 64948,
+      "seconds": 0.876,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/503bd7edf261e446-1600.webp",
+      "status": "200",
+      "bytes": 247074,
+      "seconds": 3.39,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/503bd7edf261e446-480.webp",
+      "status": "200",
+      "bytes": 28498,
+      "seconds": 0.908,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/503bd7edf261e446-960.webp",
+      "status": "200",
+      "bytes": 104230,
+      "seconds": 1.006,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/50b37d4bf3eb9632-1600.webp",
+      "status": "200",
+      "bytes": 120230,
+      "seconds": 2.586,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/50b37d4bf3eb9632-480.webp",
+      "status": "200",
+      "bytes": 17516,
+      "seconds": 0.55,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/50b37d4bf3eb9632-960.webp",
+      "status": "200",
+      "bytes": 53136,
+      "seconds": 2.174,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/51c5188eb79d6713-1279.webp",
+      "status": "200",
+      "bytes": 269344,
+      "seconds": 15.033,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/51c5188eb79d6713-480.webp",
+      "status": "200",
+      "bytes": 70020,
+      "seconds": 1.25,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/51c5188eb79d6713-960.webp",
+      "status": "200",
+      "bytes": 192030,
+      "seconds": 5.402,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/533ad5fe1080f2d0-1600.webp",
+      "status": "200",
+      "bytes": 463688,
+      "seconds": 10.509,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/533ad5fe1080f2d0-480.webp",
+      "status": "200",
+      "bytes": 37104,
+      "seconds": 1.475,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/533ad5fe1080f2d0-960.webp",
+      "status": "200",
+      "bytes": 155176,
+      "seconds": 2.925,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/544c0b366b3baf0f-1600.webp",
+      "status": "200",
+      "bytes": 186092,
+      "seconds": 2.892,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/544c0b366b3baf0f-480.webp",
+      "status": "200",
+      "bytes": 26740,
+      "seconds": 2.19,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/544c0b366b3baf0f-960.webp",
+      "status": "200",
+      "bytes": 84928,
+      "seconds": 1.266,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5481cf517fe96040-1600.webp",
+      "status": "200",
+      "bytes": 395958,
+      "seconds": 11.491,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5481cf517fe96040-480.webp",
+      "status": "200",
+      "bytes": 52908,
+      "seconds": 0.774,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5481cf517fe96040-960.webp",
+      "status": "200",
+      "bytes": 171388,
+      "seconds": 1.796,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/551e04145bea47b3-1600.webp",
+      "status": "200",
+      "bytes": 179644,
+      "seconds": 3.839,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/551e04145bea47b3-480.webp",
+      "status": "200",
+      "bytes": 25938,
+      "seconds": 3.257,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/551e04145bea47b3-960.webp",
+      "status": "200",
+      "bytes": 79970,
+      "seconds": 2.108,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/552c22a8a228f469-1600.webp",
+      "status": "200",
+      "bytes": 74620,
+      "seconds": 1.717,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/552c22a8a228f469-480.webp",
+      "status": "200",
+      "bytes": 10718,
+      "seconds": 1.66,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/552c22a8a228f469-960.webp",
+      "status": "200",
+      "bytes": 32202,
+      "seconds": 2.231,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/578d0808bacf0d35-1600.webp",
+      "status": "200",
+      "bytes": 253030,
+      "seconds": 5.399,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/578d0808bacf0d35-480.webp",
+      "status": "200",
+      "bytes": 46758,
+      "seconds": 1.25,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/578d0808bacf0d35-960.webp",
+      "status": "200",
+      "bytes": 129232,
+      "seconds": 1.989,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/58d8b8d101dfcc38-1600.webp",
+      "status": "200",
+      "bytes": 122744,
+      "seconds": 1.732,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/58d8b8d101dfcc38-480.webp",
+      "status": "200",
+      "bytes": 18210,
+      "seconds": 0.872,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/58d8b8d101dfcc38-960.webp",
+      "status": "200",
+      "bytes": 55834,
+      "seconds": 2.027,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5cba8034eab83d85-1600.webp",
+      "status": "200",
+      "bytes": 315968,
+      "seconds": 6.654,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5cba8034eab83d85-480.webp",
+      "status": "200",
+      "bytes": 50856,
+      "seconds": 1.064,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5cba8034eab83d85-960.webp",
+      "status": "200",
+      "bytes": 149676,
+      "seconds": 3.26,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5fa501db847e0754-1600.webp",
+      "status": "200",
+      "bytes": 256940,
+      "seconds": 2.369,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5fa501db847e0754-480.webp",
+      "status": "200",
+      "bytes": 31224,
+      "seconds": 2.064,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5fa501db847e0754-960.webp",
+      "status": "200",
+      "bytes": 107252,
+      "seconds": 2.544,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5fcf4ec33cc87ee5-1600.webp",
+      "status": "200",
+      "bytes": 105052,
+      "seconds": 0.979,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5fcf4ec33cc87ee5-480.webp",
+      "status": "200",
+      "bytes": 14826,
+      "seconds": 0.853,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/5fcf4ec33cc87ee5-960.webp",
+      "status": "200",
+      "bytes": 47472,
+      "seconds": 6.846,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/60eb2cd648d71f05-1418.webp",
+      "status": "200",
+      "bytes": 66390,
+      "seconds": 1.301,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/60eb2cd648d71f05-480.webp",
+      "status": "200",
+      "bytes": 12350,
+      "seconds": 0.811,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/60eb2cd648d71f05-960.webp",
+      "status": "200",
+      "bytes": 37096,
+      "seconds": 1.042,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/60f693fe59397133-1600.webp",
+      "status": "200",
+      "bytes": 429096,
+      "seconds": 9.71,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/60f693fe59397133-480.webp",
+      "status": "200",
+      "bytes": 40646,
+      "seconds": 1.248,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/60f693fe59397133-960.webp",
+      "status": "200",
+      "bytes": 149908,
+      "seconds": 1.846,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/612057df4a1bd2d1-1600.webp",
+      "status": "200",
+      "bytes": 152664,
+      "seconds": 5.603,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/612057df4a1bd2d1-480.webp",
+      "status": "200",
+      "bytes": 25320,
+      "seconds": 1.191,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/612057df4a1bd2d1-960.webp",
+      "status": "200",
+      "bytes": 72480,
+      "seconds": 0.849,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/62bdcea4e9ef718c-1391.webp",
+      "status": "200",
+      "bytes": 316194,
+      "seconds": 9.614,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/62bdcea4e9ef718c-480.webp",
+      "status": "200",
+      "bytes": 45634,
+      "seconds": 0.972,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/62bdcea4e9ef718c-960.webp",
+      "status": "200",
+      "bytes": 170578,
+      "seconds": 3.121,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/65b06d2271f012c0-1600.webp",
+      "status": "200",
+      "bytes": 63946,
+      "seconds": 1.657,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/65b06d2271f012c0-480.webp",
+      "status": "200",
+      "bytes": 10916,
+      "seconds": 0.604,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/65b06d2271f012c0-960.webp",
+      "status": "200",
+      "bytes": 30250,
+      "seconds": 0.887,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/66c3863a47bfcd38-1600.webp",
+      "status": "200",
+      "bytes": 147062,
+      "seconds": 1.469,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/66c3863a47bfcd38-480.webp",
+      "status": "200",
+      "bytes": 23946,
+      "seconds": 1.12,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/66c3863a47bfcd38-960.webp",
+      "status": "200",
+      "bytes": 68910,
+      "seconds": 1.27,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/67571f8c787e05e5-1600.webp",
+      "status": "200",
+      "bytes": 96530,
+      "seconds": 1.15,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/67571f8c787e05e5-480.webp",
+      "status": "200",
+      "bytes": 8956,
+      "seconds": 0.578,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/67571f8c787e05e5-960.webp",
+      "status": "200",
+      "bytes": 31414,
+      "seconds": 1.93,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6854b4027419fee0-1234.webp",
+      "status": "200",
+      "bytes": 101010,
+      "seconds": 1.981,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6854b4027419fee0-480.webp",
+      "status": "200",
+      "bytes": 22532,
+      "seconds": 0.931,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6854b4027419fee0-960.webp",
+      "status": "200",
+      "bytes": 71516,
+      "seconds": 1.844,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/69145e810e8381cd-1150.webp",
+      "status": "200",
+      "bytes": 90344,
+      "seconds": 1.579,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/69145e810e8381cd-480.webp",
+      "status": "200",
+      "bytes": 12612,
+      "seconds": 1.872,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/69145e810e8381cd-960.webp",
+      "status": "200",
+      "bytes": 56384,
+      "seconds": 1.946,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6af45ab6247689f8-1219.webp",
+      "status": "200",
+      "bytes": 89722,
+      "seconds": 0.817,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6af45ab6247689f8-480.webp",
+      "status": "200",
+      "bytes": 24870,
+      "seconds": 1.909,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6af45ab6247689f8-960.webp",
+      "status": "200",
+      "bytes": 66934,
+      "seconds": 1.777,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6b1f586388d3c410-1600.webp",
+      "status": "200",
+      "bytes": 87886,
+      "seconds": 2.736,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6b1f586388d3c410-480.webp",
+      "status": "200",
+      "bytes": 15030,
+      "seconds": 0.755,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6b1f586388d3c410-960.webp",
+      "status": "200",
+      "bytes": 41662,
+      "seconds": 0.676,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6cadcdc304d6cd8c-1600.webp",
+      "status": "200",
+      "bytes": 399566,
+      "seconds": 11.77,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6cadcdc304d6cd8c-480.webp",
+      "status": "200",
+      "bytes": 32348,
+      "seconds": 0.752,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6cadcdc304d6cd8c-960.webp",
+      "status": "200",
+      "bytes": 132926,
+      "seconds": 3.181,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6e1234604a58db55-1600.webp",
+      "status": "200",
+      "bytes": 101806,
+      "seconds": 3.905,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6e1234604a58db55-480.webp",
+      "status": "200",
+      "bytes": 13724,
+      "seconds": 1.091,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6e1234604a58db55-960.webp",
+      "status": "200",
+      "bytes": 42008,
+      "seconds": 1.443,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6e7f0893e49faa62-1600.webp",
+      "status": "200",
+      "bytes": 196414,
+      "seconds": 1.505,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6e7f0893e49faa62-480.webp",
+      "status": "200",
+      "bytes": 26130,
+      "seconds": 0.591,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6e7f0893e49faa62-960.webp",
+      "status": "200",
+      "bytes": 88602,
+      "seconds": 1.767,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6f866551f9710ba2-1600.webp",
+      "status": "200",
+      "bytes": 159174,
+      "seconds": 4.36,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6f866551f9710ba2-480.webp",
+      "status": "200",
+      "bytes": 21698,
+      "seconds": 1.156,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6f866551f9710ba2-960.webp",
+      "status": "200",
+      "bytes": 69532,
+      "seconds": 0.808,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6fad117463ad0164-1600.webp",
+      "status": "200",
+      "bytes": 199418,
+      "seconds": 3.865,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6fad117463ad0164-480.webp",
+      "status": "200",
+      "bytes": 31156,
+      "seconds": 1.159,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/6fad117463ad0164-960.webp",
+      "status": "200",
+      "bytes": 94904,
+      "seconds": 3.705,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/72e4c3597ae736d9-1600.webp",
+      "status": "200",
+      "bytes": 124562,
+      "seconds": 2.665,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/72e4c3597ae736d9-480.webp",
+      "status": "200",
+      "bytes": 15958,
+      "seconds": 1.104,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/72e4c3597ae736d9-960.webp",
+      "status": "200",
+      "bytes": 55414,
+      "seconds": 2.239,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/74f813d43798fb94-1454.webp",
+      "status": "200",
+      "bytes": 205128,
+      "seconds": 2.341,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/74f813d43798fb94-480.webp",
+      "status": "200",
+      "bytes": 33408,
+      "seconds": 0.72,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/74f813d43798fb94-960.webp",
+      "status": "200",
+      "bytes": 108718,
+      "seconds": 2.958,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7656b2c9b04ae4ae-1600.webp",
+      "status": "200",
+      "bytes": 200716,
+      "seconds": 3.235,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7656b2c9b04ae4ae-480.webp",
+      "status": "200",
+      "bytes": 29242,
+      "seconds": 1.94,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7656b2c9b04ae4ae-960.webp",
+      "status": "200",
+      "bytes": 91764,
+      "seconds": 1.401,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/76dd66d6cb70976f-1600.webp",
+      "status": "200",
+      "bytes": 400848,
+      "seconds": 12.536,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/76dd66d6cb70976f-480.webp",
+      "status": "200",
+      "bytes": 34052,
+      "seconds": 1.453,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/76dd66d6cb70976f-960.webp",
+      "status": "200",
+      "bytes": 139144,
+      "seconds": 2.033,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77726fa57aa50696-1600.webp",
+      "status": "200",
+      "bytes": 213486,
+      "seconds": 17.541,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77726fa57aa50696-480.webp",
+      "status": "200",
+      "bytes": 18246,
+      "seconds": 2.076,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77726fa57aa50696-960.webp",
+      "status": "200",
+      "bytes": 85058,
+      "seconds": 0.906,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77a501eef45c1b1d-1600.webp",
+      "status": "200",
+      "bytes": 81112,
+      "seconds": 1.024,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77a501eef45c1b1d-480.webp",
+      "status": "200",
+      "bytes": 15484,
+      "seconds": 0.732,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77a501eef45c1b1d-960.webp",
+      "status": "200",
+      "bytes": 42298,
+      "seconds": 1.914,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77fb4fc4a2bcce68-1600.webp",
+      "status": "200",
+      "bytes": 125742,
+      "seconds": 3.595,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77fb4fc4a2bcce68-480.webp",
+      "status": "200",
+      "bytes": 11432,
+      "seconds": 1.536,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/77fb4fc4a2bcce68-960.webp",
+      "status": "200",
+      "bytes": 51692,
+      "seconds": 1.394,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7b4ddc155aa5a82f-1254.webp",
+      "status": "200",
+      "bytes": 283638,
+      "seconds": 8.049,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7b4ddc155aa5a82f-480.webp",
+      "status": "200",
+      "bytes": 55080,
+      "seconds": 1.166,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7b4ddc155aa5a82f-960.webp",
+      "status": "200",
+      "bytes": 189412,
+      "seconds": 1.55,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7e6591244e86f13d-1276.webp",
+      "status": "200",
+      "bytes": 255284,
+      "seconds": 4.17,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7e6591244e86f13d-480.webp",
+      "status": "200",
+      "bytes": 50216,
+      "seconds": 1.383,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/7e6591244e86f13d-960.webp",
+      "status": "200",
+      "bytes": 165882,
+      "seconds": 1.339,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/812b76d7436126f4-1600.webp",
+      "status": "200",
+      "bytes": 248238,
+      "seconds": 5.63,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/812b76d7436126f4-480.webp",
+      "status": "200",
+      "bytes": 19700,
+      "seconds": 2.235,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/812b76d7436126f4-960.webp",
+      "status": "200",
+      "bytes": 82700,
+      "seconds": 1.48,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/816850a2581e3678-1600.webp",
+      "status": "200",
+      "bytes": 130082,
+      "seconds": 1.375,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/816850a2581e3678-480.webp",
+      "status": "200",
+      "bytes": 22108,
+      "seconds": 3.338,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/816850a2581e3678-960.webp",
+      "status": "200",
+      "bytes": 62584,
+      "seconds": 1.941,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8179f50e8589e1a8-1600.webp",
+      "status": "200",
+      "bytes": 116338,
+      "seconds": 1.386,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8179f50e8589e1a8-480.webp",
+      "status": "200",
+      "bytes": 18364,
+      "seconds": 0.885,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8179f50e8589e1a8-960.webp",
+      "status": "200",
+      "bytes": 55588,
+      "seconds": 1.931,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/81849c95e5a1a2c3-1600.webp",
+      "status": "200",
+      "bytes": 406312,
+      "seconds": 11.733,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/81849c95e5a1a2c3-480.webp",
+      "status": "200",
+      "bytes": 25128,
+      "seconds": 0.673,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/81849c95e5a1a2c3-960.webp",
+      "status": "200",
+      "bytes": 113850,
+      "seconds": 1.349,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/826b225359a98e03-1600.webp",
+      "status": "200",
+      "bytes": 528206,
+      "seconds": 14.37,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/826b225359a98e03-480.webp",
+      "status": "200",
+      "bytes": 61436,
+      "seconds": 1.97,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/826b225359a98e03-960.webp",
+      "status": "200",
+      "bytes": 246950,
+      "seconds": 6.256,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/83fb63e12ebf223f-1600.webp",
+      "status": "200",
+      "bytes": 58780,
+      "seconds": 1.163,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/83fb63e12ebf223f-480.webp",
+      "status": "200",
+      "bytes": 9506,
+      "seconds": 1.103,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/83fb63e12ebf223f-960.webp",
+      "status": "200",
+      "bytes": 27276,
+      "seconds": 5.114,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8483805025f4b0b8-1600.webp",
+      "status": "200",
+      "bytes": 170980,
+      "seconds": 9.757,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8483805025f4b0b8-480.webp",
+      "status": "200",
+      "bytes": 22174,
+      "seconds": 0.793,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8483805025f4b0b8-960.webp",
+      "status": "200",
+      "bytes": 73426,
+      "seconds": 2.037,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8646a1d8102eed6c-1600.webp",
+      "status": "200",
+      "bytes": 25112,
+      "seconds": 0.641,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8646a1d8102eed6c-480.webp",
+      "status": "200",
+      "bytes": 3862,
+      "seconds": 0.54,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8646a1d8102eed6c-960.webp",
+      "status": "200",
+      "bytes": 11340,
+      "seconds": 0.706,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8760cea3a79780ea-1600.webp",
+      "status": "200",
+      "bytes": 168752,
+      "seconds": 4.054,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8760cea3a79780ea-480.webp",
+      "status": "200",
+      "bytes": 29004,
+      "seconds": 0.856,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8760cea3a79780ea-960.webp",
+      "status": "200",
+      "bytes": 85652,
+      "seconds": 1.193,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/88c5705d0ab687cc-1600.webp",
+      "status": "200",
+      "bytes": 209336,
+      "seconds": 13.891,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/88c5705d0ab687cc-480.webp",
+      "status": "200",
+      "bytes": 30416,
+      "seconds": 0.963,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/88c5705d0ab687cc-960.webp",
+      "status": "200",
+      "bytes": 90920,
+      "seconds": 1.379,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/898f858abae89ca1-1600.webp",
+      "status": "200",
+      "bytes": 163492,
+      "seconds": 7.364,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/898f858abae89ca1-480.webp",
+      "status": "200",
+      "bytes": 24312,
+      "seconds": 1.215,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/898f858abae89ca1-960.webp",
+      "status": "200",
+      "bytes": 75980,
+      "seconds": 2.109,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8a0280c48d340fbb-1600.webp",
+      "status": "200",
+      "bytes": 318812,
+      "seconds": 7.621,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8a0280c48d340fbb-480.webp",
+      "status": "200",
+      "bytes": 56852,
+      "seconds": 1.634,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8a0280c48d340fbb-960.webp",
+      "status": "200",
+      "bytes": 157814,
+      "seconds": 1.391,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8a296af5813b81b0-1600.webp",
+      "status": "200",
+      "bytes": 194704,
+      "seconds": 7.624,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8a296af5813b81b0-480.webp",
+      "status": "200",
+      "bytes": 27520,
+      "seconds": 1.395,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8a296af5813b81b0-960.webp",
+      "status": "200",
+      "bytes": 88446,
+      "seconds": 1.111,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8ae57a95b97f8575-1600.webp",
+      "status": "200",
+      "bytes": 174386,
+      "seconds": 5.548,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8ae57a95b97f8575-480.webp",
+      "status": "200",
+      "bytes": 25396,
+      "seconds": 1.098,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8ae57a95b97f8575-960.webp",
+      "status": "200",
+      "bytes": 82486,
+      "seconds": 4.5,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8bd74f7b424015e9-1600.webp",
+      "status": "200",
+      "bytes": 352620,
+      "seconds": 5.358,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8bd74f7b424015e9-480.webp",
+      "status": "200",
+      "bytes": 33730,
+      "seconds": 0.928,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8bd74f7b424015e9-960.webp",
+      "status": "200",
+      "bytes": 122820,
+      "seconds": 0.918,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8cab2f956e81d71c-1600.webp",
+      "status": "200",
+      "bytes": 170056,
+      "seconds": 8.584,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8cab2f956e81d71c-480.webp",
+      "status": "200",
+      "bytes": 27138,
+      "seconds": 3.561,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8cab2f956e81d71c-960.webp",
+      "status": "200",
+      "bytes": 80622,
+      "seconds": 2.39,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8da6ed7de6573a13-1600.webp",
+      "status": "200",
+      "bytes": 297866,
+      "seconds": 7.112,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8da6ed7de6573a13-480.webp",
+      "status": "200",
+      "bytes": 26538,
+      "seconds": 1.44,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8da6ed7de6573a13-960.webp",
+      "status": "200",
+      "bytes": 127696,
+      "seconds": 2.389,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8e842ddb869fb7e6-1600.webp",
+      "status": "200",
+      "bytes": 237532,
+      "seconds": 19.705,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8e842ddb869fb7e6-480.webp",
+      "status": "200",
+      "bytes": 32098,
+      "seconds": 1.145,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8e842ddb869fb7e6-960.webp",
+      "status": "200",
+      "bytes": 100482,
+      "seconds": 1.374,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8f2bac1d70d9570f-1600.webp",
+      "status": "200",
+      "bytes": 243346,
+      "seconds": 10.607,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8f2bac1d70d9570f-480.webp",
+      "status": "200",
+      "bytes": 20480,
+      "seconds": 0.567,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/8f2bac1d70d9570f-960.webp",
+      "status": "200",
+      "bytes": 79202,
+      "seconds": 0.903,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9181414029b6ee33-1600.webp",
+      "status": "200",
+      "bytes": 277812,
+      "seconds": 4.411,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9181414029b6ee33-480.webp",
+      "status": "200",
+      "bytes": 28356,
+      "seconds": 0.849,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9181414029b6ee33-960.webp",
+      "status": "200",
+      "bytes": 102998,
+      "seconds": 1.175,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/92a179c194048c1e-1600.webp",
+      "status": "200",
+      "bytes": 135550,
+      "seconds": 0.989,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/92a179c194048c1e-480.webp",
+      "status": "200",
+      "bytes": 13258,
+      "seconds": 1.785,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/92a179c194048c1e-960.webp",
+      "status": "200",
+      "bytes": 52258,
+      "seconds": 1.211,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/94781eaa965962f5-1200.webp",
+      "status": "200",
+      "bytes": 150624,
+      "seconds": 3.682,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/94781eaa965962f5-480.webp",
+      "status": "200",
+      "bytes": 42842,
+      "seconds": 1.513,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/94781eaa965962f5-960.webp",
+      "status": "200",
+      "bytes": 110914,
+      "seconds": 1.843,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/947eb96a3b5cab42-1600.webp",
+      "status": "200",
+      "bytes": 314570,
+      "seconds": 13.92,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/947eb96a3b5cab42-480.webp",
+      "status": "200",
+      "bytes": 32626,
+      "seconds": 0.668,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/947eb96a3b5cab42-960.webp",
+      "status": "200",
+      "bytes": 119240,
+      "seconds": 2.822,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/975405ae7be80e01-1600.webp",
+      "status": "200",
+      "bytes": 142396,
+      "seconds": 1.947,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/975405ae7be80e01-480.webp",
+      "status": "200",
+      "bytes": 25508,
+      "seconds": 1.163,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/975405ae7be80e01-960.webp",
+      "status": "200",
+      "bytes": 72966,
+      "seconds": 2.333,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/979336d89c7094e5-1600.webp",
+      "status": "200",
+      "bytes": 63934,
+      "seconds": 1.691,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/979336d89c7094e5-480.webp",
+      "status": "200",
+      "bytes": 9548,
+      "seconds": 0.711,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/979336d89c7094e5-960.webp",
+      "status": "200",
+      "bytes": 29492,
+      "seconds": 0.826,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/994e92c216d71516-1600.webp",
+      "status": "200",
+      "bytes": 148806,
+      "seconds": 1.859,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/994e92c216d71516-480.webp",
+      "status": "200",
+      "bytes": 21094,
+      "seconds": 1.11,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/994e92c216d71516-960.webp",
+      "status": "200",
+      "bytes": 65358,
+      "seconds": 0.894,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9bb3997a3ab20d13-1600.webp",
+      "status": "200",
+      "bytes": 100932,
+      "seconds": 1.87,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9bb3997a3ab20d13-480.webp",
+      "status": "200",
+      "bytes": 14142,
+      "seconds": 1.211,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9bb3997a3ab20d13-960.webp",
+      "status": "200",
+      "bytes": 42838,
+      "seconds": 0.96,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9c2410073067c929-1600.webp",
+      "status": "200",
+      "bytes": 180508,
+      "seconds": 13.269,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9c2410073067c929-480.webp",
+      "status": "200",
+      "bytes": 24298,
+      "seconds": 1.155,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9c2410073067c929-960.webp",
+      "status": "200",
+      "bytes": 79242,
+      "seconds": 1.305,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9cdd83ee60d5f4b9-1600.webp",
+      "status": "200",
+      "bytes": 165604,
+      "seconds": 5.79,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9cdd83ee60d5f4b9-480.webp",
+      "status": "200",
+      "bytes": 23522,
+      "seconds": 2.014,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9cdd83ee60d5f4b9-960.webp",
+      "status": "200",
+      "bytes": 72282,
+      "seconds": 0.924,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9d22b33e0672a643-480.webp",
+      "status": "200",
+      "bytes": 50210,
+      "seconds": 1.347,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9d22b33e0672a643-676.webp",
+      "status": "200",
+      "bytes": 106406,
+      "seconds": 3.211,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9e37bafeb4cdde84-1203.webp",
+      "status": "200",
+      "bytes": 156442,
+      "seconds": 1.865,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9e37bafeb4cdde84-480.webp",
+      "status": "200",
+      "bytes": 34310,
+      "seconds": 0.916,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/9e37bafeb4cdde84-960.webp",
+      "status": "200",
+      "bytes": 106824,
+      "seconds": 2.562,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a3a8c532c94d300f-1600.webp",
+      "status": "200",
+      "bytes": 346826,
+      "seconds": 10.891,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a3a8c532c94d300f-480.webp",
+      "status": "200",
+      "bytes": 48050,
+      "seconds": 1.597,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a3a8c532c94d300f-960.webp",
+      "status": "200",
+      "bytes": 174432,
+      "seconds": 3.582,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a435aa8659ef02c8-1600.webp",
+      "status": "200",
+      "bytes": 204114,
+      "seconds": 8.273,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a435aa8659ef02c8-480.webp",
+      "status": "200",
+      "bytes": 25614,
+      "seconds": 1.143,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a435aa8659ef02c8-960.webp",
+      "status": "200",
+      "bytes": 81358,
+      "seconds": 1.383,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a4a43ca4a39773f8-1600.webp",
+      "status": "200",
+      "bytes": 211722,
+      "seconds": 6.942,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a4a43ca4a39773f8-480.webp",
+      "status": "200",
+      "bytes": 19062,
+      "seconds": 1.029,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a4a43ca4a39773f8-960.webp",
+      "status": "200",
+      "bytes": 83212,
+      "seconds": 3.731,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a5aeea5e791dab93-1600.webp",
+      "status": "200",
+      "bytes": 190564,
+      "seconds": 7.812,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a5aeea5e791dab93-480.webp",
+      "status": "200",
+      "bytes": 27816,
+      "seconds": 2.185,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a5aeea5e791dab93-960.webp",
+      "status": "200",
+      "bytes": 86506,
+      "seconds": 2.668,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a8e04460d3dc2580-1585.webp",
+      "status": "200",
+      "bytes": 358278,
+      "seconds": 3.532,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a8e04460d3dc2580-480.webp",
+      "status": "200",
+      "bytes": 41450,
+      "seconds": 1.087,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/a8e04460d3dc2580-960.webp",
+      "status": "200",
+      "bytes": 148708,
+      "seconds": 2.09,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aab2d893aac55f9f-1600.webp",
+      "status": "200",
+      "bytes": 62994,
+      "seconds": 0.863,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aab2d893aac55f9f-480.webp",
+      "status": "200",
+      "bytes": 11224,
+      "seconds": 1.976,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aab2d893aac55f9f-960.webp",
+      "status": "200",
+      "bytes": 32262,
+      "seconds": 0.919,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aca8b353dde2d13f-1600.webp",
+      "status": "200",
+      "bytes": 287694,
+      "seconds": 11.187,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aca8b353dde2d13f-480.webp",
+      "status": "200",
+      "bytes": 16426,
+      "seconds": 0.977,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aca8b353dde2d13f-960.webp",
+      "status": "200",
+      "bytes": 114496,
+      "seconds": 1.366,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aca8da730cc3038b-1600.webp",
+      "status": "200",
+      "bytes": 664982,
+      "seconds": 21.184,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aca8da730cc3038b-480.webp",
+      "status": "200",
+      "bytes": 51902,
+      "seconds": 2.103,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/aca8da730cc3038b-960.webp",
+      "status": "200",
+      "bytes": 238234,
+      "seconds": 3.875,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/adeb5fd3e4892486-1600.webp",
+      "status": "200",
+      "bytes": 178414,
+      "seconds": 1.705,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/adeb5fd3e4892486-480.webp",
+      "status": "200",
+      "bytes": 22616,
+      "seconds": 1.671,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/adeb5fd3e4892486-960.webp",
+      "status": "200",
+      "bytes": 72628,
+      "seconds": 1.165,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ae7e48b9f540ecc5-1238.webp",
+      "status": "200",
+      "bytes": 132078,
+      "seconds": 1.668,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ae7e48b9f540ecc5-480.webp",
+      "status": "200",
+      "bytes": 25440,
+      "seconds": 2.16,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ae7e48b9f540ecc5-960.webp",
+      "status": "200",
+      "bytes": 86032,
+      "seconds": 0.996,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/af37a799e49b93ee-1600.webp",
+      "status": "200",
+      "bytes": 107656,
+      "seconds": 1.83,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/af37a799e49b93ee-480.webp",
+      "status": "200",
+      "bytes": 19480,
+      "seconds": 0.715,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/af37a799e49b93ee-960.webp",
+      "status": "200",
+      "bytes": 56280,
+      "seconds": 1.391,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b06fd06d672ad89f-1166.webp",
+      "status": "200",
+      "bytes": 85396,
+      "seconds": 1.389,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b06fd06d672ad89f-480.webp",
+      "status": "200",
+      "bytes": 11138,
+      "seconds": 0.669,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b06fd06d672ad89f-960.webp",
+      "status": "200",
+      "bytes": 50980,
+      "seconds": 0.872,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b17965c763a7bbab-1600.webp",
+      "status": "200",
+      "bytes": 95570,
+      "seconds": 0.714,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b17965c763a7bbab-480.webp",
+      "status": "200",
+      "bytes": 14564,
+      "seconds": 0.862,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b17965c763a7bbab-960.webp",
+      "status": "200",
+      "bytes": 44078,
+      "seconds": 1.865,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b204d91c7a170555-1600.webp",
+      "status": "200",
+      "bytes": 147914,
+      "seconds": 3.02,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b204d91c7a170555-480.webp",
+      "status": "200",
+      "bytes": 22456,
+      "seconds": 1.94,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b204d91c7a170555-960.webp",
+      "status": "200",
+      "bytes": 67142,
+      "seconds": 2.893,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b3e9694b1964e342-1528.webp",
+      "status": "200",
+      "bytes": 113240,
+      "seconds": 1.309,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b3e9694b1964e342-480.webp",
+      "status": "200",
+      "bytes": 17960,
+      "seconds": 2.016,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b3e9694b1964e342-960.webp",
+      "status": "200",
+      "bytes": 57744,
+      "seconds": 1.172,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b4cc44eaa7ba0637-1600.webp",
+      "status": "200",
+      "bytes": 327448,
+      "seconds": 7.212,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b4cc44eaa7ba0637-480.webp",
+      "status": "200",
+      "bytes": 46982,
+      "seconds": 3.417,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b4cc44eaa7ba0637-960.webp",
+      "status": "200",
+      "bytes": 148248,
+      "seconds": 3.19,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b6bccbac87f6f754-1600.webp",
+      "status": "200",
+      "bytes": 299718,
+      "seconds": 9.321,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b6bccbac87f6f754-480.webp",
+      "status": "200",
+      "bytes": 41440,
+      "seconds": 0.958,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b6bccbac87f6f754-960.webp",
+      "status": "200",
+      "bytes": 135096,
+      "seconds": 2.206,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b7bfb093bca98412-1600.webp",
+      "status": "200",
+      "bytes": 209908,
+      "seconds": 7.552,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b7bfb093bca98412-480.webp",
+      "status": "200",
+      "bytes": 30186,
+      "seconds": 1.179,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b7bfb093bca98412-960.webp",
+      "status": "200",
+      "bytes": 101038,
+      "seconds": 0.997,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b7c918041ede2a81-1600.webp",
+      "status": "200",
+      "bytes": 59920,
+      "seconds": 0.937,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b7c918041ede2a81-480.webp",
+      "status": "200",
+      "bytes": 9412,
+      "seconds": 0.729,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b7c918041ede2a81-960.webp",
+      "status": "200",
+      "bytes": 27880,
+      "seconds": 2.17,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b8c3f22fd8e112ee-1600.webp",
+      "status": "200",
+      "bytes": 101994,
+      "seconds": 2.499,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b8c3f22fd8e112ee-480.webp",
+      "status": "200",
+      "bytes": 18852,
+      "seconds": 0.682,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b8c3f22fd8e112ee-960.webp",
+      "status": "200",
+      "bytes": 51838,
+      "seconds": 1.065,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9754d9fc728df0c-1600.webp",
+      "status": "200",
+      "bytes": 128058,
+      "seconds": 1.691,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9754d9fc728df0c-480.webp",
+      "status": "200",
+      "bytes": 16942,
+      "seconds": 0.824,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9754d9fc728df0c-960.webp",
+      "status": "200",
+      "bytes": 59416,
+      "seconds": 0.971,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9a131d2f172f051-1600.webp",
+      "status": "200",
+      "bytes": 132068,
+      "seconds": 1.118,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9a131d2f172f051-480.webp",
+      "status": "200",
+      "bytes": 16458,
+      "seconds": 2.386,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9a131d2f172f051-960.webp",
+      "status": "200",
+      "bytes": 56206,
+      "seconds": 0.782,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9f0f27735fb951f-1600.webp",
+      "status": "200",
+      "bytes": 219582,
+      "seconds": 7.409,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9f0f27735fb951f-480.webp",
+      "status": "200",
+      "bytes": 26134,
+      "seconds": 0.715,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/b9f0f27735fb951f-960.webp",
+      "status": "200",
+      "bytes": 93838,
+      "seconds": 1.876,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/bee7c98ea1867090-1600.webp",
+      "status": "200",
+      "bytes": 208390,
+      "seconds": 6.278,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/bee7c98ea1867090-480.webp",
+      "status": "200",
+      "bytes": 44496,
+      "seconds": 1.153,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/bee7c98ea1867090-960.webp",
+      "status": "200",
+      "bytes": 117216,
+      "seconds": 1.55,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/beffb0e683d501b0-1600.webp",
+      "status": "200",
+      "bytes": 144028,
+      "seconds": 2.152,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/beffb0e683d501b0-480.webp",
+      "status": "200",
+      "bytes": 20812,
+      "seconds": 1.533,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/beffb0e683d501b0-960.webp",
+      "status": "200",
+      "bytes": 66346,
+      "seconds": 1.107,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/bf7c8074f30ff82d-1600.webp",
+      "status": "200",
+      "bytes": 452762,
+      "seconds": 23.8,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/bf7c8074f30ff82d-480.webp",
+      "status": "200",
+      "bytes": 40288,
+      "seconds": 1.268,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/bf7c8074f30ff82d-960.webp",
+      "status": "200",
+      "bytes": 158964,
+      "seconds": 7.145,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c0a68acb0b98819b-1600.webp",
+      "status": "200",
+      "bytes": 123426,
+      "seconds": 1.545,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c0a68acb0b98819b-480.webp",
+      "status": "200",
+      "bytes": 18130,
+      "seconds": 1.118,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c0a68acb0b98819b-960.webp",
+      "status": "200",
+      "bytes": 56240,
+      "seconds": 2.687,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c5f4b7f1df61277e-1600.webp",
+      "status": "200",
+      "bytes": 200442,
+      "seconds": 4.488,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c5f4b7f1df61277e-480.webp",
+      "status": "200",
+      "bytes": 28384,
+      "seconds": 1.411,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c5f4b7f1df61277e-960.webp",
+      "status": "200",
+      "bytes": 95804,
+      "seconds": 1.758,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c69cbe5986919acd-1600.webp",
+      "status": "200",
+      "bytes": 181886,
+      "seconds": 2.552,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c69cbe5986919acd-480.webp",
+      "status": "200",
+      "bytes": 21532,
+      "seconds": 0.626,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c69cbe5986919acd-960.webp",
+      "status": "200",
+      "bytes": 69378,
+      "seconds": 3.234,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c6ef5cb2406aae15-1412.webp",
+      "status": "200",
+      "bytes": 364272,
+      "seconds": 14.613,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c6ef5cb2406aae15-480.webp",
+      "status": "200",
+      "bytes": 42288,
+      "seconds": 2.2,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c6ef5cb2406aae15-960.webp",
+      "status": "200",
+      "bytes": 178712,
+      "seconds": 1.524,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c709c929f5902651-1600.webp",
+      "status": "200",
+      "bytes": 185342,
+      "seconds": 2.432,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c709c929f5902651-480.webp",
+      "status": "200",
+      "bytes": 18556,
+      "seconds": 1.66,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c709c929f5902651-960.webp",
+      "status": "200",
+      "bytes": 57630,
+      "seconds": 0.906,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c767da9d4cbf31a5-1600.webp",
+      "status": "200",
+      "bytes": 266066,
+      "seconds": 4.707,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c767da9d4cbf31a5-480.webp",
+      "status": "200",
+      "bytes": 27868,
+      "seconds": 1.641,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c767da9d4cbf31a5-960.webp",
+      "status": "200",
+      "bytes": 104888,
+      "seconds": 1.817,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c8609f16712bc3f9-1600.webp",
+      "status": "200",
+      "bytes": 206068,
+      "seconds": 9.452,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c8609f16712bc3f9-480.webp",
+      "status": "200",
+      "bytes": 30476,
+      "seconds": 0.697,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c8609f16712bc3f9-960.webp",
+      "status": "200",
+      "bytes": 92262,
+      "seconds": 1.964,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c9892609a6cfaf17-1600.webp",
+      "status": "200",
+      "bytes": 212176,
+      "seconds": 5.356,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c9892609a6cfaf17-480.webp",
+      "status": "200",
+      "bytes": 23198,
+      "seconds": 1.193,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/c9892609a6cfaf17-960.webp",
+      "status": "200",
+      "bytes": 79324,
+      "seconds": 2.153,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ca76f4c371054daf-1600.webp",
+      "status": "200",
+      "bytes": 272516,
+      "seconds": 16.753,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ca76f4c371054daf-480.webp",
+      "status": "200",
+      "bytes": 39248,
+      "seconds": 0.823,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ca76f4c371054daf-960.webp",
+      "status": "200",
+      "bytes": 130880,
+      "seconds": 1.814,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cc1dd6b571201c2a-1600.webp",
+      "status": "200",
+      "bytes": 437306,
+      "seconds": 14.986,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cc1dd6b571201c2a-480.webp",
+      "status": "200",
+      "bytes": 37836,
+      "seconds": 0.937,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cc1dd6b571201c2a-960.webp",
+      "status": "200",
+      "bytes": 151906,
+      "seconds": 2.286,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cc661a901abde4a9-1504.webp",
+      "status": "200",
+      "bytes": 589324,
+      "seconds": 22.774,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cc661a901abde4a9-480.webp",
+      "status": "200",
+      "bytes": 74306,
+      "seconds": 3.049,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cc661a901abde4a9-960.webp",
+      "status": "200",
+      "bytes": 266168,
+      "seconds": 5.917,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cf08899e81885358-1600.webp",
+      "status": "200",
+      "bytes": 567158,
+      "seconds": 24.918,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cf08899e81885358-480.webp",
+      "status": "200",
+      "bytes": 64412,
+      "seconds": 2.015,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cf08899e81885358-960.webp",
+      "status": "200",
+      "bytes": 243486,
+      "seconds": 1.696,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cff88194d00848e4-1600.webp",
+      "status": "200",
+      "bytes": 248108,
+      "seconds": 5.098,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cff88194d00848e4-480.webp",
+      "status": "200",
+      "bytes": 36270,
+      "seconds": 2.099,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/cff88194d00848e4-960.webp",
+      "status": "200",
+      "bytes": 109420,
+      "seconds": 1.067,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d196f5c575fc7bfd-1216.webp",
+      "status": "200",
+      "bytes": 311142,
+      "seconds": 9.325,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d196f5c575fc7bfd-480.webp",
+      "status": "200",
+      "bytes": 55750,
+      "seconds": 1.049,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d196f5c575fc7bfd-960.webp",
+      "status": "200",
+      "bytes": 211770,
+      "seconds": 2.626,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d353b88d78323248-1600.webp",
+      "status": "200",
+      "bytes": 90380,
+      "seconds": 1.296,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d353b88d78323248-480.webp",
+      "status": "200",
+      "bytes": 16690,
+      "seconds": 1.133,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d353b88d78323248-960.webp",
+      "status": "200",
+      "bytes": 46480,
+      "seconds": 0.959,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d41b7979dd8f99df-1600.webp",
+      "status": "200",
+      "bytes": 300932,
+      "seconds": 8.734,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d41b7979dd8f99df-480.webp",
+      "status": "200",
+      "bytes": 31472,
+      "seconds": 0.916,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d41b7979dd8f99df-960.webp",
+      "status": "200",
+      "bytes": 113100,
+      "seconds": 2.361,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d51030fe562fedb9-1600.webp",
+      "status": "200",
+      "bytes": 161112,
+      "seconds": 2.161,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d51030fe562fedb9-480.webp",
+      "status": "200",
+      "bytes": 23144,
+      "seconds": 2.456,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d51030fe562fedb9-960.webp",
+      "status": "200",
+      "bytes": 73220,
+      "seconds": 2.341,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d56bd6dba617804f-1600.webp",
+      "status": "200",
+      "bytes": 275172,
+      "seconds": 3.149,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d56bd6dba617804f-480.webp",
+      "status": "200",
+      "bytes": 31274,
+      "seconds": 0.705,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d56bd6dba617804f-960.webp",
+      "status": "200",
+      "bytes": 104466,
+      "seconds": 3.576,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d5b2285900324de3-1600.webp",
+      "status": "200",
+      "bytes": 196182,
+      "seconds": 1.417,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d5b2285900324de3-480.webp",
+      "status": "200",
+      "bytes": 30334,
+      "seconds": 1.134,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d5b2285900324de3-960.webp",
+      "status": "200",
+      "bytes": 92064,
+      "seconds": 1.365,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d5f85ca04c4d5d25-1600.webp",
+      "status": "200",
+      "bytes": 154642,
+      "seconds": 2.372,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d5f85ca04c4d5d25-480.webp",
+      "status": "200",
+      "bytes": 23840,
+      "seconds": 0.953,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/d5f85ca04c4d5d25-960.webp",
+      "status": "200",
+      "bytes": 70158,
+      "seconds": 1.785,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/da8299d8351a9daf-1600.webp",
+      "status": "200",
+      "bytes": 760238,
+      "seconds": 27.635,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/da8299d8351a9daf-480.webp",
+      "status": "200",
+      "bytes": 65582,
+      "seconds": 1.839,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/da8299d8351a9daf-960.webp",
+      "status": "200",
+      "bytes": 284108,
+      "seconds": 12.722,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/db001990c0f7d827-1600.webp",
+      "status": "200",
+      "bytes": 71776,
+      "seconds": 1.27,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/db001990c0f7d827-480.webp",
+      "status": "200",
+      "bytes": 6746,
+      "seconds": 2.139,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/db001990c0f7d827-960.webp",
+      "status": "200",
+      "bytes": 25054,
+      "seconds": 3.435,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/dce3537d3a92a8a3-1430.webp",
+      "status": "200",
+      "bytes": 190938,
+      "seconds": 3.887,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/dce3537d3a92a8a3-480.webp",
+      "status": "200",
+      "bytes": 35772,
+      "seconds": 1.956,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/dce3537d3a92a8a3-960.webp",
+      "status": "200",
+      "bytes": 107990,
+      "seconds": 2.901,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ddeb9b85c282e556-1600.webp",
+      "status": "200",
+      "bytes": 92924,
+      "seconds": 2.107,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ddeb9b85c282e556-480.webp",
+      "status": "200",
+      "bytes": 11246,
+      "seconds": 0.84,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ddeb9b85c282e556-960.webp",
+      "status": "200",
+      "bytes": 39642,
+      "seconds": 1.035,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/df6a30890b481ca0-1600.webp",
+      "status": "200",
+      "bytes": 310240,
+      "seconds": 10.887,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/df6a30890b481ca0-480.webp",
+      "status": "200",
+      "bytes": 31334,
+      "seconds": 1.684,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/df6a30890b481ca0-960.webp",
+      "status": "200",
+      "bytes": 114836,
+      "seconds": 1.237,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e0239db59f69f95a-1600.webp",
+      "status": "200",
+      "bytes": 204046,
+      "seconds": 1.652,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e0239db59f69f95a-480.webp",
+      "status": "200",
+      "bytes": 29366,
+      "seconds": 3.191,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e0239db59f69f95a-960.webp",
+      "status": "200",
+      "bytes": 93320,
+      "seconds": 2.937,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e089bc1f5a6b5c42-1542.webp",
+      "status": "200",
+      "bytes": 169702,
+      "seconds": 2.746,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e089bc1f5a6b5c42-480.webp",
+      "status": "200",
+      "bytes": 35344,
+      "seconds": 1.124,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e089bc1f5a6b5c42-960.webp",
+      "status": "200",
+      "bytes": 93142,
+      "seconds": 1.008,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e2a8d823199476c6-1600.webp",
+      "status": "200",
+      "bytes": 414474,
+      "seconds": 32.601,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e2a8d823199476c6-480.webp",
+      "status": "200",
+      "bytes": 35928,
+      "seconds": 2.615,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e2a8d823199476c6-960.webp",
+      "status": "200",
+      "bytes": 137672,
+      "seconds": 3.072,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e3ebd56415801b8c-1600.webp",
+      "status": "200",
+      "bytes": 113720,
+      "seconds": 1.577,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e3ebd56415801b8c-480.webp",
+      "status": "200",
+      "bytes": 9424,
+      "seconds": 0.637,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e3ebd56415801b8c-960.webp",
+      "status": "200",
+      "bytes": 44570,
+      "seconds": 1.098,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e4c0dd40175cc187-1600.webp",
+      "status": "200",
+      "bytes": 378492,
+      "seconds": 12.851,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e4c0dd40175cc187-480.webp",
+      "status": "200",
+      "bytes": 37498,
+      "seconds": 1.078,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e4c0dd40175cc187-960.webp",
+      "status": "200",
+      "bytes": 141674,
+      "seconds": 4.034,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e5fbefde44226c39-1600.webp",
+      "status": "200",
+      "bytes": 253228,
+      "seconds": 3.304,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e5fbefde44226c39-480.webp",
+      "status": "200",
+      "bytes": 32632,
+      "seconds": 1.938,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e5fbefde44226c39-960.webp",
+      "status": "200",
+      "bytes": 106940,
+      "seconds": 1.538,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e83a68bee59d17b0-1600.webp",
+      "status": "200",
+      "bytes": 156056,
+      "seconds": 9.926,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e83a68bee59d17b0-480.webp",
+      "status": "200",
+      "bytes": 19886,
+      "seconds": 2.517,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e83a68bee59d17b0-960.webp",
+      "status": "200",
+      "bytes": 67476,
+      "seconds": 1.686,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e9b40c33070fa571-1600.webp",
+      "status": "200",
+      "bytes": 139626,
+      "seconds": 1.605,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e9b40c33070fa571-480.webp",
+      "status": "200",
+      "bytes": 24334,
+      "seconds": 0.91,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/e9b40c33070fa571-960.webp",
+      "status": "200",
+      "bytes": 68488,
+      "seconds": 1.51,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ebc02ee8f738fdcd-1600.webp",
+      "status": "200",
+      "bytes": 136638,
+      "seconds": 2.149,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ebc02ee8f738fdcd-480.webp",
+      "status": "200",
+      "bytes": 20362,
+      "seconds": 2.165,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ebc02ee8f738fdcd-960.webp",
+      "status": "200",
+      "bytes": 67508,
+      "seconds": 4.143,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ede67d3a3d5c1b4a-1600.webp",
+      "status": "200",
+      "bytes": 212766,
+      "seconds": 8.61,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ede67d3a3d5c1b4a-480.webp",
+      "status": "200",
+      "bytes": 21166,
+      "seconds": 0.545,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ede67d3a3d5c1b4a-960.webp",
+      "status": "200",
+      "bytes": 77144,
+      "seconds": 2.009,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/eeb7fa7e0908ced8-1600.webp",
+      "status": "200",
+      "bytes": 121508,
+      "seconds": 4.675,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/eeb7fa7e0908ced8-480.webp",
+      "status": "200",
+      "bytes": 11032,
+      "seconds": 1.074,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/eeb7fa7e0908ced8-960.webp",
+      "status": "200",
+      "bytes": 40840,
+      "seconds": 0.766,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ef32d06d8fe13dd0-1600.webp",
+      "status": "200",
+      "bytes": 271646,
+      "seconds": 5.932,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ef32d06d8fe13dd0-480.webp",
+      "status": "200",
+      "bytes": 42414,
+      "seconds": 1.212,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ef32d06d8fe13dd0-960.webp",
+      "status": "200",
+      "bytes": 129340,
+      "seconds": 2.592,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f145f6ead22b7fb8-1600.webp",
+      "status": "200",
+      "bytes": 129542,
+      "seconds": 3.521,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f145f6ead22b7fb8-480.webp",
+      "status": "200",
+      "bytes": 22198,
+      "seconds": 1.02,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f145f6ead22b7fb8-960.webp",
+      "status": "200",
+      "bytes": 62736,
+      "seconds": 1.728,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f4c192d88f1cbe8b-1600.webp",
+      "status": "200",
+      "bytes": 270090,
+      "seconds": 4.928,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f4c192d88f1cbe8b-480.webp",
+      "status": "200",
+      "bytes": 37562,
+      "seconds": 0.945,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f4c192d88f1cbe8b-960.webp",
+      "status": "200",
+      "bytes": 124694,
+      "seconds": 1.253,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f500f794ba0b827d-1600.webp",
+      "status": "200",
+      "bytes": 164126,
+      "seconds": 1.645,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f500f794ba0b827d-480.webp",
+      "status": "200",
+      "bytes": 24882,
+      "seconds": 1.149,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f500f794ba0b827d-960.webp",
+      "status": "200",
+      "bytes": 76116,
+      "seconds": 1.117,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f64ff8e8e19916c0-1600.webp",
+      "status": "200",
+      "bytes": 172916,
+      "seconds": 2.633,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f64ff8e8e19916c0-480.webp",
+      "status": "200",
+      "bytes": 28968,
+      "seconds": 0.949,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f64ff8e8e19916c0-960.webp",
+      "status": "200",
+      "bytes": 84934,
+      "seconds": 1.756,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f81711a3a20c61bb-1578.webp",
+      "status": "200",
+      "bytes": 105916,
+      "seconds": 2.114,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f81711a3a20c61bb-480.webp",
+      "status": "200",
+      "bytes": 19016,
+      "seconds": 1.767,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f81711a3a20c61bb-960.webp",
+      "status": "200",
+      "bytes": 53760,
+      "seconds": 0.86,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f87134b05c298010-1600.webp",
+      "status": "200",
+      "bytes": 327362,
+      "seconds": 4.875,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f87134b05c298010-480.webp",
+      "status": "200",
+      "bytes": 27074,
+      "seconds": 1.068,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f87134b05c298010-960.webp",
+      "status": "200",
+      "bytes": 131798,
+      "seconds": 1.471,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f9482e4d3c9fada3-1600.webp",
+      "status": "200",
+      "bytes": 229734,
+      "seconds": 2.081,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f9482e4d3c9fada3-480.webp",
+      "status": "200",
+      "bytes": 20010,
+      "seconds": 0.789,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f9482e4d3c9fada3-960.webp",
+      "status": "200",
+      "bytes": 77720,
+      "seconds": 1.657,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f99a582b3dfcb7d8-1600.webp",
+      "status": "200",
+      "bytes": 193928,
+      "seconds": 5.041,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f99a582b3dfcb7d8-480.webp",
+      "status": "200",
+      "bytes": 33172,
+      "seconds": 1.031,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/f99a582b3dfcb7d8-960.webp",
+      "status": "200",
+      "bytes": 100076,
+      "seconds": 1.282,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fac9f68938aa7d64-1600.webp",
+      "status": "200",
+      "bytes": 637072,
+      "seconds": 13.22,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fac9f68938aa7d64-480.webp",
+      "status": "200",
+      "bytes": 62306,
+      "seconds": 1.272,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fac9f68938aa7d64-960.webp",
+      "status": "200",
+      "bytes": 241886,
+      "seconds": 6.587,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fb2fab1f3c01c22d-1600.webp",
+      "status": "200",
+      "bytes": 188770,
+      "seconds": 1.463,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fb2fab1f3c01c22d-480.webp",
+      "status": "200",
+      "bytes": 34748,
+      "seconds": 3.627,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fb2fab1f3c01c22d-960.webp",
+      "status": "200",
+      "bytes": 100004,
+      "seconds": 2.165,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fd5a3d451ae38aa3-1600.webp",
+      "status": "200",
+      "bytes": 287454,
+      "seconds": 7.989,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fd5a3d451ae38aa3-480.webp",
+      "status": "200",
+      "bytes": 35536,
+      "seconds": 0.773,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/fd5a3d451ae38aa3-960.webp",
+      "status": "200",
+      "bytes": 120390,
+      "seconds": 7.839,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ff49baf5e8640393-1600.webp",
+      "status": "200",
+      "bytes": 126106,
+      "seconds": 2.137,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ff49baf5e8640393-480.webp",
+      "status": "200",
+      "bytes": 17622,
+      "seconds": 0.721,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/optimized/ff49baf5e8640393-960.webp",
+      "status": "200",
+      "bytes": 55544,
+      "seconds": 1.224,
+      "curlExit": 0
+    },
+    {
+      "url": "https://yuxiangworks.com/models/itb.glb",
+      "status": "200",
+      "bytes": 1754845,
+      "seconds": 60.058,
+      "curlExit": 28,
+      "error": "curl: (28) Operation timed out after 60008 milliseconds with 1754845 out of 6539052 bytes received",
+      "sha256MatchesLocal": false
+    },
+    {
+      "url": "https://yuxiangworks.com/models/shekua.glb",
+      "status": "200",
+      "bytes": 1867747,
+      "seconds": 60.105,
+      "curlExit": 28,
+      "error": "curl: (28) Operation timed out after 60010 milliseconds with 1867747 out of 23820388 bytes received",
+      "sha256MatchesLocal": false
+    },
+    {
+      "url": "https://www.yuxiangworks.com/",
+      "status": "200",
+      "bytes": 12354,
+      "seconds": 1.418,
+      "curlExit": 0
+    }
+  ]
+}

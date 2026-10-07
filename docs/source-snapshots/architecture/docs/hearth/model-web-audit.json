@@ -1,0 +1,38 @@
+{
+  "outputBytes": 23820388,
+  "nodes": 588,
+  "instances": 5186,
+  "triangles": 1863067,
+  "primitives": 710,
+  "textures": 248,
+  "materials": 319,
+  "beforeBounds": {
+    "min": [
+      -38.681578686080755,
+      0,
+      -42.40201522983877
+    ],
+    "max": [
+      38.681578686080776,
+      9.361727756035295,
+      42.40201522983877
+    ]
+  },
+  "afterBounds": {
+    "min": [
+      -38.681635882241586,
+      -1,
+      -42.40201522983877
+    ],
+    "max": [
+      38.68162707611797,
+      8.199997777433925,
+      42.40201514169293
+    ]
+  },
+  "layers": [
+    "场地与道路",
+    "建筑与院落"
+  ],
+  "note": "Central complete courtyard and site, excluding peripheral study duplicates. No geometric simplification within selected geometry. Shared meshes, GPU instancing, joining, meshopt quantization/compression. WebP textures capped at 768 px. Original source preserved."
+}

@@ -1,0 +1,462 @@
+{
+  "sources": {
+    "a": "C:\\Users\\WangYuxiang\\xwechat_files\\wxid_1jae6l7uutxe22_a92a\\msg\\file\\2026-09\\（已压缩）protfolio.pdf",
+    "b": "C:\\Users\\WangYuxiang\\xwechat_files\\wxid_1jae6l7uutxe22_a92a\\msg\\file\\2026-09\\portfolio-Yuxiang Wang, Han Liu_compressed.pdf"
+  },
+  "sourcePageCounts": {
+    "a": 66,
+    "b": 66
+  },
+  "assets": [
+    {
+      "source": "a",
+      "page": 8,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/village-texture.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 1354030,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 10,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/settlement-layers.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 637455,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 12,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/village-evolution.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 1347205,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 36,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/residents-and-visitors.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 714447,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 37,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/grandmothers-day.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 903773,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 47,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/courtyard-iterations.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 905353,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 49,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/roof-sketches.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 572078,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "a",
+      "page": 56,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/model-making.jpg",
+      "width": 3110,
+      "height": 2202,
+      "bytes": 1186780,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 5,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/field-visit.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1178411,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 6,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/regional-context.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1072403,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 7,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/site-location.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1181606,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 11,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/existing-ground-floor.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1661961,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 12,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/existing-upper-floor.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 686681,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 13,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/existing-conditions.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1225033,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 16,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/spatial-order.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 775163,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 18,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/existing-structure.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 948842,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 19,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/timber-language.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1085127,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 23,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/significance-assessment.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 622693,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 24,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/retain-and-repair.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1094562,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 25,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/remove-and-add.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1104500,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 27,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/soft-balance.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1086261,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 30,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/programme.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 852013,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 31,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/circulation.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 955433,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 32,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/master-plan.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1393095,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 33,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/ground-floor.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1672517,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 34,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/upper-floor.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1402879,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 35,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/roof-plan.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1209930,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 36,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/elevations.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1411912,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 37,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/sections.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 874738,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 38,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/old-and-new.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 826284,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 41,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/structural-explosion.jpg",
+      "width": 2263,
+      "height": 3200,
+      "bytes": 1173391,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 42,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/log-repair.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1146036,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 43,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/structural-interventions.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1074066,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 45,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/materials.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1148646,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 46,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/construction-section.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1309871,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 48,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/joint-details.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 772194,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 49,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/construction-sequence-01.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 957421,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 50,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/construction-sequence-02.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 992440,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 51,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/physical-models.jpg",
+      "width": 3200,
+      "height": 2263,
+      "bytes": 1087846,
+      "method": "page rendered at 3200px; full final-PDF canvas / research exterior margins only; labels retained"
+    },
+    {
+      "source": "b",
+      "page": 53,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/aerial-day.jpg",
+      "width": 1412,
+      "height": 980,
+      "bytes": 622787,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 54,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/aerial-evening.jpg",
+      "width": 1216,
+      "height": 844,
+      "bytes": 510065,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 55,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/family-hearth.jpg",
+      "width": 1391,
+      "height": 1077,
+      "bytes": 563520,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 56,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/cultivation.jpg",
+      "width": 1876,
+      "height": 1501,
+      "bytes": 874457,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 57,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/grandmothers-courtyard.jpg",
+      "width": 1198,
+      "height": 921,
+      "bytes": 492870,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 58,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/visitor-arrival.jpg",
+      "width": 1254,
+      "height": 1001,
+      "bytes": 493575,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 59,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/upper-walkway.jpg",
+      "width": 1874,
+      "height": 1507,
+      "bytes": 1061465,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 62,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/shared-courtyard.jpg",
+      "width": 1276,
+      "height": 979,
+      "bytes": 455887,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 64,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/window-and-hearth.jpg",
+      "width": 1430,
+      "height": 1043,
+      "bytes": 420133,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 65,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/reading-room.jpg",
+      "width": 1454,
+      "height": 941,
+      "bytes": 427037,
+      "method": "embedded main rendering; page title and side text excluded"
+    },
+    {
+      "source": "b",
+      "page": 66,
+      "file": "public/images/projects/grandmothers-hearth/portfolio/scripture-hall-view.jpg",
+      "width": 1340,
+      "height": 949,
+      "bytes": 531833,
+      "method": "embedded main rendering; page title and side text excluded"
+    }
+  ]
+}

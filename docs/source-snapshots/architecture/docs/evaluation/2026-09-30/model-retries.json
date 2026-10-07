@@ -1,0 +1,24 @@
+{
+  "at": 1790777073.5404992,
+  "conditions": "Sequential anonymous GET retries; same host, proxy bypass; VPN unknown; 60s per request. Not UX timing.",
+  "results": [
+    {
+      "url": "https://yuxiangworks.com/models/itb.glb",
+      "status": "200",
+      "bytes": 2038939,
+      "seconds": 60.06,
+      "curlExit": 28,
+      "error": "curl: (28) Operation timed out after 60009 milliseconds with 2038939 out of 6539052 bytes received",
+      "sha256MatchesLocal": false
+    },
+    {
+      "url": "https://yuxiangworks.com/models/shekua.glb",
+      "status": "200",
+      "bytes": 1473687,
+      "seconds": 60.052,
+      "curlExit": 28,
+      "error": "curl: (28) Operation timed out after 60003 milliseconds with 1473687 out of 23820388 bytes received",
+      "sha256MatchesLocal": false
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "route": "/",
+    "broken": [],
+    "heading": "王誉翔Yuxiang Wang",
+    "overflow": false
+  },
+  {
+    "route": "/ai/",
+    "broken": [],
+    "heading": "从具体问题出发，让判断接受验证。",
+    "overflow": false
+  },
+  {
+    "route": "/about/",
+    "broken": [],
+    "heading": "从空间设计，走向 AI 产品。",
+    "overflow": false
+  },
+  {
+    "route": "/contact/",
+    "broken": [],
+    "heading": "从一次交流开始。",
+    "overflow": false
+  },
+  {
+    "route": "/resume/",
+    "broken": [],
+    "heading": "王誉翔Yuxiang Wang",
+    "overflow": false
+  },
+  {
+    "route": "/projects/knowledge-copilot/",
+    "broken": [],
+    "heading": "建筑项目知识助手让每个判断，有据可查。",
+    "overflow": false
+  },
+  {
+    "route": "/projects/gym/",
+    "broken": [],
+    "heading": "AI 健身与饮食记录让 AI 帮忙，让自己确认。",
+    "overflow": false
+  },
+  {
+    "route": "/projects/spatial-portfolio/",
+    "broken": [],
+    "heading": "交互式建筑作品集从阅读图纸，到探索空间。",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/",
+    "broken": [],
+    "heading": "先理解人与场所，再让空间回应。",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/continuation/",
+    "broken": [],
+    "heading": "延续与重构",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/gather-living/",
+    "broken": [],
+    "heading": "「20+」青年集合住宅",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/grandmothers-hearth/",
+    "broken": [],
+    "heading": "祖母的火塘",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/half-diary/",
+    "broken": [],
+    "heading": "½ 日记——大院时光",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/hard-hat-cafe/",
+    "broken": [],
+    "heading": "暂驻之间｜临时咖啡馆",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/iterative-learning/",
+    "broken": [],
+    "heading": "迭代学习",
+    "overflow": false
+  },
+  {
+    "route": "/architecture/symsensory/",
+    "broken": [],
+    "heading": "新五感设计",
+    "overflow": false
+  }
+]

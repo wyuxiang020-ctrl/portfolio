@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { profile } from '../../data/profile';
+import '../../styles/profile.css';
+---
+<BaseLayout title="关于我" description="王誉翔的建筑与空间设计背景、AI 产品实践、教育经历与个人责任。">
+  <article class="profile-page">
+    <header class="profile-heading">
+      <p class="eyebrow">ABOUT / 关于我</p>
+      <h1>从空间设计，<br />走向 AI 产品。</h1>
+      <p class="profile-lead">{profile.tagline}。我关注 AI 如何进入具体的工作与生活场景，帮助人们查找依据、整理信息、完成任务。</p>
+    </header>
+    <div class="about-introduction">
+      <figure class="profile-portrait"><img src={profile.portrait} alt="王誉翔 Yuxiang Wang" width="1279" height="1927" loading="eager" /><figcaption>{profile.name} · {profile.enName}</figcaption></figure>
+      <div class="profile-prose">
+        <p>我是王誉翔，本科毕业于四川美术学院建筑学专业，目前攻读 MA Architecture and Adaptive Reuse，预计 2026 年 10 月毕业。</p>
+        <p>从山东威海到重庆，再到曼彻斯特，不同城市的地形、历史和日常生活塑造了我理解场景的方式。在建筑实践中，我关注既有建筑更新、文化叙事与数字化空间表达，也习惯把复杂的目标和约束转化为可讨论的方案。</p>
+        <p>现在，我把这种方法带入 AI 产品实践：先明确要完成的任务，再设计用户流程、判断模型的职责，最后用可检查的结果和失败样本检验方案。我的求职方向是 <strong>AI 产品</strong>。</p>
+        <p class="profile-availability">{profile.availability}</p>
+        <a class="text-link" href="/resume/">阅读完整简历 <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <section class="profile-section" aria-labelledby="responsibility-title">
+      <p class="eyebrow">MY CONTRIBUTION</p><h2 id="responsibility-title">我负责什么</h2>
+      <div class="profile-prose"><p>在建筑知识助手、健身记录和交互式作品集三个个人实践中，我负责问题定义、产品取舍、流程设计、评测与迭代验收，借助 Claude Code 和 Codex 完成开发协作。案例页保留真实界面、评测记录、限制与证据入口。</p><p>建筑栏目保留具体设计项目及其原有分工。团队成果按项目说明标注个人责任；AI 辅助开发作为协作方式记录，不直接等同于 Agent 产品能力。</p></div>
+      <div class="profile-links"><a class="text-link" href="/ai/">AI 与数字产品 ↗</a><a class="text-link" href="/architecture/">建筑与空间作品 ↗</a></div>
+    </section>
+    <section class="profile-section" aria-labelledby="education-title"><p class="eyebrow">EDUCATION</p><h2 id="education-title">教育背景</h2><div class="profile-timeline">{profile.education.map(item => <article><p class="profile-date">{item.date}</p><div><h3>{item.institution}</h3><p class="profile-meta">{item.degree}</p><p>{item.result}。{item.description}</p></div></article>)}</div></section>
+    <section class="profile-section" aria-labelledby="experience-title"><p class="eyebrow">EXPERIENCE</p><h2 id="experience-title">实习经历</h2><div class="profile-timeline">{profile.experience.map(item => <article><p class="profile-date">{item.date}</p><div><h3>{item.institution}</h3><p class="profile-meta">{item.role}</p><p>{item.description}</p></div></article>)}</div></section>
+    <section class="profile-section" aria-labelledby="exhibition-title"><p class="eyebrow">SELECTED EXHIBITIONS</p><h2 id="exhibition-title">从专业背景到具体作品</h2><ul class="profile-exhibitions">{profile.exhibitions.map(item => <li><span>{item.name}</span><a class="text-link" href={item.href}>{item.project} ↗</a></li>)}</ul></section>
+    <footer class="profile-end"><p>欢迎交流 AI 产品与空间应用。</p><a class="text-link" href="/contact/">联系我 ↗</a></footer>
+  </article>
+</BaseLayout>

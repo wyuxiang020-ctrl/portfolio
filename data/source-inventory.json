@@ -1,0 +1,68 @@
+{
+  "checkedDate": "2026-10-07",
+  "priority": "AI 产品求职为主，建筑作品作为专业背景与能力证据",
+  "stage": "local_complete_not_deployed",
+  "sources": [
+    {
+      "kind": "ai",
+      "sourceRoot": "E:\\ai作品网站\\portfolio",
+      "framework": "React / TypeScript / portable static build",
+      "publicFileCount": 31,
+      "publicBytes": 21494941,
+      "contentItems": 3,
+      "migrationStatus": "completed_locally",
+      "sourceFilesCopied": true,
+      "notes": "3篇案例、公开证据、当前及原版简历迁入；7个额外旧公开media文件保留链接兼容；GitHub保存与发布分开。",
+      "sourceCommit": "88f7631f7c142b2f72b739b6d18547f676f5ff8e"
+    },
+    {
+      "kind": "architecture",
+      "sourceRoot": "E:\\cd portfolio",
+      "framework": "Astro / MDX / Three.js",
+      "publicFileCount": 950,
+      "publicBytes": 623189407,
+      "contentItems": 7,
+      "migrationStatus": "completed_locally",
+      "sourceFilesCopied": true,
+      "notes": "7篇MDX、210原图、618唯一WebP、2轻量模型；当前未提交文本亦做选择性快照；原目录只读。",
+      "sourceCommit": "bcf1ebe3375034f7b991c3aa519989e2e6d18bb3"
+    }
+  ],
+  "mergedPublic": {
+    "fileCount": 871,
+    "bytes": 589981135,
+    "largest": [
+      {
+        "path": "public/images/projects/half-diary/gallery-12.png",
+        "bytes": 11303542
+      },
+      {
+        "path": "public/images/projects/half-diary/gallery-11.png",
+        "bytes": 10182499
+      },
+      {
+        "path": "public/images/projects/symsensory/gallery-19.jpg",
+        "bytes": 10117842
+      },
+      {
+        "path": "public/images/projects/half-diary/gallery-13.png",
+        "bytes": 9793988
+      },
+      {
+        "path": "public/images/projects/half-diary/gallery-21.png",
+        "bytes": 9588652
+      },
+      {
+        "path": "public/images/projects/gather-living/gallery-15.png",
+        "bytes": 9494631
+      }
+    ],
+    "note": "Total on disk, not initial page transfer. Original images are opened on demand."
+  },
+  "manifests": [
+    "data/source-snapshot-manifest.json",
+    "data/architecture-assets.json",
+    "data/ai-source-manifest.json",
+    "data/legacy-media-manifest.json"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-07T05:44:28.995Z",
+  "environment": "Node HTTP software integration tests, localhost. Uses real GLB bytes for success; deterministic injected HTTP faults for failure. Fault timers scaled to 200/500ms, not production performance. No browser rendering or LLM call/replay.",
+  "results": [
+    {
+      "name": "itb: real file transfer integrity",
+      "passed": true,
+      "ms": 44
+    },
+    {
+      "name": "shekua: real file transfer integrity",
+      "passed": true,
+      "ms": 20
+    },
+    {
+      "name": "fault 503 => http",
+      "passed": true,
+      "ms": 3
+    },
+    {
+      "name": "fault stall => idle-timeout",
+      "passed": true,
+      "ms": 210
+    },
+    {
+      "name": "fault trickle => total-timeout",
+      "passed": true,
+      "ms": 509
+    },
+    {
+      "name": "fault short => incomplete",
+      "passed": true,
+      "ms": 2
+    },
+    {
+      "name": "cancel in flight",
+      "passed": true,
+      "ms": 62
+    },
+    {
+      "name": "already cancelled",
+      "passed": true,
+      "ms": 0
+    },
+    {
+      "name": "retry after failure transfers real GLB",
+      "passed": true,
+      "ms": 18
+    }
+  ]
+}

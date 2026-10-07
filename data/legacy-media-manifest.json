@@ -1,0 +1,51 @@
+[
+  {
+    "bytes": 44851,
+    "destination": "public\\media\\gym-complete.png",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\gym-complete.png",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "b5146c084157b2ec3dc03d510da99a93acbc7fcf3f14ed6712e5eb92fcf94174"
+  },
+  {
+    "bytes": 48355,
+    "destination": "public\\media\\gym-plan.png",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\gym-plan.png",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "97bf201a3113c87d0b64eb5877490f4a00620a04fb329e52e74b614594375d9b"
+  },
+  {
+    "bytes": 1784,
+    "destination": "public\\media\\knowledge-flow-cover.svg",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\knowledge-flow-cover.svg",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "03c1cf0fa29a1cf95bc003a40dbe1665b385b5218b419708cf1e35693c8e5c4d"
+  },
+  {
+    "bytes": 40529,
+    "destination": "public\\media\\spatial-model.png",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\spatial-model.png",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "2b635c7360980d982428f325428621a91fa73a5b9aafa6e7b2564cd2ab51b039"
+  },
+  {
+    "bytes": 103039,
+    "destination": "public\\media\\spatial-site.png",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\spatial-site.png",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "80be3ab140d9423c1bec8ff94298b0aaa0fdc7feccc0fdf0948c9a3adffca98a"
+  },
+  {
+    "bytes": 1173391,
+    "destination": "public\\media\\spatial-structure.jpg",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\spatial-structure.jpg",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "6a1ea01cfa6e1b68e9e4e463d56976d424a4c562a9d78e9f2a36d9e7c8f551ac"
+  },
+  {
+    "bytes": 1714001,
+    "destination": "public\\media\\spatial-work.png",
+    "source": "E:\\ai作品网站\\portfolio\\public\\media\\spatial-work.png",
+    "reason": "Preserve previously published media URL; intentionally not requested by the new homepage",
+    "sha256": "ba16a4b8174fd3fc6ec32c80ceb324abbb8f5f1782206416de196688251aa958"
+  }
+]

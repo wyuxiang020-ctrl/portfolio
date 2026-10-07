@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-01T14:57:55.528Z",
+  "version": "spatial-ux-2026-10-01-parallel-load",
+  "git": "3831d5a58d10e21239f5d37e2a6c8efd4ddc1319",
+  "deployment": "6PUYjusVqFg78sF9V3kK4yEiQH2w",
+  "deploymentStatus": "success",
+  "deploymentCompletedAt": "2026-10-01T14:57:14Z",
+  "publicFileVerification": "public-release-check.json: both project pages have new version; both scripts HTTP200 and SHA256 match local build",
+  "publicBrowser": "unverified: browser automation timeout, see browser-public.json",
+  "model": "unchanged /models/shekua-lite.glb; full public transfer and hash verified before deployment using current 16KiB probe, see transfer-small-probe.json",
+  "realPhone": "not tested",
+  "mainlandWithoutVPN": "not verified; tunnel status unknown",
+  "humanParticipants": 0,
+  "visitorLLMCalls": 0
+}

@@ -1,0 +1,64 @@
+{
+  "redirects": [
+    {
+      "statusCode": 302,
+      "source": "/",
+      "destination": "https://yuxiangworks.com/ai/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/resume",
+      "destination": "https://yuxiangworks.com/resume/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/resume/",
+      "destination": "https://yuxiangworks.com/resume/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/projects/knowledge-copilot",
+      "destination": "https://yuxiangworks.com/projects/knowledge-copilot/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/projects/knowledge-copilot/",
+      "destination": "https://yuxiangworks.com/projects/knowledge-copilot/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/projects/gym",
+      "destination": "https://yuxiangworks.com/projects/gym/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/projects/gym/",
+      "destination": "https://yuxiangworks.com/projects/gym/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/projects/spatial-portfolio",
+      "destination": "https://yuxiangworks.com/projects/spatial-portfolio/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/projects/spatial-portfolio/",
+      "destination": "https://yuxiangworks.com/projects/spatial-portfolio/"
+    },
+    {
+      "statusCode": 302,
+      "source": "/downloads/*",
+      "destination": "https://yuxiangworks.com/downloads/:splat"
+    },
+    {
+      "statusCode": 302,
+      "source": "/evidence/*",
+      "destination": "https://yuxiangworks.com/evidence/:splat"
+    },
+    {
+      "statusCode": 302,
+      "source": "/media/*",
+      "destination": "https://yuxiangworks.com/media/:splat"
+    }
+  ]
+}

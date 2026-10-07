@@ -1,0 +1,3770 @@
+{
+  "/images/projects/continuation/cover.jpg": {
+    "width": 7133,
+    "height": 4152,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d56bd6dba617804f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d56bd6dba617804f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d56bd6dba617804f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/banner.jpg": {
+    "width": 4114,
+    "height": 3130,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/27f105acd664b3a5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/27f105acd664b3a5-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/27f105acd664b3a5-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-1.jpg": {
+    "width": 3547,
+    "height": 1247,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b9a131d2f172f051-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b9a131d2f172f051-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b9a131d2f172f051-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-2.jpg": {
+    "width": 3640,
+    "height": 4008,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ca76f4c371054daf-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ca76f4c371054daf-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/ca76f4c371054daf-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-3.jpg": {
+    "width": 6571,
+    "height": 6003,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e5fbefde44226c39-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e5fbefde44226c39-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e5fbefde44226c39-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-23.jpg": {
+    "width": 8130,
+    "height": 3864,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/aab2d893aac55f9f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/aab2d893aac55f9f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/aab2d893aac55f9f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-4.jpg": {
+    "width": 7494,
+    "height": 5061,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/43f41067010fdf1a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/43f41067010fdf1a-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/43f41067010fdf1a-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-5.jpg": {
+    "width": 1585,
+    "height": 2166,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/a8e04460d3dc2580-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/a8e04460d3dc2580-960.webp"
+      },
+      {
+        "width": 1585,
+        "src": "/optimized/a8e04460d3dc2580-1585.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-6.jpg": {
+    "width": 3510,
+    "height": 3537,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/994e92c216d71516-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/994e92c216d71516-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/994e92c216d71516-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-7.jpg": {
+    "width": 2400,
+    "height": 3375,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4d87c8ff5673b835-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4d87c8ff5673b835-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4d87c8ff5673b835-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-8.jpg": {
+    "width": 5269,
+    "height": 3714,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ff49baf5e8640393-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ff49baf5e8640393-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/ff49baf5e8640393-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-9.jpg": {
+    "width": 5269,
+    "height": 3713,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/5fcf4ec33cc87ee5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/5fcf4ec33cc87ee5-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/5fcf4ec33cc87ee5-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-10.jpg": {
+    "width": 3366,
+    "height": 1968,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c767da9d4cbf31a5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c767da9d4cbf31a5-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c767da9d4cbf31a5-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-11.jpg": {
+    "width": 2706,
+    "height": 1102,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/a435aa8659ef02c8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/a435aa8659ef02c8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/a435aa8659ef02c8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-12.jpg": {
+    "width": 1507,
+    "height": 802,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/1ae0f11cc223c389-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/1ae0f11cc223c389-960.webp"
+      },
+      {
+        "width": 1507,
+        "src": "/optimized/1ae0f11cc223c389-1507.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-13.jpg": {
+    "width": 4397,
+    "height": 1641,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e3ebd56415801b8c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e3ebd56415801b8c-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e3ebd56415801b8c-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-14.jpg": {
+    "width": 2862,
+    "height": 1050,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/77fb4fc4a2bcce68-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/77fb4fc4a2bcce68-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/77fb4fc4a2bcce68-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-15.jpg": {
+    "width": 2400,
+    "height": 1357,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/5fa501db847e0754-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/5fa501db847e0754-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/5fa501db847e0754-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-16.jpg": {
+    "width": 6000,
+    "height": 3976,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/079af4882aac3aca-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/079af4882aac3aca-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/079af4882aac3aca-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-17.jpg": {
+    "width": 1504,
+    "height": 2160,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/cc661a901abde4a9-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/cc661a901abde4a9-960.webp"
+      },
+      {
+        "width": 1504,
+        "src": "/optimized/cc661a901abde4a9-1504.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-18.jpg": {
+    "width": 1933,
+    "height": 2262,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/cf08899e81885358-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/cf08899e81885358-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/cf08899e81885358-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-19.jpg": {
+    "width": 2180,
+    "height": 2283,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/826b225359a98e03-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/826b225359a98e03-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/826b225359a98e03-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-20.jpg": {
+    "width": 3337,
+    "height": 2160,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/947eb96a3b5cab42-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/947eb96a3b5cab42-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/947eb96a3b5cab42-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-21.jpg": {
+    "width": 3840,
+    "height": 2155,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/9181414029b6ee33-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/9181414029b6ee33-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/9181414029b6ee33-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/continuation/gallery-22.jpg": {
+    "width": 7133,
+    "height": 4152,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d56bd6dba617804f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d56bd6dba617804f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d56bd6dba617804f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/cover.png": {
+    "width": 2400,
+    "height": 1304,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/df6a30890b481ca0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/df6a30890b481ca0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/df6a30890b481ca0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/banner.png": {
+    "width": 2400,
+    "height": 1304,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/df6a30890b481ca0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/df6a30890b481ca0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/df6a30890b481ca0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-1.png": {
+    "width": 2119,
+    "height": 2215,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f4c192d88f1cbe8b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f4c192d88f1cbe8b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f4c192d88f1cbe8b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-2.png": {
+    "width": 1542,
+    "height": 1906,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e089bc1f5a6b5c42-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e089bc1f5a6b5c42-960.webp"
+      },
+      {
+        "width": 1542,
+        "src": "/optimized/e089bc1f5a6b5c42-1542.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-3.png": {
+    "width": 2394,
+    "height": 4173,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/578d0808bacf0d35-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/578d0808bacf0d35-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/578d0808bacf0d35-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-4.png": {
+    "width": 4250,
+    "height": 2590,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/af37a799e49b93ee-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/af37a799e49b93ee-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/af37a799e49b93ee-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-5.png": {
+    "width": 4219,
+    "height": 2615,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2ad9bf07722a70b1-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2ad9bf07722a70b1-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/2ad9bf07722a70b1-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-6.png": {
+    "width": 8647,
+    "height": 2926,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/83fb63e12ebf223f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/83fb63e12ebf223f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/83fb63e12ebf223f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-7.png": {
+    "width": 2913,
+    "height": 1461,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/77a501eef45c1b1d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/77a501eef45c1b1d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/77a501eef45c1b1d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-8.png": {
+    "width": 2400,
+    "height": 3243,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/5481cf517fe96040-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/5481cf517fe96040-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/5481cf517fe96040-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-9.png": {
+    "width": 7625,
+    "height": 2993,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/47384d1d7dc3957c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/47384d1d7dc3957c-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/47384d1d7dc3957c-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-10.png": {
+    "width": 7625,
+    "height": 2784,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/979336d89c7094e5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/979336d89c7094e5-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/979336d89c7094e5-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-11.png": {
+    "width": 7625,
+    "height": 2939,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b7c918041ede2a81-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b7c918041ede2a81-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b7c918041ede2a81-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-12.png": {
+    "width": 2400,
+    "height": 1109,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4898b88e5ad9ab62-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4898b88e5ad9ab62-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4898b88e5ad9ab62-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-13.png": {
+    "width": 3295,
+    "height": 1450,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4f875d485a990c39-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4f875d485a990c39-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4f875d485a990c39-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-14.png": {
+    "width": 5921,
+    "height": 1862,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4d5c7bfcbe4bdfb4-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4d5c7bfcbe4bdfb4-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4d5c7bfcbe4bdfb4-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-15.png": {
+    "width": 3680,
+    "height": 2049,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/9bb3997a3ab20d13-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/9bb3997a3ab20d13-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/9bb3997a3ab20d13-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-16.png": {
+    "width": 3094,
+    "height": 2002,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/09c9beb7e2de2e6b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/09c9beb7e2de2e6b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/09c9beb7e2de2e6b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-17.png": {
+    "width": 7872,
+    "height": 4500,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/552c22a8a228f469-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/552c22a8a228f469-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/552c22a8a228f469-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-18.png": {
+    "width": 8229,
+    "height": 4800,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6e1234604a58db55-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6e1234604a58db55-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/6e1234604a58db55-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-19.png": {
+    "width": 2400,
+    "height": 2671,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/975405ae7be80e01-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/975405ae7be80e01-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/975405ae7be80e01-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-20.png": {
+    "width": 2400,
+    "height": 1379,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/cff88194d00848e4-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/cff88194d00848e4-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/cff88194d00848e4-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-21.png": {
+    "width": 2400,
+    "height": 1418,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e4c0dd40175cc187-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e4c0dd40175cc187-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e4c0dd40175cc187-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-22.png": {
+    "width": 2400,
+    "height": 1418,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2290070d14677727-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2290070d14677727-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/2290070d14677727-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/gather-living/gallery-23.png": {
+    "width": 2400,
+    "height": 1379,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/0b12c469fdaed03b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/0b12c469fdaed03b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/0b12c469fdaed03b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/aerial-day.jpg": {
+    "width": 1412,
+    "height": 980,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c6ef5cb2406aae15-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c6ef5cb2406aae15-960.webp"
+      },
+      {
+        "width": 1412,
+        "src": "/optimized/c6ef5cb2406aae15-1412.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/aerial-evening.jpg": {
+    "width": 1216,
+    "height": 844,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d196f5c575fc7bfd-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d196f5c575fc7bfd-960.webp"
+      },
+      {
+        "width": 1216,
+        "src": "/optimized/d196f5c575fc7bfd-1216.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/field-visit.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e0239db59f69f95a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e0239db59f69f95a-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e0239db59f69f95a-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/regional-context.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c5f4b7f1df61277e-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c5f4b7f1df61277e-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c5f4b7f1df61277e-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/site-location.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d5b2285900324de3-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d5b2285900324de3-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d5b2285900324de3-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/village-texture.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ef32d06d8fe13dd0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ef32d06d8fe13dd0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/ef32d06d8fe13dd0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/settlement-layers.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/72e4c3597ae736d9-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/72e4c3597ae736d9-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/72e4c3597ae736d9-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/village-evolution.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/206a9a550e39ea19-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/206a9a550e39ea19-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/206a9a550e39ea19-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/residents-and-visitors.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/455e364b524b1c7a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/455e364b524b1c7a-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/455e364b524b1c7a-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/grandmothers-day.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/31c54b46022d1ba8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/31c54b46022d1ba8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/31c54b46022d1ba8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/spatial-order.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8179f50e8589e1a8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8179f50e8589e1a8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8179f50e8589e1a8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/existing-ground-floor.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/aca8b353dde2d13f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/aca8b353dde2d13f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/aca8b353dde2d13f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/existing-upper-floor.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ddeb9b85c282e556-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ddeb9b85c282e556-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/ddeb9b85c282e556-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/existing-conditions.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/10043bcb00fac643-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/10043bcb00fac643-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/10043bcb00fac643-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/existing-structure.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/353d556fe76fd7a2-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/353d556fe76fd7a2-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/353d556fe76fd7a2-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/timber-language.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/7656b2c9b04ae4ae-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/7656b2c9b04ae4ae-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/7656b2c9b04ae4ae-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/soft-balance.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/1b529e47e86f7c67-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/1b529e47e86f7c67-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/1b529e47e86f7c67-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/significance-assessment.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d353b88d78323248-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d353b88d78323248-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d353b88d78323248-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/retain-and-repair.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/04a1cf16af530dec-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/04a1cf16af530dec-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/04a1cf16af530dec-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/remove-and-add.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/fb2fab1f3c01c22d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/fb2fab1f3c01c22d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/fb2fab1f3c01c22d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/circulation.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f64ff8e8e19916c0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f64ff8e8e19916c0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f64ff8e8e19916c0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/programme.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/27fedc1ab5632817-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/27fedc1ab5632817-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/27fedc1ab5632817-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/courtyard-iterations.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8760cea3a79780ea-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8760cea3a79780ea-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8760cea3a79780ea-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/roof-sketches.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/46c4930e0e55babb-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/46c4930e0e55babb-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/46c4930e0e55babb-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/old-and-new.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f145f6ead22b7fb8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f145f6ead22b7fb8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f145f6ead22b7fb8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/master-plan.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/77726fa57aa50696-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/77726fa57aa50696-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/77726fa57aa50696-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/ground-floor.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f87134b05c298010-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f87134b05c298010-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f87134b05c298010-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/upper-floor.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8da6ed7de6573a13-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8da6ed7de6573a13-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8da6ed7de6573a13-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/roof-plan.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/a4a43ca4a39773f8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/a4a43ca4a39773f8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/a4a43ca4a39773f8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/elevations.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/503bd7edf261e446-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/503bd7edf261e446-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/503bd7edf261e446-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/sections.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2ee7cfd53ff397bc-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2ee7cfd53ff397bc-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/2ee7cfd53ff397bc-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/structural-explosion.jpg": {
+    "width": 2263,
+    "height": 3200,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b6bccbac87f6f754-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b6bccbac87f6f754-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b6bccbac87f6f754-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/log-repair.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6e7f0893e49faa62-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6e7f0893e49faa62-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/6e7f0893e49faa62-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/structural-interventions.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/adeb5fd3e4892486-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/adeb5fd3e4892486-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/adeb5fd3e4892486-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/materials.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/9c2410073067c929-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/9c2410073067c929-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/9c2410073067c929-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/construction-section.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2c457129ffeded61-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2c457129ffeded61-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/2c457129ffeded61-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/joint-details.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c0a68acb0b98819b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c0a68acb0b98819b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c0a68acb0b98819b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/construction-sequence-01.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6f866551f9710ba2-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6f866551f9710ba2-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/6f866551f9710ba2-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/construction-sequence-02.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8483805025f4b0b8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8483805025f4b0b8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8483805025f4b0b8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/physical-models.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8cab2f956e81d71c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8cab2f956e81d71c-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8cab2f956e81d71c-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/model-making.jpg": {
+    "width": 3110,
+    "height": 2202,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/465166d7be25e1db-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/465166d7be25e1db-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/465166d7be25e1db-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/family-hearth.jpg": {
+    "width": 1391,
+    "height": 1077,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/62bdcea4e9ef718c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/62bdcea4e9ef718c-960.webp"
+      },
+      {
+        "width": 1391,
+        "src": "/optimized/62bdcea4e9ef718c-1391.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/cultivation.jpg": {
+    "width": 1876,
+    "height": 1501,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/a3a8c532c94d300f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/a3a8c532c94d300f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/a3a8c532c94d300f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/grandmothers-courtyard.jpg": {
+    "width": 1198,
+    "height": 921,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2ea3e2c914be4548-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2ea3e2c914be4548-960.webp"
+      },
+      {
+        "width": 1198,
+        "src": "/optimized/2ea3e2c914be4548-1198.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/visitor-arrival.jpg": {
+    "width": 1254,
+    "height": 1001,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/7b4ddc155aa5a82f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/7b4ddc155aa5a82f-960.webp"
+      },
+      {
+        "width": 1254,
+        "src": "/optimized/7b4ddc155aa5a82f-1254.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/upper-walkway.jpg": {
+    "width": 1874,
+    "height": 1507,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/38936a19d644f77e-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/38936a19d644f77e-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/38936a19d644f77e-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/shared-courtyard.jpg": {
+    "width": 1276,
+    "height": 979,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/7e6591244e86f13d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/7e6591244e86f13d-960.webp"
+      },
+      {
+        "width": 1276,
+        "src": "/optimized/7e6591244e86f13d-1276.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/window-and-hearth.jpg": {
+    "width": 1430,
+    "height": 1043,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/dce3537d3a92a8a3-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/dce3537d3a92a8a3-960.webp"
+      },
+      {
+        "width": 1430,
+        "src": "/optimized/dce3537d3a92a8a3-1430.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/reading-room.jpg": {
+    "width": 1454,
+    "height": 941,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/74f813d43798fb94-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/74f813d43798fb94-960.webp"
+      },
+      {
+        "width": 1454,
+        "src": "/optimized/74f813d43798fb94-1454.webp"
+      }
+    ]
+  },
+  "/images/projects/grandmothers-hearth/portfolio/scripture-hall-view.jpg": {
+    "width": 1340,
+    "height": 949,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/0aca7cab2fc0ab26-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/0aca7cab2fc0ab26-960.webp"
+      },
+      {
+        "width": 1340,
+        "src": "/optimized/0aca7cab2fc0ab26-1340.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/cover.png": {
+    "width": 2165,
+    "height": 1558,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/0931bdac8a4d98aa-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/0931bdac8a4d98aa-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/0931bdac8a4d98aa-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/banner.png": {
+    "width": 2400,
+    "height": 710,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f9482e4d3c9fada3-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f9482e4d3c9fada3-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f9482e4d3c9fada3-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-2.png": {
+    "width": 2400,
+    "height": 1694,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/273714a47118b44b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/273714a47118b44b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/273714a47118b44b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-3.png": {
+    "width": 2400,
+    "height": 1199,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/58d8b8d101dfcc38-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/58d8b8d101dfcc38-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/58d8b8d101dfcc38-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-15.png": {
+    "width": 6300,
+    "height": 5262,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b8c3f22fd8e112ee-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b8c3f22fd8e112ee-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b8c3f22fd8e112ee-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-4.png": {
+    "width": 5472,
+    "height": 5093,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/88c5705d0ab687cc-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/88c5705d0ab687cc-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/88c5705d0ab687cc-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-5.png": {
+    "width": 2400,
+    "height": 1593,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8a296af5813b81b0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8a296af5813b81b0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8a296af5813b81b0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-19.png": {
+    "width": 2860,
+    "height": 1575,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/beffb0e683d501b0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/beffb0e683d501b0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/beffb0e683d501b0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-6.png": {
+    "width": 1160,
+    "height": 885,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/41272af9e5d22ca1-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/41272af9e5d22ca1-960.webp"
+      },
+      {
+        "width": 1160,
+        "src": "/optimized/41272af9e5d22ca1-1160.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-7.png": {
+    "width": 10800,
+    "height": 7651,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/898f858abae89ca1-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/898f858abae89ca1-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/898f858abae89ca1-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-8.png": {
+    "width": 2971,
+    "height": 1906,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/66c3863a47bfcd38-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/66c3863a47bfcd38-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/66c3863a47bfcd38-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-9.png": {
+    "width": 4258,
+    "height": 6850,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b4cc44eaa7ba0637-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b4cc44eaa7ba0637-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b4cc44eaa7ba0637-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-10.png": {
+    "width": 4488,
+    "height": 2965,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d51030fe562fedb9-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d51030fe562fedb9-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d51030fe562fedb9-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-16.png": {
+    "width": 2622,
+    "height": 1595,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4d17b04112a30e60-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4d17b04112a30e60-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4d17b04112a30e60-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-17.png": {
+    "width": 2599,
+    "height": 1829,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b9754d9fc728df0c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b9754d9fc728df0c-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b9754d9fc728df0c-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-18.png": {
+    "width": 2400,
+    "height": 584,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/233df35d9a317295-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/233df35d9a317295-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/233df35d9a317295-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-11.png": {
+    "width": 2400,
+    "height": 2337,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/1a19243fcebe8e8a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/1a19243fcebe8e8a-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/1a19243fcebe8e8a-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-12.png": {
+    "width": 2400,
+    "height": 2394,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/da8299d8351a9daf-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/da8299d8351a9daf-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/da8299d8351a9daf-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-13.png": {
+    "width": 2400,
+    "height": 2134,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/fac9f68938aa7d64-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/fac9f68938aa7d64-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/fac9f68938aa7d64-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-20.png": {
+    "width": 676,
+    "height": 676,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/9d22b33e0672a643-480.webp"
+      },
+      {
+        "width": 676,
+        "src": "/optimized/9d22b33e0672a643-676.webp"
+      }
+    ]
+  },
+  "/images/projects/half-diary/gallery-21.png": {
+    "width": 2400,
+    "height": 2247,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4acd6d58439616db-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4acd6d58439616db-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4acd6d58439616db-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/cover.png": {
+    "width": 1743,
+    "height": 1050,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/812b76d7436126f4-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/812b76d7436126f4-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/812b76d7436126f4-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/banner.png": {
+    "width": 1578,
+    "height": 630,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f81711a3a20c61bb-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f81711a3a20c61bb-960.webp"
+      },
+      {
+        "width": 1578,
+        "src": "/optimized/f81711a3a20c61bb-1578.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-3.png": {
+    "width": 832,
+    "height": 1127,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/3fe6ec8c12fa11fd-480.webp"
+      },
+      {
+        "width": 832,
+        "src": "/optimized/3fe6ec8c12fa11fd-832.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-4.png": {
+    "width": 1219,
+    "height": 528,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6af45ab6247689f8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6af45ab6247689f8-960.webp"
+      },
+      {
+        "width": 1219,
+        "src": "/optimized/6af45ab6247689f8-1219.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-5.png": {
+    "width": 1203,
+    "height": 799,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/9e37bafeb4cdde84-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/9e37bafeb4cdde84-960.webp"
+      },
+      {
+        "width": 1203,
+        "src": "/optimized/9e37bafeb4cdde84-1203.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-18.png": {
+    "width": 3575,
+    "height": 3508,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/bee7c98ea1867090-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/bee7c98ea1867090-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/bee7c98ea1867090-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-19.png": {
+    "width": 2400,
+    "height": 1697,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/072d79a624388b88-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/072d79a624388b88-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/072d79a624388b88-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-6.png": {
+    "width": 1743,
+    "height": 1050,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/812b76d7436126f4-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/812b76d7436126f4-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/812b76d7436126f4-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-7.png": {
+    "width": 1234,
+    "height": 581,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6854b4027419fee0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6854b4027419fee0-960.webp"
+      },
+      {
+        "width": 1234,
+        "src": "/optimized/6854b4027419fee0-1234.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-23.png": {
+    "width": 837,
+    "height": 1192,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/3f38205938bcd7bc-480.webp"
+      },
+      {
+        "width": 837,
+        "src": "/optimized/3f38205938bcd7bc-837.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-8.png": {
+    "width": 1418,
+    "height": 562,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/60eb2cd648d71f05-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/60eb2cd648d71f05-960.webp"
+      },
+      {
+        "width": 1418,
+        "src": "/optimized/60eb2cd648d71f05-1418.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-9.png": {
+    "width": 1489,
+    "height": 1095,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/11f42453d70f5783-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/11f42453d70f5783-960.webp"
+      },
+      {
+        "width": 1489,
+        "src": "/optimized/11f42453d70f5783-1489.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-10.png": {
+    "width": 1885,
+    "height": 1105,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/67571f8c787e05e5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/67571f8c787e05e5-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/67571f8c787e05e5-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-13.png": {
+    "width": 1166,
+    "height": 878,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b06fd06d672ad89f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b06fd06d672ad89f-960.webp"
+      },
+      {
+        "width": 1166,
+        "src": "/optimized/b06fd06d672ad89f-1166.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-14.png": {
+    "width": 1150,
+    "height": 827,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/69145e810e8381cd-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/69145e810e8381cd-960.webp"
+      },
+      {
+        "width": 1150,
+        "src": "/optimized/69145e810e8381cd-1150.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-15.png": {
+    "width": 1123,
+    "height": 851,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2256bafaf8ba241a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2256bafaf8ba241a-960.webp"
+      },
+      {
+        "width": 1123,
+        "src": "/optimized/2256bafaf8ba241a-1123.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-16.png": {
+    "width": 1286,
+    "height": 916,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2d86e87244aff2ec-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2d86e87244aff2ec-960.webp"
+      },
+      {
+        "width": 1286,
+        "src": "/optimized/2d86e87244aff2ec-1286.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-12.png": {
+    "width": 1965,
+    "height": 386,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8646a1d8102eed6c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8646a1d8102eed6c-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8646a1d8102eed6c-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-11.png": {
+    "width": 1882,
+    "height": 762,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/1126cb61a3bb8ef7-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/1126cb61a3bb8ef7-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/1126cb61a3bb8ef7-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-17.png": {
+    "width": 1948,
+    "height": 1024,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/30ab9b149a532d2d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/30ab9b149a532d2d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/30ab9b149a532d2d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-20.png": {
+    "width": 1087,
+    "height": 703,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/21063b61b9c6d8df-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/21063b61b9c6d8df-960.webp"
+      },
+      {
+        "width": 1087,
+        "src": "/optimized/21063b61b9c6d8df-1087.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-21.png": {
+    "width": 1200,
+    "height": 1600,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/94781eaa965962f5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/94781eaa965962f5-960.webp"
+      },
+      {
+        "width": 1200,
+        "src": "/optimized/94781eaa965962f5-1200.webp"
+      }
+    ]
+  },
+  "/images/projects/hard-hat-cafe/gallery-22.png": {
+    "width": 1622,
+    "height": 1058,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6fad117463ad0164-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6fad117463ad0164-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/6fad117463ad0164-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/aerial-front.jpg": {
+    "width": 3200,
+    "height": 2302,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/60f693fe59397133-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/60f693fe59397133-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/60f693fe59397133-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/aerial-rear.jpg": {
+    "width": 3200,
+    "height": 2302,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/48f3b99d80139811-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/48f3b99d80139811-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/48f3b99d80139811-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/site-context.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/2af99e47d717a320-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/2af99e47d717a320-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/2af99e47d717a320-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/site-history.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/fd5a3d451ae38aa3-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/fd5a3d451ae38aa3-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/fd5a3d451ae38aa3-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/existing-character.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/21a839ed9f38c923-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/21a839ed9f38c923-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/21a839ed9f38c923-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/existing-plans.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/03612f8b16463687-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/03612f8b16463687-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/03612f8b16463687-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/existing-structure.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/29f965290864e3ea-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/29f965290864e3ea-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/29f965290864e3ea-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/existing-materials.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/50b37d4bf3eb9632-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/50b37d4bf3eb9632-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/50b37d4bf3eb9632-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/carbon-study.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e83a68bee59d17b0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e83a68bee59d17b0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e83a68bee59d17b0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/learning-concept.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4f0199b73f369f6d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4f0199b73f369f6d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4f0199b73f369f6d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/spatial-journey.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/353cd82ebaa2f0cf-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/353cd82ebaa2f0cf-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/353cd82ebaa2f0cf-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/programme-diagram.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e9b40c33070fa571-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e9b40c33070fa571-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e9b40c33070fa571-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/strategy-intervention.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f500f794ba0b827d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f500f794ba0b827d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f500f794ba0b827d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/strategy-insertion.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/551e04145bea47b3-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/551e04145bea47b3-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/551e04145bea47b3-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/strategy-installation.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/a5aeea5e791dab93-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/a5aeea5e791dab93-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/a5aeea5e791dab93-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/reading-space-study.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8ae57a95b97f8575-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8ae57a95b97f8575-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8ae57a95b97f8575-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/design-sketches.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/177d017cf8c57562-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/177d017cf8c57562-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/177d017cf8c57562-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/entrance-iteration.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/22a65caa34bd58bf-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/22a65caa34bd58bf-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/22a65caa34bd58bf-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/entrance-render.jpg": {
+    "width": 2429,
+    "height": 2798,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/aca8da730cc3038b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/aca8da730cc3038b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/aca8da730cc3038b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/lecture-iteration.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/3de2ebe88c663a19-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/3de2ebe88c663a19-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/3de2ebe88c663a19-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/lecture-render.jpg": {
+    "width": 3200,
+    "height": 2258,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8bd74f7b424015e9-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8bd74f7b424015e9-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8bd74f7b424015e9-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/lecture-detail.jpg": {
+    "width": 3200,
+    "height": 2263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/bf7c8074f30ff82d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/bf7c8074f30ff82d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/bf7c8074f30ff82d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/study-iteration.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d5f85ca04c4d5d25-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d5f85ca04c4d5d25-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d5f85ca04c4d5d25-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/study-render.jpg": {
+    "width": 3200,
+    "height": 2256,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/cc1dd6b571201c2a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/cc1dd6b571201c2a-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/cc1dd6b571201c2a-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/discussion-render.jpg": {
+    "width": 3200,
+    "height": 2223,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/533ad5fe1080f2d0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/533ad5fe1080f2d0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/533ad5fe1080f2d0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/garden-iteration.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/816850a2581e3678-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/816850a2581e3678-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/816850a2581e3678-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/roof-garden-render.jpg": {
+    "width": 3200,
+    "height": 2268,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/e2a8d823199476c6-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/e2a8d823199476c6-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/e2a8d823199476c6-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/exhibition-iteration.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/612057df4a1bd2d1-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/612057df4a1bd2d1-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/612057df4a1bd2d1-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/corridor-render.jpg": {
+    "width": 3200,
+    "height": 2285,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/81849c95e5a1a2c3-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/81849c95e5a1a2c3-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/81849c95e5a1a2c3-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/corridor-detail.jpg": {
+    "width": 3200,
+    "height": 2223,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6cadcdc304d6cd8c-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6cadcdc304d6cd8c-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/6cadcdc304d6cd8c-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/loop-iteration.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/39e8a9ab9b808017-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/39e8a9ab9b808017-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/39e8a9ab9b808017-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/brick-study.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b9f0f27735fb951f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b9f0f27735fb951f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b9f0f27735fb951f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/master-plan.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/0361e8ccbbf0332d-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/0361e8ccbbf0332d-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/0361e8ccbbf0332d-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/ground-floor.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c709c929f5902651-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c709c929f5902651-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c709c929f5902651-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/first-floor.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/0e7a467099e01775-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/0e7a467099e01775-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/0e7a467099e01775-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/second-floor.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/92a179c194048c1e-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/92a179c194048c1e-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/92a179c194048c1e-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/upper-and-roof.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/eeb7fa7e0908ced8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/eeb7fa7e0908ced8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/eeb7fa7e0908ced8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/section-long.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/65b06d2271f012c0-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/65b06d2271f012c0-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/65b06d2271f012c0-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/section-arch.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b17965c763a7bbab-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b17965c763a7bbab-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b17965c763a7bbab-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/elevations-west-north.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/1515791f750954b6-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/1515791f750954b6-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/1515791f750954b6-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/elevations-south-east.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ede67d3a3d5c1b4a-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ede67d3a3d5c1b4a-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/ede67d3a3d5c1b4a-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/physical-overview.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/544c0b366b3baf0f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/544c0b366b3baf0f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/544c0b366b3baf0f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/physical-spaces.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4c996b5ba4a2668b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4c996b5ba4a2668b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4c996b5ba4a2668b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/physical-process.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/09f7b8f94f45d9bb-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/09f7b8f94f45d9bb-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/09f7b8f94f45d9bb-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/iterative-learning/portfolio/physical-disassembly.jpg": {
+    "width": 3091,
+    "height": 2186,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/6b1f586388d3c410-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/6b1f586388d3c410-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/6b1f586388d3c410-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/cover.jpg": {
+    "width": 5760,
+    "height": 3475,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/76dd66d6cb70976f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/76dd66d6cb70976f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/76dd66d6cb70976f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-1.jpg": {
+    "width": 2354,
+    "height": 2482,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b7bfb093bca98412-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b7bfb093bca98412-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b7bfb093bca98412-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-2.jpg": {
+    "width": 5268,
+    "height": 9302,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8a0280c48d340fbb-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8a0280c48d340fbb-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8a0280c48d340fbb-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-3.jpg": {
+    "width": 4933,
+    "height": 7327,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8e842ddb869fb7e6-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8e842ddb869fb7e6-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8e842ddb869fb7e6-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-4.jpg": {
+    "width": 2929,
+    "height": 3456,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/5cba8034eab83d85-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/5cba8034eab83d85-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/5cba8034eab83d85-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-5.jpg": {
+    "width": 1771,
+    "height": 708,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ebc02ee8f738fdcd-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ebc02ee8f738fdcd-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/ebc02ee8f738fdcd-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-6.jpg": {
+    "width": 1238,
+    "height": 822,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/ae7e48b9f540ecc5-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/ae7e48b9f540ecc5-960.webp"
+      },
+      {
+        "width": 1238,
+        "src": "/optimized/ae7e48b9f540ecc5-1238.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-7.jpg": {
+    "width": 6450,
+    "height": 3750,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/9cdd83ee60d5f4b9-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/9cdd83ee60d5f4b9-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/9cdd83ee60d5f4b9-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-8.jpg": {
+    "width": 2400,
+    "height": 3282,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/4a0b229edcfd0743-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/4a0b229edcfd0743-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/4a0b229edcfd0743-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-9.jpg": {
+    "width": 3406,
+    "height": 3355,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/29eb2fc83e2c8e48-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/29eb2fc83e2c8e48-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/29eb2fc83e2c8e48-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-10.jpg": {
+    "width": 2400,
+    "height": 2309,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c8609f16712bc3f9-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c8609f16712bc3f9-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c8609f16712bc3f9-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-11.jpg": {
+    "width": 7536,
+    "height": 7238,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b204d91c7a170555-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b204d91c7a170555-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/b204d91c7a170555-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-12.jpg": {
+    "width": 1772,
+    "height": 1428,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/f99a582b3dfcb7d8-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/f99a582b3dfcb7d8-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/f99a582b3dfcb7d8-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-13.jpg": {
+    "width": 1528,
+    "height": 1185,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/b3e9694b1964e342-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/b3e9694b1964e342-960.webp"
+      },
+      {
+        "width": 1528,
+        "src": "/optimized/b3e9694b1964e342-1528.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-14.jpg": {
+    "width": 11350,
+    "height": 3050,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/111b1ae180763bda-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/111b1ae180763bda-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/111b1ae180763bda-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-15.jpg": {
+    "width": 4711,
+    "height": 1237,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/db001990c0f7d827-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/db001990c0f7d827-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/db001990c0f7d827-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-16.jpg": {
+    "width": 2400,
+    "height": 2182,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/195c3fab0099ee2b-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/195c3fab0099ee2b-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/195c3fab0099ee2b-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-17.jpg": {
+    "width": 2400,
+    "height": 1263,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/8f2bac1d70d9570f-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/8f2bac1d70d9570f-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/8f2bac1d70d9570f-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-18.jpg": {
+    "width": 2400,
+    "height": 1709,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/d41b7979dd8f99df-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/d41b7979dd8f99df-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/d41b7979dd8f99df-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-19.jpg": {
+    "width": 4943,
+    "height": 3761,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c69cbe5986919acd-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c69cbe5986919acd-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c69cbe5986919acd-1600.webp"
+      }
+    ]
+  },
+  "/images/projects/symsensory/gallery-20.jpg": {
+    "width": 2400,
+    "height": 1761,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/c9892609a6cfaf17-480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/c9892609a6cfaf17-960.webp"
+      },
+      {
+        "width": 1600,
+        "src": "/optimized/c9892609a6cfaf17-1600.webp"
+      }
+    ]
+  }
+}

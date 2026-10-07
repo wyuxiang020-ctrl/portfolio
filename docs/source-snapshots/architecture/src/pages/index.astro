@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import FeaturedProjects from '../components/home/FeaturedProjects.astro';
+import ProjectTimeline from '../components/work/ProjectTimeline.astro';
+import { getCollection } from 'astro:content';
+import { compareProjectsByYear } from '../lib/projects';
+
+const allProjects = await getCollection('projects');
+const featured = allProjects
+  .filter((p) => p.data.featured)
+  .sort(compareProjectsByYear)
+  .slice(0, 3);
+---
+
+<BaseLayout>
+  <!-- Hero -->
+  <Hero />
+
+  <!-- Intro -->
+  <section class="py-20 md:py-28">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+        <div>
+          <p class="font-serif text-2xl md:text-3xl text-[#1a1a1a] leading-[1.5] mb-0">
+            关注既有建筑更新、文化叙事与数字化空间表达。
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-center gap-4 text-[#555] text-[0.95rem] leading-[1.85]">
+          <p>
+            我是王誉翔，现于曼彻斯特建筑学院学习建筑与适应性再利用。此前在四川美术学院完成建筑学本科学习。
+          </p>
+          <p>
+            从重庆的工业遗产、泸沽湖的传统院落，到英国的教育与社区空间，我通过调研、图纸和模型，探索旧建筑与当代生活的联系。
+          </p>
+          <a
+            href="#all-projects"
+            class="inline-block mt-2 text-[11px] tracking-[0.18em] uppercase text-accent border-b border-accent pb-px w-fit hover:opacity-70 transition-opacity duration-200"
+          >
+            按时间浏览全部 {allProjects.length} 个项目 ↓
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured projects -->
+  <FeaturedProjects projects={featured} totalCount={allProjects.length} />
+
+  <section id="all-projects" class="py-20 md:py-28 scroll-mt-24" aria-labelledby="all-projects-title">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-12">
+      <div class="mb-10 md:mb-14">
+        <p class="text-[11px] tracking-[0.18em] uppercase text-accent mb-4" lang="en">Project Timeline</p>
+        <h2 id="all-projects-title" class="font-serif text-3xl md:text-4xl text-[#1a1a1a]">全部项目 <span class="text-lg text-[#737971]">/ {allProjects.length}</span></h2>
+        <p class="mt-5 text-[#586058] leading-relaxed">从近期探索到早期实践，以下是全部 {allProjects.length} 个项目。按项目年份由近及远排列，跨年项目保留完整时间跨度。</p>
+      </div>
+      <ProjectTimeline projects={allProjects} />
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-01T13:34:29.848Z",
+  "conditions": "Anonymous Node fetch of real public GLB, no cookies/API key; actual VPN routing unknown. Current production downloader, default 45s idle/300s total. NodeIO meshopt decode checks real data, not GPU/browser presentation or LLM API. n=1 per model.",
+  "results": [
+    {
+      "name": "itb",
+      "outcome": "downloaded-and-decoded",
+      "bytes": 6539052,
+      "downloadMs": 73456,
+      "decodeMs": 84,
+      "sha256Matches": true,
+      "meshes": 249,
+      "materials": 92
+    },
+    {
+      "name": "shekua",
+      "outcome": "failed",
+      "elapsedMs": 300017,
+      "bytes": 9863156,
+      "error": "ModelDownloadError: total-timeout",
+      "code": "total-timeout"
+    }
+  ]
+}
