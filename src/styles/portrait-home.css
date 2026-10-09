@@ -49,3 +49,13 @@
 @media(max-width:370px){.portrait-name h1{font-size:51px}.portrait-position{font-size:17px}.home-page .intro-copy>p{font-size:19px}}
 @media(prefers-reduced-motion:reduce){.home-enter-pending [data-hero-enter]{opacity:1}.scroll-motion [data-reveal-line]{color:var(--ink);background:none}.scroll-motion [data-scroll-reveal]{opacity:1;transform:none}.home-page .footer>.shell{transform:none}}
 @media print{.home-enter-pending [data-hero-enter],[data-scroll-reveal]{opacity:1!important;transform:none!important}[data-reveal-line]{color:var(--ink)!important;background:none!important}.footer-curve{display:none}}
+
+/* Longer first-person introduction: keep prose readable beside the story. */
+.home-page .introduction{grid-template-columns:1.15fr 1fr;gap:9%}
+.home-page .intro-copy>p.section-kicker{font-size:11px;line-height:1.6;margin-bottom:25px;color:var(--muted)}
+.home-page .intro-copy>p.home-story-lead{font-size:clamp(21px,1.9vw,27px);line-height:1.85;letter-spacing:0;text-wrap:wrap}
+.home-page .intro-aside{display:block;padding-top:43px}
+.home-page .intro-aside>p{max-width:none;font-size:15px;line-height:2}
+.home-page .intro-aside>p+p{margin-top:22px}
+.work-description{font-size:14px;line-height:1.9;color:#55575c;margin-top:20px;max-width:40em}
+@media(max-width:760px){.home-page .introduction{grid-template-columns:1fr;gap:24px}.home-page .intro-copy>p.home-story-lead{font-size:20px}.home-page .intro-aside{padding-top:0}.home-page .intro-aside>p{font-size:14px}.home-page .intro-aside .circle{margin-top:24px}.work-description{font-size:13px}}

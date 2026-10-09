@@ -7,8 +7,8 @@ import { architectureOrder, architectureNotes } from '../../data/architecture-pr
 const products=projects.filter(project=>project.id!=='spatial-portfolio');
 const architecture=(await getCollection('architecture')).sort((a,b)=>architectureOrder.indexOf(a.id)-architectureOrder.indexOf(b.id));
 const works=[
-  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.key==='knowledge'?'资料工作台 · 信息架构与交互设计':p.key==='slowtrail'?'旅行原型 · 当前产品界面':'个人 MVP · 产品界面'})),
-  ...architecture.map(p=>({id:p.id,title:architectureNotes[p.id]?.title||p.data.title.split(' · ')[0],subtitle:architectureNotes[p.id]?.discipline||p.data.subtitle,image:p.data.coverImage,href:'/architecture/'+p.id+'/',category:'architecture',label:'建筑',year:p.data.year,note:p.data.projectType}))
+  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.period,description:p.description})),
+  ...architecture.map(p=>({id:p.id,title:architectureNotes[p.id]?.title||p.data.title.split(' · ')[0],subtitle:architectureNotes[p.id]?.discipline||p.data.subtitle,image:p.data.coverImage,href:'/architecture/'+p.id+'/',category:'architecture',label:'建筑',year:p.data.year,note:p.data.projectType,description:p.data.description}))
 ];
 ---
 <PortfolioLayout title="作品 — 王誉翔" description="王誉翔的三个产品项目与七个建筑项目。">
@@ -20,7 +20,7 @@ const works=[
         <div class="work-image" data-project-preview><OptimizedImage src={work.image} alt={work.title+'项目展示'} gallery={false} sizes="(max-width:760px) 90vw, 45vw" loading="lazy"/><span class="work-open" aria-hidden="true">查看</span></div>
         <div class="card-title"><h2>{work.title}</h2><span aria-hidden="true">↗</span></div>
       </a>
-      <div class="card-meta"><span>{work.label} / {work.subtitle}</span><span>{work.year}</span></div><p class="card-note">{work.note}</p>
+      {work.description && <p class="work-description">{work.description}</p>}<div class="card-meta"><span>{work.label} / {work.subtitle}</span><span>{work.year}</span></div><p class="card-note">{work.note}</p>
     </article>)}</div>
   </section>
 </PortfolioLayout>

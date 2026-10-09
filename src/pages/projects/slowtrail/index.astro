@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="英伦慢游 · 产品作品集" description="从旅行灵感到清楚的安排。英伦慢游产品原型、来源资料与体验迭代成果。" wide={true}>
+<BaseLayout title="国际旅行 Agent 助手 · 王誉翔" description="面向中国用户的出境旅行规划原型。英国三城、3–7 天，30 个来源地点和 3 对交通参考；自动规划尚未接入。" wide={true}>
 <div id="case-content" class="slowtrail-case">
   <nav class="case-topbar" aria-label="作品目录">
     <a class="case-wordmark" href="#case-content">英伦慢游 <span lang="en">SLOWTRAIL</span></a>
@@ -12,59 +12,59 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
     <img class="case-hero-photo" src="/media/slowtrail/city-cover.jpg" alt="阴云下的伦敦议会大厦、大本钟与西敏桥，作为项目城市氛围封面" width="4048" height="2937" fetchpriority="high">
     <div class="case-hero-shade"></div>
     <div class="case-hero-copy">
-      <p class="case-eyebrow">个人产品项目 · 2026.10</p>
-      <h1>旅行，<br>自有节奏。</h1>
-      <p class="case-hero-intro">先有想去的心情，<br>再有看得清的旅行安排。</p>
+      <p class="case-eyebrow">面向中国用户的出境旅行规划 · 2026.10</p>
+      <h1 class="travel-project-title">国际旅行<br>Agent 助手</h1>
+      <p class="case-hero-intro">英国是第一个案例。<br>从确认需求，到逐日行程与地图。</p>
       <a class="case-hero-link" href="#case-results">看见产品成果 <span aria-hidden="true">↓</span></a>
     </div>
     <span class="case-cover-note">项目氛围封面 · 城市摄影，非产品截图</span>
   </header>
 
   <section class="case-introduction case-wrap" aria-label="项目概览">
-    <div><p class="case-eyebrow case-muted">英伦慢游 / Slowtrail</p><h2>让模糊的想去，<br>成为清楚的安排。</h2></div>
-    <div class="case-intro-details"><p>面向中文使用者的英国旅行产品原型。从地点故事出发，把偏好、日程和需要核对的资料放在一起。</p><dl><div><dt>我的职责</dt><dd>产品范围、交互方向、体验取舍与阶段验收；与 AI 编程助手协作实现。</dd></div><div><dt>当前状态</dt><dd>交互原型与资料检查已实现。行程为固定示例，尚未接入模型自动规划。</dd></div></dl></div>
+    <div><p class="case-eyebrow case-muted">英伦慢游 / Slowtrail</p><h2>一趟旅行，<br>要来回查多少次？</h2></div>
+    <div class="case-intro-details"><p>规划出境游的典型麻烦是：查景点在一个页面，查火车和地铁换乘在另一个页面，查门票开放时间又要切回去。做完行程之后，每天出发前还要重新确认一遍时间和路线。</p><p>这个项目想解决的是一条完整的链路：从行前准备、逐日行程规划，到景点购票时点提醒、航班与机场接驳、城际乘车衔接。根据用户的兴趣、预算、出行天数和节奏偏好来安排行程。</p><dl><div><dt>我的职责</dt><dd>产品范围、交互方向、体验取舍与阶段验收；与 AI 编程助手协作实现。</dd></div><div><dt>当前状态</dt><dd>可演示的原型。模型自动规划、购票提醒和航班与机场衔接还没有接入，行程内容是示例，不是自动生成的。</dd></div></dl></div>
   </section>
 
   <div class="case-facts case-wrap" aria-label="当前已完成范围">
-    <div><strong>3</strong><span>座英国城市</span></div><div><strong>30</strong><span>个来源地点</span></div><div><strong>6</strong><span>篇地点故事</span></div><div><strong>4</strong><span>项查询与检查工具</span></div>
+    <div><strong>3</strong><span>座英国城市</span></div><div><strong>30</strong><span>个来源地点</span></div><div><strong>3</strong><span>对交通参考</span></div><div><strong>3–7</strong><span>天行程范围</span></div>
   </div>
 
   <section id="case-results" class="case-section case-wrap">
-    <div class="case-section-heading"><p class="case-eyebrow case-muted">从旅行的心情开始</p><h2>先有一点向往，<br>再决定去往哪里。</h2><p>用城市摄影开场，让“计划我的旅行”与“发现我的旅行”承接两种不同的起点。</p></div>
+    <div class="case-section-heading"><p class="case-eyebrow case-muted">从旅行的心情开始</p><h2>先看看目的地，<br>或直接开始计划。</h2><p>用城市摄影开场，让“计划我的旅行”与“发现我的旅行”承接两种不同的起点。</p></div>
     <figure class="case-screen case-screen-wide"><a href="/media/slowtrail/cover.jpg" aria-label="打开当前首页完整截图"><img src="/media/slowtrail/cover.jpg" alt="当前首页：城市摄影、旅行主题与计划和发现两个入口" loading="lazy"></a><figcaption><span>当前首页 · 2026.10.09</span><span>减少介绍与重复入口，让旅行态度先被看见。</span></figcaption></figure>
   </section>
 
   <section class="case-section case-wrap case-section-compact">
-    <div class="case-section-heading"><p class="case-eyebrow case-muted">成果 01 / 完整体验</p><h2>行程和地点，<br>终于在同一张画面里。</h2><p>把每天去哪里、先后顺序和地点位置一起呈现，减少在长文本与地图之间来回寻找。</p></div>
+    <div class="case-section-heading"><p class="case-eyebrow case-muted">成果 01 / 完整体验</p><h2>逐日行程与地图</h2><p>英国是第一个案例，聚焦伦敦、牛津、巴斯，行程长度 3 到 7 天。目前完成了需求确认、逐日示例和地图联动，整理了 30 个来源地点和 3 对交通参考，支持资料查询和基础时间检查。</p></div>
     <figure class="case-screen case-screen-wide"><a href="/media/slowtrail/workspace.jpg" aria-label="打开当前规划工作区完整截图"><img src="/media/slowtrail/workspace.jpg" alt="当前规划工作区：固定示例的逐日安排与重点景点地图" loading="lazy"></a><figcaption><span>示例规划工作区 · 2026.10.09</span><span>行程与地图并排；示例编排不代表 AI 已完成真实规划。</span></figcaption></figure>
     <div class="case-result-notes"><p><strong>看得见重点</strong><span>每日安排分组呈现，选中景点可对应地图位置。</span></p><p><strong>细节按需展开</strong><span>故事、参观资料和调整便笺放在需要时出现的位置。</span></p><p><strong>说明真实状态</strong><span>保留“示例”标识；调整入口记录意图，不假装已重排行程。</span></p></div>
   </section>
 
   <section class="case-feature-band">
     <div class="case-wrap case-feature-layout">
-      <div class="case-feature-copy"><p class="case-eyebrow">成果 02 / 旅行发现</p><h2>一个地方的故事，<br>也可以是出发的理由。</h2><p>伦敦、牛津与巴斯，各有两篇短故事。让“为什么想去”与“在哪里”相遇，再将喜欢的地点带入自己的规划需求。</p><div class="case-city-index"><span>伦敦 <em>河岸与艺术</em></span><span>牛津 <em>学院与绿地</em></span><span>巴斯 <em>古迹与街景</em></span></div><p class="case-small">六条故事、城市筛选与重点标记联动。近似位置用于理解景点分布，不作为导航。</p></div>
+      <div class="case-feature-copy"><p class="case-eyebrow">成果 02 / 旅行发现</p><h2>还没想好去哪时，<br>先读一段地点故事。</h2><p>伦敦、牛津与巴斯，各有两篇短故事。让“为什么想去”与“在哪里”相遇，再将喜欢的地点带入自己的规划需求。</p><div class="case-city-index"><span>伦敦 <em>河岸与艺术</em></span><span>牛津 <em>学院与绿地</em></span><span>巴斯 <em>古迹与街景</em></span></div><p class="case-small">六条故事、城市筛选与重点标记联动。近似位置用于理解景点分布，不作为导航。</p></div>
       <figure class="case-phone-figure"><a href="/media/slowtrail/mobile-map.jpg" aria-label="打开当前手机地图完整截图"><div class="case-phone-window"><img src="/media/slowtrail/mobile-map.jpg" alt="当前手机地图与重点景点展示" loading="lazy"></div></a><figcaption>手机地图 · 2026.10.09<br>突出重点景点，减少连线与覆盖操作。点击可查看完整图。</figcaption></figure>
     </div>
     <figure class="case-discovery-image case-wrap"><a href="/media/slowtrail/discover.jpg" aria-label="打开当前发现页完整截图"><img src="/media/slowtrail/discover.jpg" alt="当前发现页：南岸河畔故事展开，文字、城市摄影与重点景点地图相互对应" loading="lazy"></a><figcaption>发现页局部 · 2026.10.09 · 点击查看完整画面。故事说明值得停留的理由，地图保留重点地点。</figcaption></figure>
   </section>
 
   <section class="case-section case-wrap case-planning-layout">
-    <div class="case-planning-copy"><p class="case-eyebrow case-muted">成果 03 / 需求到安排</p><h2>先确认期待，<br>再打开旅程。</h2><p>从城市、天数和节奏开始，留出表达必去地点与固定安排的位置。复杂偏好可以稍后展开。</p><ol class="case-steps"><li><span>01</span><div><strong>说出旅行想法</strong><p>已有目的地，或从故事带入一点灵感。</p></div></li><li><span>02</span><div><strong>确认自己的条件</strong><p>一起查看城市、日期、兴趣和特别安排。</p></div></li><li><span>03</span><div><strong>浏览示例与核对资料</strong><p>逐日看清安排，需要时查来源或手动检查时间。</p></div></li></ol><p class="case-small case-muted">现阶段不会把自然语言自动编排为真实行程。</p></div>
+    <div class="case-planning-copy"><p class="case-eyebrow case-muted">成果 03 / 需求到安排</p><h2>先确认这次怎么走</h2><p>从城市、天数和节奏开始，留出表达必去地点与固定安排的位置。复杂偏好可以稍后展开。</p><ol class="case-steps"><li><span>01</span><div><strong>说出旅行想法</strong><p>已有目的地，或从故事带入一点灵感。</p></div></li><li><span>02</span><div><strong>确认自己的条件</strong><p>一起查看城市、日期、兴趣和特别安排。</p></div></li><li><span>03</span><div><strong>浏览示例与核对资料</strong><p>逐日看清安排，需要时查来源或手动检查时间。</p></div></li></ol><p class="case-small case-muted">现阶段不会把自然语言自动编排为真实行程。</p></div>
     <figure class="case-screen case-review-screen"><a href="/media/slowtrail/plan-review.jpg" aria-label="打开当前规划入口完整截图"><img src="/media/slowtrail/plan-review.jpg" alt="当前规划入口：整理旅行想法、城市、日期与个人偏好" loading="lazy"></a><figcaption><span>规划入口 · 2026.10.09</span><span>先整理个人条件，再进入示例行程。</span></figcaption></figure>
   </section>
 
   <section class="case-evidence-section">
-    <div class="case-wrap"><div class="case-section-heading"><p class="case-eyebrow case-muted">成果 04 / 有依据的旅行资料</p><h2>能核对的给出来源。<br>不能确认的，明确说出来。</h2><p>整理真实资料快照，并把基础检查做成可以使用的功能。</p></div><div class="case-evidence-gallery"><figure><a href="/media/slowtrail/place-evidence.jpg" aria-label="打开地点资料完整截图"><img src="/media/slowtrail/place-evidence.jpg" alt="当前地点资料截图：大本钟与议会周边的有来源信息、待确认开放信息与资料链接" loading="lazy"></a><figcaption><strong>资料有来源，未知项不猜测。</strong>当前资料页面局部 · 2026.10.09 · 点击查看完整图。</figcaption></figure><figure><a href="/media/slowtrail/check-result.jpg" aria-label="打开真实检查结果完整截图"><img src="/media/slowtrail/check-result.jpg" alt="当前单日检查截图：演示测试样例实际运行后显示固定活动重叠与跨城预留不足两项冲突" loading="lazy"></a><figcaption><strong>冲突有原因，可以回看安排。</strong>真实检查结果局部 · 输入为演示测试样例，非用户反馈。点击查看完整图。</figcaption></figure></div><div class="case-evidence-grid"><article><span class="case-evidence-number">30</span><h3>地点资料</h3><p>三城各十个地点，保留来源、核对日期和未知字段。</p><span class="case-proof-label">来源可查</span></article><article><span class="case-evidence-number">3</span><h3>城际交通参考</h3><p>官方耗时参考与项目预留时间分开说明，不暗示实时班次。</p><span class="case-proof-label">事实与估算分开</span></article><article><span class="case-evidence-number">4</span><h3>查询与检查工具</h3><p>查地点、看详情、查交通，并检查手填单日安排的冲突与缺口。</p><span class="case-proof-label">实际执行检查</span></article></div><p class="case-evidence-footnote">开放日期例外、余票、同城移动与实时交通尚未完整覆盖；坐标为近似位置，地图不提供导航保证。</p></div>
+    <div class="case-wrap"><div class="case-section-heading"><p class="case-eyebrow case-muted">成果 04 / 有依据的旅行资料</p><h2>查资料，也查时间是否冲突</h2><p>整理真实资料快照，并把基础检查做成可以使用的功能。</p></div><div class="case-evidence-gallery"><figure><a href="/media/slowtrail/place-evidence.jpg" aria-label="打开地点资料完整截图"><img src="/media/slowtrail/place-evidence.jpg" alt="当前地点资料截图：大本钟与议会周边的有来源信息、待确认开放信息与资料链接" loading="lazy"></a><figcaption><strong>资料有来源，未知项不猜测。</strong>当前资料页面局部 · 2026.10.09 · 点击查看完整图。</figcaption></figure><figure><a href="/media/slowtrail/check-result.jpg" aria-label="打开真实检查结果完整截图"><img src="/media/slowtrail/check-result.jpg" alt="当前单日检查截图：演示测试样例实际运行后显示固定活动重叠与跨城预留不足两项冲突" loading="lazy"></a><figcaption><strong>冲突有原因，可以回看安排。</strong>真实检查结果局部 · 输入为演示测试样例，非用户反馈。点击查看完整图。</figcaption></figure></div><div class="case-evidence-grid"><article><span class="case-evidence-number">30</span><h3>地点资料</h3><p>三城各十个地点，保留来源、核对日期和未知字段。</p><span class="case-proof-label">来源可查</span></article><article><span class="case-evidence-number">3</span><h3>城际交通参考</h3><p>官方耗时参考与项目预留时间分开说明，不暗示实时班次。</p><span class="case-proof-label">事实与估算分开</span></article><article><span class="case-evidence-number">4</span><h3>查询与检查工具</h3><p>查地点、看详情、查交通，并检查手填单日安排的冲突与缺口。</p><span class="case-proof-label">实际执行检查</span></article></div><p class="case-evidence-footnote">开放日期例外、余票、同城移动与实时交通尚未完整覆盖；坐标为近似位置，地图不提供导航保证。</p></div>
   </section>
 
   <section id="case-decisions" class="case-section case-wrap">
-    <div class="case-section-heading"><p class="case-eyebrow case-muted">我的工作 / 把想法推进到可用原型</p><h2>做得更少，<br>让旅行本身更清楚。</h2></div>
-    <div class="case-contribution-grid"><article><span>01</span><h3>定义一个可完成的范围</h3><p>聚焦三座城市与 3–7 天旅行，先连通发现、需求、确认与逐日浏览，再补充来源资料与时间检查。</p></article><article><span>02</span><h3>决定体验的重心</h3><p>用摄影与地点故事表达旅行态度；减少首页模块，统一字体，让地图服务于重点景点。</p></article><article><span>03</span><h3>组织实现与阶段检查</h3><p>与 AI 编程助手协作，将需求变成可运行页面；按阶段查看成果、提出修改并记录已实现与待完成内容。</p></article></div>
+    <div class="case-section-heading"><p class="case-eyebrow case-muted">我的工作 / 把想法推进到可用原型</p><h2>信息多，不等于好用。</h2></div>
+    <p class="case-reflection">做这个项目最大的收获，是理解了“信息密度”和“可操作性”之间的取舍：把所有信息堆在一屏看起来全面，用户反而不知道从哪里开始。所以我折叠了次要内容，让地图先突出重点景点。</p><div class="case-contribution-grid"><article><span>01</span><h3>定义一个可完成的范围</h3><p>聚焦三座城市与 3–7 天旅行，先连通发现、需求、确认与逐日浏览，再补充来源资料与时间检查。</p></article><article><span>02</span><h3>决定体验的重心</h3><p>用摄影与地点故事表达旅行态度；减少首页模块，统一字体，让地图服务于重点景点。</p></article><article><span>03</span><h3>组织实现与阶段检查</h3><p>与 AI 编程助手协作，将需求变成可运行页面；按阶段查看成果、提出修改并记录已实现与待完成内容。</p></article></div>
     <div class="case-feedback"><div><h3>意见，落到具体的改变。</h3><p>本人转述的同学与朋友非正式意见。未开展正式访谈统计，不代表量化使用效果。</p></div><div class="case-feedback-rows"><div><span>首页内容多、缺少特色</span><strong>摄影开场，保留计划与发现双入口</strong></div><div><span>字体与地图显得杂乱</span><strong>统一层级，折叠次要信息，突出重点景点</strong></div><div><span>访问失败、页面闪动</span><strong>排查预览与刷新问题，改用稳定预览</strong></div></div></div>
   </section>
 
   <section id="case-deliverables" class="case-deliverables">
-    <div class="case-wrap"><div class="case-section-heading"><p class="case-eyebrow case-muted">可检查的交付</p><h2>把产品成果，<br>完整交付。</h2></div><div class="case-document-grid"><a class="case-document-card" href="/media/slowtrail/product-prd.pdf"><span class="case-document-type">产品说明 / PDF</span><h3>英伦慢游<br>产品需求文档</h3><p>定位、范围、功能、异常处理与验收标准。</p><span class="case-document-action">阅读 PRD <span aria-hidden="true">↗</span></span></a><a class="case-document-card" href="/media/slowtrail/resume.pdf"><span class="case-document-type">简历素材 / PDF</span><h3>我具体做了什么</h3><p>以范围定义、体验决策和真实交付说明项目贡献。</p><span class="case-document-action">查看简历项目内容 <span aria-hidden="true">↗</span></span></a><a class="case-document-card case-code-card" data-repo-slot href="https://github.com/wyuxiang020-ctrl/uk-travel-agent"><span class="case-document-type">源代码</span><h3>可运行的工程</h3><p>包含页面、资料、检查工具、来源与阶段记录。</p><span class="case-document-action">查看 GitHub 源码 <span aria-hidden="true">↗</span></span></a></div><div class="case-text-links"><a href="/media/slowtrail/slowtrail-portfolio.pdf">6 页成果作品集 PDF</a><span>可编辑原文</span><a href="/media/slowtrail/prd.md">PRD</a><a href="/media/slowtrail/resume-copy.md">简历内容</a><a href="/media/slowtrail/case-study.md">完整案例文字</a></div><details class="case-scope"><summary>当前能力与检查边界</summary><div><p>当前完成交互原型、来源资料查询和基础时间检查；行程仍为固定示例。模型自动规划、真实行程修改、锁定、撤销与保存恢复尚未接入。</p><p>最近一轮记录为24项单元测试及构建、类型和代码检查通过；这些属于工程检查，不是用户效果。页面截图用于展示当前界面，不等于全部视觉、手机和异常交互已经验收。</p></div></details></div>
+    <div class="case-wrap"><p class="case-current-status">目前是可演示原型：行程是示例，模型自动规划、购票提醒和航班衔接尚未接入。</p><div class="case-section-heading"><p class="case-eyebrow case-muted">可检查的交付</p><h2>产品文档与当前边界</h2></div><div class="case-document-grid"><a class="case-document-card" href="/media/slowtrail/product-prd.pdf"><span class="case-document-type">产品说明 / PDF</span><h3>英伦慢游<br>产品需求文档</h3><p>定位、范围、功能、异常处理与验收标准。</p><span class="case-document-action">阅读 PRD <span aria-hidden="true">↗</span></span></a><a class="case-document-card" href="/media/slowtrail/resume.pdf"><span class="case-document-type">简历素材 / PDF</span><h3>我具体做了什么</h3><p>以范围定义、体验决策和真实交付说明项目贡献。</p><span class="case-document-action">查看简历项目内容 <span aria-hidden="true">↗</span></span></a><a class="case-document-card case-code-card" data-repo-slot href="https://github.com/wyuxiang020-ctrl/uk-travel-agent"><span class="case-document-type">源代码</span><h3>可运行的工程</h3><p>包含页面、资料、检查工具、来源与阶段记录。</p><span class="case-document-action">查看 GitHub 源码 <span aria-hidden="true">↗</span></span></a></div><div class="case-text-links"><a href="/media/slowtrail/slowtrail-portfolio.pdf">6 页成果作品集 PDF</a><span>可编辑原文</span><a href="/media/slowtrail/prd.md">PRD</a><a href="/media/slowtrail/resume-copy.md">简历内容</a><a href="/media/slowtrail/case-study.md">完整案例文字</a></div><details class="case-scope"><summary>当前能力与检查边界</summary><div><p>当前完成交互原型、来源资料查询和基础时间检查；行程仍为固定示例。模型自动规划、真实行程修改、锁定、撤销与保存恢复尚未接入。</p><p>最近一轮记录为24项单元测试及构建、类型和代码检查通过；这些属于工程检查，不是用户效果。页面截图用于展示当前界面，不等于全部视觉、手机和异常交互已经验收。</p></div></details></div>
   </section>
 
   <footer class="case-footer case-wrap"><div class="case-footer-title">旅行，自有节奏。<a href="#case-content">回到顶部 ↑</a></div><p>英伦慢游 · 个人产品项目 · 2026.10</p><details class="case-credits"><summary>图片许可与参考</summary><div><p>封面：<a href="https://commons.wikimedia.org/wiki/File:London_-_Palace_of_Westminster_-_Big_Ben_%E2%80%93_Westminster-Bridge_-_panoramio.jpg">伦敦摄影</a>，Edgar El，<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>，裁切展示。产品截图中的城市影像另包括 Mike Peel 的<a href="https://commons.wikimedia.org/wiki/File:Radcliffe_Camera,_Oxford.jpg">牛津摄影</a>（<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>）与 Draceane 的<a href="https://commons.wikimedia.org/wiki/File:Bath_roman_baths.jpg">巴斯摄影</a>（公共领域）。地图数据 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>。含牛津照片的截图之图片改编部分遵循 CC BY-SA 4.0；该许可不扩展到独立应用代码，代码未另授权。</p><p>作品叙事参考：<a href="https://ben-rowe.com/work/support-copilot">Ben Rowe · Support Copilot</a>、<a href="https://www.jason-eng.design/dap">Jason Eng · DAPPA</a>、<a href="https://shumin.design/work/clairo/">Shu-Min Yang · Clairo</a>、<a href="https://shumin.design/work/pr-po-copilot/">PR→PO Copilot</a>。只借鉴展示结构，未复用他人作品图片、评价或成绩。</p></div></details></footer>
@@ -81,4 +81,13 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 .case-discovery-image{margin-top:65px}.case-discovery-image img{width:100%;height:640px;object-fit:cover;object-position:center 38%}.case-discovery-image figcaption{font-size:11px;color:#bac6ba;margin-top:20px}.case-evidence-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-bottom:42px}.case-evidence-gallery figure{padding:12px;background:#f7f7ef;border:1px solid #d9ddcf}.case-evidence-gallery img{width:100%;height:530px;object-fit:cover;object-position:center 65%}.case-evidence-gallery figcaption{font-size:10px;line-height:1.8;color:#73766d;padding:17px 5px 8px}.case-evidence-gallery figcaption strong{display:block;font-size:14px;font-weight:500;color:#242820;margin-bottom:6px}.case-evidence-grid article{min-height:250px;padding:26px}.case-evidence-number{font-size:45px}.case-evidence-grid h3{font-size:17px;margin-top:17px}.case-evidence-grid p{font-size:12px}.case-proof-label{margin-top:16px}@media(max-width:760px){.case-discovery-image{margin-top:38px}.case-discovery-image img{height:430px;object-fit:contain;background:#f7f7ef}.case-evidence-gallery{grid-template-columns:1fr;gap:20px}.case-evidence-gallery img{height:450px}.case-evidence-grid article{min-height:0}.case-evidence-grid h3{margin-top:0}.case-evidence-number{font-size:38px}}
 
 
+</style>
+<style is:global>
+ .slowtrail-case{--case-bg:#fff}
+ .slowtrail-case .case-hero :is(.case-eyebrow,.case-hero-intro){color:#fff}
+ .slowtrail-case .travel-project-title{font-size:clamp(48px,6vw,82px);line-height:1.35}
+ .case-intro-details>p+p{margin-top:24px}
+ .slowtrail-case .case-reflection{max-width:720px;font-size:17px;line-height:2;margin:-18px 0 42px;color:var(--case-muted)}
+ .slowtrail-case .case-current-status{max-width:760px;font-size:16px;line-height:2;margin-bottom:38px;padding-bottom:28px;border-bottom:1px solid var(--case-line)}
+ @media(max-width:760px){.slowtrail-case .travel-project-title{font-size:46px}.slowtrail-case .case-reflection,.slowtrail-case .case-current-status{font-size:14px}}
 </style>
