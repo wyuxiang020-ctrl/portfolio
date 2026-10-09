@@ -48,6 +48,19 @@ export const projects = [
     ],
     chapters: [['problem','问题与目标'],['experience','产品体验'],['decisions','关键取舍'],['delivery','实现与协作'],['evaluation','验证证据'],['reflection','边界与下一步']],
   },
+  {
+    id: 'slowtrail', key: 'slowtrail', number: '04', title: '英伦慢游 · 旅行规划原型',
+    subtitle: '旅行，自有节奏。',
+    description: '把旅行心情、地点故事和清楚的日程连接起来。负责产品范围、交互方向与体验取舍，与 AI 编程助手协作完成原型。',
+    image: '/media/slowtrail/cover.jpg', href: '/projects/slowtrail/', label: '旅行体验 · 故事地图 · 资料可追溯',
+    english: 'SLOWTRAIL / TRAVEL PLANNING PROTOTYPE',
+    lead: '面向中文使用者的英国旅行规划原型。从旅行灵感开始，用地点故事、重点地图和来源资料帮助用户认识目的地。',
+    status: '可交互原型与资料检查已实现 · 尚未接入模型自动规划',
+    role: '产品范围、交互方向、体验取舍与阶段验收', period: '2026.10',
+    scope: '三城旅行原型 · AI 编程助手协作实现', repo: 'https://github.com/wyuxiang020-ctrl/uk-travel-agent',
+    summary: [['问题','旅行想法、地点信息与每天安排分散。'],['选择','摄影与双入口开场，故事与重点地图联动。'],['结果','交付三城原型、六篇地点故事和三十个来源地点。'],['边界','固定示例行程；未接入模型、保存恢复与真实行程修改。']],
+    chapters: [['case-results','产品成果'],['case-decisions','我的工作'],['case-deliverables','交付文档']],
+  },
 ] as const;
 
 export type AIProject = (typeof projects)[number];

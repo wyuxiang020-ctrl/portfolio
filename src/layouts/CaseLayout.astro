@@ -4,7 +4,7 @@ import ProjectScreens from '../components/cases/ProjectScreens.astro';
 import EvidencePanel from '../components/cases/EvidencePanel.astro';
 import type { AIProject } from '../data/ai-projects';
 import '../styles/cases.css';
-interface Props { project: AIProject; }
+interface Props { project: Exclude<AIProject, { key: 'slowtrail' }>; }
 const { project } = Astro.props;
 ---
 <BaseLayout title={project.title + ' · 王誉翔'} description={project.description} wide>

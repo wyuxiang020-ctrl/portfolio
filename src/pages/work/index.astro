@@ -4,16 +4,16 @@ import OptimizedImage from '../../components/ui/OptimizedImage.astro';
 import { getCollection } from 'astro:content';
 import { projects } from '../../data/ai-projects';
 import { architectureOrder, architectureNotes } from '../../data/architecture-projects';
-const products=projects.slice(0,2);
+const products=projects.filter(project=>project.id!=='spatial-portfolio');
 const architecture=(await getCollection('architecture')).sort((a,b)=>architectureOrder.indexOf(a.id)-architectureOrder.indexOf(b.id));
 const works=[
-  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.key==='knowledge'?'本地 MVP · 合成演示界面':'个人 MVP · 产品界面'})),
+  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.key==='knowledge'?'本地 MVP · 合成演示界面':p.key==='slowtrail'?'旅行原型 · 当前产品界面':'个人 MVP · 产品界面'})),
   ...architecture.map(p=>({id:p.id,title:architectureNotes[p.id]?.title||p.data.title.split(' · ')[0],subtitle:architectureNotes[p.id]?.discipline||p.data.subtitle,image:p.data.coverImage,href:'/architecture/'+p.id+'/',category:'architecture',label:'建筑',year:p.data.year,note:p.data.projectType}))
 ];
 ---
-<PortfolioLayout title="作品 — 王誉翔" description="王誉翔的两个 AI 产品项目与七个建筑项目。">
+<PortfolioLayout title="作品 — 王誉翔" description="王誉翔的三个产品项目与七个建筑项目。">
   <section class="work-page content-shell">
-    <header class="page-heading"><p class="section-kicker">作品 / WORK</p><h1>我做过的项目</h1><p class="page-intro">两个 AI 产品项目，以及七个建筑设计项目。</p></header>
+    <header class="page-heading"><p class="section-kicker">作品 / WORK</p><h1>我做过的项目</h1><p class="page-intro">三个产品项目，以及七个建筑设计项目。</p></header>
     <div class="work-controls"><div class="filters" role="group" aria-label="作品分类"><button class="fill-button pill active" data-filter="all" aria-pressed="true"><span>全部<sup>{works.length}</sup></span></button><button class="fill-button pill" data-filter="product" aria-pressed="false"><span>产品<sup>{products.length}</sup></span></button><button class="fill-button pill" data-filter="architecture" aria-pressed="false"><span>建筑<sup>{architecture.length}</sup></span></button></div><span class="work-count" id="filter-status" role="status">{works.length} 个项目</span></div>
     <div class="work-grid">{works.map(work=><article class:list={['work-card',work.category]} data-category={work.category}>
       <a href={work.href} aria-label={'查看'+work.title}>

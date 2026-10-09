@@ -4,14 +4,14 @@ import { projects } from '../../data/ai-projects';
 import { profile } from '../../data/profile';
 import '../../styles/cases.css';
 ---
-<BaseLayout title="AI 与数字产品 · 王誉翔" description="三个完整产品案例：建筑项目知识助手、AI 健身与饮食记录、交互式建筑作品集。问题、关键判断、结果与证据。" wide>
+<BaseLayout title="AI 与数字产品 · 王誉翔" description="四个产品案例：建筑项目知识助手、AI 健身与饮食记录、交互式建筑作品集、英伦慢游旅行原型。问题、关键判断、结果与证据。" wide>
   <div class="case-page" id="content">
-    <header class="ai-list-intro" id="top"><div id="about"><p class="case-kicker">SELECTED PRODUCT WORK / 01—03</p><h1 id="about-title">从具体问题出发，<br />让判断接受验证。</h1><p class="ai-byline">{profile.name} · {profile.tagline}</p><p>我关注专业信息如何被理解、AI 输出如何被核验，以及人在流程中如何保留控制权。三个项目记录了问题、选择、实现、失败与仍待完成的验证。</p></div></header>
+    <header class="ai-list-intro" id="top"><div id="about"><p class="case-kicker">SELECTED PRODUCT WORK / 01—04</p><h1 id="about-title">从具体问题出发，<br />让判断接受验证。</h1><p class="ai-byline">{profile.name} · {profile.tagline}</p><p>我关注专业信息如何被理解、AI 输出如何被核验，以及人在流程中如何保留控制权。四个项目展示了产品成果、关键选择与可以核对的依据。</p></div></header>
     <section class="ai-project-list" id="projects" aria-labelledby="projects-title"><h2 id="projects-title" class="sr-only">精选 AI 与数字产品案例</h2>{projects.map(project => <a class={'ai-project-row ' + project.key} href={project.href}>
       <div class="ai-project-image"><img src={project.image} alt={project.title + '真实界面'} width="1265" height="712" loading="lazy" decoding="async" /></div>
       <div><span class="case-kicker">{project.number} / {project.label}</span><h2>{project.title}</h2><p>{project.description}</p><span class="row-link">阅读完整案例 →</span></div>
     </a>)}</section>
-    <p class="ai-list-note">知识助手与健身工具为个人 MVP；交互式作品集为已发布的网站实践。案例中的测试数据、合成素材和实际界面分别标注，不将工程通过率或合成评测写成真实用户效果。</p>
+    <p class="ai-list-note">知识助手与健身工具为个人 MVP；英伦慢游为尚未接入模型的旅行原型；交互式作品集为已发布的网站实践。案例中的测试数据、合成素材和实际界面分别标注，不将工程通过率或合成评测写成真实用户效果。</p>
     <div class="ai-context-grid">
       <section id="experience" aria-labelledby="experience-title"><p class="case-kicker">BACKGROUND / 背景与经历</p><h2 id="experience-title">从空间设计，走向 AI 产品。</h2><p>{profile.education[0].institution}硕士在读，{profile.education[1].institution}建筑学学士。曾于{profile.experience[0].institution}担任建筑实习生。</p><a href="/about/">了解我的背景与个人责任 →</a></section>
       <section id="contact" aria-labelledby="ai-contact-title"><p class="case-kicker">CONTACT / 联系</p><h2 id="ai-contact-title">交流 AI 产品方向的机会。</h2><a href={'mailto:' + profile.email}>{profile.email} ↗</a><p><a href="/contact/">全部联系入口 →</a></p></section>

@@ -44,6 +44,12 @@ export const profile = {
 } as const;
 
 export const resumeProjects = [
+  { name: '英伦慢游 · 旅行规划原型', en: 'Slowtrail · AI 旅行规划方向的可交互原型', date: '2026.10', href: '/projects/slowtrail/', points: [
+    { label: '确定范围、完成体验', text: '将英国旅行规划收敛到伦敦、牛津、巴斯与 3–7 天行程，梳理发现灵感、填写需求、确认条件与查看行程的完整路径，与 AI 编程助手协作完成可运行原型。' },
+    { label: '根据反馈做取舍', text: '根据同学与朋友的非正式意见，明确旅行自有节奏的产品调性，改为摄影与计划、发现双入口，加入六篇地点故事；统一字体、折叠次要内容，让地图突出重点景点。' },
+    { label: '让资料有依据', text: '以信息能追溯、未知项能识别为交付要求，协同整理三十个来源地点与三对交通参考，实现资料查询与基础时间检查。当前行程为固定示例，尚未接入模型自动规划。' },
+  ] },
+
   { name: '建筑团队 RAG 知识助手', en: 'Project Knowledge Copilot', date: '2026.05 — 至今', href: '/projects/knowledge-copilot/', points: [
     { label: '问题洞察与规划', text: '基于个人建筑资料分散、AI 回答难核验的场景，以用户任务（JTBD）拆解“找到证据—形成结论—原文核验”；独立负责 MVP、交互与评测，优先打通可信问答，暂缓企业权限与复杂 Agent。' },
     { label: 'RAG 方案与可信交互', text: '将系统拆为资料入库、检索、生成与证据核验四层，借助 AI Coding 基于 Next.js、pgvector、Voyage AI 与 Claude API 完成原型；区分回答、证据不足、引用异常与请求失败，设计引用校验、拒答及恢复路径。' },
