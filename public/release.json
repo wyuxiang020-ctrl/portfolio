@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-10.1",
+  "version": "2026-10-10.2",
   "site": "yuxiangworks.com",
   "edition": "unified-product-and-architecture",
   "portrait": "/images/yuxiang-portrait-railing-v4.webp",
@@ -26,6 +26,7 @@
     "white-content-canvas",
     "fangkuai-full-product-case",
     "fangkuai-high-resolution-images",
-    "fangkuai-four-ip-states"
+    "fangkuai-four-ip-states",
+    "fangkuai-outcomes-and-product-decisions"
   ]
 }

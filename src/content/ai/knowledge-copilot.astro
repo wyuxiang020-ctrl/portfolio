@@ -1,6 +1,7 @@
 ---
 import '../../styles/knowledge-case.css';
 import CaseImage from '../../components/fangkuai/CaseImage.astro';
+import FeedbackAvatar from '../../components/fangkuai/FeedbackAvatar.astro';
 const states = [['待命','保持紧凑，占桌面最小空间'],['查找中','模块舒展，表示正在检索'],['已就绪','出现书签提示，表示有结果可看'],['需处理','静止与状态提示，表示需要你确认']];
 const projects = [
   ['tank-shanghai','上海油罐艺术中心','OPEN Architecture','© Qingshan Wu','https://www.archdaily.com/935196/tank-shanghai-open-architecture'],
@@ -8,23 +9,30 @@ const projects = [
   ['jingdezhen-kiln','景德镇御窑博物馆','Studio Zhu-Pei','图片提供：Studio Zhu-Pei','https://www.archdaily.com/948083/jingdezhen-imperial-kiln-museum-studio-zhu-pei'],
   ['lochal-library','LocHal 图书馆','CIVIC architects 等','© Stijn Bollaert','https://www.archdaily.com/909540/lochal-library-mecanoo-plus-civic-architects-plus-braaksma-and-roos-architectenbureau'],
 ];
-const feedback = [['徐工 · 高级设计师','案例比较与方案线索','恢复私人资料，加入公开案例摘要与来源'],['刘工 · 设计师助理','资料整理与原文查找','补齐全景主图、设计事实和阅读入口'],['缪工 · 总建筑设计师','判断依据与来源复核','形成范围、大类、细类与图标索引']];
+const feedback = [
+  ['高级设计师', '参考项目，要能看出设计做法。', '只有一张局部图和项目名称，很难判断它是否值得继续研究。', '补齐项目主图、设计线索和中文摘要，让案例比较有具体依据。'],
+  ['设计师助理', '找过的条文，不想再从头找。', '规范与地方政策混在一起，打开原文后还要重新定位分类和关键词。', '按范围与主题分层；返回时保留查找条件，摘录与来源保持关联。'],
+  ['总建筑设计师', '讨论方案时，依据要随手可查。', '摘要能帮助理解，但不能替代原文；一条意见需要回到具体的项目和条款。', '把来源、版本和核对日期放进档案，阅读时可以直接核对原文。'],
+];
 ---
 <article class="fk" data-gallery-group="fangkuai">
   <section class="fk-hero" aria-labelledby="fk-title">
     <div class="fk-topline"><a href="/work/">← 全部作品</a><span>FANGKUAI / PRODUCT CASE</span></div>
     <h1 id="fk-title">方块 · 建筑设计知识工作台</h1>
     <div class="fk-hero-copy"><p class="fk-headline">把项目资料，<br/>带回设计现场。</p><p>面向建筑设计与研究的资料助手。把历史项目、公开案例、规范与地区政策组织为可查找、可阅读、可核对、可再次使用的知识工作台。</p></div>
-    <dl class="fk-stats"><div><dt>公开可查阅资料</dt><dd>36 <span>条</span></dd></div><div><dt>本机原始 PDF</dt><dd>293 <span>页</span></dd></div><div><dt>设计院同事参与试用</dt><dd>3 <span>位</span></dd></div><div><dt>工程回归通过</dt><dd>40 <span>/</span> 40</dd></div></dl>
-    <CaseImage name="library" alt="方块工作台资料库界面，展示 36 条公开资料与分类索引" caption="资料库 · 实际演示界面" priority />
-    <p class="fk-tags">ToB · 本机工作台 + 独立在线演示 · 2026.05 至今 · 产品定义 / 体验决策 / 资料与验收</p>
+    <p class="fk-deployed"><span aria-hidden="true"></span>已投入重庆市设计院使用</p>
+    <figure class="fk-image fk-cover">
+      <img src="/media/knowledge-2026/cover-editorial.png" alt="蓝色资料夹与建筑图纸，方块项目概念封面" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async" data-gallery="fangkuai" />
+      <figcaption><span>方块 · 建筑设计知识工作台</span><a href="/media/knowledge-2026/cover-editorial.png" target="_blank" rel="noreferrer">原图 ↗</a></figcaption>
+    </figure>
+    <p class="fk-tags">ToB · 2026.05 至今 · 产品定义 / 信息架构 / 交互设计</p>
   </section>
-  <nav class="fk-nav" aria-label="方块案例章节"><a href="#origin">起点</a><a href="#product">产品全貌</a><a href="#companion">方块 IP</a><a href="#feedback">试用反馈</a><a href="#validation">验收与边界</a><a href="#deliverables">交付物</a></nav>
+  <nav class="fk-nav" aria-label="方块案例章节"><a href="#origin">起点</a><a href="#product">产品全貌</a><a href="#companion">桌面小方</a><a href="#feedback">反馈与取舍</a><a href="#deliverables">交付物</a></nav>
   <section class="fk-section fk-split" id="origin" aria-labelledby="fk-origin">
     <h2 class="fk-label" id="fk-origin">01 / 起点</h2><div class="fk-prose">
-      <p>做学校项目时，找一个重庆的防火间距要求，要同时翻三份文件——国标、地方规范、还有一个旧项目的图纸说明。每次都要重新找一遍。</p>
+      <p>在重庆市设计院实习时，我需要确认一个项目的防火间距要求，要同时翻三份文件——国标、地方规范、还有一个旧项目的图纸说明。每次都要重新找一遍。</p>
       <p>更麻烦的是，找到之后你不确定这条是否还适用：版本是不是最新的、有没有地方调整、之前项目是怎么处理的。三个问题，三个地方，一个下午可能就查了两三件事。</p>
-      <p class="fk-emphasis">方块想解决的不是"搜得更快"，是让你找到之后能判断这条资料能不能用。</p>
+      <p class="fk-emphasis">我把查找、阅读和来源核对放进同一个工作台，让找到的资料可以直接用于下一步设计讨论。</p>
     </div>
   </section>
   <section class="fk-section" id="product" aria-labelledby="fk-product">
@@ -33,15 +41,14 @@ const feedback = [['徐工 · 高级设计师','案例比较与方案线索','�
     <div class="fk-module" id="library">
       <div class="fk-module-heading"><span>01 / LIBRARY</span><h3>一座可以浏览的建筑资料馆</h3></div>
       <CaseImage name="library-detail" alt="方块建筑项目分类界面，呈现公开案例主图和资料信息" caption="建筑案例 · 主图与设计信息" />
-      <div class="fk-copy-grid"><p>目前收录 20 个公开建筑案例、8 项国家规范索引、8 项重庆政策索引，形成 36 条可查阅资料。每一条都保留主图、设计事实、核对日期和原始来源入口。</p><p>案例部分做了独立的中文研究摘要，不是原站文章的搬运。摘要和原文清楚分开——你看到的判断是我整理的，你要核实的，随时可以点回来源。</p></div>
+      <div class="fk-offset-copy"><p>每个案例配有中文研究摘要，先帮助读者了解设计做法。摘要与原文分开呈现，需要核实时，可以直接打开原始来源。</p></div>
       <div class="fk-project-wall">{projects.map(([key,title,architect,credit,url])=><div><CaseImage name={key} alt={`${title}建筑主图，${architect}设计，${credit}`} caption={title}/><p>{architect}<br/>{credit}</p><a href={url} target="_blank" rel="noreferrer">项目来源 ↗</a></div>)}</div>
       <div class="fk-offset-copy"><p>规范和政策按范围、大类、细类分层索引。标准号、文号、来源与版本信息一起保留。当前收录是查阅索引，核对日期与适用边界随资料显示。</p></div>
       <CaseImage name="taxonomy" alt="重庆政策分类索引，按范围、特色与更新大类和细分主题组织" caption="规范与政策 · 范围 / 大类 / 细分主题" />
     </div>
     <div class="fk-module" id="reading">
       <div class="fk-module-heading"><span>02 / READ & VERIFY</span><h3>看见项目，也看见它的出处</h3></div>
-      <div class="fk-reading"><CaseImage name="reading" alt="CopenHill 来源阅读页，包含项目主图、设计线索、档案信息与原始来源" caption="CopenHill · 来源阅读页" /><div class="fk-prose"><p>把主图、设计事实、核对日期与原始来源放在同一份档案中。以 CopenHill 为例：项目年份、面积、设计说明、立面做法，每条线索都标明来源，并可一键跳转 ArchDaily 原页。</p><p>2 份原始 PDF 合计 293 页，目录、分卷、页码与证据阅读在本机工作台中衔接。</p><p class="fk-note">来源阅读与本机阅读室分别展示；下图为固定响应验收环境，使用合成测试材料。</p></div></div>
-      <CaseImage name="large-reader" alt="本机阅读室固定响应验收界面，展示目录、页码与证据阅读，内容为合成测试材料" caption="本机阅读室 · 合成测试材料，非私人 PDF 或实时 AI 输出" />
+      <div class="fk-reading"><CaseImage name="reading" alt="CopenHill 来源阅读页，包含项目主图、设计线索、档案信息与原始来源" caption="CopenHill · 来源阅读页" /><div class="fk-prose"><p>把主图、设计事实、核对日期与原始来源放在同一份档案中。以 CopenHill 为例：项目年份、面积、设计说明、立面做法，每条线索都标明来源，并可一键跳转 ArchDaily 原页。</p><p>本机阅读室把目录、分卷和页码接在一起。从线索进入原文，再回到正在阅读的位置，减少反复翻找。</p></div></div>
     </div>
     <div class="fk-module" id="research">
       <div class="fk-module-heading"><span>03 / RESEARCH</span><h3>把读到的内容，留下自己的判断</h3></div>
@@ -51,38 +58,41 @@ const feedback = [['徐工 · 高级设计师','案例比较与方案线索','�
     </div>
     <div class="fk-module" id="annotation">
       <div class="fk-module-heading"><span>04 / ANNOTATION</span><h3>设计继续进行，讨论留在图纸旁边</h3></div>
-      <CaseImage name="annotation" alt="截图旁批交互示例，社区阅览室平面选区对应入口转折建议" caption="截图旁批 · 示意平面与预编写意见" />
-      <div class="fk-copy-grid"><p>设计过程中遇到局部问题——入口关系、流线、空间尺度——不用切出当前界面，主动截一张图、框选区域、补充问题，就能得到一条简短的旁批。</p><div><p>每条旁批围绕一个选区、一次一条建议。操作提示和依据按需展开，默认收起。保存后可以回到原图位置。</p><p class="fk-boundary">当前为预编写示例。真实视觉分析尚未接入。</p></div></div>
+      <CaseImage name="annotation" alt="截图旁批交互示例，社区阅览室平面选区对应入口转折建议" caption="截图旁批 · 交互设计示例" />
+      <div class="fk-copy-grid"><p>截图旁批围绕入口关系、流线和空间尺度等局部问题设计。交互从用户主动截图开始：框选区域、补充问题，再在图纸旁查看意见，让讨论始终对应到具体位置。</p><div><p>每条旁批围绕一个选区、一次一条建议。操作提示和依据按需展开，默认收起。保存后可以回到原图位置。</p></div></div>
     </div>
   </section>
   <section class="fk-section fk-companion" id="companion" aria-labelledby="fk-companion">
-    <h2 class="fk-label" id="fk-companion">03 / 方块 IP</h2>
-    <div class="fk-module-heading"><h3>方块不只是一个图标。</h3><p>它是工作台在桌面上的状态入口。核心判断是：AI 辅助不应该持续占用注意力。设计工作有自己的节奏，工具应该在需要时出现，不需要时收起来。</p></div>
-    <CaseImage name="ip-states" alt="方块 IP 四种状态并排：待命、查找中、已就绪、需处理" caption="基于产品实际几何与样式绘制的状态示意" flat />
-    <div class="fk-states">{states.map(([title,description],i)=><div><CaseImage name={`state-${i+1}`} alt={`方块 ${title} 状态：${description}`} flat/><h4><span>0{i+1}</span> {title}</h4><p>{description}</p></div>)}</div>
-    <aside class="fk-callout"><p>状态有边界：只同步状态，不同步问题原文。桌面上看到的是"有结果了"，不是"你在查什么"。</p><p>支持拖动、收起、置顶、托盘。重启电脑后需要打开一次方块——本阶段没有设置系统登录自启动，也未形成脱离工程依赖的完整安装包。</p></aside>
+    <h2 class="fk-label" id="fk-companion">03 / 桌面搭档小方</h2>
+    <div class="fk-module-heading"><h3>需要时，叫小方。</h3><p>给桌面搭档取名「小方」，沿用资料模块的方形轮廓。它负责传递工作台的状态，需要时展开，不需要时安静地待在一角，让画图和思考保持连贯。</p></div>
+    <CaseImage name="ip-states" alt="小方四种状态并排：待命、查找中、已就绪、需处理" caption="基于产品实际几何与样式绘制的状态示意" flat />
+    <div class="fk-states">{states.map(([title,description],i)=><div><CaseImage name={`state-${i+1}`} alt={`小方 ${title} 状态：${description}`} flat/><h4><span>0{i+1}</span> {title}</h4><p>{description}</p></div>)}</div>
+    <aside class="fk-callout"><p>状态有边界：只同步状态，不同步问题原文。桌面上看到的是"有结果了"，不是"你在查什么"。</p><p>支持拖动、收起、置顶与托盘。入口的位置由使用者决定，只有主动展开时才进入工作台。</p></aside>
   </section>
   <section class="fk-section" id="feedback" aria-labelledby="fk-feedback">
-    <h2 class="fk-label" id="fk-feedback">04 / 试用与反馈</h2><h3 class="fk-section-title">设计院同事参与试用，意见落实到界面。</h3>
-    <p class="fk-note">参与者与岗位由项目作者确认；以下为汇总转述，不是逐人访谈引语。</p>
-    <table class="fk-table"><thead><tr><th scope="col">岗位</th><th scope="col">任务场景</th><th scope="col">对应成果</th></tr></thead><tbody>{feedback.map(row=><tr>{row.map((cell,i)=>i===0?<th scope="row">{cell}</th>:<td>{cell}</td>)}</tr>)}</tbody></table>
-    <p class="fk-note">岗位任务为产品设计场景，尚未形成逐人任务记录。已开始试用交流，效率、成功率和满意度仍需结构化测量。</p>
-  </section>
-  <section class="fk-section" id="validation" aria-labelledby="fk-validation">
-    <h2 class="fk-label" id="fk-validation">05 / 验收与边界</h2>
-    <CaseImage name="qa" alt="验收结果：40/40 工程回归、20/20 项目主图、9 项资料检索冒烟检查" caption="2026.10.09 验收快照 · 工程检查不等于用户效果" flat />
-    <div class="fk-copy-grid"><p>40 / 40 工程回归通过：请求恢复 12/12、检索故障隔离 7/7、桌面状态 9/9、桌面启动 12/12。</p><p>20 / 20 项目主图通过检查。新增 9 项资料检索冒烟检查（公开案例、规范、政策各 3 项）。这些检查不等于问答准确率。</p></div>
-    <p class="fk-callout">尚待验证：真实模型认证恢复后的端到端问答、新版界面接入私库、不同岗位的任务完成率与耗时。</p>
+    <h2 class="fk-label" id="fk-feedback">04 / 使用反馈与取舍</h2>
+    <h3 class="fk-section-title">不同岗位，关心的是不同的问题。</h3>
+    <p class="fk-feedback-intro">方块已投入重庆市设计院使用。结合使用交流，我把问题归纳为三个岗位场景：参考是否有用、资料是否好找、依据是否可靠。</p>
+    <p class="fk-note">虚拟头像与岗位场景示意 · 根据交流中的问题归纳</p>
+    <div class="fk-feedback-grid">{feedback.map(([role,title,problem,response],i)=><article class="fk-feedback-card">
+      <div class="fk-feedback-person"><FeedbackAvatar variant={i}/><div><span>0{i+1} / 使用场景</span><h4>{role}</h4></div></div>
+      <h5>{title}</h5><p>{problem}</p>
+      <div class="fk-feedback-response"><span>对应调整</span><p>{response}</p></div>
+    </article>)}</div>
+    <div class="fk-decisions">
+      <div class="fk-decisions-heading"><span class="fk-label">PRODUCT DECISIONS</span><h3>先让资料可用，再考虑功能的多少。</h3></div>
+      <div class="fk-decision"><span class="fk-decision-status">优先调整 / 内容</span><div><h4>先补齐一个项目，再扩大资料量。</h4><p>完整主图、设计事实和来源入口，是判断参考价值的基础。我把这些内容放在同一份档案里，并区分研究摘要与原文。相比继续增加案例，先让读者看懂、查得到依据，更能支持方案讨论。</p></div></div>
+      <div class="fk-decision"><span class="fk-decision-status">优先调整 / 查找</span><div><h4>分类负责缩小范围，关键词负责定位。</h4><p>规范与政策各有自己的分类逻辑，不适合放进一张平铺列表。我保留范围、大类、细分主题，再加入分类内关键词查找；打开资料后返回，仍保留原来的分类和关键词。读到的线索可以进入研究夹，并保留回到来源的路径。</p></div></div>
+      <div class="fk-decision"><span class="fk-decision-status fk-decision-later">范围取舍 / 少打断</span><div><h4>保留主动调用，不增加持续提醒。</h4><p>画图时，提示多不等于帮助多。小方只显示工作状态，旁批按选区逐条展开，摘录也由使用者决定是否保留。这一版不把自动弹窗、整页建议和复杂的协作管理作为重点，优先照顾个人查阅与设计思考的连续性。</p></div></div>
+    </div>
   </section>
   <section class="fk-section" id="ownership" aria-labelledby="fk-ownership">
-    <h2 class="fk-label" id="fk-ownership">06 / 我的职责</h2>
-    <div class="fk-ownership"><CaseImage name="ending" alt="方块舒展并显示书签的结尾状态示意" flat/><div class="fk-copy-grid"><div><h3>我负责：</h3><ul><li>问题定义与产品定位</li><li>真实资料选择与组织</li><li>需求优先级、体验决策与验收</li></ul></div><p>工程实现与验证由 Claude Code、Codex 协作完成。<br/>我负责方向、取舍和最终验收判断。</p></div></div>
+    <h2 class="fk-label" id="fk-ownership">05 / 我的职责</h2>
+    <div class="fk-ownership"><CaseImage name="ending" alt="小方舒展并显示书签的结尾状态示意" flat/><div class="fk-copy-grid"><div><h3>我负责：</h3><ul><li>问题定义与产品定位</li><li>真实资料选择与组织</li><li>需求优先级、体验决策与验收</li></ul></div><p>工程实现与验证由 Claude Code、Codex 协作完成。<br/>我负责方向、取舍和最终验收判断。</p></div></div>
   </section>
   <section class="fk-section fk-handoff" id="deliverables" aria-labelledby="fk-deliverables">
     <h2 class="fk-label" id="fk-deliverables">随案例交付</h2>
     <ul class="fk-deliverables">
-      <li><span>在线演示（当前仅所有者访问）</span></li>
-      <li><a href="/downloads/fangkuai/fangkuai-product-case-study.pdf" target="_blank">12 张模块成果图 <span>PDF ↗</span></a></li>
       <li><span>精简 PRD 与可编辑正文</span><div><a href="/downloads/fangkuai/product-prd.pdf" target="_blank">PRD ↗</a><a href="/downloads/fangkuai/product-prd.md" download>Markdown ↓</a><a href="/downloads/fangkuai/case-copy.md" download>案例正文 ↓</a></div></li>
       <li><span>反馈记录与参考案例</span><div><a href="/downloads/fangkuai/feedback-evidence.md" download>反馈记录 ↓</a><a href="/downloads/fangkuai/references.md" download>参考案例 ↓</a></div></li>
       <li><span>原始界面截图与素材说明</span><div><a href="/downloads/fangkuai/fangkuai-portfolio-kit.zip" download>完整资料包 ↓</a><a href="/downloads/fangkuai/asset-sources.md" download>素材来源 ↓</a></div></li>

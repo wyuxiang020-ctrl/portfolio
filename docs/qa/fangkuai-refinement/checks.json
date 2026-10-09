@@ -1,0 +1,93 @@
+{
+  "release": "2026-10-10.2",
+  "checks": {
+    "build": "27 routes passed",
+    "links": "30 pages, no failures",
+    "desktop": {
+      "viewport": 1280,
+      "bodyPx": 16,
+      "overflow": false
+    },
+    "mobile": {
+      "viewport": 375,
+      "bodyPx": 15,
+      "overflow": false,
+      "feedbackColumns": 1
+    },
+    "feedbackAvatars": 3,
+    "removedStats": true,
+    "removedValidationSection": true,
+    "coverGallery": "opens, 17 images",
+    "sourceNote": "Deployment status supplied by the user; role cards are virtual personas and grouped needs, not interview quotations."
+  },
+  "images": [
+    {
+      "path": "/images/fangkuai/fangkuai-annotation.png",
+      "bytes": 15487200
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-copenhill.png",
+      "bytes": 3843212
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-ending.png",
+      "bytes": 13698756
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-excerpt.png",
+      "bytes": 10805036
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-ip-states.png",
+      "bytes": 8538042
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-jingdezhen-kiln.png",
+      "bytes": 5143722
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-library-detail.png",
+      "bytes": 2906311
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-lochal-library.png",
+      "bytes": 3710948
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-reading.png",
+      "bytes": 2334749
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-research-folder.png",
+      "bytes": 10805036
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-state-1.png",
+      "bytes": 15655717
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-state-2.png",
+      "bytes": 15649716
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-state-3.png",
+      "bytes": 15649716
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-state-4.png",
+      "bytes": 15649716
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-tank-shanghai.png",
+      "bytes": 3519498
+    },
+    {
+      "path": "/images/fangkuai/fangkuai-taxonomy.png",
+      "bytes": 10805036
+    },
+    {
+      "path": "/media/knowledge-2026/cover-editorial.png",
+      "bytes": 2141182
+    }
+  ]
+}
