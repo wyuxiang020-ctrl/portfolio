@@ -3,6 +3,7 @@ import '../styles/home.css';
 import '../styles/editorial.css';
 import '../styles/portrait-home.css';
 import '../styles/personal-story.css';
+import '../styles/footer-contact.css';
 import { profile } from '../data/profile';
 import TransitionBoot from '../components/TransitionBoot.astro';
 import TransitionLayer from '../components/TransitionLayer.astro';
@@ -29,7 +30,11 @@ const links = [{href:'/work/',label:'作品'},{href:'/about/',label:'关于'},{h
   <button class="floating-menu fill-button" data-menu-toggle data-magnetic data-page-region aria-label="打开导航" aria-haspopup="dialog" aria-controls="navigation-dialog" aria-expanded="false" hidden><span class="hamburger" aria-hidden="true"><i></i><i></i></span></button>
   <main id="main-content" tabindex="-1" data-page-region><slot/></main>
   <footer class="footer" data-page-region><div class="shell">
-    {!contact && <div class="footer-invite"><div><p class="footer-label">联系 / SAY HELLO</p><h2><span class="footer-title-line"><span class="footer-avatar"><img src="/images/yuxiang-portrait-railing-v4.webp" alt="" width="1024" height="1536" loading="lazy"/></span><span data-line-reveal>期待您的联系</span></span></h2></div><a class="fill-button circle" href="/contact/" data-magnetic><span>邮件</span></a></div>}
+    {!contact && <>
+      <div class="footer-invite"><div><p class="footer-label">联系 / SAY HELLO</p><h2><span class="footer-title-line"><span class="footer-avatar"><img src="/images/yuxiang-portrait-railing-v4.webp" alt="" width="1024" height="1536" loading="lazy"/></span><span data-line-reveal>期待您的联系</span></span></h2></div><span class="footer-invite-arrow" aria-hidden="true">↙</span></div>
+      <div class="footer-contact-rule"><a class="fill-button circle footer-contact-cta" href="/contact/" data-magnetic><span>联系我</span></a></div>
+      <div class="footer-contact-details"><a class="fill-button pill" href={`mailto:${profile.email}`}><span>{profile.email}</span></a><a class="fill-button pill" href={`tel:+86${profile.phone}`}><span>{profile.phoneDisplay}</span></a></div>
+    </> }
     <div class="footer-bottom"><span>© 2026 王誉翔</span><a href={profile.resumePdf}>简历 PDF ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a><a class="back-top" href="#main-content">回到顶部 ↑</a></div>
   </div></footer>
   <dialog id="navigation-dialog" aria-label="导航"><button class="menu-close" aria-label="关闭导航" autofocus><span aria-hidden="true"></span></button><div class="menu-top"><span>导航 / NAVIGATION</span></div><nav aria-label="展开导航">{[{href:'/',label:'首页'},...links].map(link=><a href={link.href} aria-current={Astro.url.pathname===link.href?'page':undefined}><span>{link.label}</span></a>)}</nav><div class="menu-bottom"><span>继续了解 / EXPLORE</span><div><a href="/resume/">完整简历 ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></div></dialog>

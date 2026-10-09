@@ -1,0 +1,72 @@
+[
+  {
+    "file": "before.png",
+    "bytes": 1120591,
+    "width": 415,
+    "height": 899,
+    "pixels_identical": true
+  },
+  {
+    "file": "equipment.png",
+    "bytes": 1621191,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "home.png",
+    "bytes": 1757910,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "meal-preview.png",
+    "bytes": 1355227,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "panda-design.png",
+    "bytes": 1343155,
+    "width": 1536,
+    "height": 1024,
+    "pixels_identical": true
+  },
+  {
+    "file": "panda-rest.png",
+    "bytes": 1495718,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "progress.png",
+    "bytes": 1255267,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "scan.png",
+    "bytes": 1628854,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "teaching.png",
+    "bytes": 1416516,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  },
+  {
+    "file": "training.png",
+    "bytes": 1538694,
+    "width": 780,
+    "height": 1760,
+    "pixels_identical": true
+  }
+]

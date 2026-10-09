@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-10.3",
+  "version": "2026-10-10.4",
   "site": "yuxiangworks.com",
   "edition": "unified-product-and-architecture",
   "portrait": "/images/yuxiang-portrait-railing-v4.webp",
@@ -29,8 +29,10 @@
     "fangkuai-four-ip-states",
     "fangkuai-outcomes-and-product-decisions",
     "gym-author-provided-case-copy",
-    "gym-six-replaceable-image-slots",
     "lighter-project-body-type",
-    "fangkuai-lossless-image-compression"
+    "fangkuai-lossless-image-compression",
+    "gym-original-images-restored",
+    "home-author-statement",
+    "footer-contact-details"
   ]
 }

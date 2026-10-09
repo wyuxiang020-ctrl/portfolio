@@ -83,6 +83,7 @@ const feedback = [
     <h2 class="gc-kicker" id="gym-feedback">03 / 用户反馈与迭代</h2>
     <p class="gc-section-lead">来自同学、朋友的试用反馈，以及我自己的使用记录。</p>
     <p class="gc-note">以下为作者汇总转述，不是逐人访谈引语，也不代表正式访谈样本数。</p>
+    <div class="gc-feedback-images"><GymImage name="gym-comparison" alt="训练首页调整前后对照" /></div>
     <table class="gc-feedback"><thead><tr><th scope="col">反馈</th><th scope="col">对应调整</th><th scope="col">结果</th></tr></thead><tbody>{feedback.map(([issue,change,result])=><tr><th scope="row" data-label="反馈">{issue}</th><td data-label="对应调整">{change}</td><td data-label="结果">{result}</td></tr>)}</tbody></table>
     <p class="gc-feedback-closing">我是怎样推进的：梳理现场问题 → 确定优先级 → 推进实际实现 → 看结果再调整。新手确认器械、固定计划训练、事后补记饮食是设计情境，不能当作真实受访者。</p>
   </section>
