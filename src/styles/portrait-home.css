@@ -27,7 +27,7 @@
 .footer-curve{height:clamp(60px,8vw,125px);background:var(--ink);overflow:hidden;margin-bottom:-1px;position:relative}
 .footer-curve svg{display:block;width:100%;height:100%}.footer-curve path{fill:var(--paper)}
 .home-page .footer{padding-top:60px;overflow:hidden}.home-page .footer>.shell{transform:translateY(var(--footer-shift,0px))}
-.footer .footer-invite h2{max-width:none;font-size:clamp(38px,5.4vw,76px);line-height:1.32;letter-spacing:-.025em}
+.footer .footer-invite h2{max-width:none;font-size:clamp(30px,3.6vw,50px);line-height:1.32;letter-spacing:-.025em}
 .footer-invite h2>span{display:block}.footer-invite h2>.footer-title-line{display:flex;align-items:center;gap:23px}
 .footer-avatar{display:inline-block;width:.95em;height:.95em;border-radius:50%;overflow:hidden;background:var(--hero,#d8d9db);flex-shrink:0;position:relative}
 .footer-avatar img{width:220%;max-width:none;height:auto;position:absolute;left:-58%;top:-5%;mix-blend-mode:multiply}
@@ -44,7 +44,7 @@
  .portrait-center{width:calc(100% + 40px);height:565px;bottom:-55px;left:44%}
  .portrait-scroll{bottom:19px;left:0;font-size:10px;gap:12px}
  .home-page .introduction{grid-template-columns:1fr;padding:60px 0 52px;gap:28px}.home-page .intro-copy>p{font-size:21px;line-height:1.9}.home-page .intro-aside{padding:0}.home-page .intro-aside>p{font-size:13px}.home-page .intro-aside .circle{width:92px;height:92px;margin:0;font-size:13px}
- .footer .footer-invite h2{font-size:34px}.footer-invite h2>.footer-title-line{gap:12px}.footer-invite>div{max-width:100%}.footer-invite{align-items:flex-start;flex-direction:column;gap:28px}.footer-invite>.circle{align-self:flex-end;margin-top:-25px}.home-page .footer{padding-top:35px}
+ .footer .footer-invite h2{font-size:28px}.footer-invite h2>.footer-title-line{gap:12px}.footer-invite>div{max-width:100%}.footer-invite{align-items:flex-start;flex-direction:column;gap:28px}.footer-invite>.circle{align-self:flex-end;margin-top:-25px}.home-page .footer{padding-top:35px}
 }
 @media(max-width:370px){.portrait-name h1{font-size:51px}.portrait-position{font-size:17px}.home-page .intro-copy>p{font-size:19px}}
 @media(prefers-reduced-motion:reduce){.home-enter-pending [data-hero-enter]{opacity:1}.scroll-motion [data-reveal-line]{color:var(--ink);background:none}.scroll-motion [data-scroll-reveal]{opacity:1;transform:none}.home-page .footer>.shell{transform:none}}

@@ -64,5 +64,5 @@ const marqueeButton = document.querySelector<HTMLButtonElement>('[data-marquee-t
 marqueeButton?.addEventListener('click', () => {
   const paused = document.querySelector('.hero-marquee')?.classList.toggle('is-paused') || false;
   marqueeButton.setAttribute('aria-pressed', String(paused));
-  marqueeButton.textContent = paused ? '继续文字移动' : '暂停文字移动';
+  marqueeButton.setAttribute('aria-label', paused ? '继续文字移动' : '暂停文字移动');
 });

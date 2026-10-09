@@ -13,7 +13,7 @@ export const profile = {
   language: 'IELTS 6.5',
   website: 'https://yuxiangworks.com/',
   portrait: '/images/yuxiang-portrait.jpg',
-  resumePdf: '/downloads/yuxiang-wang-resume.pdf',
+  resumePdf: '/downloads/yuxiang-wang-resume-2026-10-09.pdf',
   originalResumePdf: '/downloads/yuxiang-wang-resume-original-2026-10-02.pdf',
   sourceUpdated: '2026.10.09',
   education: [

@@ -4,21 +4,12 @@ const button = document.querySelector<HTMLButtonElement>('[data-color-button]');
 const status = document.querySelector<HTMLElement>('[data-color-status]');
 let color = 0;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-const autoButton = document.querySelector<HTMLButtonElement>('[data-color-auto]');
-let paused = reduced.matches;
 function changeColor(announce = false) {
   color = (color + 1) % palette.length;
   document.querySelector<HTMLElement>('.story-page')?.style.setProperty('--story-accent', palette[color]);
   if (announce && status) status.textContent = `现在是${names[color]}，再点一下换色`;
 }
-function syncButton() {
-  autoButton?.setAttribute('aria-pressed', String(paused));
-  if (autoButton) autoButton.textContent = paused ? '自动变色' : '暂停变色';
-}
 button?.addEventListener('click', () => { changeColor(true); });
-autoButton?.addEventListener('click', () => { paused = !paused; syncButton(); });
-reduced.addEventListener('change', () => { paused = reduced.matches; syncButton(); });
-syncButton();
 window.setInterval(() => {
-  if (!paused && !document.hidden && button && button.getBoundingClientRect().bottom > 0 && button.getBoundingClientRect().top < innerHeight) changeColor();
+  if (!reduced.matches && !document.hidden && button && button.getBoundingClientRect().bottom > 0 && button.getBoundingClientRect().top < innerHeight) changeColor();
 }, 5000);
