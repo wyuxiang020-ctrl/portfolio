@@ -1,7 +1,7 @@
 {
-  "version": "2026-10-09.2",
+  "version": "2026-10-09.3",
   "site": "yuxiangworks.com",
   "edition": "unified-product-and-architecture",
   "portrait": "/images/yuxiang-portrait-railing-v4.webp",
-  "features": ["multilingual-intro", "project-filters", "pointer-project-preview", "light-project-pages", "chinese-editorial-type", "direct-product-copy"]
+  "features": ["multilingual-intro", "project-filters", "pointer-project-preview", "light-project-pages", "chinese-editorial-type", "centered-portrait", "hero-slide-entrance", "scroll-text-reveal", "scroll-footer-curve"]
 }

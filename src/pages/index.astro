@@ -13,28 +13,29 @@ const featured = [
 ];
 ---
 <PortfolioLayout home>
-  <div class="hero-band"><section class="hero shell" aria-labelledby="hero-title">
-    <div class="hero-identity">
-      <p class="hero-role"><span></span> AI 产品经理 / 产品策划</p>
-      <h1 id="hero-title">王誉翔<span>Yuxiang Wang</span></h1>
-      <p class="hero-statement">关注 AI 知识工具<br/>与个人效率应用。</p>
-      <div class="hero-education">
-        <p>曼彻斯特大学 / 曼彻斯特建筑学院<small>建筑与适应性再利用 · 硕士在读 · 预计 2026.10 毕业</small></p>
-        <p>四川美术学院<small>建筑学学士 · 专业排名 1 / 50</small></p>
-      </div>
-      <a class="hero-work-link" href="/work/">查看作品 <span aria-hidden="true">↗</span></a>
+  <div class="hero-band"><section class="portrait-hero shell" aria-labelledby="hero-title">
+    <div class="portrait-center" data-hero-enter><img src="/images/yuxiang-portrait-railing-v4.webp" alt="王誉翔倚靠浅色栏杆的半身人像" width="1024" height="1536" loading="eager" fetchpriority="high" decoding="async" /></div>
+    <div class="portrait-name" data-hero-enter>
+      <p class="portrait-kicker">个人作品集 / 2026</p>
+      <h1 id="hero-title">王誉翔</h1>
+      <p class="portrait-english" lang="en">Yuxiang Wang</p>
+      <a class="portrait-work" href="/work/">查看作品 <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="portrait-space"><img class="hero-portrait" src="/images/yuxiang-portrait-railing-v4.webp" alt="王誉翔倚靠浅色栏杆的半身人像" width="1024" height="1536" loading="eager" fetchpriority="high" decoding="async" /></div>
-    <div class="hero-bottom"><span>产品定义 / 用户流程 / AI 交互 / 评测迭代</span><span>PORTFOLIO / 2026</span></div>
+    <div class="portrait-details" data-hero-enter>
+      <span class="portrait-arrow" aria-hidden="true">↘</span>
+      <p class="portrait-position"><small>求职方向</small>AI 产品经理<br/>产品策划</p>
+      <div class="portrait-schools"><p>曼彻斯特大学<br/>曼彻斯特建筑学院<small>硕士在读 · 预计 2026.10 毕业</small></p><p>四川美术学院<small>建筑学学士 · 专业排名 1 / 50</small></p></div>
+    </div>
+    <a class="portrait-scroll" href="#home-introduction" aria-label="向下浏览个人介绍"><span>向下浏览</span><span aria-hidden="true">↓</span></a>
   </section></div>
-  <section class="introduction content-shell" aria-label="关于入口">
-    <div class="intro-copy"><span class="section-kicker">最近在做 / CURRENTLY</span><p>最近在做两个 AI 产品：<br/>知识助手和健身记录工具。</p></div>
-    <div class="intro-aside"><p>项目里记录了功能怎么定、原型怎么做，以及测试后改了什么。你可以从下面的项目开始看。</p><a class="fill-button circle" href="/about/" data-magnetic><span>关于我 ↗</span></a></div>
+  <section id="home-introduction" class="introduction content-shell" aria-label="关于入口">
+    <div class="intro-copy"><p class="scroll-copy"><span data-reveal-line>理解人的需求，</span><span data-reveal-line>也关心想法如何落地。</span><span data-reveal-line>在产品与建筑中，寻找具体的答案。</span></p></div>
+    <div class="intro-aside" data-scroll-reveal><p>建筑训练让我习惯观察人与环境的关系；现在，我把这种思考带入 AI 产品，用清晰的流程与可验证的反馈，把复杂问题变成可用的体验。</p><a class="fill-button circle" href="/about/" data-magnetic><span>关于我 ↗</span></a></div>
   </section>
   <section class="home-products content-shell" aria-labelledby="products-title">
     <h2 id="products-title" class="section-kicker">项目实践 <span>PRODUCT & ARCHITECTURE / 02</span></h2>
     <div class="feature-grid">
-      {featured.map(project=><article class:list={['feature-card',project.category]}>
+      {featured.map(project=><article class:list={['feature-card',project.category]} data-scroll-reveal>
         <a href={project.href} aria-label={'查看'+project.title}>
           <div class="feature-image" data-project-preview><OptimizedImage src={project.image} alt={project.title+'项目展示'} gallery={false} sizes="(max-width:760px) 90vw, 45vw" loading="lazy"/><span class="feature-view" aria-hidden="true">查看</span></div>
           <div class="feature-title"><h3>{project.title}</h3><span aria-hidden="true">↗</span></div>
@@ -46,4 +47,6 @@ const featured = [
     </div>
     <div class="more-work"><a class="fill-button pill" href="/work/" data-magnetic><span>全部作品<sup>{total}</sup></span></a></div>
   </section>
+  <div class="footer-curve" aria-hidden="true"><svg viewBox="0 0 1000 100" preserveAspectRatio="none"><path data-footer-curve d="M0 0 H1000 V0 Q500 190 0 0 Z"/></svg></div>
+  <script src="../scripts/home-motion.ts"></script>
 </PortfolioLayout>

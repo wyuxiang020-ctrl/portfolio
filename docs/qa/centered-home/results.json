@@ -1,0 +1,12 @@
+{
+  "date":"2026-10-09",
+  "version":"2026-10-09.3",
+  "reference":"https://dennissnellenberg.com/",
+  "scope":"Centered portrait hero, reduced side information, staged slide entrance after greeting/route transition, restored introduction per latest request, scroll-driven text color reveal, changing footer curve and avatar heading.",
+  "desktop": {"horizontalOverflow":false,"heroPendingCleared":true,"portraitCentered":true,"backgroundBlended":true},
+  "mobile390": {"horizontalOverflow":false,"photoEdgesBlended":true,"nameAndRoleSeparated":true,"menuOpen":true},
+  "scroll": {"lineProgressBefore":["0%","0%","0%"],"lineProgressMiddle":["116%","96.57%","73.75%"],"lineProgressAfter":["116%","116%","116%"],"curveControlBefore":190,"curveControlDuring":54.5199,"footerShiftDuring":12.9126},
+  "navigation":"Home to work to home via native links passed; no console errors.",
+  "fallbacks":"Reduced-motion and print styles show full text; static no-JS defaults preserve content. These fallbacks reviewed in source, not browser-emulated.",
+  "screenshots":["desktop.jpg","mobile.jpg","footer.jpg"]
+}

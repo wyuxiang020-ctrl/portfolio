@@ -1,6 +1,7 @@
 ---
 import '../styles/home.css';
 import '../styles/editorial.css';
+import '../styles/portrait-home.css';
 import { profile } from '../data/profile';
 import TransitionBoot from '../components/TransitionBoot.astro';
 import TransitionLayer from '../components/TransitionLayer.astro';
@@ -13,7 +14,7 @@ const links = [{href:'/work/',label:'作品'},{href:'/about/',label:'关于'},{h
   <title>{title}</title><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:url" content={new URL(Astro.url.pathname,Astro.site)}/><link rel="canonical" href={new URL(Astro.url.pathname,Astro.site)}/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
   <TransitionBoot/>
   {home && <script is:inline>
-    (() => {let seen=false;try{seen=sessionStorage.getItem('yuxiang-intro-v2-seen')==='1';}catch{}
+    (() => {if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('home-enter-pending');window.setTimeout(()=>document.documentElement.classList.remove('home-enter-pending'),7000);}let seen=false;try{seen=sessionStorage.getItem('yuxiang-intro-v2-seen')==='1';}catch{}
       if(!seen&&!location.hash&&!document.documentElement.classList.contains('nav-arriving')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
         document.documentElement.classList.add('intro-pending');
         document.documentElement.dataset.introTimer=String(setTimeout(()=>{document.documentElement.classList.remove('intro-pending');document.querySelectorAll('[data-page-region]').forEach(el=>el.inert=false);},6000));
@@ -27,7 +28,7 @@ const links = [{href:'/work/',label:'作品'},{href:'/about/',label:'关于'},{h
   <button class="floating-menu fill-button" data-menu-toggle data-magnetic data-page-region aria-label="打开导航" aria-haspopup="dialog" aria-controls="navigation-dialog" aria-expanded="false" hidden><span class="hamburger" aria-hidden="true"><i></i><i></i></span></button>
   <main id="main-content" tabindex="-1" data-page-region><slot/></main>
   <footer class="footer" data-page-region><div class="shell">
-    {!contact && <div class="footer-invite"><div><p class="footer-label">联系 / CONTACT</p><h2>聊聊产品与工作机会。</h2></div><a class="fill-button circle" href="/contact/" data-magnetic><span>联系我 ↗</span></a></div>}
+    {!contact && <div class="footer-invite"><div><p class="footer-label">联系 / CONTACT</p><h2><span class="footer-title-line"><span class="footer-avatar"><img src="/images/yuxiang-portrait-railing-v4.webp" alt="" width="1024" height="1536" loading="lazy"/></span>聊聊产品，</span><span>保持联系。</span></h2></div><a class="fill-button circle" href="/contact/" data-magnetic><span>联系我 ↗</span></a></div>}
     <div class="footer-bottom"><span>© 2026 王誉翔</span><a href={profile.resumePdf}>简历 PDF ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a><a class="back-top" href="#main-content">回到顶部 ↑</a></div>
   </div></footer>
   <dialog id="navigation-dialog" aria-label="导航"><button class="menu-close" aria-label="关闭导航" autofocus><span aria-hidden="true"></span></button><div class="menu-top"><span>导航 / NAVIGATION</span></div><nav aria-label="展开导航">{[{href:'/',label:'首页'},...links].map(link=><a href={link.href} aria-current={Astro.url.pathname===link.href?'page':undefined}><span>{link.label}</span></a>)}</nav><div class="menu-bottom"><span>继续了解 / EXPLORE</span><div><a href="/resume/">完整简历 ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></div></dialog>
