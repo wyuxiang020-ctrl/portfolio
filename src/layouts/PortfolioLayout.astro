@@ -1,5 +1,6 @@
 ---
 import '../styles/home.css';
+import '../styles/editorial.css';
 import { profile } from '../data/profile';
 import TransitionBoot from '../components/TransitionBoot.astro';
 import TransitionLayer from '../components/TransitionLayer.astro';
@@ -26,8 +27,8 @@ const links = [{href:'/work/',label:'作品'},{href:'/about/',label:'关于'},{h
   <button class="floating-menu fill-button" data-menu-toggle data-magnetic data-page-region aria-label="打开导航" aria-haspopup="dialog" aria-controls="navigation-dialog" aria-expanded="false" hidden><span class="hamburger" aria-hidden="true"><i></i><i></i></span></button>
   <main id="main-content" tabindex="-1" data-page-region><slot/></main>
   <footer class="footer" data-page-region><div class="shell">
-    {!contact && <div class="footer-invite"><h2>一起，让产品更进一步。</h2><a class="fill-button circle" href="/contact/" data-magnetic><span>联系我 ↗</span></a></div>}
-    <div class="footer-bottom"><span>© 2026 王誉翔</span><a href={profile.resumePdf}>简历 PDF ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a>{home && <button id="replay-intro">重看开场 ↗</button>}<a class="back-top" href="#main-content">回到顶部 ↑</a></div>
+    {!contact && <div class="footer-invite"><div><p class="footer-label">联系 / CONTACT</p><h2>聊聊产品与工作机会。</h2></div><a class="fill-button circle" href="/contact/" data-magnetic><span>联系我 ↗</span></a></div>}
+    <div class="footer-bottom"><span>© 2026 王誉翔</span><a href={profile.resumePdf}>简历 PDF ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a><a class="back-top" href="#main-content">回到顶部 ↑</a></div>
   </div></footer>
   <dialog id="navigation-dialog" aria-label="导航"><button class="menu-close" aria-label="关闭导航" autofocus><span aria-hidden="true"></span></button><div class="menu-top"><span>导航 / NAVIGATION</span></div><nav aria-label="展开导航">{[{href:'/',label:'首页'},...links].map(link=><a href={link.href} aria-current={Astro.url.pathname===link.href?'page':undefined}><span>{link.label}</span></a>)}</nav><div class="menu-bottom"><span>继续了解 / EXPLORE</span><div><a href="/resume/">完整简历 ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></div></dialog>
   <div class="project-cursor" aria-hidden="true"><span>查看</span></div>

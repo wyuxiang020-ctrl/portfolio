@@ -8,8 +8,8 @@ const hearth = architecture.find(project => project.id === 'grandmothers-hearth'
 const knowledge = projects[0];
 const total = 2 + architecture.length;
 const featured = [
-  { title: knowledge.title, href: knowledge.href, image: knowledge.image, category: 'product', label: 'AI 产品 / RAG · 知识检索', description: '用自然语言查找建筑资料，从回答中的引用回到原文。让每个判断，有据可查。', date: '2026.05 — 08 · 持续迭代', note: '本人主导 · 本地 MVP · 封面为合成演示界面' },
-  { title: '祖母的火塘', href: '/architecture/grandmothers-hearth/', image: hearth.data.coverImage, category: 'architecture', label: '建筑 / 适应性再利用', description: '从泸沽湖的真实走访出发，以火塘与院落为线索，探索家庭生活与访客体验的柔性平衡。', date: hearth.data.year + ' · 设计项目', note: '合作设计 / 王誉翔 × 刘涵' },
+  { title: knowledge.title, href: knowledge.href, image: knowledge.image, category: 'product', label: 'AI 产品 / RAG · 知识检索', description: '向项目资料提问，查看回答引用的出处，再回到 PDF 核对原文。资料不够时，明确提示无法回答。', date: '2026.05 — 至今 · 持续迭代', note: '本人主导 · 本地 MVP · 封面为合成演示界面' },
+  { title: '祖母的火塘', href: '/architecture/grandmothers-hearth/', image: hearth.data.coverImage, category: 'architecture', label: '建筑 / 适应性再利用', description: '泸沽湖走访后的住宅改造设计：保留围绕火塘的家庭生活，为居民和访客安排各自的活动空间。', date: hearth.data.year + ' · 设计项目', note: '合作设计 / 王誉翔 × 刘涵' },
 ];
 ---
 <PortfolioLayout home>
@@ -17,19 +17,19 @@ const featured = [
     <div class="hero-identity">
       <p class="hero-role"><span></span> AI 产品经理 / 产品策划</p>
       <h1 id="hero-title">王誉翔<span>Yuxiang Wang</span></h1>
-      <p class="hero-statement">理解真实需求，<br/>让 AI 成为可用的产品。</p>
+      <p class="hero-statement">关注 AI 知识工具<br/>与个人效率应用。</p>
       <div class="hero-education">
         <p>曼彻斯特大学 / 曼彻斯特建筑学院<small>建筑与适应性再利用 · 硕士在读 · 预计 2026.10 毕业</small></p>
         <p>四川美术学院<small>建筑学学士 · 专业排名 1 / 50</small></p>
       </div>
       <a class="hero-work-link" href="/work/">查看作品 <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="portrait-space"><img class="hero-portrait" src="/images/yuxiang-portrait-selected-v3.jpg" alt="王誉翔的半身人像" width="1021" height="1540" loading="eager" fetchpriority="high" decoding="async" /></div>
+    <div class="portrait-space"><img class="hero-portrait" src="/images/yuxiang-portrait-railing-v4.webp" alt="王誉翔倚靠浅色栏杆的半身人像" width="1024" height="1536" loading="eager" fetchpriority="high" decoding="async" /></div>
     <div class="hero-bottom"><span>产品定义 / 用户流程 / AI 交互 / 评测迭代</span><span>PORTFOLIO / 2026</span></div>
   </section></div>
   <section class="introduction content-shell" aria-label="关于入口">
-    <p>理解人的需求，<br/>也关心想法如何落地。<br/>在产品与建筑中，寻找具体的答案。</p>
-    <div class="intro-aside"><p>建筑训练让我习惯观察人与环境的关系；现在，我把这种思考带入 AI 产品，用清晰的流程与可验证的反馈，把复杂问题变成可用的体验。</p><a class="fill-button circle" href="/about/" data-magnetic><span>关于我 ↗</span></a></div>
+    <div class="intro-copy"><span class="section-kicker">最近在做 / CURRENTLY</span><p>最近在做两个 AI 产品：<br/>知识助手和健身记录工具。</p></div>
+    <div class="intro-aside"><p>项目里记录了功能怎么定、原型怎么做，以及测试后改了什么。你可以从下面的项目开始看。</p><a class="fill-button circle" href="/about/" data-magnetic><span>关于我 ↗</span></a></div>
   </section>
   <section class="home-products content-shell" aria-labelledby="products-title">
     <h2 id="products-title" class="section-kicker">项目实践 <span>PRODUCT & ARCHITECTURE / 02</span></h2>

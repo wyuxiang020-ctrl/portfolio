@@ -3,14 +3,12 @@ if(root.dataset.introTimer){clearTimeout(Number(root.dataset.introTimer));delete
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const pointer=matchMedia('(hover: hover) and (pointer: fine)');
 const greeting=document.querySelector<HTMLElement>('#greeting');
-const replay=document.querySelector<HTMLButtonElement>('#replay-intro');
 const regions=[...document.querySelectorAll<HTMLElement>('[data-page-region]')];
-let timers:number[]=[];let replaying=false;
-function finishIntro(){timers.forEach(clearTimeout);timers=[];root.classList.remove('intro-pending');regions.forEach(el=>el.inert=false);try{sessionStorage.setItem('yuxiang-intro-v2-seen','1');}catch{}if(replaying){document.querySelector<HTMLElement>('main')?.focus({preventScroll:true});replaying=false;}}
-function startIntro(fromReplay=false){
+let timers:number[]=[];
+function finishIntro(){timers.forEach(clearTimeout);timers=[];root.classList.remove('intro-pending');regions.forEach(el=>el.inert=false);try{sessionStorage.setItem('yuxiang-intro-v2-seen','1');}catch{}}
+function startIntro(){
   if(!greeting||reduced.matches)return;
-  timers.forEach(clearTimeout);timers=[];replaying=fromReplay;
-  if(fromReplay)window.scrollTo({top:0,behavior:'instant'});
+  timers.forEach(clearTimeout);timers=[];
   greeting.textContent='Hello';greeting.lang='en';
   regions.forEach(el=>el.inert=true);root.classList.add('intro-pending');
   // Hold the first and last greetings; keep the middle seven brisk.
@@ -18,9 +16,8 @@ function startIntro(fromReplay=false){
   timers.push(window.setTimeout(finishIntro,2700));
 }
 if(root.classList.contains('intro-pending'))startIntro();
-replay?.addEventListener('click',()=>startIntro(true));if(replay)replay.hidden=reduced.matches;
 document.addEventListener('keydown',e=>{if(root.classList.contains('intro-pending')&&['Escape','Enter','Tab'].includes(e.key))finishIntro();});
-reduced.addEventListener('change',()=>{if(replay)replay.hidden=reduced.matches;if(reduced.matches)finishIntro();});
+reduced.addEventListener('change',()=>{if(reduced.matches)finishIntro();});
 const filters=[...document.querySelectorAll<HTMLButtonElement>('[data-filter]')];
 const cards=[...document.querySelectorAll<HTMLElement>('[data-category]')];
 filters.forEach(button=>button.addEventListener('click',()=>{const value=button.dataset.filter;filters.forEach(el=>{el.classList.toggle('active',el===button);el.setAttribute('aria-pressed',String(el===button));});cards.forEach(card=>card.hidden=value!=='all'&&card.dataset.category!==value);const status=document.querySelector('#filter-status');if(status)status.textContent=cards.filter(card=>!card.hidden).length+' 个'+(value==='product'?'产品':value==='architecture'?'建筑':'')+'项目';}));

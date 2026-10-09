@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/project-light.css';
+import '../styles/editorial.css';
 import Gallery from '../components/Gallery.astro';
 import TransitionBoot from '../components/TransitionBoot.astro';
 import TransitionLayer from '../components/TransitionLayer.astro';
@@ -38,7 +39,7 @@ const canonical = new URL(path, Astro.site);
       <nav id="mobile-nav" class="mobile-nav" aria-label="手机导航" hidden>{links.map(link=><a href={link.href} aria-current={path.startsWith(link.href)?'page':undefined}>{link.label}</a>)}<a href="/contact/">联系 ↗</a></nav>
     </header>
     <main id="main-content" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><a href="/">{profile.name} <span lang="en">{profile.enName.toUpperCase()}</span></a><p>从空间中的问题，到可以验证的产品。</p><div><a href="/resume/">完整简历 ↗</a><a href="/contact/">联系我 ↗</a><a href="#main-content">回到顶部 ↑</a></div><small>© 2026 {profile.name}</small></footer>
+    <footer class="site-footer"><a href="/">{profile.name} <span lang="en">{profile.enName.toUpperCase()}</span></a><p>AI 产品项目与建筑设计作品</p><div><a href="/resume/">完整简历 ↗</a><a href="/contact/">联系我 ↗</a><a href="#main-content">回到顶部 ↑</a></div><small>© 2026 {profile.name}</small></footer>
     <Gallery />
     <TransitionLayer />
     <script>

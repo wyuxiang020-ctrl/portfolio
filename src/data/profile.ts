@@ -2,7 +2,7 @@
 export const profile = {
   name: '王誉翔',
   enName: 'Yuxiang Wang',
-  tagline: '具有建筑与空间设计背景的 AI 产品实践者',
+  tagline: '关注知识检索与个人效率工具的 AI 产品实践者',
   role: 'AI 产品经理 / 产品策划',
   direction: 'AI 产品',
   email: 'm17347819733@163.com',

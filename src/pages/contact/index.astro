@@ -3,7 +3,7 @@ import PortfolioLayout from '../../layouts/PortfolioLayout.astro';
 import { profile } from '../../data/profile';
 ---
 <PortfolioLayout title="联系 — 王誉翔" contact>
-  <section class="contact-page content-shell"><header class="page-heading"><p class="section-kicker">联系 / CONTACT</p><h1>从一次交流，<br/>开始下一步。</h1><p class="page-intro">欢迎交流 AI 产品经理 / 产品策划机会，<br/>也欢迎关于项目、设计与 AI 应用的讨论。</p></header>
+  <section class="contact-page content-shell"><header class="page-heading"><p class="section-kicker">联系 / CONTACT</p><h1>联系我</h1><p class="page-intro">正在寻找 AI 产品经理 / 产品策划岗位。<br/>想了解项目细节或聊聊工作机会，可以直接给我发邮件。</p></header>
     <div class="contact-layout"><dl class="contact-details"><div><dt>01 / 邮箱</dt><dd><a href={'mailto:'+profile.email}>{profile.email} ↗</a></dd></div><div><dt>02 / 电话</dt><dd><a href={'tel:+86'+profile.phone}>{profile.phoneDisplay} ↗</a></dd></div><div><dt>03 / GitHub</dt><dd><a href={profile.github} target="_blank" rel="noreferrer">wyuxiang020-ctrl ↗</a></dd></div><div id="xiaohongshu"><dt>04 / 小红书</dt><dd>{profile.xiaohongshu}</dd><p>在小红书搜索此账号即可找到我。</p></div></dl><aside class="contact-aside"><p>王誉翔<span>Yuxiang Wang</span></p><p>{profile.availability}</p><a class="fill-button circle" href="/resume/" data-magnetic><span>阅读简历 ↗</span></a></aside></div>
   </section>
 </PortfolioLayout>

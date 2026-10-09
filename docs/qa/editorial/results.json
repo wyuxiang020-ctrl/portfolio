@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-09",
+  "version": "2026-10-09.2",
+  "references": [
+    {"url":"https://justfont.com/", "application":"中文标题的字形对比与留白；本项目实际采用开源 Noto Serif SC，并未使用 justfont 商业字体。", "review":"browser screenshot"},
+    {"url":"https://sspai.com/", "application":"标题、摘要、日期分级，保持正文易读。", "review":"browser screenshot"},
+    {"url":"https://www.notion.com/zh-cn/product/ai", "application":"参考围绕具体功能与使用任务组织文案的写法，不复制品牌口号。", "review":"web page content"},
+    {"url":"https://www.retiehe.com/", "application":"用产品名称与具体用途组织介绍。", "review":"web page content"}
+  ],
+  "changes": ["portrait with supporting railing", "local serif display font with sans body hierarchy", "concrete project-focused copy", "removed three-column product-method section", "removed intro replay button and event handler"],
+  "localValidation": {
+    "desktopHome": "portrait loaded at 1024px, serif heading rendered, no horizontal overflow, no replay button",
+    "about": "headings contain about, education, exhibitions; method grid absent",
+    "mobile390": "home and about inspected, no horizontal overflow",
+    "interactions": "menu-to-work navigation and product filter passed, shows exactly two product cards",
+    "consoleErrors": [],
+    "screenshots": ["home-desktop.jpg", "home-mobile.jpg"]
+  }
+}

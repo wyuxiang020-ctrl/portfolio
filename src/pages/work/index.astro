@@ -13,7 +13,7 @@ const works=[
 ---
 <PortfolioLayout title="作品 — 王誉翔" description="王誉翔的两个 AI 产品项目与七个建筑项目。">
   <section class="work-page content-shell">
-    <header class="page-heading"><p class="section-kicker">作品 / WORK</p><h1>从真实问题出发，<br/>让想法成为产品。</h1></header>
+    <header class="page-heading"><p class="section-kicker">作品 / WORK</p><h1>我做过的项目</h1><p class="page-intro">两个 AI 产品项目，以及七个建筑设计项目。</p></header>
     <div class="work-controls"><div class="filters" role="group" aria-label="作品分类"><button class="fill-button pill active" data-filter="all" aria-pressed="true"><span>全部<sup>{works.length}</sup></span></button><button class="fill-button pill" data-filter="product" aria-pressed="false"><span>产品<sup>{products.length}</sup></span></button><button class="fill-button pill" data-filter="architecture" aria-pressed="false"><span>建筑<sup>{architecture.length}</sup></span></button></div><span class="work-count" id="filter-status" role="status">{works.length} 个项目</span></div>
     <div class="work-grid">{works.map(work=><article class:list={['work-card',work.category]} data-category={work.category}>
       <a href={work.href} aria-label={'查看'+work.title}>
