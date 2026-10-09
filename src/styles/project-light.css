@@ -1,0 +1,25 @@
+/* Case studies share the warm paper used on the portfolio's work page. */
+html.light-page{color-scheme:light;--bg:#faf9f6;--surface:#efeee9;--surface-2:#e7e7e2;--text:#242529;--muted:#595c63;--quiet:#6b6e74;--accent:#455ce9;--line:#d6d5d0;background:var(--bg)}
+.light-page .contact-link{margin-left:0}
+.light-page .mobile-nav:not([hidden]){background:var(--bg)}
+.light-page .button-filled:hover{background:#364bd0;color:white}
+.light-page .gallery-dialog{background:#faf9f6fa;color:var(--text)}
+.light-page .gallery-dialog::backdrop{background:var(--bg)}
+.light-page .case-page{--case-muted:var(--quiet);--case-line:var(--line);color:var(--muted)}
+html.light-page body .case-page :is(h1,h2,h3,strong,b,dd){color:var(--text)}
+html.light-page body .case-page :is(p,li,td){color:var(--muted)}
+html.light-page body .case-page :is(.case-kicker,.case-status,.eyebrow,.decision-label,.method-note,.technical-note,.media-kind,figcaption,dt){color:var(--quiet)}
+html.light-page body .case-page h1 span,html.light-page body .case-content h2 span{color:var(--muted)}
+html.light-page body .case-page a{color:var(--accent)}
+html.light-page body .case-page a:hover{color:#263eae}
+html.light-page body .case-page :is(a,summary,[tabindex]):focus-visible{outline-color:var(--accent)}
+html.light-page body .case-page :is(.flow-strip span,.insight>span,.pipeline>span,.experience-list>div>span,.stack-line,.evidence-type,.evidence-list summary,.technical-note summary){color:#455b65}
+html.light-page body .case-page :is(.case-sidebar a,.case-sidebar a span){color:var(--quiet)}
+html.light-page body .case-page .case-sidebar a:hover{color:var(--accent)}
+html.light-page body .case-page .results-table :is(th,td){color:var(--muted)}
+html.light-page body .case-page .results-table th{color:var(--text)}
+html.light-page body .case-page :is(figure a,figure img[data-full-src],.screens-gym figure>img,.food-grid figure>img[data-full-src],.evidence-list pre,.ai-project-image){background:var(--surface)}
+html.light-page body .case-page .evidence-list pre{color:var(--text)}
+html.light-page body .case-page .pipeline{background:var(--surface)}
+html.light-page body .case-page .insight{border-left-color:var(--accent)}
+html.light-page body .case-page .food-grid figcaption>b{color:var(--text)!important}

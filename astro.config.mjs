@@ -6,6 +6,6 @@ export default defineConfig({
   site: 'https://yuxiangworks.com',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [mdx(), sitemap({filter: page => !new URL(page).pathname.startsWith('/work/') && !page.includes('/404')})],
+  integrations: [mdx(), sitemap({filter: page => (new URL(page).pathname === '/work/' || !new URL(page).pathname.startsWith('/work/')) && !page.includes('/404') && !page.includes('/studio/')})],
   vite: { build: { chunkSizeWarningLimit: 650 } }
 });

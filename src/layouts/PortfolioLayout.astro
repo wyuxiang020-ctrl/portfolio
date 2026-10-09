@@ -1,0 +1,36 @@
+---
+import '../styles/home.css';
+import { profile } from '../data/profile';
+import TransitionBoot from '../components/TransitionBoot.astro';
+import TransitionLayer from '../components/TransitionLayer.astro';
+interface Props { title?: string; description?: string; home?: boolean; contact?: boolean }
+const {title = '王誉翔 — AI 产品经理 / 产品策划', description = '王誉翔的个人作品集，展示 AI 产品实践、建筑项目与教育经历。',home = false,contact = false} = Astro.props;
+const links = [{href:'/work/',label:'作品'},{href:'/about/',label:'关于'},{href:'/contact/',label:'联系'}];
+---
+<!doctype html><html lang="zh-CN"><head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#f7f7f5"/>
+  <title>{title}</title><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:url" content={new URL(Astro.url.pathname,Astro.site)}/><link rel="canonical" href={new URL(Astro.url.pathname,Astro.site)}/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <TransitionBoot/>
+  {home && <script is:inline>
+    (() => {let seen=false;try{seen=sessionStorage.getItem('yuxiang-intro-v2-seen')==='1';}catch{}
+      if(!seen&&!location.hash&&!document.documentElement.classList.contains('nav-arriving')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+        document.documentElement.classList.add('intro-pending');
+        document.documentElement.dataset.introTimer=String(setTimeout(()=>{document.documentElement.classList.remove('intro-pending');document.querySelectorAll('[data-page-region]').forEach(el=>el.inert=false);},6000));
+      }
+    })();
+  </script>}
+</head><body class:list={{'home-page':home}}>
+  {home && <div class="intro-screen" aria-hidden="true"><div class="intro-greeting"><i></i><span id="greeting" lang="en">Hello</span></div><span class="intro-note">王誉翔 / 按 Esc 跳过</span></div>}
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <header class="header shell" data-page-region><a class="brand" href="/" aria-label="王誉翔，首页">Yuxiang Wang</a><nav class="desktop-nav" aria-label="主导航">{links.map(link=><a href={link.href} class="nav-link" data-magnetic aria-current={Astro.url.pathname===link.href?'page':undefined}><span>{link.label}</span></a>)}</nav><button class="menu-toggle" data-menu-toggle aria-haspopup="dialog" aria-controls="navigation-dialog" aria-expanded="false">菜单 <span>＋</span></button></header>
+  <button class="floating-menu fill-button" data-menu-toggle data-magnetic data-page-region aria-label="打开导航" aria-haspopup="dialog" aria-controls="navigation-dialog" aria-expanded="false" hidden><span class="hamburger" aria-hidden="true"><i></i><i></i></span></button>
+  <main id="main-content" tabindex="-1" data-page-region><slot/></main>
+  <footer class="footer" data-page-region><div class="shell">
+    {!contact && <div class="footer-invite"><h2>一起，让产品更进一步。</h2><a class="fill-button circle" href="/contact/" data-magnetic><span>联系我 ↗</span></a></div>}
+    <div class="footer-bottom"><span>© 2026 王誉翔</span><a href={profile.resumePdf}>简历 PDF ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a>{home && <button id="replay-intro">重看开场 ↗</button>}<a class="back-top" href="#main-content">回到顶部 ↑</a></div>
+  </div></footer>
+  <dialog id="navigation-dialog" aria-label="导航"><button class="menu-close" aria-label="关闭导航" autofocus><span aria-hidden="true"></span></button><div class="menu-top"><span>导航 / NAVIGATION</span></div><nav aria-label="展开导航">{[{href:'/',label:'首页'},...links].map(link=><a href={link.href} aria-current={Astro.url.pathname===link.href?'page':undefined}><span>{link.label}</span></a>)}</nav><div class="menu-bottom"><span>继续了解 / EXPLORE</span><div><a href="/resume/">完整简历 ↗</a><a href={profile.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></div></dialog>
+  <div class="project-cursor" aria-hidden="true"><span>查看</span></div>
+  <TransitionLayer/>
+  <script src="../scripts/home-interactions.ts"></script>
+</body></html>

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-08",
+  "greetings": [
+    {
+      "word": "Hello",
+      "ms": 39
+    },
+    {
+      "word": "Bonjour",
+      "ms": 268
+    },
+    {
+      "word": "Hola",
+      "ms": 484
+    },
+    {
+      "word": "Ciao",
+      "ms": 711
+    },
+    {
+      "word": "Hallo",
+      "ms": 938
+    },
+    {
+      "word": "Olá",
+      "ms": 1155
+    },
+    {
+      "word": "こんにちは",
+      "ms": 1481
+    },
+    {
+      "word": "안녕하세요",
+      "ms": 1697
+    },
+    {
+      "word": "你好",
+      "ms": 1916
+    }
+  ],
+  "build": "26 pages passed",
+  "localReferences": 1582,
+  "brokenLocalReferences": 0,
+  "homeProjects": [
+    "建筑项目知识助手",
+    "祖母的火塘"
+  ],
+  "verified": [
+    "320px,390px,1440px layout without horizontal overflow",
+    "desktop floating menu and mobile menu",
+    "Escape closes and restores focus",
+    "menu work navigation and back",
+    "both covers loaded",
+    "nine greeting texts visibly observed"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08",
+  "preview": "http://127.0.0.1:4324/",
+  "scope": "Homepage and greeting entrance; existing detail pages retained",
+  "build": "passed: 26 static routes",
+  "browser": "Codex in-app browser",
+  "verified": [
+    "Correct name: 王誉翔; intentionally empty portrait area",
+    "Greeting starts with Hello, ends with 你好 and releases inert page regions",
+    "Replay returns to top and focuses main-content after completion",
+    "Repeat visit skips intro",
+    "Architecture filter shows 2 projects; AI shows 2; all shows 4",
+    "Knowledge Copilot link opens its existing case; Back restores usable homepage",
+    "Mobile dialog opens; Escape closes; selecting About closes and navigates",
+    "All 4 homepage images loaded",
+    "No horizontal overflow at 320, 390, 768, 1024 and 1440 px",
+    "No errors in browser console"
+  ],
+  "screenshots": ["desktop.jpg", "mobile.jpg", "work.jpg", "full-page.jpg"],
+  "not_verified": ["Physical mobile devices", "Reduced-motion setting in browser", "JavaScript-disabled browser"],
+  "deployment": "Local only; production unchanged"
+}

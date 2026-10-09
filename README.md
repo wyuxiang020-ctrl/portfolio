@@ -1,6 +1,6 @@
 # 王誉翔 · AI 产品与空间实践
 
-**完整本地合并版，已完成静态构建与本地浏览器检查。尚未发布、未改 DNS 或证书。**
+**AI 产品与建筑作品合并版。2026-10-09 起接入主站 GitHub 仓库及 Vercel 自动部署。实际发布与线上验收结果见 `docs/deployment/2026-10-09-release.md`。**
 
 以 AI 产品求职为主，建筑作品作为专业背景与能力证据。源码、依赖、输出与开发记录均位于本目录；原 AI 项目及建筑项目保持只读。
 
@@ -23,18 +23,20 @@ npm run check:links
 npm run preview
 ```
 
-本次交付预览为 **http://127.0.0.1:4321/**。进程停止后用npm run preview重启。preview只读dist，改源码后必须重新构建；dev自动更新。CLI启动器禁用Astro遥测，避免向个人AppData写全局配置。运行时不需要账号、数据库或AI API key。
+当前设计预览为 **http://127.0.0.1:4324/**（通过 `node scripts/astro.mjs preview --host 127.0.0.1 --port 4324` 启动）。preview只读dist，改源码后必须重新构建；dev自动更新。CLI启动器禁用Astro遥测，避免向个人AppData写全局配置。运行时不需要账号、数据库或AI API key。
 
 ## 页面
 
-- `/`：综合首页。
+- `/studio/`：圆形建筑互动入口第一版。墙带围合、三个可展开的圆馆、视角拖动、围合滑杆与昼夜切换；链接接入现有作品，暂不进入 sitemap。
+- `/`：浅灰首屏与个人照片、九语言问候开场、产品和建筑项目展示、跟随鼠标的查看圆圈与侧栏导航。
+- `/work/`：全部 / 产品 / 建筑筛选列表，产品项目优先。
 - `/ai/`：AI与数字产品投递入口。
 - `/projects/knowledge-copilot/`、`/projects/gym/`、`/projects/spatial-portfolio/`：3篇完整案例。
 - `/architecture/`：7个建筑项目总览。
 - `/architecture/[slug]/`：continuation、gather-living、grandmothers-hearth、half-diary、hard-hat-cafe、iterative-learning、symsensory。
 - `/about/`、`/resume/`、`/contact/`：背景、完整网页简历与联系。
 
-共16个内容页，加8个旧/work/兼容页及404，共25个静态HTML输出。深层页面可直接访问和刷新。旧AI域名跳转尚未启用。
+共17个内容页，加圆形建筑入口原型、7个旧/work/详情兼容页及404，共26个静态HTML输出。深层页面可直接访问和刷新。项目详情采用暖白底；旧AI域名跳转尚未启用。
 
 ## 维护结构
 
@@ -85,5 +87,11 @@ npm run test:models
 -docs/deployment-and-rollback.md：预发布、Range/缓存/HTTPS、主域切换和回退。
 -docs/deployment/*.example.json：未启用的EdgeOne配置样例。
 
-**保存代码、构建、发布、线上验收是四个步骤。** 当前GitHub推送不会自动更新旧AI站。本次未购买服务或修改线上部署。发布前仍需实际EdgeOne环境和关闭VPN的手机移动网络验收。
+## 主站发布
+
+- 仓库：`https://github.com/wyuxiang020-ctrl/portfolio`，生产分支 `master`。
+- 主站：`https://yuxiangworks.com/`，沿用现有 Vercel Git 集成，构建命令 `npm run build`，输出 `dist/`。
+- 新版代码与旧主站历史合并保存，不强制覆盖远程历史。推送后须等 Vercel 构建完成，再核验正式域名和 `/release.json`。
+- `ai.yuxiangworks.com` 是原 EdgeOne 独立站，推送主站仓库不会自动更新该子域。
+- 本次不调整 DNS 或证书。构建、推送、Vercel 发布及线上验证分别记录，手机移动网络体验仍需真机确认。
 

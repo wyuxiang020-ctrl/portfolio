@@ -10,7 +10,7 @@ const { project } = Astro.props;
 <BaseLayout title={project.title + ' · 王誉翔'} description={project.description} wide>
   <article class={'case-page case-' + project.key} data-gallery-group={project.id}>
     <header class="case-intro" id="top">
-      <a class="case-back" href="/ai/">← AI 与数字产品</a>
+      <a class="case-back" href="/work/">← 全部作品</a>
       <p class="case-kicker">{project.number} / {project.english}</p>
       <h1>{project.title}<span>{project.subtitle}</span></h1>
       <p class="case-lead">{project.lead}</p>
@@ -28,6 +28,6 @@ const { project } = Astro.props;
       <div class="case-content"><slot /></div>
     </div>
     <EvidencePanel project={project.key} repo={project.repo} />
-    <nav class="case-next" aria-label="继续阅读"><a href="/ai/">← 全部数字产品</a><a href="/architecture/">建筑与空间 →</a><a href="/resume/">完整简历 ↗</a></nav>
+    <nav class="case-next" aria-label="继续阅读"><a href="/work/">← 全部作品</a><a href="/architecture/">建筑与空间 →</a><a href="/resume/">完整简历 ↗</a></nav>
   </article>
 </BaseLayout>

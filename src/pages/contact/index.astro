@@ -1,17 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import PortfolioLayout from '../../layouts/PortfolioLayout.astro';
 import { profile } from '../../data/profile';
-import '../../styles/profile.css';
 ---
-<BaseLayout title="联系" description="联系王誉翔，交流 AI 产品机会、建筑与空间设计以及数字产品实践。">
-  <article class="profile-page contact-page">
-    <header class="profile-heading"><p class="eyebrow">CONTACT / 联系</p><h1>从一次交流开始。</h1><p class="profile-lead">如果你对我的工作感兴趣，或想合作、交流，欢迎联系。<br />目前关注 AI 产品方向的机会。</p></header>
-    <dl class="contact-details">
-      <div><dt>EMAIL / 邮箱</dt><dd><a href={'mailto:' + profile.email}>{profile.email}<span aria-hidden="true"> ↗</span></a></dd></div>
-      <div><dt>PHONE / 电话</dt><dd><a href={'tel:+86' + profile.phone}>{profile.phoneDisplay}</a></dd></div>
-      <div><dt>GITHUB</dt><dd><a href={profile.github} target="_blank" rel="noreferrer">wyuxiang020-ctrl <span aria-hidden="true">↗</span><span class="sr-only">（新窗口）</span></a></dd></div>
-      <div id="xiaohongshu"><dt>小红书</dt><dd>{profile.xiaohongshu}</dd><p>在小红书搜索此账号即可找到我。</p></div>
-    </dl>
-    <footer class="profile-end"><p>{profile.availability}</p><div class="profile-links"><a class="text-link" href="/resume/">完整网页简历 ↗</a><a class="text-link" href={profile.resumePdf}>查看 PDF 简历 ↗</a></div></footer>
-  </article>
-</BaseLayout>
+<PortfolioLayout title="联系 — 王誉翔" contact>
+  <section class="contact-page content-shell"><header class="page-heading"><p class="section-kicker">联系 / CONTACT</p><h1>从一次交流，<br/>开始下一步。</h1><p class="page-intro">欢迎交流 AI 产品经理 / 产品策划机会，<br/>也欢迎关于项目、设计与 AI 应用的讨论。</p></header>
+    <div class="contact-layout"><dl class="contact-details"><div><dt>01 / 邮箱</dt><dd><a href={'mailto:'+profile.email}>{profile.email} ↗</a></dd></div><div><dt>02 / 电话</dt><dd><a href={'tel:+86'+profile.phone}>{profile.phoneDisplay} ↗</a></dd></div><div><dt>03 / GitHub</dt><dd><a href={profile.github} target="_blank" rel="noreferrer">wyuxiang020-ctrl ↗</a></dd></div><div id="xiaohongshu"><dt>04 / 小红书</dt><dd>{profile.xiaohongshu}</dd><p>在小红书搜索此账号即可找到我。</p></div></dl><aside class="contact-aside"><p>王誉翔<span>Yuxiang Wang</span></p><p>{profile.availability}</p><a class="fill-button circle" href="/resume/" data-magnetic><span>阅读简历 ↗</span></a></aside></div>
+  </section>
+</PortfolioLayout>

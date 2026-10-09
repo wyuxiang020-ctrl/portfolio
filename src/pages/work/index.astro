@@ -1,3 +1,26 @@
 ---
+import PortfolioLayout from '../../layouts/PortfolioLayout.astro';
+import OptimizedImage from '../../components/ui/OptimizedImage.astro';
+import { getCollection } from 'astro:content';
+import { projects } from '../../data/ai-projects';
+import { architectureOrder, architectureNotes } from '../../data/architecture-projects';
+const products=projects.slice(0,2);
+const architecture=(await getCollection('architecture')).sort((a,b)=>architectureOrder.indexOf(a.id)-architectureOrder.indexOf(b.id));
+const works=[
+  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.key==='knowledge'?'本地 MVP · 合成演示界面':'个人 MVP · 产品界面'})),
+  ...architecture.map(p=>({id:p.id,title:architectureNotes[p.id]?.title||p.data.title.split(' · ')[0],subtitle:architectureNotes[p.id]?.discipline||p.data.subtitle,image:p.data.coverImage,href:'/architecture/'+p.id+'/',category:'architecture',label:'建筑',year:p.data.year,note:p.data.projectType}))
+];
 ---
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><title>建筑作品已迁移</title><meta name="robots" content="noindex"/><link rel="canonical" href="https://yuxiangworks.com/architecture/"/><meta http-equiv="refresh" content="0;url=/architecture/"/></head><body><a href="/architecture/">建筑作品已迁移，继续阅读 →</a><script is:inline>location.replace('/architecture/'+location.search+location.hash);</script></body></html>
+<PortfolioLayout title="作品 — 王誉翔" description="王誉翔的两个 AI 产品项目与七个建筑项目。">
+  <section class="work-page content-shell">
+    <header class="page-heading"><p class="section-kicker">作品 / WORK</p><h1>从真实问题出发，<br/>让想法成为产品。</h1></header>
+    <div class="work-controls"><div class="filters" role="group" aria-label="作品分类"><button class="fill-button pill active" data-filter="all" aria-pressed="true"><span>全部<sup>{works.length}</sup></span></button><button class="fill-button pill" data-filter="product" aria-pressed="false"><span>产品<sup>{products.length}</sup></span></button><button class="fill-button pill" data-filter="architecture" aria-pressed="false"><span>建筑<sup>{architecture.length}</sup></span></button></div><span class="work-count" id="filter-status" role="status">{works.length} 个项目</span></div>
+    <div class="work-grid">{works.map(work=><article class:list={['work-card',work.category]} data-category={work.category}>
+      <a href={work.href} aria-label={'查看'+work.title}>
+        <div class="work-image" data-project-preview><OptimizedImage src={work.image} alt={work.title+'项目展示'} gallery={false} sizes="(max-width:760px) 90vw, 45vw" loading="lazy"/><span class="work-open" aria-hidden="true">查看</span></div>
+        <div class="card-title"><h2>{work.title}</h2><span aria-hidden="true">↗</span></div>
+      </a>
+      <div class="card-meta"><span>{work.label} / {work.subtitle}</span><span>{work.year}</span></div><p class="card-note">{work.note}</p>
+    </article>)}</div>
+  </section>
+</PortfolioLayout>

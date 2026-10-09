@@ -1,0 +1,13 @@
+<script is:inline>
+  (() => {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    try {
+      const entry = JSON.parse(sessionStorage.getItem('portfolio-route-transition') || 'null');
+      sessionStorage.removeItem('portfolio-route-transition');
+      if (entry && entry.path === location.pathname && Date.now() - entry.time < 8000) {
+        document.documentElement.classList.add('nav-arriving');
+        window.setTimeout(() => document.documentElement.classList.remove('nav-arriving'), 2500);
+      }
+    } catch {}
+  })();
+</script>

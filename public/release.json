@@ -1,0 +1,7 @@
+{
+  "version": "2026-10-09.1",
+  "site": "yuxiangworks.com",
+  "edition": "unified-product-and-architecture",
+  "portrait": "/images/yuxiang-portrait-selected-v3.jpg",
+  "features": ["multilingual-intro", "project-filters", "pointer-project-preview", "light-project-pages"]
+}

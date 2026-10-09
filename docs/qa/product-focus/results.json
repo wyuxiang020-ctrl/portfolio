@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-08",
+  "preview": "http://127.0.0.1:4324/",
+  "scope": "Product-focused home, independent Work/About/Contact pages, shared named transitions",
+  "build": "26 routes built successfully",
+  "localLinkCheck": "1575 local references checked; no failures",
+  "verified": [
+    "Home: Chinese name, PM positioning, education with in-progress graduation wording, blank portrait",
+    "Home: exactly two product rows, no featured architecture grid or inline biography",
+    "Work navigation displays a named transition and opens /work/",
+    "Work: All 9 / Product 2 / Architecture 7; two products ordered first",
+    "Filters reveal 9, 2 and 7 projects respectively",
+    "About circle opens /about/; main navigation opens /contact/",
+    "Mobile navigation closes when a destination is selected",
+    "Product detail navigation and browser Back do not leave an obstructing curtain",
+    "Keyboard focus exposes product preview",
+    "Home has no horizontal overflow at 320, 390, 768, 1024 and 1440 px",
+    "Work has no horizontal overflow at 390 px",
+    "No browser console errors observed"
+  ],
+  "screenshots": ["home-desktop.jpg", "home-mobile.jpg", "work-desktop.jpg"],
+  "limitations": ["No physical-device testing", "Existing case content preserved"],
+  "publication": "Local only; no production deployment"
+}

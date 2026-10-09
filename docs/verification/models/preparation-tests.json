@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-07T05:44:30.020Z",
+  "at": "2026-10-09T05:57:32.590Z",
   "scope": "Node local HTTP integration using unchanged public/models/shekua-lite.glb; module delay is a deterministic fixture. Not real public network, browser/GPU, physical device, reader, author self-test, or LLM call.",
   "sha256": "c1c897f5f9ff37ffe276689b5ee4957c2b2c47430fe76d332d1f79b0197f6905",
   "passed": 4,
@@ -12,12 +12,12 @@
         "downloadStartedMs": 0,
         "requestedTransport": "single",
         "transport": "single",
-        "firstProgressMs": 84,
-        "downloadFinishedMs": 96,
-        "downloadMs": 96
+        "firstProgressMs": 74,
+        "downloadFinishedMs": 85,
+        "downloadMs": 85
       },
-      "moduleFixtureMs": 125,
-      "bothReadyMs": 128
+      "moduleFixtureMs": 131,
+      "bothReadyMs": 134
     },
     {
       "name": "existing bounded range transport preserves exact GLB through preparation",
@@ -28,9 +28,9 @@
         "downloadStartedMs": 0,
         "requestedTransport": "ranges",
         "transport": "ranges",
-        "firstProgressMs": 78,
-        "downloadFinishedMs": 319,
-        "downloadMs": 319
+        "firstProgressMs": 75,
+        "downloadFinishedMs": 314,
+        "downloadMs": 314
       }
     },
     {
@@ -48,7 +48,7 @@
         "bytes": 0,
         "downloadStartedMs": 0,
         "requestedTransport": "single",
-        "downloadMs": 34
+        "downloadMs": 35
       }
     }
   ]
