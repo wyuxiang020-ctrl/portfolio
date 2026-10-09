@@ -1,7 +1,5 @@
 ---
-import CaseLayout from '../../../layouts/CaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Content from '../../../content/ai/knowledge-copilot.astro';
-import { projects } from '../../../data/ai-projects';
-const project = projects.find(item => item.id === 'knowledge-copilot')!;
 ---
-<CaseLayout project={project}><Content /></CaseLayout>
+<BaseLayout title="方块 · 建筑知识助手｜王誉翔的产品案例" description="将建筑案例、规范与重庆政策组织成可浏览、可查找、可回溯的资料工作台。产品定位、信息架构与核心体验。" wide><Content /></BaseLayout>

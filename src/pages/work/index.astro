@@ -7,7 +7,7 @@ import { architectureOrder, architectureNotes } from '../../data/architecture-pr
 const products=projects.filter(project=>project.id!=='spatial-portfolio');
 const architecture=(await getCollection('architecture')).sort((a,b)=>architectureOrder.indexOf(a.id)-architectureOrder.indexOf(b.id));
 const works=[
-  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.key==='knowledge'?'本地 MVP · 合成演示界面':p.key==='slowtrail'?'旅行原型 · 当前产品界面':'个人 MVP · 产品界面'})),
+  ...products.map(p=>({id:p.id,title:p.title,subtitle:p.subtitle,image:p.image,href:p.href,category:'product',label:'产品',year:'2026',note:p.key==='knowledge'?'资料工作台 · 公开资料展示版':p.key==='slowtrail'?'旅行原型 · 当前产品界面':'个人 MVP · 产品界面'})),
   ...architecture.map(p=>({id:p.id,title:architectureNotes[p.id]?.title||p.data.title.split(' · ')[0],subtitle:architectureNotes[p.id]?.discipline||p.data.subtitle,image:p.data.coverImage,href:'/architecture/'+p.id+'/',category:'architecture',label:'建筑',year:p.data.year,note:p.data.projectType}))
 ];
 ---

@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-09.6",
+  "version": "2026-10-09.7",
   "site": "yuxiangworks.com",
   "edition": "unified-product-and-architecture",
   "portrait": "/images/yuxiang-portrait-railing-v4.webp",
@@ -20,6 +20,8 @@
     "gym-result-led-case-study",
     "gym-prd-and-resume-downloads",
     "slowtrail-travel-case-study",
-    "slowtrail-prd-and-resume-downloads"
+    "slowtrail-prd-and-resume-downloads",
+    "knowledge-product-led-case-study",
+    "knowledge-classification-and-reading-walkthrough"
   ]
 }

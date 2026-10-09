@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-10-09",
+  "source": "Project Knowledge Copilot / web-demo/dist / independent public-catalog demonstration",
+  "screenshots": ["library.png", "standards.png", "find.png", "source.png"],
+  "captureMethod": "Unmodified browser viewport screenshots",
+  "scope": "Public catalog only. No private documents, account identifiers, generated answers or backend credentials are included.",
+  "interfaceStatus": "Independent interactive demonstration, separate from the local AI workbench. No live AI calls were made during capture.",
+  "photography": "The library screenshot includes the existing project thumbnail. Photography belongs to its original rights holder; original source and credits remain in the product catalog.",
+  "taxonomyIcons": "Reused from the user's product component src/components/archive-topic-icon.tsx; code-native SVG paths."
+}

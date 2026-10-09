@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-09",
+  "page": "/projects/knowledge-copilot/",
+  "approach": "Product-led case: task and audience, information architecture, interface walkthrough, three decisions, delivery scope. Historical model metrics and implementation detail removed from the main narrative.",
+  "references": [
+    {"url":"https://linear.app/changelog/2024-05-02-the-next-generation-of-linear-projects", "application":"Explain fragmented user work before named capabilities; use interface examples to show how those capabilities reconnect the task."},
+    {"url":"https://www.notion.com/customers/figma", "application":"Present knowledge organization in terms of finding and using information, with concrete navigational structure instead of a technical stack."}
+  ],
+  "sourceReview": ["src/lib/archive-taxonomy.ts", "src/components/classified-archive.tsx", "src/components/archive-topic-icon.tsx", "docs/iteration-report-2026-10-09.md", "web-demo/README.md"],
+  "browserChecks": {
+    "publicCatalog": "National standards > Basic space > Accessibility, keyword 坡道: one matching source; opened it and returned with all filters and keyword retained.",
+    "caseStepSwitching": "Second and third step show the matching screenshot and explanation; selected button aria-pressed changes.",
+    "gallery": "Source screenshot opens in image dialog; close button returns to case.",
+    "mobile": "390 x 844 viewport override; document clientWidth and scrollWidth both 375; four screenshots loaded.",
+    "modelCalls": 0
+  },
+  "engineeringChecks": ["npm run build passed", "npm run check:links passed", "npm run check:assets passed"],
+  "limits": "Software and display verification only. No user research, answer-quality retest, measured efficiency gain or live AI integration is claimed."
+}
