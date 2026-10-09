@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-09.4",
+  "version": "2026-10-09.5",
   "site": "yuxiangworks.com",
   "edition": "unified-product-and-architecture",
   "portrait": "/images/yuxiang-portrait-railing-v4.webp",
@@ -16,6 +16,8 @@
     "portrait-marquee",
     "personal-story",
     "interactive-color-orb",
-    "contact-email-draft"
+    "contact-email-draft",
+    "gym-result-led-case-study",
+    "gym-prd-and-resume-downloads"
   ]
 }
