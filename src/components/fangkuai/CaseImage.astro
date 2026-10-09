@@ -1,0 +1,12 @@
+---
+import manifest from '../../../public/images/fangkuai/manifest.json';
+interface Props { name: string; alt: string; caption?: string; priority?: boolean; flat?: boolean; }
+const {name,alt,caption,priority=false,flat=false}=Astro.props;
+const file=`fangkuai-${name}`;
+const asset=manifest[file as keyof typeof manifest];
+const src=`/images/fangkuai/${file}.png`;
+---
+<figure class:list={['fk-image',{'fk-image-flat':flat}]}>
+  <img src={src} alt={alt} width={asset.width} height={asset.height} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async" data-gallery="fangkuai" />
+  {caption&&<figcaption><span>{caption}</span><a href={src} target="_blank" rel="noreferrer" aria-label={`查看原图：${caption}`}>原图 ↗</a></figcaption>}
+</figure>

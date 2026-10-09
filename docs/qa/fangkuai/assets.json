@@ -1,0 +1,147 @@
+{
+  "images": [
+    {
+      "file": "fangkuai-annotation.png",
+      "width": 2400,
+      "height": 2150,
+      "bytes": 15487200,
+      "native": true
+    },
+    {
+      "file": "fangkuai-copenhill.png",
+      "width": 2000,
+      "height": 1333,
+      "bytes": 3843212,
+      "native": true
+    },
+    {
+      "file": "fangkuai-ending.png",
+      "width": 2000,
+      "height": 2282,
+      "bytes": 13698756,
+      "native": true
+    },
+    {
+      "file": "fangkuai-excerpt.png",
+      "width": 2400,
+      "height": 1500,
+      "bytes": 10805036,
+      "native": true
+    },
+    {
+      "file": "fangkuai-feedback.png",
+      "width": 2399,
+      "height": 1017,
+      "bytes": 7322781,
+      "native": true
+    },
+    {
+      "file": "fangkuai-ip-states.png",
+      "width": 3200,
+      "height": 889,
+      "bytes": 8538042,
+      "native": true
+    },
+    {
+      "file": "fangkuai-jingdezhen-kiln.png",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 5143722,
+      "native": true
+    },
+    {
+      "file": "fangkuai-large-reader.png",
+      "width": 2000,
+      "height": 1319,
+      "bytes": 7917932,
+      "native": false
+    },
+    {
+      "file": "fangkuai-library-detail.png",
+      "width": 2400,
+      "height": 2100,
+      "bytes": 2906311,
+      "native": true
+    },
+    {
+      "file": "fangkuai-library.png",
+      "width": 2400,
+      "height": 1500,
+      "bytes": 10805036,
+      "native": true
+    },
+    {
+      "file": "fangkuai-lochal-library.png",
+      "width": 2000,
+      "height": 1333,
+      "bytes": 3710948,
+      "native": true
+    },
+    {
+      "file": "fangkuai-qa.png",
+      "width": 2399,
+      "height": 834,
+      "bytes": 6005122,
+      "native": true
+    },
+    {
+      "file": "fangkuai-reading.png",
+      "width": 2400,
+      "height": 3100,
+      "bytes": 2334749,
+      "native": true
+    },
+    {
+      "file": "fangkuai-research-folder.png",
+      "width": 2400,
+      "height": 1500,
+      "bytes": 10805036,
+      "native": true
+    },
+    {
+      "file": "fangkuai-state-1.png",
+      "width": 2000,
+      "height": 2608,
+      "bytes": 15655717,
+      "native": true
+    },
+    {
+      "file": "fangkuai-state-2.png",
+      "width": 2000,
+      "height": 2607,
+      "bytes": 15649716,
+      "native": true
+    },
+    {
+      "file": "fangkuai-state-3.png",
+      "width": 2000,
+      "height": 2607,
+      "bytes": 15649716,
+      "native": true
+    },
+    {
+      "file": "fangkuai-state-4.png",
+      "width": 2000,
+      "height": 2607,
+      "bytes": 15649716,
+      "native": true
+    },
+    {
+      "file": "fangkuai-tank-shanghai.png",
+      "width": 2000,
+      "height": 1425,
+      "bytes": 3519498,
+      "native": false
+    },
+    {
+      "file": "fangkuai-taxonomy.png",
+      "width": 2400,
+      "height": 1500,
+      "bytes": 10805036,
+      "native": true
+    }
+  ],
+  "allAtLeast2MiB": true,
+  "allAtLeast2000pxWide": true,
+  "sectionCount": 8
+}
