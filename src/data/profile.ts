@@ -10,20 +10,22 @@ export const profile = {
   phoneDisplay: '+86 150 6517 1825',
   github: 'https://github.com/wyuxiang020-ctrl',
   xiaohongshu: '9535218642',
-  availability: '2026.11 可到岗，可协商提前至 10 月',
-  graduation: '预计 2026.10 毕业',
   language: 'IELTS 6.5',
   website: 'https://yuxiangworks.com/',
   portrait: '/images/yuxiang-portrait.jpg',
   resumePdf: '/downloads/yuxiang-wang-resume.pdf',
   originalResumePdf: '/downloads/yuxiang-wang-resume-original-2026-10-02.pdf',
-  sourceUpdated: '2026.10.02',
+  sourceUpdated: '2026.10.09',
   education: [
-    { institution: '曼彻斯特大学 / 曼彻斯特建筑学院', date: '2025.09 — 2026.10（预计）', degree: 'MA Architecture and Adaptive Reuse · 硕士在读', result: '预计 Distinction', description: '建筑设计与适应性改造；跨学科研究、复杂信息梳理与方案表达。' },
+    { institution: '曼彻斯特大学 / 曼彻斯特建筑学院', date: '2025.09 — 至今', degree: 'MA Architecture and Adaptive Reuse · 硕士在读', result: '预计 Distinction', description: '建筑设计与适应性改造；跨学科研究、复杂信息梳理与方案表达。' },
     { institution: '四川美术学院', date: '2020.09 — 2025.06', degree: '建筑学学士', result: 'GPA 3.85 / 4.0 · 专业排名 1 / 50', description: '连续四年校级奖学金 · 本科毕业展入选。' },
   ],
   experience: [
-    { institution: '重庆市设计院有限公司', date: '2024.03 — 2024.06', role: '建筑设计六院 · 建筑实习生', description: '参与建筑项目，梳理客户目标、场地条件与评审约束，将模糊诉求转化为功能、动线和设计任务；协同主创建筑师比较方案、收敛多轮反馈，以 CAD、Rhino、SketchUp 推进设计深化与图纸交付。' },
+    { institution: '重庆市设计院有限公司 · 建筑设计六院', date: '2024.03–2024.08', role: '建筑实习生', projects: [
+      { name: '川渝（广安）教育协同发展试验基地建设项目', description: '重庆永安高校校园规划建筑项目联合负责人，参与将教育协同与地域特色的方向细化为功能布局、道路衔接和高差适配问题；参与实地踏勘、场地分析及方案比较，与设计师共绘总平面备选方案，完成图书馆、科研楼、食堂平立面图，支持团队完成投标方案交付并成功中标。' },
+      { name: '北碚区酒店·医疗·康养文化小镇策划', description: '围绕酒店、医疗、康养与文化融合的策划目标，梳理养生、度假、周末游及亲子客群的不同需求；结合政策、区位与文化资源分析，参与功能定位与分期开发分析，绘制项目定位与开发重点的图示说明。' },
+      { name: '重庆市巴山仪器有限责任公司职工安置房项目', description: '参与施工图深化，负责楼梯间、卫生间、屋面排水及部分节点大样，配合完成平立剖面图；按设计师反馈修订细节，使方案落到可实施图纸，项目于 2025 年落地并投入使用。' },
+    ] },
   ],
   skills: [
     { name: '产品与评测', description: '需求拆解、用户流程、MVP 取舍、边界情况、评测与验收。' },

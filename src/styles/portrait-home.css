@@ -22,7 +22,6 @@
 .home-page .intro-copy>p{margin:0;font-size:clamp(23px,2.3vw,33px);line-height:1.85;font-weight:400;letter-spacing:0}
 .scroll-copy>span{display:block;width:fit-content}
 .home-page .intro-aside{padding-top:4px}.home-page .intro-aside>p{font-size:14px;line-height:1.95}.home-page .intro-aside .circle{width:114px;height:114px;font-size:14px;margin-top:26px}
-.scroll-motion [data-reveal-line]{color:transparent;background:linear-gradient(90deg,var(--ink) 0%,var(--ink) var(--reveal,0%),#b2b1ad calc(var(--reveal,0%) + 16%),#b2b1ad 100%);background-clip:text;-webkit-background-clip:text}
 .scroll-motion [data-scroll-reveal]{opacity:.15;transform:translateY(35px);transition:opacity .85s ease,transform .95s cubic-bezier(.22,1,.36,1)}
 .scroll-motion [data-scroll-reveal].is-revealed,.scroll-motion [data-scroll-reveal]:focus-within{opacity:1;transform:none}
 .footer-curve{height:clamp(60px,8vw,125px);background:var(--ink);overflow:hidden;margin-bottom:-1px;position:relative}

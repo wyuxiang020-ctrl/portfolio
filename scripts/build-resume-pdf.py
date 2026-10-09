@@ -48,7 +48,7 @@ def project(item):
   flow.append(para('完整案例：' + link(p['website'].rstrip('/') + item['href']), 'small'))
   return flow
 
-story = [para(clean(p['name']) + ' <font name="YaHei" size="14" color="#516364">' + clean(p['enName']) + '</font>', 'name'), para('求职方向：' + clean(p['role']), 'role'), para(clean(p['phoneDisplay']) + '  |  ' + link('mailto:' + p['email'], p['email']) + '  |  ' + clean(p['language']), 'small'), para(clean(p['graduation']) + '  |  ' + clean(p['availability']), 'small'), para('作品集：' + link(p['website']), 'small'), para('01  教育背景', 'section')]
+story = [para(clean(p['name']) + ' <font name="YaHei" size="14" color="#516364">' + clean(p['enName']) + '</font>', 'name'), para('求职方向：' + clean(p['role']), 'role'), para(clean(p['phoneDisplay']) + '  |  ' + link('mailto:' + p['email'], p['email']) + '  |  ' + clean(p['language']), 'small'), para('作品集：' + link(p['website']), 'small'), para('01  教育背景', 'section')]
 for item in p['education']:
   story.append(para(clean(item['institution']) + ' <font name="YaHei" size="8" color="#516364"> / ' + clean(item['date']) + '</font>', 'entry'))
   story.append(para(clean(item['degree']) + ' · ' + clean(item['result']), 'small'))
@@ -57,7 +57,8 @@ story.append(para('02  实习经历', 'section'))
 for item in p['experience']:
   story.append(para(clean(item['institution']) + ' <font name="YaHei" size="8" color="#516364"> / ' + clean(item['date']) + '</font>', 'entry'))
   story.append(para(clean(item['role']), 'small'))
-  story.append(para('<b>需求拆解与协同</b>  ' + clean(item['description'])))
+  for point in item['projects']:
+    story.append(para('<b>' + clean(point['name']) + '</b>  ' + clean(point['description'])))
 story.append(para('03  项目经历', 'section'))
 story.extend(project(projects[0]))
 story.append(PageBreak())
@@ -74,7 +75,7 @@ for item in p['awards']:
     text += '<br/><font size="8" color="#516364">' + clean(item['note']) + '</font>'
   story.append(para(text))
 story.append(Spacer(1, 8))
-story.append(para('内容依据 2026.10.02 更新简历与建筑站现有资料整理。原版 PDF 与完整案例可在网页版简历中查看。', 'small'))
+story.append(para('内容依据 2026.10.09 更新实习经历、原简历与建筑站现有资料整理。原版 PDF 与完整案例可在网页版简历中查看。', 'small'))
 story.append(para(link('https://yuxiangworks.com/resume/'), 'small'))
 
 def footer(canvas, doc):
@@ -84,8 +85,8 @@ def footer(canvas, doc):
   canvas.line(42, 34, w-42, 34)
   canvas.setFont('YaHei', 7)
   canvas.setFillColor(MUTED)
-  canvas.drawString(42, 22, '王誉翔 · AI 产品方向 · 合并版 2026.10.07')
-  canvas.drawRightString(w-42, 22, f'{doc.page} / 2')
+  canvas.drawString(42, 22, '王誉翔 · AI 产品方向 · 更新版 2026.10.09')
+  canvas.drawRightString(w-42, 22, f'{doc.page}')
   canvas.restoreState()
 
 destination = ROOT / 'public/downloads/yuxiang-wang-resume.pdf'

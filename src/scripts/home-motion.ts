@@ -22,7 +22,6 @@ entryObserver.observe(root, { attributes: true, attributeFilter: ['class'] });
 enterHero();
 if (entered) entryObserver.disconnect();
 
-const lines = [...document.querySelectorAll<HTMLElement>('[data-reveal-line]')];
 const reveals = [...document.querySelectorAll<HTMLElement>('[data-scroll-reveal]')];
 const curve = document.querySelector<SVGPathElement>('[data-footer-curve]');
 const curveBox = document.querySelector<HTMLElement>('.footer-curve');
@@ -37,11 +36,6 @@ function updateScroll() {
   frame = 0;
   if (reduced.matches) return;
   const height = innerHeight;
-  // Progress follows native scroll; reverse scrolling restores the same state.
-  lines.forEach(line => {
-    const progress = clamp((height * .88 - line.getBoundingClientRect().top) / (height * .38));
-    line.style.setProperty('--reveal', `${progress * 116}%`);
-  });
   if (curve && curveBox) {
     const progress = clamp((height - curveBox.getBoundingClientRect().top) / (height * .8));
     curve.setAttribute('d', `M0 0 H1000 V0 Q500 ${190 * (1 - progress)} 0 0 Z`);
@@ -65,3 +59,10 @@ window.addEventListener('resize', scheduleScroll);
 window.addEventListener('pageshow', scheduleScroll);
 window.addEventListener('pagehide', () => { cancelAnimationFrame(frame); frame = 0; });
 reduced.addEventListener('change', setMotion);
+
+const marqueeButton = document.querySelector<HTMLButtonElement>('[data-marquee-toggle]');
+marqueeButton?.addEventListener('click', () => {
+  const paused = document.querySelector('.hero-marquee')?.classList.toggle('is-paused') || false;
+  marqueeButton.setAttribute('aria-pressed', String(paused));
+  marqueeButton.textContent = paused ? '继续文字移动' : '暂停文字移动';
+});
