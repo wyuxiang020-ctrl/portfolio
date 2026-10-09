@@ -8,7 +8,7 @@ const hearth = architecture.find(project => project.id === 'grandmothers-hearth'
 const knowledge = projects[0];
 const total = projects.filter(project => project.id !== 'spatial-portfolio').length + architecture.length;
 const featured = [
-  { title: knowledge.title, href: knowledge.href, image: knowledge.image, category: 'product', label: 'AI 产品 / 信息架构 · 资料工作台', description: '按主题浏览建筑案例、规范与重庆政策，在分类内查找，阅读后继续刚才的任务。', date: '2026.05 — 至今 · 持续迭代', note: '本人主导 · 封面为公开资料展示版' },
+  { title: knowledge.title, href: knowledge.href, image: knowledge.image, category: 'product', label: 'AI 产品 / 信息架构 · 资料工作台', description: '把建筑案例、规范和重庆政策按主题整理，方便查找、阅读和核对出处。', date: '2026.05 — 至今 · 持续迭代', note: '本人主导 · 资料查找与阅读' },
   { title: '祖母的火塘', href: '/architecture/grandmothers-hearth/', image: hearth.data.coverImage, category: 'architecture', label: '建筑 / 适应性再利用', description: '泸沽湖走访后的住宅改造设计：保留围绕火塘的家庭生活，为居民和访客安排各自的活动空间。', date: hearth.data.year + ' · 设计项目', note: '合作设计 / 王誉翔 × 刘涵' },
 ];
 ---
@@ -29,13 +29,13 @@ const featured = [
     <a class="portrait-scroll" href="#home-introduction" aria-label="向下浏览个人介绍"><span>向下浏览</span><span aria-hidden="true">↓</span></a>
   </section><div class="hero-marquee" aria-label="ARCHITECTURE & PRODUCT"><div class="marquee-track" aria-hidden="true"><span>ARCHITECTURE &amp; PRODUCT — </span><span>ARCHITECTURE &amp; PRODUCT — </span></div><button class="marquee-toggle" type="button" data-marquee-toggle aria-pressed="false">暂停文字移动</button></div></div>
   <section id="home-introduction" class="introduction content-shell" aria-label="关于入口">
-    <div class="intro-copy"><p class="scroll-copy"><span data-reveal-line>理解人的需求，</span><span data-reveal-line>也关心想法如何落地。</span><span data-reveal-line>在产品与建筑中，寻找具体的答案。</span></p></div>
-    <div class="intro-aside" data-scroll-reveal><p>建筑训练让我习惯观察人与环境的关系；现在，我把这种思考带入 AI 产品，用清晰的流程与可验证的反馈，把复杂问题变成可用的体验。</p><a class="fill-button circle" href="/about/" data-magnetic><span>关于我 ↗</span></a></div>
+    <div class="intro-copy"><p class="scroll-copy"><span data-reveal-line>我在做 AI 产品，</span><span data-reveal-line>也做建筑设计。</span><span data-reveal-line>这里记录了我的一些项目。</span></p></div>
+    <div class="intro-aside" data-scroll-reveal><p>我目前在曼彻斯特读研，正在寻找产品经理或产品策划的工作。做产品时，我会先确定要解决的问题，再做原型、试用和修改。</p><a class="fill-button circle" href="/about/" data-magnetic><span>关于我 ↗</span></a></div>
   </section>
   <section class="home-products content-shell" aria-labelledby="products-title">
     <h2 id="products-title" class="section-kicker">项目实践 <span>PRODUCT & ARCHITECTURE / 02</span></h2>
     <div class="feature-grid">
-      {featured.map(project=><article class:list={['feature-card',project.category]} data-scroll-reveal>
+      {featured.map(project=><article class:list={['feature-card',project.category,{'knowledge-cover':project.href===knowledge.href}]} data-scroll-reveal>
         <a href={project.href} aria-label={'查看'+project.title}>
           <div class="feature-image" data-project-preview><OptimizedImage src={project.image} alt={project.title+'项目展示'} gallery={false} sizes="(max-width:760px) 90vw, 45vw" loading="lazy"/><span class="feature-view" aria-hidden="true">查看</span></div>
           <div class="feature-title"><h3>{project.title}</h3><span aria-hidden="true">↗</span></div>

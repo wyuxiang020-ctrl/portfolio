@@ -1,9 +1,9 @@
-/* Case studies share the warm paper used on the portfolio's work page. */
-html.light-page{color-scheme:light;--bg:#faf9f6;--surface:#efeee9;--surface-2:#e7e7e2;--text:#242529;--muted:#595c63;--quiet:#6b6e74;--accent:#455ce9;--line:#d6d5d0;background:var(--bg)}
+/* Case studies share the white canvas used on the portfolio's work page. */
+html.light-page{color-scheme:light;--bg:#ffffff;--surface:#f4f4f4;--surface-2:#e9e9e9;--text:#242529;--muted:#595c63;--quiet:#6b6e74;--accent:#455ce9;--line:#d6d5d0;background:var(--bg)}
 .light-page .contact-link{margin-left:0}
 .light-page .mobile-nav:not([hidden]){background:var(--bg)}
 .light-page .button-filled:hover{background:#364bd0;color:white}
-.light-page .gallery-dialog{background:#faf9f6fa;color:var(--text)}
+.light-page .gallery-dialog{background:#fffffffa;color:var(--text)}
 .light-page .gallery-dialog::backdrop{background:var(--bg)}
 .light-page .case-page{--case-muted:var(--quiet);--case-line:var(--line);color:var(--muted)}
 html.light-page body .case-page :is(h1,h2,h3,strong,b,dd){color:var(--text)}

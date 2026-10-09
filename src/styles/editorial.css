@@ -1,4 +1,7 @@
 /* A small local CJK display subset; body copy keeps a readable system sans. */
+.knowledge-cover.product .work-image,.knowledge-cover.product .feature-image{padding:0;background:#f2f3f5}
+.knowledge-cover.product .work-image img,.knowledge-cover.product .feature-image img{object-fit:cover;box-shadow:none}
+@media(max-width:760px){.footer .footer-invite>div{width:100%;max-width:100%}.footer .footer-invite h2{max-width:none}.footer .footer-title-line>[data-line-reveal]{white-space:nowrap}}
 @font-face{font-family:"Portfolio Serif";src:url('/fonts/noto-serif-sc-display.ttf') format('truetype');font-style:normal;font-weight:500;font-display:swap}
 :root{--font-body:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;--font-display:"Portfolio Serif","Songti SC","Source Han Serif SC",serif}
 html body{font-family:var(--font-body);font-weight:400;line-height:1.8;letter-spacing:.012em}

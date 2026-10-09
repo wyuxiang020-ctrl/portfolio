@@ -3,7 +3,7 @@ import PortfolioLayout from '../../layouts/PortfolioLayout.astro';
 import { profile } from '../../data/profile';
 ---
 <PortfolioLayout title="联系 — 王誉翔" contact>
-  <section class="letter-page content-shell"><header class="letter-heading"><p class="section-kicker">联系 / SAY HELLO</p><h1><span data-line-reveal>有个想法？</span><span data-line-reveal>写信给我。</span></h1><p>工作机会、项目交流，或者打个招呼。<br/>很高兴认识你。</p></header>
+  <section class="letter-page content-shell"><header class="letter-heading"><p class="section-kicker">联系 / SAY HELLO</p><h1><span data-line-reveal>期待您的联系</span></h1><p>欢迎联系我，交流工作机会或产品项目。</p></header>
     <div class="letter-layout"><form class="letter-form" data-contact-form data-recipient={profile.email} action={'mailto:'+profile.email} method="post" enctype="text/plain">
       <div class="letter-field"><span aria-hidden="true">01</span><div><label for="sender-name">怎么称呼你？ <small>必填</small></label><input id="sender-name" name="name" autocomplete="name" placeholder="你的名字" required maxlength="60"/></div></div>
       <div class="letter-field"><span aria-hidden="true">02</span><div><label for="sender-email">我可以回复到哪个邮箱？ <small>必填</small></label><input id="sender-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="160"/></div></div>

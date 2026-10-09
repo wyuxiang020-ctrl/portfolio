@@ -1,9 +1,9 @@
 export const projects = [
   {
     id: 'knowledge-copilot', key: 'knowledge', number: '01', title: '方块 · 建筑知识助手',
-    subtitle: '从一个设计问题，找到下一份资料。',
-    description: '把建筑案例、规范与重庆政策组织成资料工作台。通过主题分类、范围内查找与连续阅读，连接问题和可核对的来源。',
-    image: '/media/knowledge-2026/library.png', href: '/projects/knowledge-copilot/', label: '信息架构 · 资料查找 · 来源阅读',
+    subtitle: '建筑资料的查找与阅读。',
+    description: '把建筑案例、规范与重庆政策按主题整理，支持分类查找、阅读和出处核对。',
+    image: '/media/knowledge-2026/cover-editorial.png', href: '/projects/knowledge-copilot/', label: '信息架构 · 资料查找 · 来源阅读',
     english: 'PROJECT KNOWLEDGE COPILOT',
     lead: '面向建筑设计与研究的资料工作台。既能带着关键词查找，也能沿着主题浏览，阅读后回到来源核对。',
     status: '本机工作台与独立资料馆展示版 · 新版展示尚未接入实时 AI 问答',

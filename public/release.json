@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-09.7",
+  "version": "2026-10-09.8",
   "site": "yuxiangworks.com",
   "edition": "unified-product-and-architecture",
   "portrait": "/images/yuxiang-portrait-railing-v4.webp",
@@ -22,6 +22,8 @@
     "slowtrail-travel-case-study",
     "slowtrail-prd-and-resume-downloads",
     "knowledge-product-led-case-study",
-    "knowledge-classification-and-reading-walkthrough"
+    "knowledge-classification-and-reading-walkthrough",
+    "white-content-canvas",
+    "knowledge-editorial-cover"
   ]
 }
