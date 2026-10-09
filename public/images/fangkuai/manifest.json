@@ -2,77 +2,77 @@
   "fangkuai-annotation": {
     "width": 2400,
     "height": 2150,
-    "bytes": 15487200,
+    "bytes": 2445908,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   },
   "fangkuai-copenhill": {
     "width": 2000,
     "height": 1333,
-    "bytes": 3843212,
+    "bytes": 3820289,
     "source": "Original provided project photograph, 2000 x 1333; credits in asset-sources.md",
     "native": true
   },
   "fangkuai-ending": {
     "width": 2000,
     "height": 2282,
-    "bytes": 13698756,
+    "bytes": 1869047,
     "source": "Provided PDF page 12, vector crop",
     "native": true
   },
   "fangkuai-excerpt": {
     "width": 2400,
     "height": 1500,
-    "bytes": 10805036,
+    "bytes": 1986566,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   },
   "fangkuai-feedback": {
     "width": 2399,
     "height": 1017,
-    "bytes": 7322781,
+    "bytes": 1138743,
     "source": "Provided PDF page 9, vector crop",
     "native": true
   },
   "fangkuai-ip-states": {
     "width": 3200,
     "height": 889,
-    "bytes": 8538042,
+    "bytes": 1172220,
     "source": "Provided PDF page 7, vector crop",
     "native": true
   },
   "fangkuai-jingdezhen-kiln": {
     "width": 2000,
     "height": 1500,
-    "bytes": 5143722,
+    "bytes": 5018333,
     "source": "Original provided project photograph, 2000 x 1500; credits in asset-sources.md",
     "native": true
   },
   "fangkuai-large-reader": {
     "width": 2000,
     "height": 1319,
-    "bytes": 7917932,
+    "bytes": 1289579,
     "source": "Original synthetic reader fixture; resized from 1365px, not new detail",
     "native": false
   },
   "fangkuai-library-detail": {
     "width": 2400,
     "height": 2100,
-    "bytes": 2906311,
+    "bytes": 2799489,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   },
   "fangkuai-library": {
     "width": 2400,
     "height": 1500,
-    "bytes": 10805036,
+    "bytes": 1331201,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   },
   "fangkuai-lochal-library": {
     "width": 2000,
     "height": 1333,
-    "bytes": 3710948,
+    "bytes": 3604090,
     "source": "Original provided project photograph, 2000 x 1333; credits in asset-sources.md",
     "native": true
   },
@@ -86,56 +86,56 @@
   "fangkuai-reading": {
     "width": 2400,
     "height": 3100,
-    "bytes": 2334749,
+    "bytes": 2302429,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   },
   "fangkuai-research-folder": {
     "width": 2400,
     "height": 1500,
-    "bytes": 10805036,
+    "bytes": 1718523,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   },
   "fangkuai-state-1": {
     "width": 2000,
     "height": 2608,
-    "bytes": 15655717,
+    "bytes": 2112272,
     "source": "Provided PDF page 7, vector crop",
     "native": true
   },
   "fangkuai-state-2": {
     "width": 2000,
     "height": 2607,
-    "bytes": 15649716,
+    "bytes": 2039142,
     "source": "Provided PDF page 7, vector crop",
     "native": true
   },
   "fangkuai-state-3": {
     "width": 2000,
     "height": 2607,
-    "bytes": 15649716,
+    "bytes": 2037875,
     "source": "Provided PDF page 7, vector crop",
     "native": true
   },
   "fangkuai-state-4": {
     "width": 2000,
     "height": 2607,
-    "bytes": 15649716,
+    "bytes": 2033544,
     "source": "Provided PDF page 7, vector crop",
     "native": true
   },
   "fangkuai-tank-shanghai": {
     "width": 2000,
     "height": 1425,
-    "bytes": 3519498,
+    "bytes": 3452310,
     "source": "Original provided project photograph, 1600 x 1140; credits in asset-sources.md",
     "native": false
   },
   "fangkuai-taxonomy": {
     "width": 2400,
     "height": 1500,
-    "bytes": 10805036,
+    "bytes": 2027289,
     "source": "Native browser capture of the unchanged local public demo at 2400px",
     "native": true
   }

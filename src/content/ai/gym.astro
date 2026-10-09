@@ -1,24 +1,107 @@
+---
+import '../../styles/gym-case.css';
+import GymImage from '../../components/gym/GymImage.astro';
+const feedback = [
+  ['「不知道器械怎么用，每次都要去外部平台查」','加入器械扫描与型号资料路径，衔接教学视频与训练添加','P2 已实现'],
+  ['「记录太麻烦，打两组就不想打了」','训练记录支持计划复用、逐组确认、重量修改','P3 已实现'],
+  ['「页面像普通记录工具，没有训练氛围」','把当天训练与继续操作放在首页中心，加入熊猫陪伴','P1 / P4 已实现'],
+  ['「熊猫和健身任务脱节」','保留原稿与休息反馈，撤下运动试作，暂停人体镜像','P4 已调整'],
+  ['「饮食记录不知道准不准」','AI 返回可编辑草稿，突出不确定内容，用户确认后才保存','P3 已实现'],
+  ['「想看到除了体重以外的变化」','加入身体维度趋势，按日期回看，支持多种测量指标','P3 右屏已实现'],
+];
+---
 <article class="gc" data-gallery-group="gym-current">
-<a class="gc-back" href="/work/">← 全部作品</a>
-<header class="gc-hero" id="top"><div class="gc-hero-top"><div class="gc-hero-copy"><p class="gc-kicker">个人产品项目 · ToC · 2026.07 至今</p><h1>Gym · AI 健身<br/><span>与饮食记录</span></h1><p>自己训练时最大的摩擦不是“不想练”，是“练完一组不知道下一组做什么”。要翻手机找教学，要手动记重量和组数，做两组记录就放弃了。</p><div class="gc-buttons"><a class="gc-primary" href="#product-view">看产品成果 ↓</a><a href="#deliverables">作品集与 PRD ↗</a></div></div><div class="gc-cover"><img src="/media/gym-2026/home.png" alt="Gym 今日训练首页" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" fetchpriority="high"/><img src="/media/gym-2026/training.png" alt="Gym 逐组训练记录" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><img src="/media/gym-2026/panda-rest.png" alt="Gym 熊猫休息陪伴" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /></div></div><p class="gc-hero-note">实际产品界面 · 合成演示数据 · 2026.10 本地新版。线上已发布基础版本；本页截图不代表真人成绩或业务增长。</p></header>
-<dl class="gc-facts"><div><dt>我的工作</dt><dd>需求梳理 · 产品与交互设计 · 迭代验收</dd></div><div><dt>推进方式</dt><dd>本人主导产品判断，借助 AI 编程工具实现</dd></div><div><dt>交付形态</dt><dd>手机优先网页 · 可安装应用 · 产品文档</dd></div></dl>
-<nav class="gc-jump" aria-label="Gym 案例导航"><a href="#product-view">产品成果</a><a href="#records">可信记录</a><a href="#companion">熊猫陪伴</a><a href="#feedback">反馈与取舍</a><a href="#deliverables">交付文件</a></nav>
-<section class="gc-section" id="product-view"><div class="gc-section-head"><div><p class="gc-kicker">01 / FROM EQUIPMENT TO WORKOUT</p><h2>先认识器械，<br/>再开始这一组。</h2></div><p>Gym 想让训练过程中不用离开当前产品。我以坐姿推胸机为试点做了器械扫描与人工确认入口，接着核对型号、查看教学视频，再添加训练。查阅和记录在同一个产品里完成。</p></div><div class="gc-screens"><figure class="gc-screen"><img src="/media/gym-2026/scan.png" alt="01 进入器械扫描" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>01 进入器械扫描</b>照片输入与手动选择并存，识别不可用时仍有入口。</figcaption></figure><figure class="gc-screen"><img src="/media/gym-2026/equipment.png" alt="02 核对器械类别" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>02 核对器械类别</b>先确认候选，不把模型判断直接当成使用依据。</figcaption></figure><figure class="gc-screen"><img src="/media/gym-2026/teaching.png" alt="03 查看适用资料" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>03 查看适用资料</b>核对指定型号后看资料，再带入记录。</figcaption></figure></div><p class="gc-note">截图为当前运行界面，器械结果使用手动选择路径。识别范围仅坐姿推胸机；没有以截图证明真实照片识别准确率。</p></section>
-<section class="gc-section" id="records"><div class="gc-section-head"><div><p class="gc-kicker">02 / RECORD WHAT REALLY HAPPENED</p><h2>AI 帮忙整理，<br/>记录由人确认。</h2></div><p>饮食部分把文字和餐食照片转为可编辑草稿。AI 给出热量估算，用户核对食物和份量、修改后再保存。训练记录也是一样：先把这组实际做了什么记清楚。</p></div><div class="gc-screens"><figure class="gc-screen"><img src="/media/gym-2026/training.png" alt="逐组记录训练" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>逐组记录训练</b>重量、次数、完成状态放在一起；计划不自动变成已完成。</figcaption></figure><figure class="gc-screen"><img src="/media/gym-2026/meal-preview.png" alt="核对 AI 饮食草稿" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>核对 AI 饮食草稿</b>份量和营养可改，低把握结果突出提醒，确认后保存。</figcaption></figure><figure class="gc-screen"><img src="/media/gym-2026/progress.png" alt="回看自己的变化" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>回看自己的变化</b>按日期查看测量数据，回到已保存记录理解变化。</figcaption></figure></div><p class="gc-note">训练与身体画面使用合成记录；饮食草稿使用固定 AI 返回展示核对交互，本轮未调用模型。</p><div class="gc-callout"><p><b>一个具体处理：</b>忘记重量时，保留“这组确实完成了”，由用户明确确认缺失；不把未知当成 0 kg，也不加入已知重量容量统计。</p></div></section>
-<section class="gc-section" id="companion"><div class="gc-section-head"><div><p class="gc-kicker">03 / A COMPANION BETWEEN SETS</p><h2>陪伴落在训练节奏里。</h2></div><p>熊猫和海豹等可选形象是后来加的。最初的动物动作太生硬，调整了几版才达到可用的程度。我把熊猫陪伴和休息计时放进训练节奏里，完成一组后再出现。</p></div><div class="gc-panda"><figure><img src="/media/gym-2026/panda-design.png" alt="D 熊猫已确认形象与道具原稿，非运行画面" width="1536" height="1024" loading="lazy" data-gallery="gym"/><figcaption>已确认的形象与道具设计稿 · 不是运行截图</figcaption><div class="gc-chips"><span>准备提示</span><span>组间休息</span><span>记录完成反馈</span></div><p>新尝试的举哑铃、跑步、拳击因效果不自然已撤下；人体动作检测暂缓。</p></figure><figure class="gc-screen"><img src="/media/gym-2026/panda-rest.png" alt="一组保存后，歇一会" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption><b>一组保存后，歇一会</b>倒计时可暂停、延长或结束；只有保存成功才触发。</figcaption></figure></div></section>
-<section class="gc-section" id="visual"><div class="gc-section-head"><div><p class="gc-kicker">04 / PRODUCT EXPRESSION</p><h2>从记录工具，<br/>走向训练现场。</h2></div><p>试了两周发现，教学入口藏得太深，用户根本找不到。后来我重新调整了首页和教学入口的位置，把当天训练和继续操作放到更显眼的地方。</p></div><div class="gc-comparison"><figure><img src="/media/gym-2026/before.png" alt="早期首页实际界面，合成数据" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption>早期 · 打卡与信息记录为主</figcaption></figure><figure><img src="/media/gym-2026/home.png" alt="新版首页实际界面，合成数据" width="780" height="1760" loading="lazy" decoding="async" data-gallery="gym" /><figcaption>新版 · 当天训练与主操作优先</figcaption></figure></div><p class="gc-note">两个版本为不同时间的合成演示画面，用于比较信息层级；不是同一用户的前后效果实验。</p></section>
-<section class="gc-section" id="feedback"><div class="gc-section-head"><div><p class="gc-kicker">05 / FEEDBACK INTO DECISIONS</p><h2>试用后，改了什么？</h2></div><p>这里的修改来自我自己、同学和朋友的试用。没有正式的用户访谈或留存统计，先把确实遇到的不方便改掉。</p></div><div class="gc-grid"><article class="gc-card"><small>定性反馈归纳 / 资料查找</small><h3>训练时仍要去外部查动作，工具没能承接现场需要。</h3><p class="gc-result">已落实：把静态器械确认、型号核对和资料入口接到训练记录。</p></article><article class="gc-card"><small>定性反馈归纳 / 训练氛围</small><h3>进入产品更像填写记录，运动感和吸引力不足。</h3><p class="gc-result">已落实：重做首页层级与深色视觉，让当天训练、完成组数和继续训练成为主内容。</p></article><article class="gc-card"><small>定性反馈归纳 / 角色陪伴</small><h3>形象与原稿不一致、动作僵硬，后来新运动仍不自然。</h3><p class="gc-result">已落实：固定已确认原稿，保留状态反馈与休息计时；暂停人体镜像，撤下三种运动试作。</p></article></div><details><summary>三类使用情境：用于检查产品覆盖，不是真人访谈</summary><p><b>刚开始接触器械：</b>先确认类别和适用资料，再把动作带入记录；检查是否能找到手动退路。</p><p><b>已有固定训练安排：</b>复用计划与历史信息，逐组确认，减少反复描述已知内容的必要。</p><p><b>训练后补记饮食：</b>用文字或照片得到草稿，核对份量再保存。以上是设计情境，尚未测量各类用户的完成耗时。</p></details></section>
-<section class="gc-section" id="deliverables"><div class="gc-section-head"><div><p class="gc-kicker">06 / DELIVERABLES</p><h2>当前版本与文档</h2></div><p>目前还是个人 MVP，没有做用户留存数据。最需要改进的是饮食记录的录入速度。试用时，中餐照片的识别表现明显不如西餐；这还需要更多样本验证，暂时不能当作准确率结论。</p></div><div class="gc-grid gc-docs"><a href="/downloads/gym-2026/portfolio.pdf"><small>01 / PDF</small><strong>完整产品作品集 ↗</strong><p>六页成果展示，适合单独发送与面试讲解。</p></a><a href="/downloads/gym-2026/prd.html"><small>02 / PRD</small><strong>产品需求文档 ↗</strong><p>目标、范围、使用流程、异常处理与验收标准。</p></a><a href="/downloads/gym-2026/resume.html"><small>03 / RÉSUMÉ</small><strong>简历项目描述 ↗</strong><p>少用技术名词，讲清做了什么、怎样推进。</p></a></div><div class="gc-buttons"><a href="/downloads/gym-2026/gym-portfolio.zip" download>完整交付包 ZIP</a><a href="/downloads/gym-2026/prd.pdf">下载 PRD PDF</a><a href="/downloads/gym-2026/resume.txt" download>下载简历文字</a><a href="/downloads/gym-2026/resume.pdf">下载项目简历页</a><a href="/downloads/gym-2026/evidence.html">查看证据与状态</a></div><details><summary>实现结果与验证范围</summary><div class="gc-table-wrap"><table><thead><tr><th>已有成果</th><th>可以支持的结论</th></tr></thead><tbody><tr><td>训练、饮食、器械资料与陪练相连</td><td>完整使用路径已实现；新版视觉已在本地验收。</td></tr><tr><td>20 条训练解析合成回归</td><td>历史已知边界题由 6/8 修复到 8/8；不是 20 位真人测试。</td></tr><tr><td>35 条饮食基线，10 条重算定向回归</td><td>保留原始失败与复核，不能推成真实食物营养准确率。</td></tr><tr><td>保存、刷新、失败恢复与陪练检查</td><td>验证产品行为；不等同于留存、节省时间或用户增长。</td></tr></tbody></table></div><p>AI 用于开发协作及文字、照片解析；没有账号与云端记录同步，不提供专业动作纠错。真人任务测试、识别质量与真实手机硬件验证仍待补充。</p></details><p class="gc-note">版式参考：<a href="https://mattlawson.design/work/copilot-studio" target="_blank" rel="noreferrer">Matt Lawson / Copilot Studio</a> 的结果与实际界面前置；<a href="https://minthukyaw.com/projects/ai-job-search-agent" target="_blank" rel="noreferrer">Min Thu Kyaw / AI Job Search Agent</a> 的职责、范围与交付分层。仅参考组织方式，未复用其成果或指标。</p></section>
-<div class="gc-final"><div><p class="gc-kicker">TRY THE PRODUCT</p><h2>试试 Gym</h2><p class="gc-note">线上为已发布基础版本；AI 调用需要访问码，本页新版视觉尚未同步到产品线上。</p></div><a href="https://gym-iota-self.vercel.app/" target="_blank" rel="noreferrer">打开 Gym 基础版本 ↗</a></div>
+  <a class="gc-back" href="/work/">← 全部作品</a>
+  <header class="gc-hero" id="top">
+    <h1>Gym · 手机优先的 AI 健身与饮食记录产品</h1>
+    <div class="gc-hero-copy"><p class="gc-headline">把训练的每一步，<br/>连起来。</p><p>自己训练时最大的摩擦不是「不想练」，是「练完一组不知道下一组做什么」。要翻手机找教学，要手动记重量和组数，做两组记录就放弃了。</p></div>
+    <dl class="gc-stats"><div><dt>训练合成回归</dt><dd>20 <span>条</span></dd></div><div><dt>饮食基线</dt><dd>35 <span>条</span></dd></div><div><dt>可选动物形象</dt><dd>3 <span>种</span></dd></div><div><dt>PRD</dt><dd>4 <span>页</span></dd></div></dl>
+    <GymImage name="gym-hero" alt="Gym 产品主视觉，展示训练、器械确认与熊猫陪伴的整体体验" priority />
+    <p class="gc-tags">ToC · 个人产品项目 · 2026.07 至今 · 需求定义 / 交互与验收</p>
+  </header>
+  <nav class="gc-jump" aria-label="Gym 案例导航"><a href="#origin">起点</a><a href="#product-view">产品全貌</a><a href="#feedback">用户反馈与迭代</a><a href="#ownership">我的职责</a><a href="#validation">验收与边界</a><a href="#deliverables">交付物</a></nav>
+  <section class="gc-section gc-split" id="origin" aria-labelledby="gym-origin">
+    <h2 class="gc-kicker" id="gym-origin">01 / 起点</h2>
+    <div class="gc-prose">
+      <p>刚开始健身几个月，遇到的摩擦比想象中多。</p>
+      <p>第一次进健身房的时候，站到坐姿推胸机前面不知道从哪里下手——座位调到多高、握距多宽、配重从多少开始。掏出手机搜，出来的都是通用教学视频，不是面前这台机器。问了旁边的教练，他说「你先试试轻的」，但「轻的」到底是多重，还是不知道。</p>
+      <p>第二个问题是记录。练完一组要打开备忘录打字，「62.5kg 8次」——打了三组就不想打了。下次来，还得翻上次的记录。练了两个月，除了体重秤上的数字，看不到其他变化。</p>
+      <p>我做 Gym 的起点很直接：不是想再做一个健身 App，是这几个具体的摩擦我自己每天都在遇到。能不能把「认识器械 → 查看资料 → 开始训练 → 回看进步」这条路径缩短一点，哪怕只缩短几步。</p>
+    </div>
+  </section>
+  <section class="gc-section" id="product-view" aria-labelledby="gym-product">
+    <h2 class="gc-kicker" id="gym-product">02 / 产品全貌</h2>
+    <p class="gc-path">一条完整路径：认识器械 → 查看资料 → 开始训练 → 回看进步。</p>
+    <section class="gc-module" id="scanner" aria-labelledby="gym-scanner">
+      <div class="gc-module-heading"><span>3.1 / 器械扫描</span><h3 id="gym-scanner">先认清器械，再开始训练</h3></div>
+      <GymImage name="gym-scanner" alt="Gym 坐姿推胸机扫描、人工确认候选、型号资料与添加训练的界面" />
+      <div class="gc-copy-grid"><div class="gc-prose">
+        <p>坐姿推胸机做了完整路径：扫描或手动选择 → 候选需人工确认 → 核对型号与适用资料 → 明确添加后才写入训练。</p>
+        <p>候选需要用户确认，是因为器械识别经常出错——同一型号不同年份的外观差异、光线不足、角度不对，都会影响结果。与其让 AI 猜，不如让用户确认。</p>
+      </div><div class="gc-prose">
+        <p>资料来自 Life Fitness Insignia SS-C 的官方手册。教学视频和型号资料衔接在确认步骤之后，用户不需要切出去搜。</p>
+        <p>当前仅支持坐姿推胸机一台器械。这不是技术限制，是有意收敛范围——在验证这条路径真的降低摩擦之前，不扩展器械库。</p>
+      </div></div>
+    </section>
+    <section class="gc-module" id="records" aria-labelledby="gym-training">
+      <div class="gc-module-heading"><span>3.2 / 训练记录</span><h3 id="gym-training">计划与完成分开，不让 AI 替你做主</h3></div>
+      <GymImage name="gym-training" alt="Gym 训练记录，展示计划导入、逐组确认以及自重、未知和已知重量的区分" />
+      <div class="gc-copy-grid"><div class="gc-prose">
+        <p>训练记录里有两条规则。</p>
+        <p>第一，计划导入不自动勾选完成。用户必须逐组确认，AI 不能替你决定「这组做完了」。重复导入同一计划时，明确询问是覆盖还是合并。</p>
+      </div><div class="gc-prose">
+        <p>第二，缺失的重量不填零。自重、未知、已知分开记录，用户确认后才保留完成状态。容量统计排除缺失项。</p>
+        <p>这样做的好处是：你事后回看时，看到的是真实完成的训练，不是被 AI 补全的理想记录。</p>
+      </div></div>
+    </section>
+    <section class="gc-module" id="diet" aria-labelledby="gym-diet">
+      <div class="gc-module-heading"><span>3.3 / 饮食记录</span><h3 id="gym-diet">AI 生成草稿，用户核对份量</h3></div>
+      <GymImage name="gym-diet" alt="Gym 饮食记录，将餐食文字和照片转为营养估算草稿，核对份量后保存" />
+      <div class="gc-copy-grid"><div class="gc-prose">
+        <p>饮食部分把文字描述和餐食照片转为可编辑草稿。以「中午吃了一碗牛肉面加一个卤蛋」为例，AI 返回热量、蛋白质、碳水、脂肪的估算，每项都可修改。</p>
+        <p>草稿会突出不确定的内容——份量估算、食材识别。用户确认后才保存到当前浏览器。</p>
+      </div><div class="gc-prose">
+        <p>保存之后，饮食数据会同步到熊猫的状态里。当天摄入和训练消耗不匹配时，熊猫会用它的方式提醒你——不是弹窗警告，是角色状态的变化。这是激励打卡的设计，不是健康建议。</p>
+        <p>拍照识别对中餐的准确率明显低于西餐。这是目前最需要改进的地方，需要更多样本来验证。</p>
+      </div></div>
+    </section>
+    <section class="gc-module" id="companion" aria-labelledby="gym-panda">
+      <div class="gc-module-heading"><span>3.4 / 熊猫陪伴</span><h3 id="gym-panda">熊猫回到训练节奏之中</h3></div>
+      <div class="gc-panda-images"><GymImage name="gym-panda-design" alt="Gym 熊猫等陪练形象的设计稿、道具与状态反馈设计" /><GymImage name="gym-panda-rest" alt="Gym 熊猫陪伴组间休息，展示休息计时和当前训练状态" portrait /></div>
+      <div class="gc-copy-grid"><div class="gc-prose">
+        <p>陪练形象是整个产品里花时间最多的部分之一。</p>
+        <p>用户可以自己选陪练的卡通形象：熊猫、海豹等。每个形象都做了独立的设计稿和动作反馈——不是换一张皮，是每种动物有自己的节奏和性格。熊猫偏安静陪伴，海豹偏活泼鼓励，用户可以根据自己的训练风格选择。</p>
+        <p>形象和训练进度绑定：</p>
+        <ul class="gc-rhythm"><li>准备时，出现在首页，提示今天该练什么。</li><li>训练中，跟随用户的训练动作做出反应——做完一组，它跟着动一下；休息计时，它坐在旁边陪着。</li><li>结束时，给出本次训练的完成反馈。</li></ul>
+      </div><div class="gc-prose">
+        <p>动作反馈只响应当前动作的成功保存事件。不替用户开始下一组，不自动补齐组数。节奏由用户掌握，形象只负责回应。</p>
+        <p>最初的动物动作太生硬，调整了几版才达到可用的程度。现在熊猫可以跟随用户的训练动作模拟完成，形象本身已经可以使用。后续还会继续补充其他动物的动作库。</p>
+      </div></div>
+    </section>
+  </section>
+  <section class="gc-section" id="feedback" aria-labelledby="gym-feedback">
+    <h2 class="gc-kicker" id="gym-feedback">03 / 用户反馈与迭代</h2>
+    <p class="gc-section-lead">来自同学、朋友的试用反馈，以及我自己的使用记录。</p>
+    <p class="gc-note">以下为作者汇总转述，不是逐人访谈引语，也不代表正式访谈样本数。</p>
+    <table class="gc-feedback"><thead><tr><th scope="col">反馈</th><th scope="col">对应调整</th><th scope="col">结果</th></tr></thead><tbody>{feedback.map(([issue,change,result])=><tr><th scope="row" data-label="反馈">{issue}</th><td data-label="对应调整">{change}</td><td data-label="结果">{result}</td></tr>)}</tbody></table>
+    <p class="gc-feedback-closing">我是怎样推进的：梳理现场问题 → 确定优先级 → 推进实际实现 → 看结果再调整。新手确认器械、固定计划训练、事后补记饮食是设计情境，不能当作真实受访者。</p>
+  </section>
+  <section class="gc-section" id="ownership" aria-labelledby="gym-ownership">
+    <h2 class="gc-kicker" id="gym-ownership">04 / 我的职责</h2>
+    <div class="gc-copy-grid"><p>我负责：需求定义与优先级 / 交互方案与验收标准 / 资料选取与内容审核</p><p>工程实现由 AI 工具协作完成。我负责方向、取舍和最终验收判断。</p></div>
+  </section>
+  <section class="gc-section gc-split" id="validation" aria-labelledby="gym-validation">
+    <h2 class="gc-kicker" id="gym-validation">05 / 验收与边界</h2>
+    <div class="gc-prose"><div class="gc-validation-group"><h3>已经可以验证的：</h3><p>入口能完成任务 / 确认前后状态一致 / 刷新后能回看 / 失败可以恢复 / 错误数据不静默写入 / 手机视口无横向溢出</p></div><div class="gc-validation-group"><h3>尚待验证的：</h3><p>真人任务成本与自然复用 / 真实照片识别质量 / 手机硬件与专业资料审校 / 不同器械的扩展路径</p></div><p>没有虚构效率、满意度或健康效果。现有合成模型评测和浏览器回归不替代这些结论。</p></div>
+  </section>
+  <section class="gc-section" id="deliverables" aria-labelledby="gym-deliverables">
+    <h2 class="gc-kicker" id="gym-deliverables">随案例交付</h2>
+    <ul class="gc-deliverables">
+      <li><span>可体验产品：</span><a href="https://gym-iota-self.vercel.app/" target="_blank" rel="noreferrer">gym-iota-self.vercel.app</a></li>
+      <li><span>完整案例：</span><a href="https://yuxiangworks.com/projects/gym/">yuxiangworks.com/projects/gym/</a></li>
+      <li><span>四页 PRD：目标、范围、流程、功能验收、异常与待验证指标</span><a href="/downloads/gym-2026/prd.pdf" target="_blank" rel="noreferrer">PRD PDF ↗</a></li>
+      <li><span>模型历史评测：20 条训练合成回归、35 条饮食基线、10 条重算定向回归</span></li>
+    </ul>
+    <div class="gc-document-links"><a href="/downloads/gym-2026/portfolio.pdf" target="_blank" rel="noreferrer">完整作品集 PDF ↗</a><a href="/work/">← 全部作品</a></div>
+  </section>
 </article>
-<style is:global>
-
-.gc{--ink:#19211d;--muted:#606a62;--lime:#dfff32;--paper:#f7f7f2;color:var(--ink);font-family:Arial,"Microsoft YaHei",sans-serif;line-height:1.8;width:min(1280px,calc(100% - 64px));margin:32px auto 80px}.gc *{box-sizing:border-box}.gc h1,.gc h2,.gc h3,.gc p,.gc figure{margin:0}.gc p{color:var(--muted)}.gc a{color:inherit;text-decoration:none}.gc a:hover{text-decoration:underline}.gc strong,.gc b{color:inherit;font-weight:700}.gc .gc-kicker{font-size:11px;letter-spacing:2px;color:#64705e;text-transform:uppercase;font-weight:700}.gc h1{font-size:clamp(40px,5.3vw,72px);line-height:1.2;letter-spacing:-2px;font-weight:750;margin:20px 0}.gc h2{font-size:clamp(29px,3.5vw,46px);line-height:1.35;font-weight:700;margin:12px 0 20px}.gc h3{font-size:20px;line-height:1.5;margin-bottom:12px}.gc-back{display:inline-block;padding:12px 0;margin-bottom:20px;font-size:13px}.gc-hero{background:#17211a;color:#f4f5ef;border-radius:22px;padding:54px 42px 30px;overflow:hidden}.gc-hero .gc-kicker{color:#c7d69c}.gc-hero h1 span{color:var(--lime)}.gc-hero p{color:#bac5b8}.gc-hero-top{display:grid;grid-template-columns:1.05fr 1fr;gap:24px;align-items:center}.gc-hero-copy>p:last-of-type{max-width:460px;font-size:15px}.gc-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.gc-buttons a{padding:12px 19px;border:1px solid #829477;border-radius:9px;min-height:46px;font-size:13px}.gc-buttons .gc-primary{background:var(--lime);color:#142015;border-color:var(--lime);font-weight:700}.gc-cover{display:grid;grid-template-columns:repeat(3,1fr);align-items:center;gap:12px}.gc-cover img{width:100%;border:4px solid #3b4437;border-radius:20px;display:block;box-shadow:0 20px 45px #0006}.gc-cover img:nth-child(2){transform:translateY(28px)}.gc-hero-note{font-size:11px;margin-top:48px}.gc-facts{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #d4d9ce;gap:24px;padding:28px 8px}.gc-facts dt{font-size:11px;color:#697260;margin-bottom:8px}.gc-facts dd{font-size:14px;margin:0}.gc-jump{display:flex;gap:22px;flex-wrap:wrap;padding:20px 8px;border-bottom:1px solid #d4d9ce;font-size:12px}.gc-section{padding:68px 0;border-bottom:1px solid #d4d9ce;scroll-margin-top:30px}.gc-section-head{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;margin-bottom:32px}.gc-section-head>p{font-size:15px;max-width:540px}.gc-screens{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:30px;background:#ebeee6;border-radius:20px}.gc-screen{min-width:0}.gc-screen img{width:100%;max-height:650px;object-fit:contain;object-position:center top;display:block;border-radius:14px;cursor:zoom-in}.gc-screen figcaption{padding-top:17px;font-size:12px;color:#626d60;line-height:1.65}.gc-screen figcaption b{display:block;font-size:16px;color:#1b291d;margin-bottom:5px}.gc-note{font-size:11px;margin-top:14px!important}.gc-callout{border-left:3px solid #93a738;padding:14px 22px;background:#eef0e4;margin-top:26px}.gc-callout p{font-size:14px}.gc-panda{display:grid;grid-template-columns:1.4fr .65fr;gap:36px;align-items:start}.gc-panda>figure>img{width:100%;border-radius:16px}.gc-panda figcaption{font-size:12px;color:#697260;margin-top:14px}.gc-panda .gc-screen img{max-height:650px}.gc-chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.gc-chips span{padding:7px 12px;background:#e5eacb;border-radius:30px;font-size:12px}.gc-comparison{display:grid;grid-template-columns:1fr 1fr;gap:28px}.gc-comparison figure{padding:25px;background:#ebeee6;border-radius:18px}.gc-comparison img{height:490px;max-width:100%;object-fit:contain;display:block;margin:auto;cursor:zoom-in}.gc-comparison figcaption{font-size:14px;text-align:center;margin-top:20px}.gc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gc-card{padding:24px;background:#eef0e8;border-radius:14px}.gc-card p{font-size:13px;margin-top:10px}.gc-card small{font-size:11px;color:#727b6a}.gc-card h3{margin-top:10px}.gc-card .gc-result{color:#314526;border-top:1px solid #d2d9c8;padding-top:14px;margin-top:18px}.gc details{border:1px solid #d5dccd;border-radius:12px;margin-top:22px;padding:18px 22px;background:#fff}.gc summary{font-size:14px;cursor:pointer;font-weight:700;min-height:32px}.gc details p,.gc details li{font-size:13px;margin:14px 0}.gc-docs a{display:block;min-height:170px;border:1px solid #d2d8cb;border-radius:12px;padding:24px;background:#fff}.gc-docs strong{display:block;font-size:20px;margin:14px 0}.gc-docs small{color:#75806b;font-size:11px}.gc-docs p{font-size:13px}.gc-table-wrap{overflow-x:auto}.gc table{width:100%;border-collapse:collapse;font-size:13px;margin-top:24px}.gc th,.gc td{text-align:left;vertical-align:top;padding:13px 16px;border-bottom:1px solid #d7ddcf}.gc th{background:#ebeee4}.gc-final{padding:44px 0;display:flex;gap:24px;align-items:center;justify-content:space-between}.gc-final h2{margin:0;font-size:28px}.gc-final a{padding:12px 20px;background:#233621;color:#fff;border-radius:8px}.gc-print{display:none}
-@media(max-width:850px){.gc{width:calc(100% - 32px);margin-top:10px}.gc-hero{padding:30px 22px}.gc-hero-top{grid-template-columns:1fr;gap:36px}.gc-cover{max-width:550px;margin:0 auto}.gc h1{font-size:44px;letter-spacing:-1px}.gc-hero-note{margin-top:45px}.gc-section{padding:44px 0}.gc-section-head{grid-template-columns:1fr;gap:10px;margin-bottom:24px}.gc-screens{gap:14px;padding:18px}.gc-screen figcaption b{font-size:14px}.gc-panda{grid-template-columns:1fr 1fr;gap:20px}.gc-grid{grid-template-columns:1fr}.gc-comparison img{height:380px}.gc-docs a{min-height:130px}.gc-facts{gap:14px}.gc-facts dd{font-size:12px}.gc-final{display:block}.gc-final a{display:inline-block;margin-top:20px}}
-@media(max-width:520px){.gc h1{font-size:38px}.gc-facts{grid-template-columns:1fr}.gc-jump{gap:16px}.gc-screens{grid-template-columns:1fr;padding:24px 34px;gap:34px}.gc-screen img{max-height:620px}.gc-panda{grid-template-columns:1fr}.gc-panda .gc-screen{max-width:270px;margin:auto}.gc-comparison{gap:12px}.gc-comparison figure{padding:12px}.gc-comparison img{height:300px}.gc-comparison figcaption{font-size:12px}.gc-hero-note{font-size:10px}.gc-cover{gap:7px}.gc-cover img{border-width:2px;border-radius:10px}}
-@media(prefers-reduced-motion:reduce){.gc *{scroll-behavior:auto!important;transition:none!important}}
-
-</style>
-<style is:global>
- .gc .gc-hero-note{margin-top:55px;position:relative;line-height:1.8}
-</style>

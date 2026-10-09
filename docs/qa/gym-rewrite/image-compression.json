@@ -1,0 +1,182 @@
+[
+  {
+    "name": "fangkuai-annotation.png",
+    "before": 15487200,
+    "after": 2445908,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 2150
+  },
+  {
+    "name": "fangkuai-copenhill.png",
+    "before": 3843212,
+    "after": 3820289,
+    "method": "PNG lossless strategy 0",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 1333
+  },
+  {
+    "name": "fangkuai-ending.png",
+    "before": 13698756,
+    "after": 1869047,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 2282
+  },
+  {
+    "name": "fangkuai-excerpt.png",
+    "before": 10805036,
+    "after": 1986566,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 1500
+  },
+  {
+    "name": "fangkuai-feedback.png",
+    "before": 7322781,
+    "after": 1138743,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2399,
+    "height": 1017
+  },
+  {
+    "name": "fangkuai-ip-states.png",
+    "before": 8538042,
+    "after": 1172220,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 3200,
+    "height": 889
+  },
+  {
+    "name": "fangkuai-jingdezhen-kiln.png",
+    "before": 5143722,
+    "after": 5018333,
+    "method": "PNG lossless strategy 0",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 1500
+  },
+  {
+    "name": "fangkuai-large-reader.png",
+    "before": 7917932,
+    "after": 1289579,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 1319
+  },
+  {
+    "name": "fangkuai-library-detail.png",
+    "before": 2906311,
+    "after": 2799489,
+    "method": "PNG lossless strategy 0",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 2100
+  },
+  {
+    "name": "fangkuai-library.png",
+    "before": 10805036,
+    "after": 1331201,
+    "method": "PNG lossless strategy 0",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 1500
+  },
+  {
+    "name": "fangkuai-lochal-library.png",
+    "before": 3710948,
+    "after": 3604090,
+    "method": "PNG lossless strategy 0",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 1333
+  },
+  {
+    "name": "fangkuai-qa.png",
+    "before": 6005122,
+    "after": 6005122,
+    "method": "original",
+    "pixelIdentical": true,
+    "width": 2399,
+    "height": 834
+  },
+  {
+    "name": "fangkuai-reading.png",
+    "before": 2334749,
+    "after": 2302429,
+    "method": "PNG lossless strategy 0",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 3100
+  },
+  {
+    "name": "fangkuai-research-folder.png",
+    "before": 10805036,
+    "after": 1718523,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 1500
+  },
+  {
+    "name": "fangkuai-state-1.png",
+    "before": 15655717,
+    "after": 2112272,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 2608
+  },
+  {
+    "name": "fangkuai-state-2.png",
+    "before": 15649716,
+    "after": 2039142,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 2607
+  },
+  {
+    "name": "fangkuai-state-3.png",
+    "before": 15649716,
+    "after": 2037875,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 2607
+  },
+  {
+    "name": "fangkuai-state-4.png",
+    "before": 15649716,
+    "after": 2033544,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 2607
+  },
+  {
+    "name": "fangkuai-tank-shanghai.png",
+    "before": 3519498,
+    "after": 3452310,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2000,
+    "height": 1425
+  },
+  {
+    "name": "fangkuai-taxonomy.png",
+    "before": 10805036,
+    "after": 2027289,
+    "method": "PNG lossless strategy 2",
+    "pixelIdentical": true,
+    "width": 2400,
+    "height": 1500
+  }
+]

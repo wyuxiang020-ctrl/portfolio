@@ -8,5 +8,5 @@ const src=`/images/fangkuai/${file}.png`;
 ---
 <figure class:list={['fk-image',{'fk-image-flat':flat}]}>
   <img src={src} alt={alt} width={asset.width} height={asset.height} loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async" data-gallery="fangkuai" />
-  {caption&&<figcaption><span>{caption}</span><a href={src} target="_blank" rel="noreferrer" aria-label={`查看原图：${caption}`}>原图 ↗</a></figcaption>}
+  {caption&&<figcaption>{caption}</figcaption>}
 </figure>

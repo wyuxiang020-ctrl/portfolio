@@ -28,7 +28,7 @@ export const projects = [
     role: '需求梳理、产品与交互设计、迭代验收', period: '2026.07 — 至今',
     scope: '本人主导产品判断 · AI 工具辅助实现', repo: 'https://github.com/wyuxiang020-ctrl/gym',
     summary: [['问题','训练时查资料、记录与回看分散。'],['选择','先连通现场任务，AI 结果经用户核对后保存。'],['结果','交付手机优先的训练、饮食、单器械确认与熊猫陪练。'],['边界','个人 MVP，尚无用户留存数据；饮食录入速度和中餐照片识别仍需改进与更多样本验证。']],
-    chapters: [['product-view','产品成果'],['records','可信记录'],['companion','熊猫陪伴'],['visual','界面升级'],['feedback','反馈与取舍'],['deliverables','交付与依据']],
+    chapters: [['origin','起点'],['product-view','产品全貌'],['companion','熊猫陪伴'],['feedback','用户反馈与迭代'],['ownership','我的职责'],['validation','验收与边界'],['deliverables','交付物']],
   },
   {
     id: 'spatial-portfolio', key: 'spatial', number: '03', title: '交互式建筑作品集',

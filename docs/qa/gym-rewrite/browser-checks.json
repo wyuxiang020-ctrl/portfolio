@@ -1,0 +1,29 @@
+{
+  "gymMobile": {
+    "body": "16px",
+    "lineHeight": "28px",
+    "overflow": false,
+    "placeholders": 6,
+    "scrollWidth": 360,
+    "width": 375
+  },
+  "gymDesktop": {
+    "width": 1280,
+    "body": "16px",
+    "lineHeight": "28px",
+    "overflow": false,
+    "feedbackRows": 6,
+    "imageSlots": 6
+  },
+  "otherProjects": {
+    "knowledgeBody": "15px",
+    "slowtrailIntro": "16px",
+    "architectureBody": "13px",
+    "spatialBody": "13px"
+  },
+  "knowledge": {
+    "originalLinks": 0,
+    "galleryOpen": true
+  },
+  "viewportReset": true
+}
