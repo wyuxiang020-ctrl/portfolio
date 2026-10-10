@@ -13,9 +13,9 @@ export const profile = {
   language: 'IELTS 6.5',
   website: 'https://yuxiangworks.com/',
   portrait: '/images/yuxiang-portrait.jpg',
-  resumePdf: '/downloads/yuxiang-wang-resume-2026-10-09.pdf',
+  resumePdf: '/downloads/yuxiang-wang-resume-2026-10-10.pdf',
   originalResumePdf: '/downloads/yuxiang-wang-resume-original-2026-10-02.pdf',
-  sourceUpdated: '2026.10.09',
+  sourceUpdated: '2026.10.10',
   education: [
     { institution: '曼彻斯特大学 / 曼彻斯特建筑学院', date: '2025.09 — 至今', degree: 'MA Architecture and Adaptive Reuse · 硕士在读', result: '预计 Distinction', description: '建筑设计与适应性改造；跨学科研究、复杂信息梳理与方案表达。' },
     { institution: '四川美术学院', date: '2020.09 — 2025.06', degree: '建筑学学士', result: 'GPA 3.85 / 4.0 · 专业排名 1 / 50', description: '连续四年校级奖学金 · 本科毕业展入选。' },
