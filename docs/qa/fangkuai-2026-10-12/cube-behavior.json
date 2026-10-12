@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "visible autoplay",
+    "manual states",
+    "pause/resume",
+    "background pause/resume",
+    "offscreen pause",
+    "reduced motion stops autoplay",
+    "reduced motion manual control",
+    "keyboard Home focus"
+  ]
+}

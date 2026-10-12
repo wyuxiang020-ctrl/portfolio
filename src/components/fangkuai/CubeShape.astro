@@ -1,0 +1,8 @@
+---
+const {miniature=false}=Astro.props;
+---
+<svg viewBox="0 0 360 290" fill="none" aria-hidden="true" class={miniature?'fc-miniature':'fc-art'}>
+  {!miniature&&<g><ellipse cx="180" cy="174" rx="144" ry="68" class="fc-orbit"/><ellipse cx="180" cy="174" rx="121" ry="93" class="fc-orbitTilt"/><ellipse cx="180" cy="243" rx="64" ry="10" class="fc-shadow"/><g class="fc-signal"><circle cx="293" cy="134" r="5"/><circle cx="62" cy="191" r="3"/></g></g>}
+  <g class="fc-float">{['bottom','middle','top'].map(layer=><g class={`fc-layer fc-${layer}`}><path d="m180 76 62 36-62 36-62-36Z" class="fc-topFace"/><path d="m118 112 62 36v27l-62-36Z" class="fc-leftFace"/><path d="m180 148 62-36v27l-62 36Z" class="fc-rightFace"/><path d="m119 112 61 35 61-35M180 148v26" class="fc-edge"/>{layer==='top'&&<path d="m158 113 20 12 26-15" class="fc-inlay"/>}</g>)}</g>
+  {!miniature&&<><g class="fc-scan"><path d="m110 147 70 40 70-40-70-40Z"/><path d="m110 147 70 40 70-40"/></g><g class="fc-badge"><circle cx="251" cy="88" r="19"/><path d="m243 88 6 6 11-12"/></g></>}
+</svg>

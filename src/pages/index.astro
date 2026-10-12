@@ -1,5 +1,6 @@
 ---
 import PortfolioLayout from '../layouts/PortfolioLayout.astro';
+import StudioCover from '../components/fangkuai/StudioCover.astro';
 import OptimizedImage from '../components/ui/OptimizedImage.astro';
 import { projects } from '../data/ai-projects';
 import { getCollection } from 'astro:content';
@@ -8,7 +9,7 @@ const hearth = architecture.find(project => project.id === 'grandmothers-hearth'
 const knowledge = projects[0];
 const total = projects.filter(project => project.id !== 'spatial-portfolio').length + architecture.length;
 const featured = [
-  { title: knowledge.title, href: knowledge.href, image: knowledge.image, category: 'product', label: 'AI 产品 / 信息架构 · 资料工作台', description: '确认一个构造做法，往往要在规范和旧项目之间反复翻找。方块把 20 个公开案例、8 项规范与 8 项政策放进同一个工作台，从找到资料到回看原文。', date: '2026.05 — 至今 · 持续迭代', note: '本人主导 · 资料查找与阅读' },
+  { title: knowledge.title, href: knowledge.href, image: knowledge.image, category: 'product', label: 'AI 产品 / 信息架构 · 资料工作台', description: '从设计院实习中的资料查找问题出发，将建筑案例、规范索引与重庆政策组织到同一工作台。本机版本连接真实文本资料与来源阅读，独立网页演示继续探索摘录、研究夹和截图旁批。', date: '2026.05 — 至今 · 持续迭代', note: '本人主导 · 本次更新：2026.10.12' },
   { title: '祖母的火塘', href: '/architecture/grandmothers-hearth/', image: hearth.data.coverImage, category: 'architecture', label: '建筑 / 适应性再利用', description: '泸沽湖走访后的住宅改造设计：保留围绕火塘的家庭生活，为居民和访客安排各自的活动空间。', date: hearth.data.year + ' · 设计项目', note: '合作设计 / 王誉翔 × 刘涵' },
 ];
 ---
@@ -37,7 +38,7 @@ const featured = [
     <div class="feature-grid">
       {featured.map(project=><article class:list={['feature-card',project.category,{'knowledge-cover':project.href===knowledge.href}]} data-scroll-reveal>
         <a href={project.href} aria-label={'查看'+project.title}>
-          <div class="feature-image" data-project-preview><OptimizedImage src={project.image} alt={project.title+'项目展示'} gallery={false} sizes="(max-width:760px) 90vw, 45vw" loading="lazy"/><span class="feature-view" aria-hidden="true">查看</span></div>
+          <div class="feature-image" data-project-preview>{project.href===knowledge.href?<StudioCover compact/>:<OptimizedImage src={project.image} alt={project.title+'项目展示'} gallery={false} sizes="(max-width:760px) 90vw, 45vw" loading="lazy"/>}<span class="feature-view" aria-hidden="true">查看</span></div>
           <div class="feature-title"><h3>{project.title}</h3><span aria-hidden="true">↗</span></div>
         </a>
         <p class="feature-description">{project.description}</p>

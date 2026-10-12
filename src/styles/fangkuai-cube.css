@@ -1,0 +1,74 @@
+.fc-showcase{width:100%;max-width:460px;min-width:0;margin:auto;color:#53694e}
+.fc-topline{display:flex;justify-content:space-between;align-items:center;padding:0 12px;font-size:10px;letter-spacing:.1em;color:#808b77}
+.fc-topline button{display:flex;align-items:center;gap:7px;border:1px solid #dce2d5;background:transparent;border-radius:20px;padding:7px 11px;min-height:32px;font:inherit;color:#64765a;cursor:pointer}
+.fc-topline button:disabled{cursor:default;color:#89917f}
+.fc-showcase button:focus-visible{outline:2px solid #617655;outline-offset:4px}
+.fc-stage{position:relative;width:100%;height:280px;background:radial-gradient(ellipse at 50% 58%,#e8eddf80,transparent 66%)}
+.fc-art{width:100%;height:100%;overflow:visible}
+.fc-orbit,.fc-orbitTilt{stroke:#dbe2d1;stroke-width:.8;transform-origin:180px 174px}
+.fc-orbit{transform:rotate(-18deg)}
+.fc-orbitTilt{transform:rotate(27deg) scaleY(.7)}
+.fc-shadow{fill:#516547;opacity:.1;filter:blur(7px);transform-origin:180px 243px;animation:fc-shadow 4s ease-in-out infinite}
+.fc-layer{transition:transform 1.2s cubic-bezier(.22,.75,.25,1);transform-origin:180px 145px}
+.fc-top{transform:translateY(-6px)}
+.fc-middle{transform:translateY(24px)}
+.fc-bottom{transform:translateY(54px)}
+.fc-topFace{fill:#a5b499}.fc-leftFace{fill:#788d6d}.fc-rightFace{fill:#465f45}
+.fc-middle .fc-topFace{fill:#c1ccb5}.fc-middle .fc-leftFace{fill:#8b9e7c}.fc-middle .fc-rightFace{fill:#627956}
+.fc-bottom .fc-topFace{fill:#b5c3a7}.fc-bottom .fc-leftFace{fill:#819773}.fc-bottom .fc-rightFace{fill:#536c49}
+.fc-edge{stroke:#f4f5ec;stroke-opacity:.6;stroke-width:1.15;stroke-linejoin:round}
+.fc-inlay{stroke:#e7eddd;stroke-width:1.2;stroke-linecap:round;opacity:.6}
+.fc-float{animation:fc-breathe 4s ease-in-out infinite;transform-origin:180px 160px}
+.fc-signal{fill:#8a9f76;opacity:0;transition:opacity .8s}
+.fc-scan{opacity:0;transition:opacity .7s;animation:fc-scan 2.8s ease-in-out infinite;pointer-events:none}
+.fc-scan path:first-child{fill:#cadbc3;fill-opacity:.2;stroke:#b2c4a3;stroke-width:1}
+.fc-scan path:last-child{stroke:#628951;stroke-width:1.5}
+.fc-badge{opacity:0;transform:translateY(10px) scale(.85);transform-origin:251px 88px;transition:opacity .7s,transform .9s cubic-bezier(.16,1,.3,1)}
+.fc-badge circle{fill:#f6f8f0;stroke:#a4b895;stroke-width:1}
+.fc-badge path{stroke:#537e45;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fc-showcase[data-state=search] .fc-top{transform:translate(0,-27px)}
+.fc-showcase[data-state=search] .fc-middle{transform:translate(0,22px)}
+.fc-showcase[data-state=search] .fc-bottom{transform:translate(0,70px)}
+.fc-showcase[data-state=search] .fc-scan,.fc-showcase[data-state=search] .fc-signal{opacity:1}
+.fc-showcase[data-state=organize] .fc-top{transform:translate(-52px,-13px)}
+.fc-showcase[data-state=organize] .fc-middle{transform:translate(53px,18px)}
+.fc-showcase[data-state=organize] .fc-bottom{transform:translate(-15px,76px)}
+.fc-showcase[data-state=organize] .fc-signal{opacity:1}
+.fc-showcase[data-state=ready] .fc-top{transform:translateY(-6px)}
+.fc-showcase[data-state=ready] .fc-middle{transform:translateY(22px)}
+.fc-showcase[data-state=ready] .fc-bottom{transform:translateY(50px)}
+.fc-showcase[data-state=ready] .fc-badge{opacity:1;transform:translateY(0) scale(1)}
+.fc-caption{text-align:center;min-height:64px;padding:5px 0 15px}
+.fc-caption strong{font-size:16px;letter-spacing:.06em;font-weight:450;color:#455d40}
+.fc-caption p{font-size:11px;line-height:1.8;color:#87917c;padding-top:9px}
+.fc-states{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.fc-states button{position:relative;display:flex;flex-direction:column;align-items:center;gap:0;overflow:hidden;border:1px solid #e0e5d8;border-radius:10px;background:#f5f5ef;color:#86917b;cursor:pointer;padding:0 5px 10px;transition:background .25s,border-color .25s,color .25s}
+.fc-states button:hover{background:#eaf0e2;border-color:#b9c8aa}
+.fc-states button[aria-pressed=true]{color:#415e38;border-color:#aabd9c;background:#eaf0e2}
+.fc-states button>span{font-size:11px;letter-spacing:.15em}
+.fc-miniature{width:64px;height:49px;margin-top:1px;opacity:.6}
+.fc-miniature .fc-float{animation:none;transform:translate(0,-5px)}
+.fc-states button[aria-pressed=true] .fc-miniature{opacity:1}
+.fc-states button[data-state=idle] .fc-layer{transform:translateY(24px)}
+.fc-states button[data-state=idle] .fc-top{transform:translateY(-6px)}
+.fc-states button[data-state=idle] .fc-bottom{transform:translateY(54px)}
+.fc-states button[data-state=search] .fc-top{transform:translateY(-27px)}
+.fc-states button[data-state=search] .fc-middle{transform:translateY(22px)}
+.fc-states button[data-state=search] .fc-bottom{transform:translateY(70px)}
+.fc-states button[data-state=organize] .fc-top{transform:translate(-52px,-13px)}
+.fc-states button[data-state=organize] .fc-middle{transform:translate(53px,18px)}
+.fc-states button[data-state=organize] .fc-bottom{transform:translate(-15px,76px)}
+.fc-states button[data-state=ready] .fc-top{transform:translateY(-6px)}
+.fc-states button[data-state=ready] .fc-middle{transform:translateY(22px)}
+.fc-states button[data-state=ready] .fc-bottom{transform:translateY(50px)}
+.fc-states i{position:absolute;bottom:0;left:0;right:0;height:2px;background:#7d956d;transform:scaleX(0);transform-origin:left}
+.fc-states button[aria-pressed=true] i{transform:scaleX(1)}
+.fc-footnote{display:flex;justify-content:space-between;margin-top:15px;padding:0 3px;font-size:10px;letter-spacing:.04em;color:#87917c}
+.fc-footnote>span{color:#a0a895;font-size:9px}
+.fc-showcase[data-paused=true] *{animation-play-state:paused!important}
+@keyframes fc-breathe{0%,100%{transform:translateY(3px)}50%{transform:translateY(-7px)}}
+@keyframes fc-shadow{0%,100%{transform:scaleX(1);opacity:.12}50%{transform:scaleX(.85);opacity:.07}}
+@keyframes fc-scan{0%,100%{transform:translateY(-16px)}50%{transform:translateY(32px)}}
+@media(max-width:900px){.fc-stage{height:250px}.fc-states{gap:5px}.fc-caption strong{font-size:14px}}
+@media(max-width:640px){.fc-showcase{max-width:400px}.fc-stage{height:260px}.fc-states{gap:8px}.fc-caption strong{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.fc-showcase *{animation:none!important;transition:none!important}.fc-states i{display:none}}

@@ -1,0 +1,71 @@
+{
+  "chapters_preserved": true,
+  "no_localhost_links": true,
+  "no_institutional_deployment_claim": true,
+  "new_share_metadata": true,
+  "resume_bytes": 418058,
+  "resume_sha256": "f63b144b9b3b37fbd83cebe62295c680859f54889a6f5abe56882a5536340011",
+  "zip_bytes": 49583998,
+  "new_assets": [
+    {
+      "file": "21-demo-project-reader.png",
+      "width": 1264,
+      "height": 1702,
+      "bytes": 1197568,
+      "MiB": 1.14,
+      "role": "独立交互演示中的御窑博物馆来源阅读页，不是实时RAG回答",
+      "source": "2026-10-12 CUA浏览器原生截图，原始JPEG无缩放转PNG；转换不增加细节",
+      "sha256": "db909ad1f7a895b6b26872bc985a126da201a6bf7167d31655d82cbef9251c59"
+    },
+    {
+      "file": "30-architecture-studio-original.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1803088,
+      "MiB": 1.72,
+      "role": "新版主封面底图；屏幕留白，须用HTML叠加产品界面；AI场景示意",
+      "source": "本项目 imagegen 原图，非实拍",
+      "sha256": "a2a89773b09ecafa68b0e7b0cf30da89d073c708ae60620adcd01ab812c0bf29"
+    },
+    {
+      "file": "31-reference-desk-original.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2382153,
+      "MiB": 2.27,
+      "role": "规范标准分区照片风格封面；AI场景示意，不代表出版物",
+      "source": "本项目 imagegen 原图，非实拍",
+      "sha256": "343600c83049f083db1ff71a61e5e53c2f789c751dfea72e1051054adbedb870"
+    },
+    {
+      "file": "32-chongqing-original.jpg",
+      "width": 4000,
+      "height": 1559,
+      "bytes": 1249222,
+      "MiB": 1.19,
+      "role": "地区政策分区真实重庆城市照片",
+      "source": "Renek78 / CC0 1.0 / https://commons.wikimedia.org/wiki/File:September_2025_in_Chongqing_08.jpg",
+      "sha256": "a6f06eb8c3d80aa92f1d0fde2df66da65d36930be75f3f495904d76cc2b3278d"
+    },
+    {
+      "file": "33-jingdezhen-original.jpg",
+      "width": 2000,
+      "height": 1500,
+      "bytes": 2559217,
+      "MiB": 2.44,
+      "role": "建筑案例与项目档案大图",
+      "source": "Studio Zhu-Pei 提供 / https://www.archdaily.com/948083/jingdezhen-imperial-kiln-museum-studio-zhu-pei",
+      "sha256": "3358e1c4c07c9b14030d7e49fbf51dc6c4968cf055d3ac631074925263c28bb4"
+    },
+    {
+      "file": "studio-share.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1062972,
+      "MiB": 1.01,
+      "role": "新版封面完整网页合成，用于社交分享和点击放大",
+      "source": "CUA 原生 1672×941 浏览器截图；无缩放转 PNG，不增加原始细节",
+      "sha256": "a30472876786b7f4bbace62b03a9de72e59348ea33cc51369d49331e1fbd05c5"
+    }
+  ]
+}

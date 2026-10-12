@@ -1,0 +1,12 @@
+---
+import CubeShape from './CubeShape.astro';
+import '../../styles/fangkuai-cube.css';
+const states=[['idle','待命'],['search','查找'],['organize','整理'],['ready','完成']];
+---
+<div class="fc-showcase" data-cube-showcase data-state="idle" data-paused="true" aria-label="小方块的四种形态演示">
+  <div class="fc-topline"><span>小方块 · 形态演示</span><button type="button" data-cube-toggle aria-label="暂停方块动画"><span aria-hidden="true">Ⅱ</span></button></div>
+  <div class="fc-stage"><CubeShape/></div>
+  <div class="fc-caption"><strong data-cube-caption>待命 · 合拢陪伴</strong><p>品牌形态演示，不连接真实任务状态。</p></div>
+  <div class="fc-states" role="group" aria-label="切换方块形态">{states.map(([id,label],i)=><button type="button" data-state={id} data-cube-state={i} aria-pressed={i===0} aria-label={`展示${label}形态`}><CubeShape miniature/><span>{label}</span><i aria-hidden="true"/></button>)}</div>
+</div>
+<script src="../../scripts/fangkuai-cube.ts"></script>

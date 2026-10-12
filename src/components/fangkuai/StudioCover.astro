@@ -1,0 +1,35 @@
+---
+interface Props { priority?: boolean; compact?: boolean }
+const {priority=false,compact=false}=Astro.props;
+---
+<div class:list={['studio-cover',{'studio-cover-compact':compact}]}>
+  <img class="studio-backdrop" src="/images/fangkuai-2026-10-12/30-architecture-studio-original.png" alt="建筑工作室场景与界面示意：木质桌面、建筑图纸与显示器" width="1672" height="941" loading={priority?'eager':'lazy'} fetchpriority={priority?'high':'auto'} decoding="async" data-gallery={priority?'fangkuai':undefined} data-full-src={priority?'/images/fangkuai-2026-10-12/studio-share.png':undefined}/>
+  <svg class="studio-overlay" viewBox="0 0 1672 941" aria-hidden="true">
+    <foreignObject x="0" y="0" width="1672" height="941">
+      <div class="studio-screen">
+        <div class="studio-sidebar"><strong>◇ 项目知识助手</strong><small>我的工作台</small><span class="selected">▣ 项目档案</span><span>▤ 规范标准</span><span>⌂ 地区政策</span><small class="studio-sidebar-bottom">资料 · 线索 · 来源</small></div>
+        <div class="studio-main"><div class="studio-toolbar">项目档案 <span>工作台界面示意</span></div><strong class="studio-heading">从资料中，寻找设计线索。</strong><div class="studio-search">⌕　查找项目、空间与设计策略</div><div class="studio-content"><div class="studio-project"><img src="/images/fangkuai-2026-10-12/33-jingdezhen-original.jpg" alt="" width="2000" height="1500" loading={priority?'eager':'lazy'}/><strong>景德镇御窑博物馆</strong><small>Studio Zhu-Pei · 项目档案</small></div><div class="studio-notes"><small>DESIGN NOTES</small><strong>查阅线索</strong><span>01　场地与空间</span><span>02　砖拱与材料</span><span>03　原始来源</span><small>↗ 回到资料，核对来源</small></div></div><div class="studio-prompt">◇　一个问题，连接你的建筑知识。<b>↑</b></div></div>
+      </div>
+    </foreignObject>
+  </svg>
+  <div class="studio-caption" aria-hidden="true"><span>FANGKUAI / WORKSPACE</span><strong>资料，回到手边。</strong><small>项目档案 · 规范标准 · 地区政策</small></div>
+</div>
+<style>
+  .studio-cover{position:relative;width:100%;aspect-ratio:1672/941;overflow:hidden;background:#252821;isolation:isolate;container-type:inline-size}
+  .studio-cover .studio-backdrop{display:block;width:100%;height:100%;object-fit:contain;border:0;border-radius:0;box-shadow:none}
+  .studio-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .studio-screen{display:flex;width:1000px;height:600px;overflow:hidden;transform-origin:0 0;transform:matrix3d(.347594744,-.087249734,0,-.000189084943,-.070605337,.553032824,0,-.000034349424,0,0,1,0,915,247,0,1);background:#f6f5ee;color:#354334;font:15px/1.4 "Microsoft YaHei",sans-serif;text-align:left}
+  .studio-screen *{box-sizing:border-box;letter-spacing:0}
+  .studio-sidebar{width:190px;flex-shrink:0;background:#e9ede3;border-right:1px solid #d6ddcf;padding:30px 18px;position:relative}
+  .studio-sidebar strong{display:block;font-size:16px;margin-bottom:50px}.studio-sidebar small{display:block;font-size:12px;color:#7a8874;margin-bottom:15px}.studio-sidebar>span{display:block;padding:15px 10px;margin:10px 0;font-size:15px}.studio-sidebar .selected{background:#d6e0cd;border-radius:6px}.studio-sidebar .studio-sidebar-bottom{position:absolute;bottom:26px;left:26px}
+  .studio-main{flex:1;padding:0 30px}.studio-toolbar{height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #dce1d5;font-size:13px}.studio-toolbar span{font-size:11px;color:#7a8874}.studio-heading{display:block;font-size:25px;font-weight:500;margin:28px 0 20px}.studio-search{padding:14px 18px;border:1px solid #d8ddcf;background:#fff;border-radius:6px;color:#89917f}.studio-content{display:grid;grid-template-columns:1.45fr 1fr;gap:18px;margin-top:20px}.studio-project{background:#fff;padding:9px;border-radius:6px}.studio-cover .studio-project img{display:block;width:100%;height:178px;object-fit:cover;border:0;box-shadow:none;border-radius:3px}.studio-project strong{display:block;font-size:17px;padding:9px 5px 3px}.studio-project small{display:block;font-size:11px;padding-left:5px;color:#7a8874}.studio-notes{display:flex;flex-direction:column;gap:14px;padding:20px 16px;border:1px solid #e1e3d8;border-radius:6px}.studio-notes small{font-size:10px;color:#7a8874}.studio-notes strong{font-size:20px;font-weight:500}.studio-notes span{font-size:14px}.studio-prompt{display:flex;justify-content:space-between;background:#e9eddf;border:1px solid #d4dcc6;padding:13px 16px;border-radius:6px;margin-top:20px;font-size:13px}.studio-prompt b{background:#586e4f;color:white;padding:0 8px;border-radius:4px}
+  .studio-caption{position:absolute;top:34%;left:6%;width:40%;color:#f0f1e8;display:flex;flex-direction:column;gap:1.5cqw;font-family:var(--font-body,sans-serif)}.studio-caption>span{font-size:.8cqw;letter-spacing:.18em}.studio-caption>strong{font-size:3.1cqw;font-weight:400;letter-spacing:-.02em;line-height:1.4}.studio-caption>small{font-size:1cqw;color:#cbd0c2}.studio-cover-compact .studio-caption>small{font-size:1.3cqw}
+</style>
+<style is:global>
+  .studio-cover .studio-screen strong{color:#354334!important}
+  .studio-cover .studio-caption>strong{color:#f0f1e8!important}
+  .knowledge-cover.product :is(.work-image,.feature-image){padding:0!important;background:#272b22!important;display:grid;place-items:center}
+  .knowledge-cover.product .studio-cover{width:100%}
+  .knowledge-cover.product .studio-cover .studio-backdrop{width:100%!important;height:100%!important;object-fit:contain!important;transform:none!important}
+  .knowledge-cover.product .studio-cover .studio-project img{width:100%!important;height:178px!important;object-fit:cover!important;transform:none!important}
+</style>

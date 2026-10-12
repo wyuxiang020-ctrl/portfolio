@@ -6,8 +6,8 @@ import Gallery from '../components/Gallery.astro';
 import TransitionBoot from '../components/TransitionBoot.astro';
 import TransitionLayer from '../components/TransitionLayer.astro';
 import { profile } from '../data/profile';
-interface Props { title?: string; description?: string; wide?: boolean; home?: boolean }
-const { title = `${profile.name} · AI 产品与空间实践`, description = `${profile.tagline}。通过知识助手、健身记录与交互式作品集，呈现问题定义、产品决策和验证过程。`, wide = false, home = false } = Astro.props;
+interface Props { title?: string; description?: string; wide?: boolean; home?: boolean; shareImage?: string }
+const { title = `${profile.name} · AI 产品与空间实践`, description = `${profile.tagline}。通过知识助手、健身记录与交互式作品集，呈现问题定义、产品决策和验证过程。`, wide = false, home = false, shareImage } = Astro.props;
 const path = Astro.url.pathname;
 const light = path.startsWith('/projects/') || path.startsWith('/architecture/');
 const links = [{href:'/work/',label:'作品'}, {href:'/about/',label:'关于'}];
@@ -25,6 +25,7 @@ const canonical = new URL(path, Astro.site);
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="zh_CN" />
+    {shareImage && <><meta property="og:image" content={new URL(shareImage,Astro.site)}/><meta property="og:image:alt" content="建筑工作室场景与方块工作台界面示意"/><meta name="twitter:card" content="summary_large_image"/></>}
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
